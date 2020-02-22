@@ -16,3 +16,8 @@ gulp
 ```
 
 Hit `ctrl + C` to stop the server.
+
+### Contributing
+
+Use the coding style recommended by [codeguide.co](https://codeguide.co).  
+Open issues and pull requests at this repo.
