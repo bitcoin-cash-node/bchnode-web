@@ -1,0 +1,31 @@
+{
+  "name": "bitcoincashnode.org",
+  "version": "1.0.0",
+  "description": "Bitcoin Cash Node website.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitcoin-cash-node/bchnode-web.git"
+  },
+  "keywords": [
+    "BitcoinCash",
+    "Bitcoin"
+  ],
+  "author": "Corentin Mercier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bitcoin-cash-node/bchnode-web/issues"
+  },
+  "homepage": "https://bitcoincashnode.org",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
