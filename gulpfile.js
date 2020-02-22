@@ -4,6 +4,7 @@ let gulp = require('gulp'),
     newer = require('gulp-newer'),
     browserSync = require('browser-sync'),
     cleanCSS = require('gulp-clean-css'),
+    nunjucksRender = require('gulp-nunjucks-render'),
     reload = browserSync.reload;
 
 
@@ -12,6 +13,17 @@ gulp.task('clean', function(done){
   // Deletes all files from dist/
   del.sync('dist/', {force: true});
   done()
+});
+
+gulp.task('nunjucks', function() {
+  // Gets all .html files in pages
+  return gulp.src('app/**/*.html')
+  // Renders template with nunjucks
+  .pipe(nunjucksRender({
+    path: ['app/templates/']
+  }))
+  // Outputs files in dist folder
+  .pipe(gulp.dest('dist'))
 });
 
 gulp.task('sass', function(){
@@ -72,8 +84,9 @@ gulp.task('serve', function(done){
 
 
 // Default task
-gulp.task('default', gulp.series('clean', 'sass', 'html',
+gulp.task('default', gulp.series('clean', 'nunjucks', 'sass', 'html',
   'copy-static', 'serve', 'watch'));
 
 // Deployment task
-gulp.task('build', gulp.series('clean', 'sass', 'html', 'copy-static'));
+gulp.task('build', gulp.series('clean', 'nunjucks', 'sass', 'html',
+  'copy-static'));

@@ -1,36 +1,9 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% extends 'base.njk' %}
 
-    <meta name="author" content="Bitcoin Cash Community">
-    <meta name="description" content="">
+{% block title %}Bitcoin Cash Node{% endblock %}
+{% block description %}{% endblock %}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/static/css/style.css">
-
-    <title>Bitcoin Cash Node</title>
-  </head>
-
-  <body>
-    <nav class="navbar navbar-dark bg-dark pt-4">
-      <div class="container">
-        <a class="navbar-brand" href="/">
-          <img src="/static/img/logo-white.svg" width="30" height="30" alt="Bitcoin Cash Node Logo">
-        </a>
-
-        <div>
-          <a class="btn btn-link text-white" href="#">Docs</a>
-          <a class="btn btn-link text-white d-none d-sm-inline" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Source</a>
-          <a class="btn btn-link text-white" href="#">Download</a>
-        </div>
-      </div>
-    </nav>
+{% block body %}
 
     <section class="bg-dark">
       <div class="container">
@@ -84,5 +57,4 @@
       </div>
     </section>
 
-  </body>
-</html>
+{% endblock %}
