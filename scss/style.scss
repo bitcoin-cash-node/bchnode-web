@@ -1,0 +1,29 @@
+// Hero header
+.hero-title {
+  margin-bottom: 1.5rem;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: .9;
+  color: #fff;
+}
+
+@media (min-width: 48em) {
+  .hero-title {
+    font-size:6rem;
+  }
+}
+
+// Color stripes
+.stripe {
+  height: 30px;
+  width: 100%;
+  &-orange {
+    background-color: #F79318;
+  }
+  &-mid {
+    background-color: #81AA53;
+  }
+  &-green {
+    background-color: #0AC18E;
+  }
+}
