@@ -65,7 +65,7 @@ gulp.task('reload', function(done){
 // Watch for changes
 gulp.task('watch', function(done){
   // Watch HTML pages
-  gulp.watch('app/**/*.html', gulp.series('html', 'copy-static', 'reload'));
+  gulp.watch('app/**/*.html', gulp.series('html', 'nunjucks', 'copy-static', 'reload'));
   // Watch SCSS files
   gulp.watch('scss/**/*.scss', gulp.series('sass', 'copy-static'));
   done();
