@@ -38,7 +38,7 @@ gulp.task('sass', function(){
 
 // Copy html files to dist
 gulp.task('html', function(){
-  return gulp.src('app/**/*.html')
+  return gulp.src(['app/**/*.html', 'app/CNAME'])
     .pipe(newer('dist/')) // Only get the modified files
     .pipe(gulp.dest('dist/'))
 });
