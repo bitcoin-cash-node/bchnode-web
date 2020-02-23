@@ -1,8 +1,13 @@
 @import "typography";
 
 // Card
-#card-up {
-  top: -100px;
+.card {
+  &-up {
+    top: -100px;
+  }
+  &-down {
+    bottom: -100px;
+  }
 }
 
 // Icons

@@ -18,7 +18,7 @@
     <section class="bg-light">
       <div class="container pt-5">
         <div class="row justify-content-center">
-          <div class="col-11 col-lg-8 card border-0 shadow" id="card-up">
+          <div class="col-11 col-lg-8 card border-0 shadow card-up">
             <div class="card-body">
               <h3 class="text-center pt-2">Download</h3>
               <div class="row pt-4 text-center justify-content-center">
@@ -68,30 +68,38 @@
           </div>
         </div>
         <!-- /social -->
-        <!-- donations -->
-        <div class="row justify-content-center mt-5">
-          <div class="col-11 col-lg-7">
-            <h4>Donate</h4>
-            <hr>
-            <div class="row">
-              <div class="col-md-8">
-                <p class="lead">
-                  This is a 3-of-5 multisignature address held by team members. It is used for general funding of BCH Node operations, including personnel, equipment and contracting.
-                  <br>
-                  At the next fundraising effort, any funds unused will also contribute to fulfilling that campaign.
-                </p>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-11 col-lg-8 card border-0 shadow card-down">
+            <div class="card-body">
+              <h3 class="text-center pt-2">Donate</h3>
+              <div class="row">
+                <div class="col-md-8 mt-5">
+                  <p>
+                    3-of-5 multisignature address held by team members. It is used for general funding of BCH Node operations, including personnel, equipment and contracting.
+                  </p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <a href="bitcoincash:prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk">
+                    <img class="rounded shadow-sm" src="/static/img/qr-donation.png" alt="QR code" height="150" width="150">
+                  </a>
+                </div>
               </div>
-              <div class="col-md-4 text-center">
-                <img class="rounded" src="/static/img/qr-donation.png" alt="QR code" height="200" width="200">
-              </div>
+              <p class="text-truncate text-center pt-4">
+                <a href="bitcoincash:prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk">bitcoincash:prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk</a>
+              </p>
             </div>
-            <p class="text-truncate text-center pt-4">
-              <a href="bitcoincash:prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk">bitcoincash:prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk</a>
-            </p>
           </div>
         </div>
-        <!-- /donations -->
       </div>
+    </section>
+
+    <section class="bg-dark">
+      <div class="container py-5"></div>
     </section>
 
 {% endblock %}
