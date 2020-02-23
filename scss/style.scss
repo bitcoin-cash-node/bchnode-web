@@ -1,22 +1,4 @@
-// Typography
-.lead {
-  font-size: 120%;
-}
-
-// Hero header
-.hero-title {
-  margin-bottom: 1.5rem;
-  font-size: 3.2rem;
-  font-weight: 600;
-  line-height: .9;
-  color: #fff;
-}
-
-@media (min-width: 48em) {
-  .hero-title {
-    font-size:6rem;
-  }
-}
+@import "typography";
 
 // Card
 #card-up {
