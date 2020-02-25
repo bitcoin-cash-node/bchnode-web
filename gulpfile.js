@@ -71,7 +71,9 @@ gulp.task('watch', function(done){
   gulp.watch('app/templates/', gulp.series('html', 'nunjucks', 'copy-static',
     'reload'));
   // Watch SCSS files
-  gulp.watch('scss/**/*.scss', gulp.series('sass', 'copy-static'));
+  gulp.watch('scss/**/*.scss', gulp.series('sass'));
+  // Watch static files
+  gulp.watch('app/static/**/*.*', gulp.series('copy-static', 'reload'));
   done();
 });
 
