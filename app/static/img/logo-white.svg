@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="174px" height="155px" viewBox="0 0 174 155" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-    <g id="logo-white" fill-rule="nonzero">
-      <rect id="big" fill="#949494" transform="translate(96.500000, 77.500000) rotate(-90.000000) translate(-96.500000, -77.500000) " x="19" y="0" width="155" height="155" rx="3"></rect>
-      <rect id="medium" fill="#CCCCCC" transform="translate(70.000000, 77.000000) rotate(-90.000000) translate(-70.000000, -77.000000) " x="11" y="18" width="118" height="118" rx="3"></rect>
-      <rect id="small" fill="#FFFFFF" transform="translate(34.000000, 77.000000) rotate(-90.000000) translate(-34.000000, -77.000000) " x="0" y="43" width="68" height="68" rx="3"></rect>
-    </g>
-  </g>
-</svg>
+<svg width="181" height="150" xmlns="http://www.w3.org/2000/svg"><g fill-rule="nonzero" fill="none"><path d="M37.372 150h136.256c3.78 0 6.872-3.093 6.872-6.872V6.872c0-3.78-3.093-6.872-6.872-6.872H37.372C33.592 0 30.5 3.093 30.5 6.872v136.256c0 3.78 3.093 6.872 6.872 6.872z" fill="#A31C37"/><path d="M20.31 127.5h95.38a4.825 4.825 0 0 0 4.81-4.81V27.31a4.825 4.825 0 0 0-4.81-4.81H20.31a4.825 4.825 0 0 0-4.81 4.81v95.38a4.825 4.825 0 0 0 4.81 4.81z" fill="#F15A24"/><path d="M3.249 105h54.502a2.757 2.757 0 0 0 2.749-2.749V47.75A2.757 2.757 0 0 0 57.751 45H3.249A2.757 2.757 0 0 0 .5 47.749v54.502A2.757 2.757 0 0 0 3.249 105z" fill="#FBB03B"/></g></svg>
