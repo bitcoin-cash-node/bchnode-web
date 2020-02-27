@@ -1,0 +1,30 @@
+// Typography
+.lead {
+  font-size: 120%;
+}
+
+// Hero header
+.hero {
+  &-title {
+    margin-bottom: 2rem;
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: .9;
+    color: #fff;
+  }
+  &-logo {
+    margin-bottom: 2rem;
+    height: 5rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .hero {
+    &-title {
+      font-size: 6rem;
+    }
+    &-logo {
+      height: 8rem;
+    }
+  }
+}

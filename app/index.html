@@ -1,0 +1,139 @@
+{% extends 'base.njk' %}
+
+{% block title %}Bitcoin Cash Node{% endblock %}
+{% block description %}{% endblock %}
+
+{% block body %}
+
+    <section class="bg-dark">
+      <div class="container">
+        <div class="row pb-3">
+          <div class="col my-5 py-5">
+            <img class="hero-logo" src="/static/img/logotype.svg" alt="Bitcoin Cash Node">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container pt-5">
+        <div class="row justify-content-center">
+          <div class="col-11 col-lg-8 card border-0 card-up">
+            <div class="card-body">
+              <h3 class="text-center pt-2">Download</h3>
+              <div class="row pt-4 text-center justify-content-center">
+                <div class="col-md-4">
+                  <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 shadow" href="#">
+                    Linux <img class="os-icon" src="/static/img/icons/linux.svg" height="15" alt="Linux">
+                  </a>
+                  <a class="text-muted" href="#">signatures</a>
+                </div>
+                <div class="col-md-4">
+                  <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 shadow" href="#">
+                    macOS <img class="os-icon" src="/static/img/icons/apple.svg" height="15" alt="Apple">
+                  </a>
+                  <a class="text-muted" href="#">signatures</a>
+                </div>
+                <div class="col-md-4">
+                  <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 shadow" href="#">
+                    Windows <img class="os-icon" src="/static/img/icons/windows.svg" height="15" alt="Windows">
+                  </a>
+                  <a class="text-muted" href="#">signatures</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container pb-5">
+        <!-- intro -->
+        <div class="row justify-content-center">
+          <div class="col-11 col-lg-7">
+            <h4 class="pb-5">Bitcoin Cash Node initiative</h4>
+            <p class="lead">The primary goal of the Bitcoin Cash Node initiative is to provide a <u>safe</u> and <u>professional</u> node implementation that will <u>neutrally</u> follow the longest Bitcoin Cash chain without contributing to the risk of a chain split.</p>
+            <a class="" href="https://read.cash/@freetrader/bitcoin-cash-node-003b2381" target="_blank">Read the annoucement</a>
+          </div>
+        </div>
+        <!-- /intro -->
+        <!-- social -->
+        <div class="row justify-content-center">
+          <div class="col-11 col-lg-7">
+            <h4 class="py-5">Get in touch</h4>
+            <div class="row text-center">
+              <!-- slack -->
+              <div class="col-6 col-md-3">
+                <a href="http://bitcoincashnode.slack.com" target="_blank">
+                  <img class="rounded shadow" src="/static/img/logo.svg" height="30" alt="placeholder">
+                  <p class="mt-3 text-muted">Slack</p>
+                </a>
+              </div>
+              <!-- /slack -->
+              <!-- twitter -->
+              <div class="col-6 col-md-3">
+                <a href="https://twitter.com/bitcoincashnode" target="_blank">
+                  <img class="rounded shadow" src="/static/img/logo.svg" height="30" alt="placeholder">
+                  <p class="mt-3 text-muted">Twitter</p>
+                </a>
+              </div>
+              <!-- /twitter -->
+              <!-- telegram -->
+              <div class="col-6 col-md-3">
+                <a href="https://t.me/bitcoincashnode" target="_blank">
+                  <img class="rounded shadow" src="/static/img/logo.svg" height="30" alt="placeholder">
+                  <p class="mt-3 text-muted">Telegram</p>
+                </a>
+              </div>
+              <!-- /telegram -->
+              <!-- gitlab -->
+              <div class="col-6 col-md-3">
+                <a href="https://gitlab.com/bitcoin-cash-node/" target="_blank">
+                  <img class="rounded shadow" src="/static/img/logo.svg" height="30" alt="placeholder">
+                  <p class="mt-3 text-muted">Gitlab</p>
+                </a>
+              </div>
+              <!-- /gitlab -->
+            </div>
+          </div>
+        </div>
+        <!-- /social -->
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-11 col-lg-8 card border-0 card-down">
+            <div class="card-body">
+              <h3 class="text-center pt-2">Donate</h3>
+              <div class="row">
+                <div class="col-md-8 mt-3">
+                  <p>
+                    3-of-5 multisignature address held by team members. It is used for general funding of BCH Node operations, including personnel, equipment and contracting.
+                  </p>
+                  <p>
+                    At the next fundraising effort, any funds unused will also contribute to fulfilling that campaign.
+                  </p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <a href="bitcoincash:prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk">
+                    <img class="rounded border" src="/static/img/qr-donation.png" alt="QR code" height="160" width="160">
+                  </a>
+                </div>
+              </div>
+              <p class="text-truncate text-center pt-4">
+                <a href="bitcoincash:prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk">bitcoincash:prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark">
+      <div class="container py-5"></div>
+    </section>
+
+{% endblock %}
