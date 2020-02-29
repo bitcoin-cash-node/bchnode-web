@@ -1,0 +1,50 @@
+{% extends 'base.njk' %}
+
+{% block title %}Ubuntu PPA | Bitcoin Cash Node{% endblock %}
+{% block description %}{% endblock %}
+
+{% block body %}
+    <section class="bg-dark">
+      <div class="container">
+        <div class="row pb-3">
+          <div class="col my-5 py-5 text-center text-md-left">
+            <h1 class="hero-title">Ubuntu PPA</h1>
+            <a class="text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/tags/v0.21.0" target="_blank">Release notes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container py-5">
+        <!-- step1 -->
+        <div class="row justify-content-center">
+          <div class="col-11 col-lg-8 col-xl-7">
+            <h2 class="py-4">Remove other clients</h2>
+            <p> If you installed other Bitcoin Cash clients via PPA, it would be better to uninstall those binaries and remove their repository:</p>
+            <div class="jumbotron">
+              <code>
+                sudo apt-get remove bitcoind bitcoin-qt bitcoin-tx <br>
+                sudo add-apt-repository --remove ppa:bitcoin-abc/ppa
+              </code>
+            </div>
+          </div>
+        </div>
+        <!-- /step1 -->
+        <!-- step2 -->
+        <div class="row justify-content-center">
+          <div class="col-11 col-lg-8 col-xl-7">
+            <h2 class="py-4">Install Bitcoin Cash Node</h2>
+            <div class="jumbotron">
+              <code>
+                sudo add-apt-repository ppa:bitcoin-cash-node/ppa <br>
+                sudo apt-get update <br>
+                sudo apt-get install bitcoind
+              </code>
+            </div>
+          </div>
+        </div>
+        <!-- /step2 -->
+      </div>
+    </section>
+{% endblock %}
