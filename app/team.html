@@ -1,0 +1,38 @@
+{% extends 'base.njk' %}
+
+{% block title %}Team | Bitcoin Cash Node{% endblock %}
+{% block description %}{% endblock %}
+
+{% block body %}
+    <section class="bg-dark">
+      <div class="container">
+        <div class="row pb-3">
+          <div class="col my-5 py-5 text-center text-md-left">
+            <h1 class="hero-title">Team</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container py-5">
+        <div class="row my-5">
+          <div class="col-6 col-lg-4 col-xl-3">
+            <img src="/static/img/team/freetrader.png" alt="freetrader" class="img-fluid rounded my-3" width="500">
+            <h4 class="h2">freetrader</h4>
+            <p class="lead">Lead maintainer</p>
+          </div>
+          <div class="col-6 col-lg-4 col-xl-3">
+            <img src="/static/img/team/sickpig.png" alt="sickpig" class="img-fluid rounded my-3" width="500">
+            <h4 class="h2">sickpig</h4>
+            <p class="lead">Maintainer and developer</p>
+          </div>
+          <div class="col-6 col-lg-4 col-xl-3">
+            <img src="/static/img/team/merc1er.jpg" alt="merc1er" class="img-fluid rounded my-3">
+            <h4 class="h2">Corentin Mercier</h4>
+            <p class="lead">Web developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}
