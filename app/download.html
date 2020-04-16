@@ -4,138 +4,148 @@
 {% block description %}{% endblock %}
 
 {% block body %}
-    <section class="bg-dark">
-      <div class="container">
-        <div class="row pb-3">
-          <div class="col my-5 py-5 text-center text-md-left">
-            <h1 class="hero-title">Download</h1>
-            <h3 class="text-white">v0.21.0</h3>
-            <a class="text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/tags/v0.21.0" target="_blank">Release notes</a>
+<section class="bg-dark">
+  <div class="container">
+    <div class="row pb-3">
+      <div class="col my-5 py-5 text-center text-md-left">
+        <h1 class="hero-title">Download</h1>
+        <!-- Version selector -->
+        <div class="dropdown">
+          <button class="btn btn-lg btn-outline-light dropdown-toggle" type="button" id="version-select" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            v0.21.1
+          </button>
+          <div class="dropdown-menu" aria-labelledby="version-select">
+            <a class="dropdown-item" href="#">v0.21.1</a>
+            <a class="dropdown-item" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/tag/v0.21.0" target="_blank">v0.21.0</a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="bg-light">
-      <div class="container py-5">
-        <!-- linux -->
-        <div class="row justify-content-center" id="linux">
-          <div class="col-11 col-lg-8 col-xl-7">
-            <div class="alert text-danger" role="alert">
-              Berkeley DB version 5.3 is needed in order to build from source.
-            </div>
-            <div class="alert text-danger" role="alert">
-              Please ensure to back up your wallet files before you run any new client.
-            </div>
-            <h2 class="py-4">Linux</h2>
-            <div class="row pt-2">
-              <div class="col-md-4">
-                <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/download/v0.21.0/bitcoin-cash-node-0.21.0-x86_64-linux-gnu.tar.gz" target="_blank">
-                  64 bit (tar)
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/download/v0.21.0/bitcoin-cash-node-0.21.0-i686-pc-linux-gnu.tar.gz" target="_blank">
-                  32 bit (tar)
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/download/v0.21.0/bitcoin-cash-node-0.21.0-arm-linux-gnueabihf.tar.gz" target="_blank">
-                  ARM (tar)
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/download/v0.21.0/bitcoin-cash-node-0.21.0-aarch64-linux-gnu.tar.gz" target="_blank">
-                  AARCH 64 (tar)
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="/download/ubuntu">
-                  Ubuntu PPA
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/tag/v0.21.0" target="_blank">
-                  Source
-                </a>
-              </div>
-            </div>
-            <a class="btn btn-link text-muted mt-3" href="#signatures">signatures</a>
-          </div>
-        </div>
-        <!-- /linux -->
-        <!-- macOS -->
-        <div class="row justify-content-center pt-5" id="macos">
-          <div class="col-11 col-lg-8 col-xl-7">
-            <h2 class="py-4">macOS</h2>
-            <div class="row pt-2 text-center">
-              <div class="col-md-4">
-                <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/download/v0.21.0/bitcoin-cash-node-0.21.0-osx-unsigned.dmg" target="_blank">
-                  dmg
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/tag/v0.21.0" target="_blank">
-                  All
-                </a>
-              </div>
-            </div>
-            <a class="btn btn-link text-muted mt-3" href="#signatures">signatures</a>
-          </div>
-        </div>
-        <!-- /macOS -->
-        <!-- Windows -->
-        <div class="row justify-content-center pt-5" id="windows">
-          <div class="col-11 col-lg-8 col-xl-7">
-            <h2 class="py-4">Windows</h2>
-            <div class="row pt-2 text-center">
-              <div class="col-md-4">
-                <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/download/v0.21.0/bitcoin-cash-node-0.21.0-win64-setup-unsigned.exe" target="_blank">
-                  64 bit
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/download/v0.21.0/bitcoin-cash-node-0.21.0-win32-setup-unsigned.exe" target="_blank">
-                  32 bit
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/tag/v0.21.0" target="_blank">
-                  All
-                </a>
-              </div>
-            </div>
-            <a class="btn btn-link text-muted mt-3" href="#signatures">signatures</a>
-          </div>
-        </div>
-        <!-- /Windows -->
-        <!-- signatures -->
-        <div class="row justify-content-center pt-5" id="signatures">
-          <div class="col-11 col-lg-8 col-xl-7">
-            <h2 class="py-4">Signatures</h2>
-            <div class="row pt-2">
-              <a class="btn btn-link" href="https://gitlab.com/bitcoin-cash-node/announcements/-/raw/master/release-sigs/0.21.0/SHA256SUMS.0.21.0.asc.Andrea_Suisani" target="_blank">Andrea Suisani</a>
-              <a class="btn btn-link" href="https://gitlab.com/bitcoin-cash-node/announcements/-/raw/master/release-sigs/0.21.0/SHA256SUMS.0.21.0.asc.Calin_Culianu" target="_blank">Calin Culianu</a>
-              <a class="btn btn-link" href="https://gitlab.com/bitcoin-cash-node/announcements/-/raw/master/release-sigs/0.21.0/SHA256SUMS.0.21.0.asc.freetrader" target="_blank">freetrader</a>
-              <a class="btn btn-link" href="https://gitlab.com/bitcoin-cash-node/announcements/-/raw/master/release-sigs/0.21.0/SHA256SUMS.0.21.0.asc.jt_freeman" target="_blank">Jt Freeman</a>
-            </div>
-          </div>
-        </div>
-        <!-- /signatures -->
-        <!-- Docker -->
-        <div class="row justify-content-center py-5" id="docker">
-          <div class="col-11 col-lg-8 col-xl-7">
-            <h2 class="py-4">Docker</h2>
-            <p>To run the latest version of Bitcoin Cash Node, run the command:</p>
-            <div class="jumbotron mb-3">
-              <code>
-                docker run zquestz/bitcoin-cash-node
-              </code>
-            </div>
-            <a class="text-muted" href="https://github.com/zquestz/docker-bitcoin" target="_blank">See full instructions</a>
-          </div>
-        </div>
-        <!-- /Docker -->
+        <p class="mt-4"><a class="text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/tags/v0.21.0" target="_blank">Release notes</a></p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light">
+  <div class="container py-5">
+    <!-- linux -->
+    <div class="row justify-content-center" id="linux">
+      <div class="col-11 col-lg-8 col-xl-7">
+        <div class="alert text-danger" role="alert">
+          Berkeley DB version 5.3 is needed in order to build from source.
+        </div>
+        <div class="alert text-danger" role="alert">
+          Please ensure to back up your wallet files before you run any new client.
+        </div>
+        <h2 class="py-4">Linux</h2>
+        <div class="row pt-2">
+          <div class="col-md-4">
+            <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/download/v0.21.0/bitcoin-cash-node-0.21.0-x86_64-linux-gnu.tar.gz" target="_blank">
+              64 bit (tar)
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/download/v0.21.0/bitcoin-cash-node-0.21.0-i686-pc-linux-gnu.tar.gz" target="_blank">
+              32 bit (tar)
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/download/v0.21.0/bitcoin-cash-node-0.21.0-arm-linux-gnueabihf.tar.gz" target="_blank">
+              ARM (tar)
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/download/v0.21.0/bitcoin-cash-node-0.21.0-aarch64-linux-gnu.tar.gz" target="_blank">
+              AARCH 64 (tar)
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="/download/ubuntu">
+              Ubuntu PPA
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/tag/v0.21.0" target="_blank">
+              Source
+            </a>
+          </div>
+        </div>
+        <a class="btn btn-link text-muted mt-3" href="#signatures">signatures</a>
+      </div>
+    </div>
+    <!-- /linux -->
+    <!-- macOS -->
+    <div class="row justify-content-center pt-5" id="macos">
+      <div class="col-11 col-lg-8 col-xl-7">
+        <h2 class="py-4">macOS</h2>
+        <div class="row pt-2 text-center">
+          <div class="col-md-4">
+            <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/download/v0.21.0/bitcoin-cash-node-0.21.0-osx-unsigned.dmg" target="_blank">
+              dmg
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/tag/v0.21.0" target="_blank">
+              All
+            </a>
+          </div>
+        </div>
+        <a class="btn btn-link text-muted mt-3" href="#signatures">signatures</a>
+      </div>
+    </div>
+    <!-- /macOS -->
+    <!-- Windows -->
+    <div class="row justify-content-center pt-5" id="windows">
+      <div class="col-11 col-lg-8 col-xl-7">
+        <h2 class="py-4">Windows</h2>
+        <div class="row pt-2 text-center">
+          <div class="col-md-4">
+            <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/download/v0.21.0/bitcoin-cash-node-0.21.0-win64-setup-unsigned.exe" target="_blank">
+              64 bit
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/download/v0.21.0/bitcoin-cash-node-0.21.0-win32-setup-unsigned.exe" target="_blank">
+              32 bit
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="m-2 btn btn-outline-dark btn-lg btn-block border-0 btn-shadow" href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/tag/v0.21.0" target="_blank">
+              All
+            </a>
+          </div>
+        </div>
+        <a class="btn btn-link text-muted mt-3" href="#signatures">signatures</a>
+      </div>
+    </div>
+    <!-- /Windows -->
+    <!-- signatures -->
+    <div class="row justify-content-center pt-5" id="signatures">
+      <div class="col-11 col-lg-8 col-xl-7">
+        <h2 class="py-4">Signatures</h2>
+        <div class="row pt-2">
+          <a class="btn btn-link" href="https://gitlab.com/bitcoin-cash-node/announcements/-/raw/master/release-sigs/0.21.0/SHA256SUMS.0.21.0.asc.Andrea_Suisani" target="_blank">Andrea Suisani</a>
+          <a class="btn btn-link" href="https://gitlab.com/bitcoin-cash-node/announcements/-/raw/master/release-sigs/0.21.0/SHA256SUMS.0.21.0.asc.Calin_Culianu" target="_blank">Calin Culianu</a>
+          <a class="btn btn-link" href="https://gitlab.com/bitcoin-cash-node/announcements/-/raw/master/release-sigs/0.21.0/SHA256SUMS.0.21.0.asc.freetrader" target="_blank">freetrader</a>
+          <a class="btn btn-link" href="https://gitlab.com/bitcoin-cash-node/announcements/-/raw/master/release-sigs/0.21.0/SHA256SUMS.0.21.0.asc.jt_freeman" target="_blank">Jt Freeman</a>
+        </div>
+      </div>
+    </div>
+    <!-- /signatures -->
+    <!-- Docker -->
+    <div class="row justify-content-center py-5" id="docker">
+      <div class="col-11 col-lg-8 col-xl-7">
+        <h2 class="py-4">Docker</h2>
+        <p>To run the latest version of Bitcoin Cash Node, run the command:</p>
+        <div class="jumbotron mb-3">
+          <code>
+            docker run zquestz/bitcoin-cash-node
+          </code>
+        </div>
+        <a class="text-muted" href="https://github.com/zquestz/docker-bitcoin" target="_blank">See full instructions</a>
+      </div>
+    </div>
+    <!-- /Docker -->
+  </div>
+</section>
 {% endblock %}
