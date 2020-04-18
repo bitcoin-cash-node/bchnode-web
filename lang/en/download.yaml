@@ -5,5 +5,5 @@ warning:
 signatures: signatures
 
 docker:
-  instruction: To run the latest version of Bitcoin Cash Node, run the command:\
+  instruction: 'To run the latest version of Bitcoin Cash Node, run the command:'
   full: See full instructions
