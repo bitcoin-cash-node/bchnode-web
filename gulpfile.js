@@ -5,6 +5,7 @@ let gulp = require('gulp'),
     browserSync = require('browser-sync'),
     cleanCSS = require('gulp-clean-css'),
     nunjucksRender = require('gulp-nunjucks-render'),
+    i18n = require('gulp-html-i18n'),
     reload = browserSync.reload;
 
 
@@ -15,6 +16,19 @@ gulp.task('clean', function(done){
   done()
 });
 
+// Internationalization
+gulp.task('i18n', function() {
+  return gulp.src('dist-lang/**/*.html')
+    .pipe(i18n({
+      langDir: 'lang', // takes translations from /lang/
+      createLangDirs: true,
+      defaultLang: 'en',
+      delimiters: ['$(',')$']
+    }))
+    .pipe(gulp.dest('dist'));
+});
+
+// Templating
 gulp.task('nunjucks', function() {
   // Gets all .html files in pages
   return gulp.src('app/**/*.html')
@@ -22,10 +36,11 @@ gulp.task('nunjucks', function() {
   .pipe(nunjucksRender({
     path: ['app/templates/']
   }))
-  // Outputs files in dist folder
-  .pipe(gulp.dest('dist'))
+  // Outputs files in dist-lang folder
+  .pipe(gulp.dest('dist-lang'));
 });
 
+// Compile Sass into CSS
 gulp.task('sass', function(){
   return gulp.src('scss/style.scss')
     .pipe(sass()) // Compiles styles.scss to css
@@ -37,8 +52,8 @@ gulp.task('sass', function(){
 });
 
 // Copy html files to dist
-gulp.task('html', function(){
-  return gulp.src(['app/**/*.html', 'app/CNAME', 'app/bitcoin.pdf'])
+gulp.task('copy-special', function(){
+  return gulp.src(['app/CNAME', 'app/bitcoin.pdf'])
     .pipe(newer('dist/')) // Only get the modified files
     .pipe(gulp.dest('dist/'))
 });
@@ -57,15 +72,17 @@ gulp.task('reload', function(done){
 // Watch for changes
 gulp.task('watch', function(done){
   // Watch HTML pages
-  gulp.watch('app/**/*.html', gulp.series('html', 'nunjucks', 'copy-static',
-    'reload'));
+  gulp.watch('app/**/*.html', gulp.series('copy-special', 'nunjucks', 'i18n',
+    'copy-static', 'reload'));
   // Watch Nunjucks templates
-  gulp.watch('app/templates/', gulp.series('html', 'nunjucks', 'copy-static',
+  gulp.watch('app/templates/', gulp.series('nunjucks', 'copy-static', 'i18n',
     'reload'));
   // Watch SCSS files
   gulp.watch('scss/**/*.scss', gulp.series('sass'));
   // Watch static files
   gulp.watch('app/static/**/*.*', gulp.series('copy-static', 'reload'));
+  // Watch translations
+  gulp.watch('lang/**/*.yaml', gulp.series('i18n', 'reload'));
   done();
 });
 
@@ -85,9 +102,9 @@ gulp.task('serve', function(done){
 
 
 // Default task
-gulp.task('default', gulp.series('clean', 'nunjucks', 'sass', 'html',
-  'copy-static', 'serve', 'watch'));
+gulp.task('default', gulp.series('clean', 'nunjucks', 'i18n', 'sass',
+  'copy-special', 'copy-static', 'serve', 'watch'));
 
 // Deployment task
-gulp.task('build', gulp.series('clean', 'nunjucks', 'sass', 'html',
-  'copy-static'));
+gulp.task('build', gulp.series('clean', 'nunjucks', 'i18n', 'sass',
+  'copy-special', 'copy-static'));

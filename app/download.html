@@ -8,7 +8,7 @@
   <div class="container">
     <div class="row pb-3">
       <div class="col my-5 py-5 text-center text-md-left">
-        <h1 class="hero-title">Download</h1>
+        <h1 class="hero-title">$( index.download )$</h1>
         <!-- Version selector -->
         <div class="dropdown">
           <button class="btn btn-lg btn-outline-light dropdown-toggle" type="button" id="version-select" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -20,7 +20,7 @@
           </div>
         </div>
 
-        <p class="mt-4"><a class="text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/tags/v0.21.1" target="_blank">Release notes</a></p>
+        <p class="mt-4"><a class="text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/tags/v0.21.1" target="_blank">$( index.release-notes )$</a></p>
       </div>
     </div>
   </div>
@@ -32,10 +32,10 @@
     <div class="row justify-content-center" id="linux">
       <div class="col-11 col-lg-8 col-xl-7">
         <div class="alert text-danger" role="alert">
-          Berkeley DB version 5.3 is needed in order to build from source.
+          $( download.warning.one )$
         </div>
         <div class="alert text-danger" role="alert">
-          Please ensure to back up your wallet files before you run any new client.
+          $( download.warning.two )$
         </div>
         <h2 class="py-4">Linux</h2>
         <div class="row pt-2">
@@ -70,7 +70,7 @@
             </a>
           </div>
         </div>
-        <a class="btn btn-link text-muted mt-3" href="#signatures">signatures</a>
+        <a class="btn btn-link text-muted mt-3" href="#signatures">$( download.signatures )$</a>
       </div>
     </div>
     <!-- /linux -->
@@ -90,7 +90,7 @@
             </a>
           </div>
         </div>
-        <a class="btn btn-link text-muted mt-3" href="#signatures">signatures</a>
+        <a class="btn btn-link text-muted mt-3" href="#signatures">$( download.signatures )$</a>
       </div>
     </div>
     <!-- /macOS -->
@@ -115,14 +115,14 @@
             </a>
           </div>
         </div>
-        <a class="btn btn-link text-muted mt-3" href="#signatures">signatures</a>
+        <a class="btn btn-link text-muted mt-3" href="#signatures">$( download.signatures )$</a>
       </div>
     </div>
     <!-- /Windows -->
     <!-- signatures -->
     <div class="row justify-content-center pt-5" id="signatures">
       <div class="col-11 col-lg-8 col-xl-7">
-        <h2 class="py-4">Signatures</h2>
+        <h2 class="py-4 text-capitalize">$( download.signatures )$</h2>
         <div class="row pt-2">
           <a class="btn btn-link" href="https://gitlab.com/bitcoin-cash-node/announcements/-/raw/master/release-sigs/0.21.1/SHA256SUMS.0.21.1.asc.Andrea_Suisani" target="_blank">Andrea Suisani</a>
           <a class="btn btn-link" href="https://gitlab.com/bitcoin-cash-node/announcements/-/raw/master/release-sigs/0.21.1/SHA256SUMS.0.21.1.asc.Calin_Culianu" target="_blank">Calin Culianu</a>
@@ -136,13 +136,13 @@
     <div class="row justify-content-center py-5" id="docker">
       <div class="col-11 col-lg-8 col-xl-7">
         <h2 class="py-4">Docker</h2>
-        <p>To run the latest version of Bitcoin Cash Node, run the command:</p>
+        <p>$( download.docker.instruction )$</p>
         <div class="jumbotron mb-3">
           <code>
             docker run zquestz/bitcoin-cash-node
           </code>
         </div>
-        <a class="text-muted" href="https://github.com/zquestz/docker-bitcoin" target="_blank">See full instructions</a>
+        <a class="text-muted" href="https://github.com/zquestz/docker-bitcoin" target="_blank">$( download.docker.full )$</a>
       </div>
     </div>
     <!-- /Docker -->

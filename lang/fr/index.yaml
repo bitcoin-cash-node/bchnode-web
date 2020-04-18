@@ -1,0 +1,19 @@
+download: Télécharger
+release-notes: Notes de version
+
+initiative:
+  title: Initiative Bitcoin Cash Node
+  parag: Le but premier de l'initiative Bitcoin Cash Node est de créer un noeud sécurisé et professionel qui suivra la chaîne Bitcoin Cash la plus longue de façon neutre sans contribuer au risque d'une divion de chaine (split).
+  btn: Lire le message d'annonce
+
+social:
+  title: Suivez-nous
+
+irc:
+  title: IRC
+  text: 'Rejoignez #bchnode sur Freenode.'
+
+donate:
+  title: Donez
+  parag1: Adresse multisignature 3-sur-5 détenue par les membres Les fonds sont utilisés pour payer les opérations, incluant le personnel, l'équipement et les contrats.
+  parag2: Les fonds non utilisés contribueront à la prochaine collecte de fonds.
