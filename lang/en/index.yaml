@@ -11,7 +11,7 @@ social:
 
 irc:
   title: IRC
-  text: Join \#bchnode on Freenode.
+  text: 'Join #bchnode on Freenode.'
 
 donate:
   title: Donate
