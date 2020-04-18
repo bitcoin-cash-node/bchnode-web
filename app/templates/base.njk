@@ -1,87 +1,87 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="author" content="Bitcoin Cash Community">
-    <meta name="description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta name="author" content="Bitcoin Cash Community">
+  <meta name="description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://bitcoincashnode.org/static/img/icons/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="https://bitcoincashnode.org/static/img/icons/apple-touch-icon.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://bitcoincashnode.org/static/img/icons/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="https://bitcoincashnode.org/static/img/icons/apple-touch-icon.png">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/static/css/style.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/static/css/style.css">
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@bitcoincashnode">
-    <meta name="twitter:creator" content="@bitcoincashnode">
-    <meta name="twitter:title" content="Bitcoin Cash Node">
-    <meta name="twitter:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
-    <meta name="twitter:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@bitcoincashnode">
+  <meta name="twitter:creator" content="@bitcoincashnode">
+  <meta name="twitter:title" content="Bitcoin Cash Node">
+  <meta name="twitter:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta name="twitter:image" content="https://bitcoincashnode.org/static/thumbnail.png">
 
-    <!-- Facebook -->
-    <meta property="og:url" content="https://bitcoincashnode.org/">
-    <meta property="og:title" content="Bitcoin Cash Node">
-    <meta property="og:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://bitcoincashnode.org/static/thumbnail.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="675">
+  <!-- Facebook -->
+  <meta property="og:url" content="https://bitcoincashnode.org/">
+  <meta property="og:title" content="Bitcoin Cash Node">
+  <meta property="og:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
 
-    <title>{% block title %}{% endblock %}</title>
-  </head>
+  <title>{% block title %}{% endblock %}</title>
+</head>
 
-  <body>
-    <div class="bg-dark pb-1">
-      <div class="bg-info py-2">
-        <div class="container text-center">
-          <a class="text-white" href="https://bchn.flipstarter.cash" target="_blank">Bitcoin Cash Node is crowd-funding via Flipstarter.cash now! Click here to visit our fundraiser page!</a>
+<body>
+  <div class="bg-dark pb-1">
+    <div class="bg-info py-2">
+      <div class="container text-center">
+        <a class="text-white" href="https://bchn.flipstarter.cash" target="_blank">Bitcoin Cash Node is crowd-funding via Flipstarter.cash now! Click here to visit our fundraiser page!</a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-dark bg-dark pt-4 navbar-expand-lg">
+    <div class="container">
+      <a class="btn btn-link text-white" href="/">$( navbar.home )$</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapsed" aria-controls="navCollapsed" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navCollapsed">
+        <ul class="navbar-nav ml-auto text-center text-lg-left">
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/tree/master/doc" target="_blank">$( navbar.docs )$</a></li>
+          <li class="nav-item"><a class="btn btn-link text-white" href="/team">$( navbar.team )$</a></li>
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">$( navbar.source )$</a></li>
+          <li class="nav-item"><a class="btn btn-link text-white" href="/download.html">$( index.download )$</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  {% block body %}{% endblock %}
+
+  <footer class="bg-dark">
+    <div class="container py-5">
+      <div class="row mb-5">
+        <div class="col text-center">
+          <a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/tree/master/doc" target="_blank">$( navbar.docs )$</a>
+          <a class="btn btn-link text-white" href="/team">$( navbar.team )$</a>
+          <a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">$( navbar.source )$</a>
+          <a class="btn btn-link text-white" href="/download.html">$( index.download )$</a>
         </div>
       </div>
     </div>
+  </footer>
 
-    <nav class="navbar navbar-dark bg-dark pt-4 navbar-expand-lg">
-      <div class="container">
-        <a class="btn btn-link text-white" href="/">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapsed" aria-controls="navCollapsed" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navCollapsed">
-            <ul class="navbar-nav ml-auto text-center text-lg-left">
-              <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/tree/master/doc" target="_blank">Docs</a></li>
-              <li class="nav-item"><a class="btn btn-link text-white" href="/team">Team</a></li>
-              <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Source</a></li>
-              <li class="nav-item"><a class="btn btn-link text-white" href="/download.html">Download</a></li>
-            </ul>
-        </div>
-      </div>
-    </nav>
-
-    {% block body %}{% endblock %}
-
-    <footer class="bg-dark">
-      <div class="container py-5">
-        <div class="row mb-5">
-          <div class="col text-center">
-            <a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/tree/master/doc" target="_blank">Docs</a>
-            <a class="btn btn-link text-white" href="/team">Team</a>
-            <a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Source</a>
-            <a class="btn btn-link text-white" href="/download.html">Download</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 </html>
