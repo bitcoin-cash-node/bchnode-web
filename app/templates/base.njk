@@ -54,14 +54,29 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapsed" aria-controls="navCollapsed" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navCollapsed">
         <ul class="navbar-nav ml-auto text-center text-lg-left">
           <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/tree/master/doc" target="_blank">$( navbar.docs )$</a></li>
           <li class="nav-item"><a class="btn btn-link text-white" href="/$( _lang_ )$/team">$( navbar.team )$</a></li>
           <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">$( navbar.source )$</a></li>
           <li class="nav-item"><a class="btn btn-link text-white" href="/$( _lang_ )$/download.html">$( index.download )$</a></li>
+          <!-- Language selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="lang-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Language
+              </button>
+              <div class="dropdown-menu border-0 text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/en">English</a>
+                <a class="dropdown-item" href="/fr">Français</a>
+              </div>
+            </div>
+          </li>
+          <!-- /Language selector -->
         </ul>
       </div>
+
     </div>
   </nav>
 
