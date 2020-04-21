@@ -21,3 +21,7 @@ Hit `ctrl + C` to stop the server.
 
 Use the coding style recommended by [codeguide.co](https://codeguide.co).  
 Open issues and pull requests at this repo.
+
+### License
+
+The files in this repository are licensed under MIT license. See COPYING.
