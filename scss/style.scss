@@ -1,3 +1,4 @@
+@import "variables";
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "typography";
 
@@ -22,10 +23,6 @@
 
 .text-danger {
   color: #A31C37 !important;
-}
-
-.bg-info {
-  background-color: #823014 !important;
 }
 
 .btn-shadow {
