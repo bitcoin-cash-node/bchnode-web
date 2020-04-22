@@ -78,7 +78,7 @@ gulp.task('watch', function(done){
   gulp.watch('app/templates/', gulp.series('nunjucks', 'copy-static', 'i18n',
     'reload'));
   // Watch SCSS files
-  gulp.watch('scss/**/*.scss', gulp.series('sass'));
+  gulp.watch('scss/**/*.scss', gulp.series('sass', 'copy-static'));
   // Watch static files
   gulp.watch('app/static/**/*.*', gulp.series('copy-static', 'reload'));
   // Watch translations
