@@ -1,0 +1,16 @@
+---
+download: Descarga
+release-notes: Notas de lanzamiento
+initiative:
+  title: Iniciativa Bitcoin Cash Node
+  parag: El objetivo principal de la iniciativa Bitcoin Cash Node es proporcionar una implementación de nodo profesional y segura que siga neutralmente la cadena Bitcoin Cash más larga sin contribuir al riesgo de una división de cadena.
+  btn: Leer el anuncio
+social:
+  title: Contacto
+irc:
+  title: IRC
+  text: 'Únete a #bchnode en Freenode.'
+donate:
+  title: Donaciones
+  parag1: Dirección multisig 3-de-5 en poder de los miembros del equipo. Es utilizada para la financiación general de las operaciones del nodo BCH, incluyendo personal, equipamiento y contratación.
+  parag2: Cualquier fondo existente que no haya sido utilizado será destinado a contribuir con la campaña de recaudación de fondos en curso.
