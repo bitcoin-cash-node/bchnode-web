@@ -30,6 +30,7 @@
     "gulp-newer": "^1.4.0",
     "gulp-nunjucks-render": "^2.2.3",
     "gulp-sass": "^4.0.2",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "node-sass": "^4.14.0"
   }
 }
