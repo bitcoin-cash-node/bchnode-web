@@ -1,16 +1,16 @@
 ---
 download: Download
-release-notes: Release notes
+release-notes: Uitgaveopmerkingen
 initiative:
-  title: Bitcoin Cash Node initiative
-  parag: The primary goal of the Bitcoin Cash Node initiative is to provide a safe and professional node implementation that will neutrally follow the longest Bitcoin Cash chain without contributing to the risk of a chain split.
-  btn: Read the announcement
+  title: Bitcoin Cash Node-initiatief
+  parag: Het primaire doel van het Bitcoin Cash Node-initiatief is het bieden van een veilige en professionele node-implementatie die neutraal de langste Bitcoin Cash-keten zal volgen zonder bij te dragen aan het risico op een ketensplitsing.
+  btn: Lees de aankondiging
 social:
-  title: Get in touch
+  title: Kom in contact
 irc:
   title: IRC
-  text: 'Join #bchnode on Freenode.'
+  text: 'Kom naar #bchnode op Freenode.'
 donate:
-  title: Donate
-  parag1: 3-of-5 multisignature address held by team members. It is used for general funding of BCH Node operations, including personnel, equipment and contracting.
-  parag2: At the next fundraising effort, any funds unused will also contribute to fulfilling that campaign.
+  title: Doneer
+  parag1: 3-van-5-multisignature-adres gehouden door teamleden. Het wordt gebruikt voor algemene financiering van werkzaamheden van BCH Node, waaronder personeel, apparatuur en contracteren.
+  parag2: Bij de volgende fondsenwerving zullen eventuele ongebruikte fondsen ook bijdragen aan het volbrengen van die campagne.
