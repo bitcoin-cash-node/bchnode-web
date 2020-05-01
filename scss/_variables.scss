@@ -20,3 +20,11 @@ $dropdown-item-padding-y: .75rem;
 // Cards
 
 $card-border-width: 0;
+
+// Spacing
+
+$spacer: 1rem;
+$spacers: (
+    6: ($spacer * 5),
+    7: ($spacer * 8)
+    );
