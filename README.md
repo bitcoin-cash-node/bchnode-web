@@ -42,4 +42,4 @@ Pull requests are automatically created when a translation is updated.
 
 ## License
 
-The files in this repository are licensed under MIT license. See COPYING.
+The files in this repository are licensed under MIT license. See [LICENSE](https://github.com/bitcoin-cash-node/bchnode-web/blob/master/LICENSE).
