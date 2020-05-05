@@ -45,18 +45,20 @@
     </div>
   </div>
 
+  <!-- Navbar -->
   <nav class="navbar navbar-dark bg-dark pt-4 navbar-expand-lg">
     <div class="container">
       <a class="btn btn-link text-white" href="/$( _lang_ )$">$( navbar.home )$</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapsed" aria-controls="navCollapsed" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+      <!-- Collapse -->
       <div class="collapse navbar-collapse" id="navCollapsed">
         <ul class="navbar-nav ml-auto text-center text-lg-left">
           <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/tree/master/doc" target="_blank">$( navbar.docs )$</a></li>
           <li class="nav-item"><a class="btn btn-link text-white" href="/$( _lang_ )$/team">$( navbar.team )$</a></li>
           <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">$( navbar.source )$</a></li>
+          <li class="nav-item"><a class="btn btn-link text-white" href="/$( _lang_ )$/newsroom">$( navbar.newsroom )$</a></li>
           <li class="nav-item"><a class="btn btn-link text-white" href="/$( _lang_ )$/download.html">$( index.download )$</a></li>
           <!-- Language selector -->
           <li class="nav-item">
@@ -75,9 +77,10 @@
           <!-- /Language selector -->
         </ul>
       </div>
-
+      <!-- /Collapse -->
     </div>
   </nav>
+  <!-- /Navbar -->
 
   {% block body %}{% endblock %}
 
