@@ -11,6 +11,6 @@ irc:
   title: IRC
   text: 'Rejoignez #bchnode sur Freenode.'
 donate:
-  title: Donez
+  title: Donnez
   parag1: Adresse multisignature 3-sur-5 détenue par les membres Les fonds sont utilisés pour payer les opérations, incluant le personnel, l'équipement et les contrats.
   parag2: Les fonds non utilisés contribueront à la prochaine collecte de fonds.
