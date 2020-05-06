@@ -1,8 +1,8 @@
 ---
-download: Download
-release-notes: Release notes
+download: 下载
+release-notes: 发布说明
 initiative:
-  title: Bitcoin Cash Node initiative
+  title: BCHN节点活动
   parag: The primary goal of the Bitcoin Cash Node initiative is to provide a safe and professional node implementation that will neutrally follow the longest Bitcoin Cash chain without contributing to the risk of a chain split.
   btn: Read the announcement
 social:
