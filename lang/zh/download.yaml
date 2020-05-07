@@ -1,6 +1,6 @@
 ---
 warning:
-  one: Berkeley DB version 5.3 is needed in order to build from source.
+  one: 为了从源码构建，需要下载Berkeley DB 5.3。
   two: 在运行任何新客户端前，请确保已备份钱包文件。
 signatures: 签名
 docker:
