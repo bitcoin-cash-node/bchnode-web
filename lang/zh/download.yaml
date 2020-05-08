@@ -1,8 +1,8 @@
 ---
 warning:
-  one: 若要从源码构建，请下载Berkeley DB 5.3。
-  two: 在运行任何新客户端前，请确保已备份钱包文件。
-signatures: 签名
+  one: Berkeley DB version 5.3 is needed in order to build from source.
+  two: Please ensure to back up your wallet files before you run any new client.
+signatures: signatures
 docker:
-  instruction: '要运行最新版BCHN客户端，请运行以下命令：'
-  full: 查看完整说明
+  instruction: 'To run the latest version of Bitcoin Cash Node, run the command:'
+  full: See full instructions
