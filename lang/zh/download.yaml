@@ -1,6 +1,6 @@
 ---
 warning:
-  one: 为了从源码构建，需要下载Berkeley DB 5.3。
+  one: 若要从源码构建，请下载Berkeley DB 5.3。
   two: 在运行任何新客户端前，请确保已备份钱包文件。
 signatures: 签名
 docker:
