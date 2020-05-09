@@ -12,5 +12,5 @@ irc:
   text: 'Join #bchnode on Freenode.'
 donate:
   title: 寄付する
-  parag1: 3-of-5 multisignature address held by team members. It is used for general funding of BCH Node operations, including personnel, equipment and contracting.
-  parag2: At the next fundraising effort, any funds unused will also contribute to fulfilling that campaign.
+  parag1: チームメンバーは5のうち3つのマルチシグネチャアドレスを保持しています。これは、人員、機器や請負を含むBCHノード操作の一般的な資金調達のために使用されます。
+  parag2: 次回の資金調達では、未使用の資金もそのキャンペーンに使用されます。
