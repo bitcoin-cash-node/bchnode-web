@@ -5,4 +5,4 @@ warning:
 signatures: signatures
 docker:
   instruction: 'Bitcoin Cash Nodeの最新バージョンを実行するには、次のコマンドを実行してください：'
-  full: See full instructions
+  full: 詳細な手順を見る
