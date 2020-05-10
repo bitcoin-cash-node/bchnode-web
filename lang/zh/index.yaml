@@ -1,16 +1,16 @@
 ---
-download: 下载
-release-notes: 发布说明
+download: Download
+release-notes: Release notes
 initiative:
-  title: BCHN节点简介
-  parag: BCHN项目的主要目标是提供一个安全、专业的节点方案，能够保持中立，追随最长链而不会加大链分裂的风险。
-  btn: 查看公告
+  title: Bitcoin Cash Node initiative
+  parag: The primary goal of the Bitcoin Cash Node initiative is to provide a safe and professional node implementation that will neutrally follow the longest Bitcoin Cash chain without contributing to the risk of a chain split.
+  btn: Read the announcement
 social:
-  title: 联系我们
+  title: Get in touch
 irc:
-  title: IRC聊天室
-  text: '在Freenode上加入#bchnode'
+  title: IRC
+  text: 'Join #bchnode on Freenode.'
 donate:
-  title: 捐赠
-  parag1: BCHN团队持有3-5多签钱包，为BCHN节点的人事、设备和外包等运营工作提供资金支持。
-  parag2: 在下次的募资活动中，未使用的资金也将用于达成募资目标。
+  title: Donate
+  parag1: 3-of-5 multisignature address held by team members. It is used for general funding of BCH Node operations, including personnel, equipment and contracting.
+  parag2: At the next fundraising effort, any funds unused will also contribute to fulfilling that campaign.
