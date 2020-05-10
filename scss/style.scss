@@ -75,6 +75,15 @@
   border: 0;
 }
 
+.rotate {
+  transition-duration: .4s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 // Article
 
 article {
