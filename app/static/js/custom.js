@@ -8,9 +8,9 @@ $(".navbar-toggler").click(function() {
 
 // Rotate chevron down on click
 $("#lang-selector").focus(function() {
-  $("#chevron-down").addClass('rotate');
+  $("#chevron-down").removeClass('unrotate').addClass('rotate');
 });
 
 $("#lang-selector").blur(function() {
-  $("#chevron-down").removeClass('rotate');
+  $("#chevron-down").removeClass('rotate').addClass('unrotate');
 });
