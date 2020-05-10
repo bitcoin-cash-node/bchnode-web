@@ -1,35 +1,18 @@
 @import "variables";
 @import "node_modules/bootstrap/scss/bootstrap";
-@import "typography";
 @import "node_modules/pattern.css/pattern.scss";
+@import "typography";
+@import "buttons";
+@import "selection";
 
 // Colors
 
 .bg-lighter-dark {
-  background-color: #282828;
-}
-
-.jumbotron {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  background-color: $lighter-dark;
 }
 
 .alert {
   border: 1px solid #A31C37;
-}
-
-.text-danger {
-  color: #A31C37 !important;
-}
-
-.btn-shadow {
-  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-
-// Icons
-
-.os-icon {
-  padding-bottom: 3px;
 }
 
 // Navbar
@@ -37,6 +20,8 @@
 .navbar-expanded {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%239A9DA0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-x'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E") !important;
 }
+
+// Underline animation
 
 .underline-animate,
 .nav-item > a,
@@ -71,6 +56,8 @@
   border: 0;
 }
 
+// Chevron rotation
+
 .rotate {
   transition-duration: .4s;
   -webkit-transform: rotate(180deg);
@@ -92,27 +79,12 @@
 // Article
 
 article {
-  font-size: 120%;
+  font-size: 1.2em;
 }
 
-// Selection Highlight
+// Misc
 
-::selection{
-  background-color: $primary;
-  color: $white;
-}
-
-::-moz-selection{
-  background-color: $primary;
-  color: $white;
-}
-
-::-webkit-selection{
-  background-color: $primary;
-  color: $white;
-}
-
-::-ms-selection {
-  background-color: $primary;
-  color: $white;
+.jumbotron {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
