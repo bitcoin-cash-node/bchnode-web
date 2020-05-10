@@ -3,14 +3,10 @@
 @import "typography";
 @import "node_modules/pattern.css/pattern.scss";
 
-// Card
-.card {
-  &-up {
-    top: -100px;
-  }
-  &-down {
-    bottom: -100px;
-  }
+// Colors
+
+.bg-lighter-dark {
+  background-color: #282828;
 }
 
 .jumbotron {
