@@ -10,6 +10,7 @@
 
 <div align="center">
   <img src="https://travis-ci.com/merc1er/bchnode-web.svg?branch=master" alt="Build">
+  <a title="Crowdin" target="_blank" href="https://crowdin.com/project/bchnode-web"><img src="https://badges.crowdin.net/bchnode-web/localized.svg"></a>
 </div>
 
 ## Run the develoment server
