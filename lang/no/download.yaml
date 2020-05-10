@@ -1,7 +1,7 @@
 ---
 warning:
   one: Berkley DB versjon 5.3 er nødvendig for å kunne kompilere fra kildekoden.
-  two: Vennligst sørg for å ta sikkerhetskopi av dine wallet-filene før du kjører ny programvare.
+  two: Vennligst sørg for å ta sikkerhetskopi av wallet-filene dine før du kjører ny programvare.
 signatures: signaturer
 docker:
   instruction: 'For å kjøre den siste versjonen av Bitcoin Cash Node, kjør følgende kommando:'
