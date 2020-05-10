@@ -1,16 +1,16 @@
 ---
-download: Download
-release-notes: Release notes
+download: 다운로드
+release-notes: 릴리스 노트
 initiative:
-  title: Bitcoin Cash Node initiative
+  title: 비트코인캐시 노드 계획
   parag: The primary goal of the Bitcoin Cash Node initiative is to provide a safe and professional node implementation that will neutrally follow the longest Bitcoin Cash chain without contributing to the risk of a chain split.
-  btn: Read the announcement
+  btn: 발표 내용을 숙지해 주십시오.
 social:
-  title: Get in touch
+  title: 연락 부탁드립니다.
 irc:
   title: IRC
-  text: 'Join #bchnode on Freenode.'
+  text: '프리노드 (Freenode)에서 #bchnode를 조인해주세요.'
 donate:
-  title: Donate
+  title: 후원하기
   parag1: 3-of-5 multisignature address held by team members. It is used for general funding of BCH Node operations, including personnel, equipment and contracting.
   parag2: At the next fundraising effort, any funds unused will also contribute to fulfilling that campaign.
