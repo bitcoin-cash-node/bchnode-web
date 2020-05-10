@@ -59,9 +59,16 @@ gulp.task('copy-special', function(){
 });
 
 // Copy all static files
-gulp.task('copy-static', function(){
-  return gulp.src('app/static/**/*.*', {base: './app/static/'})
+gulp.task('copy-static', function(done){
+  // Add AOS library from node_modules
+  gulp.src('node_modules/aos/dist/aos.css')
+    .pipe(gulp.dest('dist/static/css/'));
+  gulp.src('node_modules/aos/dist/aos.js')
+    .pipe(gulp.dest('dist/static/js/'));
+  // Copy everything from app/static
+  gulp.src('app/static/**/*.*', {base: './app/static/'})
     .pipe(gulp.dest('dist/static/'));
+  done();
 });
 
 gulp.task('reload', function(done){
