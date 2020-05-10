@@ -1,6 +1,7 @@
 @import "variables";
 @import "node_modules/bootstrap/scss/bootstrap";
-@import "node_modules/pattern.css/pattern.scss";
+@import "node_modules/pattern.css/pattern";
+@import "node_modules/aos/src/sass/aos";
 @import "typography";
 @import "buttons";
 @import "selection";
