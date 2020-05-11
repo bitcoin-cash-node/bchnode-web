@@ -6,6 +6,7 @@ let gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css'),
     nunjucksRender = require('gulp-nunjucks-render'),
     i18n = require('gulp-html-i18n'),
+    uglify = require('gulp-uglify'),
     reload = browserSync.reload;
 
 
@@ -17,7 +18,7 @@ gulp.task('clean', function(done){
 });
 
 // Internationalization
-gulp.task('i18n', function() {
+gulp.task('i18n', function(){
   return gulp.src('dist-lang/**/*.html')
     .pipe(i18n({
       langDir: 'lang', // takes translations from /lang/
@@ -29,7 +30,7 @@ gulp.task('i18n', function() {
 });
 
 // Templating
-gulp.task('nunjucks', function() {
+gulp.task('nunjucks', function(){
   // Gets all .html files in pages
   return gulp.src('app/**/*.html')
   // Renders template with nunjucks
@@ -64,13 +65,22 @@ gulp.task('copy-static', function(done){
   gulp.src('node_modules/aos/dist/aos.js')
     .pipe(gulp.dest('dist/static/js/'));
   // Copy everything from app/static
-  gulp.src('app/static/**/*.*', {base: './app/static/'})
+  gulp.src('app/static/**/*.*', { ignore: 'app/static/js/custom.js' })
     .pipe(gulp.dest('dist/static/'));
   done();
 });
 
 gulp.task('reload', function(done){
   reload();
+  done();
+});
+
+// Uglify (minify JS)
+gulp.task('minify-js', function(done){
+  // Uglify
+  gulp.src('app/static/js/custom.js')
+  .pipe(uglify())
+  .pipe(gulp.dest('dist/static/js/'));
   done();
 });
 
@@ -112,4 +122,4 @@ gulp.task('default', gulp.series('clean', 'nunjucks', 'i18n', 'sass',
 
 // Deployment task
 gulp.task('build', gulp.series('clean', 'nunjucks', 'i18n', 'sass',
-  'copy-special', 'copy-static'));
+  'copy-special', 'copy-static', 'minify-js'));
