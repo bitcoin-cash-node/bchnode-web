@@ -6,9 +6,9 @@
 {% block body %}
 
 <section class="bg-dark">
-  <div class="container">
-    <div class="row pt-3 pb-6">
-      <div class="col py-7 text-center text-md-left">
+  <div class="container py-7">
+    <div class="row pb-6">
+      <div class="col text-center text-md-left">
         <!-- Logo -->
         <svg class="hero-logo" viewBox="0 0 718 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -45,49 +45,28 @@
         <!-- End logo -->
       </div>
     </div>
-  </div>
-</section>
 
-<section class="bg-lighter-dark text-white">
-  <div class="container py-5">
-    <div class="row justify-content-center">
-      <div class="col-11 col-lg-8 card bg-dark">
-        <div class="card-body">
-          <h3 class="text-center pt-2">$( index.download )$ <small>v0.21.1</small></h3>
-          <div class="row pt-4 text-center justify-content-center pb-2">
-            <div class="col-md-4">
-              <a class="m-2 btn btn-outline-light btn-lg btn-block btn-shadow" href="/$( _lang_ )$/download.html#linux">
-                Linux
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a class="m-2 btn btn-outline-light btn-lg btn-block btn-shadow" href="/$( _lang_ )$/download.html#macos">
-                macOS
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a class="m-2 btn btn-outline-light btn-lg btn-block btn-shadow" href="/$( _lang_ )$/download.html#windows">
-                Windows
-              </a>
-            </div>
-          </div>
-          <div class="text-center pt-3">
-            <a class="text-muted" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/tags/v0.21.1" target="_blank">$( index.release-notes )$</a>
-          </div>
-        </div>
+    <!-- Button -->
+    <div class="row">
+      <div class="col text-center">
+        <a class="btn btn-primary btn-lg rounded-pill" href="/$( _lang_ )$/download.html" data-aos="fade-up" data-aos-delay="1200">
+          $( index.download )$ <small>v0.21.1</small>
+        </a>
       </div>
     </div>
+    <!-- /Button -->
+
   </div>
 </section>
 
 <section class="bg-lighter-dark text-white">
-  <div class="container pb-5">
+  <div class="container py-7">
     <!-- intro -->
     <div class="row justify-content-center">
       <div class="col-11 col-lg-7">
         <h4 class="pb-5">$( index.initiative.title )$</h4>
         <p class="lead">$( index.initiative.parag )$</p>
-        <a class="" href="https://read.cash/@freetrader/bitcoin-cash-node-003b2381" target="_blank">$( index.initiative.btn )$</a>
+        <a href="https://read.cash/@freetrader/bitcoin-cash-node-003b2381" target="_blank">$( index.initiative.btn )$</a>
       </div>
     </div>
     <!-- /intro -->
