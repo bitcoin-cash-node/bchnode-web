@@ -10,6 +10,7 @@
 
 <div align="center">
   <img src="https://travis-ci.com/merc1er/bchnode-web.svg?branch=master" alt="Build">
+  <a title="Crowdin" target="_blank" href="https://crowdin.com/project/bchnode-web"><img src="https://badges.crowdin.net/bchnode-web/localized.svg"></a>
 </div>
 
 ## Run the develoment server
@@ -33,6 +34,18 @@ Hit `ctrl + C` to stop the server.
 
 Use the coding style recommended by [codeguide.co](https://codeguide.co).  
 Open issues and pull requests at this repo.
+
+#### HTML
+
+HTML files are found in `/app/`.
+
+#### CSS
+
+To add styles, edit the files in `/scss/` - use [Sass](https://sass-lang.com) if possible (regular CSS will work too).
+
+#### JavaScript
+
+Edit `/app/static/js/custom.js` *(this will change in the future)*. jQuery is available.
 
 ## Translating
 

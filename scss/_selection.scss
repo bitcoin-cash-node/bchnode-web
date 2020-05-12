@@ -1,0 +1,21 @@
+// Selection
+
+::selection{
+  background-color: $primary;
+  color: $white;
+}
+
+::-moz-selection{
+  background-color: $primary;
+  color: $white;
+}
+
+::-webkit-selection{
+  background-color: $primary;
+  color: $white;
+}
+
+::-ms-selection {
+  background-color: $primary;
+  color: $white;
+}

@@ -48,14 +48,14 @@
   <!-- Navbar -->
   <nav class="navbar navbar-dark bg-dark pt-4 navbar-expand-lg">
     <div class="container">
-      <a class="btn btn-link text-white" href="/$( _lang_ )$">$( navbar.home )$</a>
+      <a class="btn btn-link text-white underline-animate" href="/$( _lang_ )$">$( navbar.home )$</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapsed" aria-controls="navCollapsed" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Collapse -->
       <div class="collapse navbar-collapse" id="navCollapsed">
         <ul class="navbar-nav ml-auto text-center text-lg-left">
-          <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/tree/master/doc" target="_blank">$( navbar.docs )$</a></li>
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://docs.bitcoincashnode.org">$( navbar.docs )$</a></li>
           <li class="nav-item"><a class="btn btn-link text-white" href="/$( _lang_ )$/team">$( navbar.team )$</a></li>
           <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">$( navbar.source )$</a></li>
           <li class="nav-item"><a class="btn btn-link text-white" href="/$( _lang_ )$/newsroom">$( navbar.newsroom )$</a></li>
@@ -64,15 +64,16 @@
           <li class="nav-item">
             <div class="dropdown">
               <button class="btn btn-link text-white dropdown-toggle" id="lang-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Language
+                Language <img id="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
               </button>
-              <div class="dropdown-menu border-0 text-center text-lg-left" aria-labelledby="lang-selector">
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
                 <a class="dropdown-item" href="/en">English</a>
                 <a class="dropdown-item" href="/zh">简体中文</a>
                 <a class="dropdown-item" href="/es">Español</a>
                 <a class="dropdown-item" href="/ja">日本語</a>
                 <a class="dropdown-item" href="/fr">Français</a>
                 <a class="dropdown-item" href="/nl">Nederlands</a>
+                <a class="dropdown-item" href="/no">Norsk</a>
               </div>
             </div>
           </li>
@@ -84,23 +85,79 @@
   </nav>
   <!-- /Navbar -->
 
-  {% block body %}{% endblock %}
+  <main class="overflow-hidden">
+    {% block body %}{% endblock %}
+  </main>
 
-  <footer class="bg-dark">
-    <div class="container py-5">
-      <div class="row mb-5">
-        <div class="col text-center">
-          <a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/tree/master/doc" target="_blank">$( navbar.docs )$</a>
-          <a class="btn btn-link text-white" href="/$( _lang_ )$/team">$( navbar.team )$</a>
-          <a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">$( navbar.source )$</a>
-          <a class="btn btn-link text-white" href="/$( _lang_ )$/download.html">$( index.download )$</a>
+  <footer class="footer bg-dark py-6 text-a-white text-light">
+    <div class="container g">
+      <div class="row">
+        <!-- Organization -->
+        <div class="col-6 col-md-3 mb-4 mb-md-0">
+          <div class="h4 text-white">Organization</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="text-muted" href="/$( _lang_ )$/team">$( navbar.team )$</a>
+            </li>
+            <li>
+              <a class="text-muted" href="/$( _lang_ )$/newsroom">$( navbar.newsroom )$</a>
+            </li>
+            <li>
+              <a class="text-muted" href="https://gitlab.com/bitcoin-cash-node/">GitLab</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Navigate -->
+        <div class="col-6 col-md-3 mb-4 mb-md-0">
+          <div class="h4 text-white">Navigate</div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="text-muted" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/tree/master/doc" target="_blank">$( navbar.docs )$</a>
+            </li>
+            <li>
+              <a class="text-muted" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">$( navbar.source )$</a>
+            </li>
+            <li>
+              <a class="text-muted" href="/$( _lang_ )$/download.html">$( index.download )$</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Social -->
+        <div class="col-6 col-md-3 mb-4 mb-md-0">
+          <div class="h4 text-white">Social</div>
+          <ul class="list-inline social">
+            <li>
+              <a target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-ctozdnpv-pUknwZpANybRg5xyeKyx8Q" class="text-muted">Slack</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/bitcoincashnode" class="text-muted">Twitter</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://t.me/bitcoincashnode" class="text-muted">Telegram</a>
+            </li>
+          </ul>
+        </div>
+        <!--  -->
+        <div class="col-6 col-md-3 text-lg-right">
+          <a href="/">
+            <img src="/static/img/logomark.svg" alt="Logo" height="50">
+          </a>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="/static/js/custom.js"></script>
+  <script src="/static/js/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
+
 </body>
 </html>
