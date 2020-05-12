@@ -6,6 +6,7 @@ let gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css'),
     nunjucksRender = require('gulp-nunjucks-render'),
     i18n = require('gulp-html-i18n'),
+    uglify = require('gulp-uglify'),
     reload = browserSync.reload;
 
 
@@ -17,7 +18,7 @@ gulp.task('clean', function(done){
 });
 
 // Internationalization
-gulp.task('i18n', function() {
+gulp.task('i18n', function(){
   return gulp.src('dist-lang/**/*.html')
     .pipe(i18n({
       langDir: 'lang', // takes translations from /lang/
@@ -29,7 +30,7 @@ gulp.task('i18n', function() {
 });
 
 // Templating
-gulp.task('nunjucks', function() {
+gulp.task('nunjucks', function(){
   // Gets all .html files in pages
   return gulp.src('app/**/*.html')
   // Renders template with nunjucks
@@ -59,9 +60,18 @@ gulp.task('copy-special', function(){
 });
 
 // Copy all static files
-gulp.task('copy-static', function(){
-  return gulp.src('app/static/**/*.*', {base: './app/static/'})
+gulp.task('copy-static', function(done){
+  // Add AOS library from node_modules
+  gulp.src('node_modules/aos/dist/aos.js')
+    .pipe(gulp.dest('dist/static/js/'));
+  // Minify JS
+  gulp.src('app/static/js/custom.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/static/js/'));
+  // Copy everything from app/static
+  gulp.src('app/static/**/*.*', { ignore: 'app/static/js/custom.js' })
     .pipe(gulp.dest('dist/static/'));
+  done();
 });
 
 gulp.task('reload', function(done){
@@ -80,7 +90,8 @@ gulp.task('watch', function(done){
   // Watch SCSS files
   gulp.watch('scss/**/*.scss', gulp.series('sass', 'copy-static'));
   // Watch static files
-  gulp.watch('app/static/**/*.*', gulp.series('copy-static', 'reload'));
+  gulp.watch('app/static/**/*.*', gulp.series('copy-static',
+    'reload'));
   // Watch translations
   gulp.watch('lang/**/*.yaml', gulp.series('i18n', 'reload'));
   done();

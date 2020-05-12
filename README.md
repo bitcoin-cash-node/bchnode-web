@@ -35,6 +35,18 @@ Hit `ctrl + C` to stop the server.
 Use the coding style recommended by [codeguide.co](https://codeguide.co).  
 Open issues and pull requests at this repo.
 
+#### HTML
+
+HTML files are found in `/app/`.
+
+#### CSS
+
+To add styles, edit the files in `/scss/` - use [Sass](https://sass-lang.com) if possible (regular CSS will work too).
+
+#### JavaScript
+
+Edit `/app/static/js/custom.js` *(this will change in the future)*. jQuery is available.
+
 ## Translating
 
 Translations are managed through [Crowdin](https://crowdin.com). If you wish to translate this website into your own language, please open an issue at this repo.
