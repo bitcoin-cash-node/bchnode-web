@@ -7,10 +7,14 @@ $(".navbar-toggler").click(function() {
 });
 
 // Rotate chevron down on click
-$("#lang-selector").focus(function() {
-  $("#chevron-down").removeClass('unrotate').addClass('rotate');
-});
+var chevrons = ["#lang-selector", "#version-select"];
 
-$("#lang-selector").blur(function() {
-  $("#chevron-down").removeClass('rotate').addClass('unrotate');
+chevrons.forEach(function(chevron, index) {
+  $(chevron).focus(function() {
+    $(chevron + " > .chevron-down").removeClass('unrotate').addClass('rotate');
+  });
+
+  $(chevron).blur(function() {
+    $(chevron + " > .chevron-down").removeClass('rotate').addClass('unrotate');
+  });
 });
