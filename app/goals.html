@@ -1,0 +1,72 @@
+{% extends 'base.njk' %}
+
+{% block title %}Goals | Bitcoin Cash Node{% endblock %}
+{% block description %}{% endblock %}
+
+{% block body %}
+<section class="bg-dark">
+  <div class="container">
+    <div class="row pb-3">
+      <div class="col my-5 py-5 text-center text-md-left">
+        <h1 class="hero-title">$( goals.title )$</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-lighter-dark text-white">
+  <div class="container py-6">
+
+    <div class="row justify-content-center">
+      <article class="col-md-10 col-lg-8">
+
+        <div class="d-flex align-items-center pb-5">
+          <img src="/static/img/logomark.svg" alt="Logo" class="mr-3" height="40">
+          <div>
+            <div>by <strong>Bitcoin Cash Node Team</strong></div>
+            <div class="text-small text-muted">10 June 2020</div>
+          </div>
+        </div>
+
+        <p>$( goals.intro.parag1 )$</p>
+        <p>$( goals.intro.parag2 )$</p>
+
+        <hr>
+
+        <h3 class="text-left h1" data-aos="zoom-in">$( goals.short-term.title )$</h3>
+
+        <hr>
+
+        <ol>
+          <li>$( goals.short-term.goal-1 )$</li>
+          <li>$( goals.short-term.goal-2 )$</li>
+          <li>$( goals.short-term.goal-3 )$</li>
+        </ol>
+
+        <hr>
+
+        <h3 class="text-left h1" data-aos="zoom-in">$( goals.medium-term.title )$</h3>
+
+        <hr>
+
+        <ol>
+          <li>$( goals.medium-term.goal-1 )$</li>
+          <li>$( goals.medium-term.goal-2 )$</li>
+          <li>$( goals.medium-term.goal-3 )$</li>
+          <li>$( goals.medium-term.goal-4 )$</li>
+        </ol>
+
+        <hr>
+
+        <h3 class="text-left h1" data-aos="zoom-in">$( goals.longterm.title )$</h3>
+
+        <hr>
+
+        <p>$( common.coming-soon )$</p>
+
+      </article>
+    </div>
+
+  </div>
+</section>
+{% endblock %}
