@@ -6,8 +6,8 @@
 {% block body %}
 
 <section class="bg-dark">
-  <div class="container py-7">
-    <div class="row pb-6">
+  <div class="container py-5">
+    <div class="row pb-4">
       <div class="col text-center text-md-left">
         <!-- Logo -->
         {% include 'logo.njk' %}
@@ -24,26 +24,63 @@
       </div>
     </div>
     <!-- /Button -->
+</section>
 
+<section class="bg-dark text-white">
+  <div class="container py-1">
+    <!-- vision -->
+    <div class="row justify-content-center text-lg-center">
+      <div class="col-11">
+        <div class="text-left h3">
+          <p>$( index.vision.parag1 )$</p>
+          <p>$( index.vision.parag2 )$</p>
+          <p>$( index.vision.parag3 )$</p>
+        </div>
+      </div>
+    </div>
+    <!-- /vision -->
   </div>
 </section>
 
 <section class="bg-lighter-dark text-white">
-  <div class="container py-7">
-    <!-- intro -->
+  <div class="container py-5">
+    <!-- goals -->
     <div class="row justify-content-center text-lg-center">
       <div class="col-11">
-        <h3 class="font-weight-light">$( index.initiative.parag )$</h3>
-        <a class="text-danger" href="https://read.cash/@freetrader/bitcoin-cash-node-003b2381" target="_blank">$( index.initiative.btn )$</a>
+        <h3 class="text-center h1" data-aos="zoom-in">$( index.goals.title )$</h3>
+        <br>
+        <h4>$( index.goals.shortterm.title )$</h4>
+        <div class="text-left lead">
+          <ul>
+            <li>$( index.goals.shortterm.goal1 )$</li>
+            <li>$( index.goals.shortterm.goal2 )$</li>
+            <li>$( index.goals.shortterm.goal3 )$</li>
+          </ul>
+        </div>
+        <h4>$( index.goals.mediumterm.title )$</h4>
+        <div class="text-left lead">
+          <ul>
+            <li>$( index.goals.mediumterm.goal1 )$</li>
+            <li>$( index.goals.mediumterm.goal2 )$</li>
+            <li>$( index.goals.mediumterm.goal3 )$</li>
+            <li>$( index.goals.mediumterm.goal4 )$</li>
+          </ul>
+        </div>
+        <h4>$( index.goals.longterm.title )$</h4>
+        <div class="text-left lead">
+          <ul>
+            <li>$( index.goals.longterm.goal1 )$</li>
+          </ul>
+        </div>
       </div>
     </div>
-    <!-- /intro -->
+    <!-- /goals -->
   </div>
 </section>
 
-<div class="pattern-checks-sm bg-lighter-dark" style="height: 20px; width: 100%"></div>
+<!--div class="pattern-checks-sm bg-lighter-dark" style="height: 20px; width: 100%"></div-->
 
-<section class="bg-lighter-dark text-white py-7" id="donate">
+<section class="bg-dark text-white py-5" id="donate">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-11 col-lg-8">
