@@ -2,9 +2,7 @@
 download: ダウンロード
 release-notes: リリースノート
 initiative:
-  title: Bitcoin Cashノード・イニシアティブ
-  parag: Bitcoin Cashノードイニシアチブの主な目標は、チェーンスプリット（分裂）のリスクに貢献することなく、最長のBitcoin Cashチェーンに中立的に従う、安全でプロフェッショナルなノード実装を提供することです。
-  btn: 発表を読む
+  parag1: The Bitcoin Cash Node project has been providing high quality full node software for the Bitcoin Cash (BCH) network since February 2020.
 social:
   title: フォローする
 irc:
@@ -14,3 +12,25 @@ donate:
   title: 寄付する
   parag1: チームメンバーは5のうち3つのマルチシグネチャアドレスを保持しています。人員、設備、請負を含むBCHノード操作の一般的な資金調達のために使用されます。
   parag2: 次回の資金調達では、未使用の資金もそのキャンペーンに使用されます。
+vision:
+  title: The Bitcoin Cash Node Vision
+  parag1: Bitcoin Cash Node is a professional, miner-friendly node that solves practical problems for Bitcoin Cash, peer-to-peer electronic cash for the world.
+  parag2: Our development process is transparent, evidence-driven and responsive to ecosystem needs, resulting in software that is performant, reliable and predictable.
+  parag3: We strongly believe in building an ecosystem that has no single points of failure, and will collaborate to make that a reality.
+goals:
+  title: Objectives
+  shortterm:
+    title: Short term
+    goal1: Establish a professional mining node which listens to feedback and delivers measurable improvements.
+    goal2: Provide well-researched proposals for consensus rule enhancements regarding DAA, 0-conf and script improvements.
+    goal3: Lead by example with specification-driven development that enables greater mining node diversity and increases BCH's resistance to capture.
+  mediumterm:
+    title: Medium term
+    goal1: Demonstrate sustainable client development based on wide ecosystem input and a transparent, voluntary funding model.
+    goal2: Demonstrate evidence-based, collaborative decision making on consensus changes.
+    goal3: Maintain and expand network effect where possible.
+    goal4: Make progress on the scaling work for global adoption through performance improvements and more advanced protocols between network peers.
+    goal5: Cooperate on specification and testing iniatives to diversify the node landscape, stimulate broader participation and protect the BCH network from catastrophic failures.
+  longterm:
+    title: Long term
+    goal1: Raise awareness that BCH must remain permissionless, useful and afforable to use in order to become the best money in the world.
