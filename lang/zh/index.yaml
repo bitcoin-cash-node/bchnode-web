@@ -2,7 +2,7 @@
 download: 下载
 release-notes: 发布说明
 initiative:
-  parag1: The Bitcoin Cash Node project has been providing high quality full node software for the Bitcoin Cash (BCH) network since February 2020.
+  parag1: 比特币现金节点项目自2020年2月以来一直为比特币现金(BCH)网络提供高质量的全节点软件。
 social:
   title: 联系我们
 irc:
@@ -13,24 +13,24 @@ donate:
   parag1: BCHN团队持有3-5多签钱包，为BCHN节点的人事、设备和外包等运营工作提供资金支持。
   parag2: 在下次的募资活动中，未使用的资金也将用于达成募资目标。
 vision:
-  title: The Bitcoin Cash Node Vision
-  parag1: Bitcoin Cash Node is a professional, miner-friendly node that solves practical problems for Bitcoin Cash, peer-to-peer electronic cash for the world.
-  parag2: Our development process is transparent, evidence-driven and responsive to ecosystem needs, resulting in software that is performant, reliable and predictable.
-  parag3: We strongly believe in building an ecosystem that has no single points of failure, and will collaborate to make that a reality.
+  title: Bitcoin Cash Node愿景
+  parag1: 比特币现金节点（BCHN）是一个专业的，对矿工友好的节点，旨在为BCH解决目前的实际问题，朝实现BCH的最终愿景：世界通用、点对点的电子现金迈进。
+  parag2: 我们的开发过程透明，以证据导向，对生态圈的需求能及时反应，从而产出高性能、可靠、可预测的软件。
+  parag3: 我们将坚定地建立一个没有中心弱点的BCH生态，并将和各造合作使之成为现实。
 goals:
-  title: Objectives
+  title: 我们的目标
   shortterm:
-    title: Short term
-    goal1: Establish a professional mining node which listens to feedback and delivers measurable improvements.
-    goal2: Provide well-researched proposals for consensus rule enhancements regarding DAA, 0-conf and script improvements.
-    goal3: Lead by example with specification-driven development that enables greater mining node diversity and increases BCH's resistance to capture.
+    title: 短期
+    goal1: 建立一个专业的挖矿节点，倾听用户反馈并提供可以检测的改进。
+    goal2: 在DAA、零确认和交易脚本的改进上提供经过充分研究的建议。
+    goal3: 以规格导向的方式开发，让挖矿节点多样化，使BCH更不容易被攻击。
   mediumterm:
-    title: Medium term
-    goal1: Demonstrate sustainable client development based on wide ecosystem input and a transparent, voluntary funding model.
-    goal2: Demonstrate evidence-based, collaborative decision making on consensus changes.
-    goal3: Maintain and expand network effect where possible.
-    goal4: Make progress on the scaling work for global adoption through both processing and network performance improvements.
-    goal5: Cooperate on specification and testing initiatives to diversify the node landscape, stimulate broader participation and protect the BCH network from catastrophic failures.
+    title: 中期
+    goal1: 基于广泛的生态系统反馈和透明、自愿的筹资模式，实现可持续的客户端发展。
+    goal2: 在共识变更的课题上，实现基于证据与合作的决策过程。
+    goal3: 保持和扩大BCH的网络效应。
+    goal4: 通过性能改进和更先进的网络传输协议，在实现全球规模的扩容上取得进展。
+    goal5: 在制定规格与测试计划上与其他团队合作，以使节点多样化，促成更广泛的参与，并保护BCH网络免于重大的灾害。
   longterm:
-    title: Long term
-    goal1: Raise awareness that BCH must remain permissionless, useful and affordable to use in order to become the best money in the world.
+    title: 长期
+    goal1: 为了成为世界上最好的货币，BCH必须保持无需许可、有用、人人都用得起的状态，我们将持续努力，并提高人们对此的认知。
