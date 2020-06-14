@@ -114,9 +114,9 @@ gulp.task('serve', function(done){
 
 
 // Default task
-gulp.task('default', gulp.series('clean', 'nunjucks', 'i18n', 'sass',
-  'copy-special', 'copy-static', 'serve', 'watch'));
+gulp.task('default', gulp.series('clean', 'copy-static', 'nunjucks', 'i18n',
+   'sass', 'copy-special', 'serve', 'watch'));
 
 // Deployment task
-gulp.task('build', gulp.series('clean', 'nunjucks', 'i18n', 'sass',
-  'copy-special', 'copy-static'));
+gulp.task('build', gulp.series('clean', 'copy-static', 'nunjucks', 'i18n',
+  'sass', 'copy-special'));
