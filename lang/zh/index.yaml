@@ -17,20 +17,6 @@ vision:
   parag1: A professional, miner-friendly node that solves practical problems for Bitcoin Cash.
   parag2: 我们的开发过程透明，以证据导向，对生态圈的需求能及时反应，从而产出高性能、可靠、可预测的软件。
   parag3: 我们将坚定地建立一个没有中心弱点的BCH生态，并将和各造合作使之成为现实。
-goals:
-  title: 我们的目标
-  shortterm:
-    title: 短期
-    goal1: 建立一个专业的挖矿节点，倾听用户反馈并提供可以检测的改进。
-    goal2: 在DAA、零确认和交易脚本的改进上提供经过充分研究的建议。
-    goal3: 以规格导向的方式开发，让挖矿节点多样化，使BCH更不容易被攻击。
-  mediumterm:
-    title: 中期
-    goal1: 基于广泛的生态系统反馈和透明、自愿的筹资模式，实现可持续的客户端发展。
-    goal2: 在共识变更的课题上，实现基于证据与合作的决策过程。
-    goal3: 保持和扩大BCH的网络效应。
-    goal4: 通过性能改进和更先进的网络传输协议，在实现全球规模的扩容上取得进展。
-    goal5: 在制定规格与测试计划上与其他团队合作，以使节点多样化，促成更广泛的参与，并保护BCH网络免于重大的灾害。
-  longterm:
-    title: 长期
-    goal1: 为了成为世界上最好的货币，BCH必须保持无需许可、有用、人人都用得起的状态，我们将持续努力，并提高人们对此的认知。
+goals: See our goals
+gitlab: See our GitLab repo
+collab: Collaborative development
