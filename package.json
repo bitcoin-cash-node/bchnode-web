@@ -22,7 +22,7 @@
   "homepage": "https://bitcoincashnode.org",
   "devDependencies": {
     "aos": "^3.0.0-beta.6",
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^5.0.0-alpha1",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
@@ -33,7 +33,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "minimist": "^1.2.5",
-    "node-sass": "^4.14.0",
+    "node-sass": "^4.14.1",
     "pattern.css": "^1.0.0"
   }
 }
