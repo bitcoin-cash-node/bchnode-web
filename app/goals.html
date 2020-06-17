@@ -1,0 +1,51 @@
+{% extends 'base.njk' %}
+
+{% block title %}Objectives | Bitcoin Cash Node{% endblock %}
+{% block description %}{% endblock %}
+
+{% block body %}
+<section class="bg-dark">
+  <div class="container">
+    <div class="row pb-3">
+      <div class="col py-7 text-center text-md-left">
+        <h1 class="hero-title">$( index.goals.title )$</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-lighter-dark text-white">
+  <div class="container py-5">
+    <!-- goals -->
+    <div class="row justify-content-center text-lg-center">
+      <div class="col-11">
+        <h4>$( index.goals.shortterm.title )$</h4>
+        <div class="text-left lead">
+          <ul>
+            <li>$( index.goals.shortterm.goal1 )$</li>
+            <li>$( index.goals.shortterm.goal2 )$</li>
+            <li>$( index.goals.shortterm.goal3 )$</li>
+          </ul>
+        </div>
+        <h4>$( index.goals.mediumterm.title )$</h4>
+        <div class="text-left lead">
+          <ul>
+            <li>$( index.goals.mediumterm.goal1 )$</li>
+            <li>$( index.goals.mediumterm.goal2 )$</li>
+            <li>$( index.goals.mediumterm.goal3 )$</li>
+            <li>$( index.goals.mediumterm.goal4 )$</li>
+            <li>$( index.goals.mediumterm.goal5 )$</li>
+          </ul>
+        </div>
+        <h4>$( index.goals.longterm.title )$</h4>
+        <div class="text-left lead">
+          <ul>
+            <li>$( index.goals.longterm.goal1 )$</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /goals -->
+  </div>
+</section>
+{% endblock %}
