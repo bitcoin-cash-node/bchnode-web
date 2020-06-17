@@ -14,6 +14,7 @@ let gulp = require('gulp'),
 gulp.task('clean', function(done){
   // Deletes all files from dist/
   del.sync('dist/', {force: true});
+  del.sync('app/static/css/style.css');
   done()
 });
 
@@ -114,9 +115,9 @@ gulp.task('serve', function(done){
 
 
 // Default task
-gulp.task('default', gulp.series('clean', 'copy-static', 'nunjucks', 'i18n',
-   'sass', 'copy-special', 'serve', 'watch'));
+gulp.task('default', gulp.series('clean', 'sass', 'nunjucks', 'i18n',
+  'copy-static', 'copy-special', 'serve', 'watch'));
 
 // Deployment task
-gulp.task('build', gulp.series('clean', 'copy-static', 'nunjucks', 'i18n',
-  'sass', 'copy-special'));
+gulp.task('build', gulp.series('clean', 'sass', 'nunjucks', 'i18n',
+  'copy-static', 'copy-special'));
