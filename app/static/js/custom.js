@@ -7,7 +7,7 @@ $(".navbar-toggler").click(function() {
 });
 
 // Rotate chevron down on click
-var chevrons = ["#lang-selector", "#version-select"];
+var chevrons = ["#about-selector", "#lang-selector", "#version-select"];
 
 chevrons.forEach(function(chevron, index) {
   $(chevron).focus(function() {

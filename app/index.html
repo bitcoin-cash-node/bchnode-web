@@ -6,100 +6,53 @@
 {% block body %}
 
 <section class="bg-dark">
-  <div class="container py-5">
+  <div class="container py-7">
     <div class="row pb-4">
       <div class="col text-center text-md-left">
         <!-- Logo -->
-        {% include 'logo.njk' %}
+        <div class="ml-md-3">
+          {% include 'logo.njk' %}
+        </div>
         <!-- End logo -->
+        <p class="text-white h3 font-weight-normal col-md-7" data-aos="fade-up" data-aos-delay="1200">$( index.vision.parag1 )$</p>
       </div>
     </div>
 
     <!-- Button -->
     <div class="row">
       <div class="col text-center">
-        <a class="btn btn-primary btn-lg rounded-pill" href="/$( _lang_ )$/download.html" data-aos="fade-up" data-aos-delay="1200">
+        <a class="btn btn-primary btn-lg rounded-pill" href="/$( _lang_ )$/download.html" data-aos="fade-up" data-aos-delay="1400">
           $( index.download )$ <small>v0.21.2</small>
         </a>
       </div>
     </div>
     <!-- /Button -->
-</section>
-
-<section class="bg-dark text-white">
-  <div class="container py-1">
-    <!-- vision -->
-    <div class="row justify-content-center text-lg-center">
-      <div class="col-11">
-        <div class="text-left h3">
-          <p>$( index.vision.parag1 )$</p>
-          <p>$( index.vision.parag2 )$</p>
-          <p>$( index.vision.parag3 )$</p>
-        </div>
-      </div>
-    </div>
-    <!-- /vision -->
   </div>
 </section>
 
 <section class="bg-lighter-dark text-white">
-  <div class="container py-5">
-    <!-- goals -->
-    <div class="row justify-content-center text-lg-center">
-      <div class="col-11">
-        <h3 class="text-center h1" data-aos="zoom-in">$( index.goals.title )$</h3>
-        <br>
-        <h4>$( index.goals.shortterm.title )$</h4>
-        <div class="text-left lead">
-          <ul>
-            <li>$( index.goals.shortterm.goal1 )$</li>
-            <li>$( index.goals.shortterm.goal2 )$</li>
-            <li>$( index.goals.shortterm.goal3 )$</li>
-          </ul>
-        </div>
-        <h4>$( index.goals.mediumterm.title )$</h4>
-        <div class="text-left lead">
-          <ul>
-            <li>$( index.goals.mediumterm.goal1 )$</li>
-            <li>$( index.goals.mediumterm.goal2 )$</li>
-            <li>$( index.goals.mediumterm.goal3 )$</li>
-            <li>$( index.goals.mediumterm.goal4 )$</li>
-            <li>$( index.goals.mediumterm.goal5 )$</li>
-          </ul>
-        </div>
-        <h4>$( index.goals.longterm.title )$</h4>
-        <div class="text-left lead">
-          <ul>
-            <li>$( index.goals.longterm.goal1 )$</li>
-          </ul>
-        </div>
+  <div class="container pt-6 pb-5">
+    <div class="row align-items-center">
+      <div class="col-md-4 order-md-2" data-aos="fade-left">
+        <h3 class="h1">Collaborative development</h3>
+        <p class="lead">$( index.vision.parag2 )$</p>
+        <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" class="btn btn-primary" target="_blank">See our GitLab repo</a>
+      </div>
+      <div class="col-md-8 order-md-1 mt-4 mt-md-0" data-aos="fade-right">
+        <img src="/static/img/screens/gitlab.png" alt="Collaborative development" class="img-fluid px-md-5">
       </div>
     </div>
-    <!-- /goals -->
   </div>
 </section>
 
-<!--div class="pattern-checks-sm bg-lighter-dark" style="height: 20px; width: 100%"></div-->
+<div class="pattern-checks-sm bg-lighter-dark" style="height: 20px; width: 100%"></div>
 
-<section class="bg-dark text-white py-5" id="donate">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-11 col-lg-8">
-        <h3 class="text-center h1" data-aos="zoom-in">$( index.donate.title )$</h3>
-        <div class="row">
-          <div class="col-md-8 mt-3 lead" data-aos="fade-right">
-            <p>$( index.donate.parag1 )$</p>
-            <p>$( index.donate.parag2 )$</p>
-          </div>
-          <div class="col-md-4 text-center mt-3" data-aos="fade-left" data-aos-delay=200>
-            <a href="bitcoincash:prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk">
-              <img class="rounded" src="/static/img/qr-donation.png" alt="QR code" height="160" width="160">
-            </a>
-          </div>
-        </div>
-        <p class="text-truncate text-center pt-4">
-          <a class="text-danger" href="bitcoincash:prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk">bitcoincash:prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk</a>
-        </p>
+<section class="bg-lighter-dark text-white">
+  <div class="container pt-5 pb-6">
+    <div class="row justify-content-center" data-aos="fade-up">
+      <div class="col-md-6 text-md-center mt-4">
+        <p class="lead">$( index.vision.parag3 )$</p>
+        <a href="/$( _lang_ )$/goals" class="btn btn-primary btn-lg rounded-pill">See our goals</a>
       </div>
     </div>
   </div>
