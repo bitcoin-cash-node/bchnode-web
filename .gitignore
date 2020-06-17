@@ -1,5 +1,13 @@
+# local env
 .DS_Store
+README.html
+
+# node
 node_modules
+
+# dist
 dist/
 dist-lang/
-README.html
+
+# compiled files
+app/static/css/style.css
