@@ -14,7 +14,7 @@ donate:
   parag2: Les fonds non utilisés contribueront à la prochaine collecte de fonds.
 vision:
   title: The Bitcoin Cash Node Vision
-  parag1: Bitcoin Cash Node is a professional, miner-friendly node that solves practical problems for Bitcoin Cash, peer-to-peer electronic cash for the world.
+  parag1: A professional, miner-friendly node that solves practical problems for Bitcoin Cash.
   parag2: Our development process is transparent, evidence-driven and responsive to ecosystem needs, resulting in software that is performant, reliable and predictable.
   parag3: We strongly believe in building an ecosystem that has no single points of failure, and will collaborate to make that a reality.
 goals:
@@ -34,3 +34,6 @@ goals:
   longterm:
     title: Long term
     goal1: Raise awareness that BCH must remain permissionless, useful and affordable to use in order to become the best money in the world.
+gitlab: See our GitLab repo
+collab: Collaborative development
+see-goals: See our goals
