@@ -18,14 +18,14 @@ vision:
   parag2: Our development process is transparent, evidence-driven and responsive to ecosystem needs, resulting in software that is performant, reliable and predictable.
   parag3: We strongly believe in building an ecosystem that has no single points of failure, and will collaborate to make that a reality.
 goals:
-  title: Objectives
+  title: Objectifs
   shortterm:
-    title: Short term
+    title: Court terme
     goal1: Establish a professional mining node which listens to feedback and delivers measurable improvements.
     goal2: Provide well-researched proposals for consensus rule enhancements regarding DAA, 0-conf and script improvements.
     goal3: Lead by example with specification-driven development that enables greater mining node diversity and increases BCH's resistance to capture.
   mediumterm:
-    title: Medium term
+    title: Moyen terme
     goal1: Demonstrate sustainable client development based on wide ecosystem input and a transparent, voluntary funding model.
     goal2: Demonstrate evidence-based, collaborative decision making on consensus changes.
     goal3: Maintain and expand network effect where possible.
