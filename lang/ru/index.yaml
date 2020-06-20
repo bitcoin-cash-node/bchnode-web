@@ -16,13 +16,13 @@ vision:
   title: Наше видение Bitcoin Cash Node
   parag1: Профессиональная, удобная для майнеров точка, которая решает практические задачи для биткойн-кеша.
   parag2: Наш процесс разработки прозрачен, основан на фактических данных и отвечает потребностям экосистемы, в результате чего программное обеспечение является производительным, надежным и предсказуемым.
-  parag3: We strongly believe in building an ecosystem that has no single points of failure, and will collaborate to make that a reality.
+  parag3: Мы твердо верим в создание экосистемы, в которой нет единых точек сбоя и будем сотрудничать, чтобы сделать это реальностью.
 goals:
-  title: Objectives
+  title: Задачи
   shortterm:
-    title: Short term
-    goal1: Establish a professional mining node which listens to feedback and delivers measurable improvements.
-    goal2: Provide well-researched proposals for consensus rule enhancements regarding DAA, 0-conf and script improvements.
+    title: Краткосрочные
+    goal1: Создать профессиональный майнинг-узел, который прислушивается к обратной связи и обеспечивает ощутимые улучшения.
+    goal2: Предоставить хорошо проработанные предложения по улучшению правил консенсуса относительно DAA, 0-conf и улучшений сценариев.
     goal3: Lead by example with specification-driven development that enables greater mining node diversity and increases BCH's resistance to capture.
   mediumterm:
     title: Medium term
