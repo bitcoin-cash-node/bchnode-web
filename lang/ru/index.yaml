@@ -13,9 +13,9 @@ donate:
   parag1: 3 из 5-подписных адресов принадлежат членам команды. Они используют их для общего финансирования операций BCH, включая расходы на персонал, оборудование и заключение контрактов.
   parag2: На следующем этапе сбора средств любые неиспользованные средства также будут способствовать выполнению этой кампании.
 vision:
-  title: The Bitcoin Cash Node Vision
-  parag1: A professional, miner-friendly node that solves practical problems for Bitcoin Cash.
-  parag2: Our development process is transparent, evidence-driven and responsive to ecosystem needs, resulting in software that is performant, reliable and predictable.
+  title: Наше видение Bitcoin Cash Node
+  parag1: Профессиональная, удобная для майнеров точка, которая решает практические задачи для биткойн-кеша.
+  parag2: Наш процесс разработки прозрачен, основан на фактических данных и отвечает потребностям экосистемы, в результате чего программное обеспечение является производительным, надежным и предсказуемым.
   parag3: We strongly believe in building an ecosystem that has no single points of failure, and will collaborate to make that a reality.
 goals:
   title: Objectives
