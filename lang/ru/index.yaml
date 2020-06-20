@@ -9,9 +9,9 @@ irc:
   title: IRC
   text: 'Присоединяйтесь к #bchnode на Freenode.'
 donate:
-  title: Donate
-  parag1: 3-of-5 multisignature address held by team members. It is used for general funding of BCH Node operations, including personnel, equipment and contracting.
-  parag2: At the next fundraising effort, any funds unused will also contribute to fulfilling that campaign.
+  title: Пожертвовать поекту
+  parag1: 3 из 5-подписных адресов принадлежат членам команды. Они используют их для общего финансирования операций BCH, включая расходы на персонал, оборудование и заключение контрактов.
+  parag2: На следующем этапе сбора средств любые неиспользованные средства также будут способствовать выполнению этой кампании.
 vision:
   title: The Bitcoin Cash Node Vision
   parag1: A professional, miner-friendly node that solves practical problems for Bitcoin Cash.
