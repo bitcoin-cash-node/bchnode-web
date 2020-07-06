@@ -2,7 +2,7 @@
 download: Download
 release-notes: Uitgaveopmerkingen
 initiative:
-  parag1: The Bitcoin Cash Node project has been providing high quality full node software for the Bitcoin Cash (BCH) network since February 2020.
+  parag1: Het Bitcoin Cash Node-project levert hoogwaardige full-node-software voor het Bitcoin Cash (BCH)-netwerk sinds februari 2020.
 social:
   title: Kom in contact
 irc:
@@ -13,9 +13,9 @@ donate:
   parag1: 3-van-5-multisignature-adres gehouden door teamleden. Het wordt gebruikt voor algemene financiering van werkzaamheden van BCH Node, waaronder personeel, apparatuur en contracteren.
   parag2: Bij de volgende fondsenwerving zullen eventuele ongebruikte fondsen ook bijdragen aan het volbrengen van die campagne.
 vision:
-  title: The Bitcoin Cash Node Vision
-  parag1: A professional, miner-friendly node that solves practical problems for Bitcoin Cash.
-  parag2: Our development process is transparent, evidence-driven and responsive to ecosystem needs, resulting in software that is performant, reliable and predictable.
+  title: De Bitcoin Cash Node-visie
+  parag1: Een professionele, miner-vriendelijke node die praktische problemen oplost voor Bitcoin Cash.
+  parag2: Ons ontwikkelproces is transparant, gedreven door bewijs en ontvankelijk voor ecosysteembehoeften, resulterend in software die efficiënt, betrouwbaar en voorspelbaar is.
   parag3: We strongly believe in building an ecosystem that has no single points of failure, and will collaborate to make that a reality.
 goals:
   title: Objectives
