@@ -35,5 +35,8 @@
     "minimist": "^1.2.5",
     "node-sass": "^4.14.1",
     "pattern.css": "^1.0.0"
+  },
+  "dependencies": {
+    "techy": "^1.2.5"
   }
 }
