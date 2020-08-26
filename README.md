@@ -47,6 +47,10 @@ To add styles, edit the files in `/scss/` - use [Sass](https://sass-lang.com) if
 
 Edit `/app/static/js/custom.js` *(this will change in the future)*. jQuery is available.
 
+## Writing an article
+
+In `/blog/`, copy the `example.md` file and replace the content. Run `gulp` to preview the article in the browser (located at http://localhost:3000/en/newsroom/filename).
+
 ## Translating
 
 Translations are managed through [Crowdin](https://crowdin.com). If you wish to translate this website into your own language, please open an issue at this repo.
