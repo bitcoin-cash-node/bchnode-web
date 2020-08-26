@@ -14,7 +14,7 @@ let gulp = require('gulp'),
 // TASKS
 gulp.task('clean', function(done){
   // Deletes all files from dist/
-  del.sync('dist/', {force: true});
+  del.sync(['dist/', 'dist-lang/'], {force: true});
   del.sync('app/static/css/style.css');
   done()
 });
