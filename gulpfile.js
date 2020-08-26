@@ -84,7 +84,7 @@ gulp.task('reload', function(done){
 
 // Techy CMS
 gulp.task('techy', function(done){
-  gulp.src('./blog/**/*.md')
+  gulp.src(['blog/**/*.md', '!blog/example.md'])
     .pipe(Techy())
     .pipe(gulp.dest('./app/newsroom/'));
   done();
