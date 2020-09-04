@@ -7,13 +7,14 @@ let gulp = require('gulp'),
     nunjucksRender = require('gulp-nunjucks-render'),
     i18n = require('gulp-html-i18n'),
     uglify = require('gulp-uglify'),
+    Techy = require('techy').gulp({root: 'blog/'}),
     reload = browserSync.reload;
 
 
 // TASKS
 gulp.task('clean', function(done){
   // Deletes all files from dist/
-  del.sync('dist/', {force: true});
+  del.sync(['dist/', 'dist-lang/'], {force: true});
   del.sync('app/static/css/style.css');
   done()
 });
@@ -81,6 +82,14 @@ gulp.task('reload', function(done){
   done();
 });
 
+// Techy CMS
+gulp.task('techy', function(done){
+  gulp.src(['blog/**/*.md', '!blog/example.md'])
+    .pipe(Techy())
+    .pipe(gulp.dest('./app/newsroom/'));
+  done();
+});
+
 // Watch for changes
 gulp.task('watch', function(done){
   // Watch HTML pages
@@ -96,6 +105,8 @@ gulp.task('watch', function(done){
     'reload'));
   // Watch translations
   gulp.watch('lang/**/*.yaml', gulp.series('i18n', 'reload'));
+  // Watch Techy CMS files
+  gulp.watch('blog/**/*.md', gulp.series('techy', 'nunjucks', 'i18n'));
   done();
 });
 
@@ -115,9 +126,9 @@ gulp.task('serve', function(done){
 
 
 // Default task
-gulp.task('default', gulp.series('clean', 'sass', 'nunjucks', 'i18n',
+gulp.task('default', gulp.series('clean', 'techy', 'sass', 'nunjucks', 'i18n',
   'copy-static', 'copy-special', 'serve', 'watch'));
 
 // Deployment task
-gulp.task('build', gulp.series('clean', 'sass', 'nunjucks', 'i18n',
+gulp.task('build', gulp.series('clean', 'techy', 'sass', 'nunjucks', 'i18n',
   'copy-static', 'copy-special'));
