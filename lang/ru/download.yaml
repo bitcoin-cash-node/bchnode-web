@@ -1,8 +1,8 @@
 ---
 warning:
-  one: Berkeley DB версии 5.3 необходим для первоисточника.
-  two: Перед созданием любого нового пользователя обязательно сделайте резервную копию файлов кошелька.
-signatures: подписи
+  one: Berkeley DB version 5.3 is needed in order to build from source.
+  two: Please ensure to back up your wallet files before you run any new client.
+signatures: signatures
 docker:
-  instruction: 'Чтобы запустить последнюю версию Bitcoin Cash Node, выполните команду:'
-  full: Смотрите полную инструкцию
+  instruction: 'To run the latest version of Bitcoin Cash Node, run the command:'
+  full: See full instructions
