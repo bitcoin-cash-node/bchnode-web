@@ -51,7 +51,7 @@ Currently BCHN derives all its income from donations.
 The donations below include those made directly to our project donation address and those forwarded from tips on this site.
 
 <figure class="text-center">
-    <img src="https://sigma.rcimg.net/images/0/d/d/bitcoincashnode/9dfca0f7/4285c142c4ca35b6f3c6b10003722bde.png" class="rounded img-fluid">
+    <img src="/static/img/newsroom/2020-09-03/distribution.png" class="rounded img-fluid">
     <figcaption>BCHN donations</figcaption>
 </figure>
 
@@ -62,7 +62,7 @@ There are many other anonymous donations making up the remainder, but some of ou
 We thank all our donors for their support!
 
 <figure class="text-center">
-    <img src="https://sigma.rcimg.net/images/0/d/d/bitcoincashnode/9dfca0f7/0df2cd3a141a0bfd7bec23bf5fd2b9fe.png" class="rounded img-fluid">
+    <img src="/static/img/newsroom/2020-09-03/donations.png" class="rounded img-fluid">
     <figcaption>BCHN donations over time</figcaption>
 </figure>
 
