@@ -7,6 +7,7 @@ let gulp = require('gulp'),
     nunjucksRender = require('gulp-nunjucks-render'),
     i18n = require('gulp-html-i18n'),
     uglify = require('gulp-uglify'),
+    data = require('gulp-data'),
     Techy = require('techy').gulp({root: 'blog/'}),
     reload = browserSync.reload;
 
@@ -36,6 +37,10 @@ gulp.task('i18n', function(){
 gulp.task('nunjucks', function(){
   // Gets all .html files in pages
   return gulp.src('app/**/*.html')
+  // Adds data from newsroom.json
+  .pipe(data(function() {
+    return require('./app/data/newsroom.json')
+  }))
   // Renders template with nunjucks
   .pipe(nunjucksRender({
     path: ['app/templates/']

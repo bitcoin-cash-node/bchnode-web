@@ -1,0 +1,25 @@
+{
+  "articles": [
+    {
+      "title": "BCHN flipstarted - thank you to the community!",
+      "date": "27 April 2020",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/img/unsplash/city-complete.jpg",
+      "filename": "bchn-flipstarted"
+    },
+    {
+      "title": "Bitcoin Cash Node 2020: plans for May upgrade and beyond",
+      "date": "22 March 2020",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/thumbnail.png",
+      "filename": "Bitcoin-Cash-Node-2020-plans-for-May-upgrade-and-beyond"
+    },
+    {
+      "title": "Announcing Bitcoin Cash Node",
+      "date": "20 February 2020",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/thumbnail.png",
+      "filename": "Announcing-Bitcoin-Cash-Node"
+    }
+  ]
+}
