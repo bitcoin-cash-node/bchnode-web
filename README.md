@@ -9,8 +9,9 @@
 </div>
 
 <div align="center">
-  <img src="https://travis-ci.com/merc1er/bchnode-web.svg?branch=master" alt="Build">
+  <img src="https://travis-ci.org/bitcoin-cash-node/bchnode-web.svg?branch=master" alt="Build">
   <a title="Crowdin" target="_blank" href="https://crowdin.com/project/bchnode-web"><img src="https://badges.crowdin.net/bchnode-web/localized.svg"></a>
+  <img src="https://www.codefactor.io/repository/github/bitcoin-cash-node/bchnode-web/badge">
 </div>
 
 ## Run the develoment server
