@@ -93,6 +93,21 @@ article {
   font-size: 1.2em;
 }
 
+.content hr {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.content h3 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.fit-cover {
+  height: 100%;
+  object-fit: cover;
+}
+
 // Misc
 
 .jumbotron {
