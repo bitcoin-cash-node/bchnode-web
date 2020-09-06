@@ -1,6 +1,13 @@
 {
   "articles": [
     {
+      "title": "BCHN Financial Report 2020-09-03",
+      "date": "3 September 2020",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/thumbnail.png",
+      "filename": "BCHN-Financial-Report-2020-09-03"
+    },
+    {
       "title": "Announcing Bitcoin Cash Node v22.0.0",
       "date": "17 August 2020",
       "author": "Bitcoin Cash Node Team",
