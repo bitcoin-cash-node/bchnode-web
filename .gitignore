@@ -11,3 +11,4 @@ dist-lang/
 # compiled files
 README.html
 app/static/css/style.css
+app/newsroom/*.html
