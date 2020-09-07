@@ -1,39 +1,39 @@
 ---
 download: Download
-release-notes: Release notes
+release-notes: Änderungsnotizen
 initiative:
-  parag1: The Bitcoin Cash Node project has been providing high quality full node software for the Bitcoin Cash (BCH) network since February 2020.
+  parag1: Das Bitcoin Cash Node Projekt stellt seit Februar 2020 hochwertige Knotensoftware für das Bitcoin Cash (BCH) Netzwerk zur Verfügung.
 social:
-  title: Kontakt aufnehmen
+  title: Kontaktieren Sie uns
 irc:
   title: IRC
   text: 'Treten Sie #bchnode auf Freenode bei.'
 donate:
   title: Spenden
-  parag1: 3-of-5 multisignature address held by team members. It is used for general funding of BCH Node operations, including personnel, equipment and contracting.
-  parag2: At the next fundraising effort, any funds unused will also contribute to fulfilling that campaign.
+  parag1: 3 von 5 Multisignaturadresse in Besitz von Teammitgliedern wird zur allgemeinen Finanzierung von BCH Node-Operationen, einschließlich Personal, Ausrüstung und Vertragsabschlüssen, verwendet.
+  parag2: Bei den nächsten Bemühungen um Spendenbeschaffung tragen alle ungenutzten Mittel auch zur Erfüllung dieser Kampagne bei.
 vision:
-  title: The Bitcoin Cash Node Vision
-  parag1: A professional, miner-friendly node that solves practical problems for Bitcoin Cash.
-  parag2: Our development process is transparent, evidence-driven and responsive to ecosystem needs, resulting in software that is performant, reliable and predictable.
-  parag3: We strongly believe in building an ecosystem that has no single points of failure, and will collaborate to make that a reality.
+  title: Die Bitcoin Cash Node Vision
+  parag1: Ein professioneller, miner-freundlicher Knoten, der praktische Probleme für Bitcoin Cash löst.
+  parag2: Unser Entwicklungsprozess ist transparent, evidenzorientiert und reagiert auf die Bedürfnisse des Ökosystems und führt zu einer leistungsfähigen, zuverlässigen und vorhersehbaren Software.
+  parag3: Wir sind fest davon überzeugt, ein Ökosystem zu schaffen, das keinen "Single Point of Failure" aufweist, und werden zusammenarbeiten, um dies Wirklichkeit werden zu lassen.
 goals:
-  title: Objectives
+  title: Ziele
   shortterm:
-    title: Short term
-    goal1: Establish a professional mining node which listens to feedback and delivers measurable improvements.
-    goal2: Provide well-researched proposals for consensus rule enhancements regarding DAA, 0-conf and script improvements.
-    goal3: Lead by example with specification-driven development that enables greater mining node diversity and increases BCH's resistance to capture.
+    title: Kurzfristig
+    goal1: Etablierung eines professionellen Minerknotens, der auf Feedback hört und messbare Verbesserungen bringt.
+    goal2: Geben von gut recherchierten Vorschlägen für Konsensregelverbesserungen in Bezug auf DAA, 0-conf und Skriptverbesserungen.
+    goal3: Mit gutem Beispiel vorangehen mit spezifikationsorientierter Entwicklung, die eine größere Vielfalt von Minerknoten ermöglicht und die BCH-Widerstandsfähigkeit gegenüber der Übernahme erhöht.
   mediumterm:
-    title: Medium term
-    goal1: Demonstrate sustainable client development based on wide ecosystem input and a transparent, voluntary funding model.
-    goal2: Demonstrate evidence-based, collaborative decision making on consensus changes.
-    goal3: Maintain and expand network effect where possible.
-    goal4: Make progress on the scaling work for global adoption through both processing and network performance improvements.
-    goal5: Cooperate on specification and testing initiatives to diversify the node landscape, stimulate broader participation and protect the BCH network from catastrophic failures.
+    title: Mittelfristig
+    goal1: Demonstrieren einer nachhaltigen Entwicklung auf der Grundlage des Ökosystem-Inputs und eines transparenten, freiwilligen Finanzierungsmodells.
+    goal2: Demonstrieren einer evidenzbasierten, gemeinsamen Entscheidungsfindung bei Konsensänderungen.
+    goal3: Erhalten und erweitern des Netzwerk-Effekts, soweit möglich.
+    goal4: Fortschritte bei der Skalierung zur globalen Annahme durch Prozess- und Netzwerk-Leistungssteigerungen.
+    goal5: Zusammenarbeit bei Spezifikations- und Testinitiativen zur Diversifizierung der Knotenlandschaft, Förderung einer breiteren Beteiligung und Schutz des BCH Netzwerks vor katastrophalen Fehlern.
   longterm:
-    title: Long term
-    goal1: Raise awareness that BCH must remain permissionless, useful and affordable to use in order to become the best money in the world.
-gitlab: See our GitLab repo
-collab: Collaborative development
-see-goals: See our goals
+    title: Langfristig
+    goal1: Erhöhen Sie das Bewusstsein, dass BCH weiterhin permissionless, nützlich und erschwinglich sein muss, um das beste Geld der Welt zu werden.
+gitlab: Sehen Sie unser GitLab-Repo
+collab: Kollaborative Entwicklung
+see-goals: Sehen Sie unsere Ziele
