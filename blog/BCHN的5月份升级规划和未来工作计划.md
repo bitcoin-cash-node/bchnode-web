@@ -3,7 +3,7 @@ layout: layout.html
 ---
 
 <% set('title', 'BCHN的5月份升级规划和未来工作计划') %>
-<% set('date', '22 March 2020') %>
+<% set('date', '18 March 2020') %>
 <% set('author', 'Bitcoin Cash Node Team') %>
 
 Bitcoin Cash Node （BCHN）项目接下来将发布一系列文章，概述我们为BCH 2020年5月份升级和11月份升级所做的准备工作。
