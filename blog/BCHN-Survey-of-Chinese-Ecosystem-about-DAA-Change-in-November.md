@@ -6,7 +6,7 @@ layout: layout.html
 <% set('date', '12 July 2020') %>
 <% set('author', 'Bitcoin Cash Node Team') %>
 
-Bitcoin Cash Node (BCHN) Representative [Tracy Chen](https://read.cash/@bitcoincashnode/bchn-welcomes-tracy-chen-as-representative-b10aec81) consulted with the Chinese Bitcoin Cash community (big mining pools, exchanges, key persons and holders) on the question of whether they support a change of Difficulty Adjustment Algorithm (DAA) in November.
+Bitcoin Cash Node (BCHN) Representative [Tracy Chen](BCHN-welcomes-Tracy-Chen-as-Representative) consulted with the Chinese Bitcoin Cash community (big mining pools, exchanges, key persons and holders) on the question of whether they support a change of Difficulty Adjustment Algorithm (DAA) in November.
 
 The question was "_Do you think DAA should be resolved in the November upgrade?_" We stress that this was an opinion poll and not a binding vote.
 
