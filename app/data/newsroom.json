@@ -50,6 +50,13 @@
       "filename": "BCHN-Financial-Report-2020-07-07"
     },
     {
+      "title": "Bitcoin Cash Node Community Survey - June 2020",
+      "date": "17 June 2020",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/thumbnail.png",
+      "filename": "survey-june-2020"
+    },
+    {
       "title": "Bitcoin Cash Node: Vision and Objectives",
       "date": "12 June 2020",
       "author": "Bitcoin Cash Node Team",
@@ -148,11 +155,32 @@
       "filename": "BCHN的5月份升级规划和未来工作计划"
     },
     {
+      "title": "BCHN客户端首席维护者的工作汇报 (2020-03-14)",
+      "date": "17 March 2020",
+      "author": "freetrader",
+      "img": "/static/thumbnail.png",
+      "filename": "BCHN客户端首席维护者的工作汇报-2020-03-14"
+    },
+    {
+      "title": "Bitcoin Cash Node Community Survey - March 2020",
+      "date": "14 March 2020",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/thumbnail.png",
+      "filename": "march-2020-survey"
+    },
+    {
       "title": "BCHN lead maintainer report 2020-03-14",
       "date": "14 March 2020",
       "author": "freetrader",
       "img": "/static/thumbnail.png",
       "filename": "lead-maintainer-report-march-2020"
+    },
+    {
+      "title": "Signatures in support of Bitcoin Cash Node",
+      "date": "26 February 2020",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/thumbnail.png",
+      "filename": "Signatures-in-support-of-Bitcoin-Cash-Node"
     },
     {
       "title": "Bitcoin Cash Node客户端即将发布",
