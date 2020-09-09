@@ -24,9 +24,9 @@ Since release, at least 3 mining pools have mined blocks signaling support of Bi
 
 Several sites have sprung up to monitor adoption of `/BCHN/` signaling miners / pools:
 
-*   [https://bitcoincash.network/voting/](https://bitcoincash.network/voting/) (at time of writing, 6.9% over last 2016 blocks in period 624961 - 626976)
+*   [bitcoincash.network/voting/](https://bitcoincash.network/voting/) (at time of writing, 6.9% over last 2016 blocks in period 624961 - 626976)
 
-*   [https://cash.coin.dance/blocks](https://cash.coin.dance/blocks) has added a diagram over last 1000 blocks, it is at 9,3% at time of writing
+*   [cash.coin.dance/blocks](https://cash.coin.dance/blocks) has added a diagram over last 1000 blocks, it is at 9,3% at time of writing
 
 Blockchain signaling shows that support for BCHN among hashpower is steadily increasing.
 
