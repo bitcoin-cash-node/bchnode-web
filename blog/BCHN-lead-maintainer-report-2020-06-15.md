@@ -6,7 +6,7 @@ layout: layout.html
 <% set('date', '15 June 2020') %>
 <% set('author', 'freetrader') %>
 
-This is my first report since the May upgrade, and I must apologize for the long delay. A lot has happened since my [last report](https://read.cash/@freetrader/bchn-lead-maintainer-report-2020-04-15-449fc115).
+This is my first report since the May upgrade, and I must apologize for the long delay. A lot has happened since my [last report](BCHN-lead-maintainer-report-2020-04-15).
 
 On the bright side (not an exhaustive list):
 
@@ -35,7 +35,7 @@ Now that the May upgrade has passed, people are logically enquiring about BCHN's
 
 In our [proposal document](https://gitlab.com/bitcoin-cash-node/bchn-project-management/bchn-pm-public/-/raw/master/finance/funding/campaigns/2020-q2-flipstarter/pdf/Bitcoin_Cash_Node_Flipstarter_Funding_Proposal_v1_1.pdf), we wrote:
 
-> The 6-monthly network upgrade cycle and very rapid client release cycles have been identified as sub-optimal, causing development centralization and practical troubles even for its staunch proponents. In consultation with users, BCHN will engage on well-considered adaptation of the upgrade cycle after November 2020 (the November upgrade is already encoded into the current software in terms of some parameters and cannot simply be abandoned).
+_The 6-monthly network upgrade cycle and very rapid client release cycles have been identified as sub-optimal, causing development centralization and practical troubles even for its staunch proponents. In consultation with users, BCHN will engage on well-considered adaptation of the upgrade cycle after November 2020 (the November upgrade is already encoded into the current software in terms of some parameters and cannot simply be abandoned)._
 
 Let me be clear: Most of our contributors, including myself, support an extension of the upgrade cycle (perhaps to 9-12 months at least) as an improvement step compared to the status quo.
 
@@ -73,7 +73,7 @@ We are thankful to those miners who have supported us during the run-up to May a
 Our special thanks to those who continue to signal support for our software using `/BCHN/` in their coinbase strings. Thanks [bitcoin.com](https://www.bitcoin.com/) , Hashpipe and P2Pool.
 
 <figure class="text-center">
-    <img src="https://rcimg.net/images/a85cfb07/3bneA5i1D0usLADh1f7AAIro3asfIlIK1AUSOFhU.png" class="rounded img-fluid" alt="" title="">
+    <img src="/static/img/newsroom/2020-06-15/3bneA5i1D0usLADh1f7AAIro3asfIlIK1AUSOFhU.png" class="rounded img-fluid" alt="" title="">
     <figcaption>Hashpower signaling for BCHN in their coinbase strings. Guess where's May 2020 in this diagram!
     </figcaption>
 </figure>
@@ -129,7 +129,7 @@ The slope of the increasing red line indicates rate at which backports from upst
 
 Internal project discussions were in May and held and concluded that the backporting effort would, for now, be shared by existing contributors to the project. This may change at a later date, but two BCHN developers have firmly committed time to this activity, while another developer has flexibly contributed to it. This is in accordance with our Flipstarter proposal, where we did foresee that
 
-> we may either share it across developers or contract further development resources with these funds.
+_we may either share it across developers or contract further development resources with these funds._
 
 Starting June, BCHN has begun paying out funds monthly from its backport budget to contributing developers based on their efforts.
 
@@ -216,6 +216,10 @@ This work is driven by BCHN developers @BigBlockIfTrue and Calin Culianu.
 Significant improvements have been achieved since BCHN project start, and since v0.21.2 release. More of these will be available in our next minor release v0.21.3.
 
 Work is progressing toward catching up with the performance of [rapidjson](https://rapidjson.org/), the leading JSON library in the field. Currently UniValue's JSON is slower by a factor of 2. This isn't actually that much difference anymore and we hope to release more benchmark results in the near future to showcase relevant BCHN improvements.
+
+These RPC performance improvements play an important part to contribute to scaling the data that can be transferred efficiently over these interfaces.
+
+The performance gains also translate into faster processing of your application's requests when interacting with the full node.
 
 ### [Better documentation](#better-documentation)
 
