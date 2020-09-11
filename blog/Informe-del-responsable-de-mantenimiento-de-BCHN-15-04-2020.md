@@ -6,6 +6,7 @@ layout: layout.html
 <% set('date', '29 April 2020') %>
 <% set('author', 'freetrader') %>
 
+(Esta es una traducción realizada por [Grido](https://read.cash/@Grido) del artículo [original](BCHN-lead-maintainer-report-2020-04-15) en inglés.)
 
 Me gustaría empezar agradeciéndole a toda la gente que apoya a Bitcoin Cash Node (BCHN) y que nos permite comenzar un nuevo capítulo en la evolución del código fuente de Satoshi que heredamos de Bitcoin ABC.
 
