@@ -17,6 +17,24 @@
 <section class="bg-dark">
   <div class="container">
 
+    <div class="text-white">
+      <!-- AMMEND COMMIT -->
+      <span class="lead ml-1">{% include "icons/filter.svg" %}</span>
+      <span class="btn btn-light ml-2">All</span>
+      <span class="btn btn-outline-light ml-2">Annoucement</span>
+      <span class="btn btn-outline-light ml-2">Survey</span>
+      <span class="btn btn-outline-light ml-2">Financial Report</span>
+      <span class="btn btn-outline-light ml-2">Maintainer Report</span>
+      <span class="btn btn-outline-light ml-2">FAQ</span>
+      <span class="btn btn-outline-light ml-2">Technical Bulletin</span>
+    </div>
+
+    <div class="text-white mt-3">
+      <span class="lead ml-1">{% include "icons/globe.svg" %}</span>
+      <span class="btn btn-outline-light ml-2">Chinese</span>
+      <span class="btn btn-outline-light ml-2">Spanish</span>
+    </div>
+
     {% for article in articles %}
     <div class="row my-6 {% for tag in article.tags %}{{ tag }} {% endfor %}">
       <div class="col-10 col-md-11">
