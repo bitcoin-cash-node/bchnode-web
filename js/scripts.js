@@ -1,4 +1,4 @@
-// Custom.js
+// scripts.js
 
 // Display closing navbar toggler icon
 $(".navbar-toggler").click(function() {
