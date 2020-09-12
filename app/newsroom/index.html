@@ -18,7 +18,7 @@
   <div class="container">
 
     {% for article in articles %}
-    <div class="row my-6">
+    <div class="row my-6 {% for tag in article.tags %}{{ tag }} {% endfor %}">
       <div class="col-10 col-md-11">
         <div class="pattern-dots-sm text-white">
           <div class="card flex-md-row no-gutters bg-light text-dark" style="transform:translate(30px, -30px);">
