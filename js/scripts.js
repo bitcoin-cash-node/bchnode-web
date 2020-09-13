@@ -18,3 +18,15 @@ chevrons.forEach(function(chevron, index) {
     $(chevron + " > .chevron-down").removeClass('rotate').addClass('unrotate');
   });
 });
+
+// newsroom tags
+$('.btn-tag-toggle').click(function() {
+  $(this).addClass('active');
+  $(this).siblings().removeClass('active');
+  if ($(this).hasClass('btn-tag-toggle-all')) {
+    $('.collapse-tag').collapse('show');
+  } else {
+    $('.collapse-tag:not(.'+$(this).data('tag-target')+')').collapse('hide');
+    $('.'+$(this).data('tag-target')).collapse('show');
+  }
+});

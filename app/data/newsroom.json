@@ -86,7 +86,7 @@
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
       "filename": "Bitcoin-Cash-Node-Vision-and-Objectives",
-      "tags": ["annoucement"]
+      "tags": ["announcement"]
     },
     {
       "title": "BCHN welcomes Tracy Chen as Representative",
@@ -94,7 +94,7 @@
       "author": "Bitcoin Cash Node Team",
       "img": "/static/img/team/tracy_chen.jpg",
       "filename": "BCHN-welcomes-Tracy-Chen-as-Representative",
-      "tags": ["annoucement"]
+      "tags": ["announcement"]
     },
     {
       "title": "BCHN Financial Report 2020-06-03",
@@ -110,7 +110,7 @@
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
       "filename": "关于发布BCHN版本0-21-2的公告",
-      "tags": ["chinese", "annoucement"]
+      "tags": ["chinese", "announcement"]
     },
     {
       "title": "Announcing Bitcoin Cash Node v0.21.2",
@@ -118,7 +118,7 @@
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
       "filename": "Announcing-Bitcoin-Cash-Node-v0-21-2",
-      "tags": ["annoucement"]
+      "tags": ["announcement"]
     },
     {
       "title": "BCHN Technical Bulletin 2020-05-04",
@@ -142,7 +142,7 @@
       "author": "Bitcoin Cash Node Team",
       "img": "/static/img/unsplash/city-complete.jpg",
       "filename": "bchn-flipstarted",
-      "tags": ["annoucement"]
+      "tags": ["announcement"]
     },
     {
       "title": "BCHN首席开发者维护工作报告（2020年4月15日）",
@@ -150,7 +150,7 @@
       "author": "freetrader",
       "img": "/static/img/unsplash/city-complete.jpg",
       "filename": "BCHN首席开发者维护工作报告2020年4月15日",
-      "tags": ["chinese", "annoucement"]
+      "tags": ["chinese", "announcement"]
     },
     {
       "title": "关于发布BCHN版本0.21.1的公告",
@@ -158,7 +158,7 @@
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
       "filename": "关于发布BCHN版本0-21-1的公告",
-      "tags": ["chinese", "annoucement"]
+      "tags": ["chinese", "announcement"]
     },
     {
       "title": "Anunciando Bitcoin Cash Node v0.21.1",
@@ -166,7 +166,7 @@
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
       "filename": "Anunciando-Bitcoin-Cash-Node-v0-21-1",
-      "tags": ["spanish", "annoucement"]
+      "tags": ["spanish", "announcement"]
     },
     {
       "title": "Announcing Bitcoin Cash Node v0.21.1",
@@ -174,7 +174,7 @@
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
       "filename": "Announcing-Bitcoin-Cash-Node-v0-21-1",
-      "tags": ["annoucement"]
+      "tags": ["announcement"]
     },
     {
       "title": "BCHN lead maintainer report 2020-04-15",
