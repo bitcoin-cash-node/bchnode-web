@@ -6,6 +6,8 @@ layout: layout.html
 <% set('date', '25 March 2020') %>
 <% set('author', 'Bitcoin Cash Node Team') %>
 
+Translations: - [中文](BCHN客户端关于BCH5月份升级的技术规范公告) - [português](Anúncio-d-BCHN-sobre-as-especificações-de-atualização-do-Bitcoin-Cash-BCH-Portuguêss)
+
 Today, the lead maintainer of Bitcoin Cash Node took a technical step to address an important issue relating to the project's need for an accurate specification of its consensus rules for the 15 May 2020 network upgrade.
 
 ### Background on the Bitcoin Cash network upgrades and specification
