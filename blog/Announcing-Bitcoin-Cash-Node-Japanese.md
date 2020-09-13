@@ -2,7 +2,7 @@
 layout: layout.html
 ---
 
-<% set('title', 'ビットコインキャッシュノード（Bitcoin Cash Node') %>
+<% set('title', 'ビットコインキャッシュノード（Bitcoin Cash Node)') %>
 <% set('date', '21 February 2020') %>
 <% set('author', 'emergent_reasons') %>
 
