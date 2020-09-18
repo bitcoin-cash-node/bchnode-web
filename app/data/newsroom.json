@@ -113,6 +113,13 @@
       "filename": "BCHN-Technical-Bulletin-2020-05-04"
     },
     {
+      "title": "Bitcoin Cash Node Korean 비트 코인 캐시 노드 한국어",
+      "date": "3 May 2020",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/thumbnail.png",
+      "filename": "Bitcoin-Cash-Node-Korean-비트-코인-캐시-노드-한국어"
+    },
+    {
       "title": "Informe del responsable de mantenimiento de BCHN 15-04-2020",
       "date": "29 April 2020",
       "author": "freeetrader",
@@ -183,6 +190,13 @@
       "filename": "BCHN客户端关于BCH5月份升级的技术规范公告"
     },
     {
+      "title": "Anúncio do BCHN sobre as especificações de atualização do Bitcoin Cash (BCH) - Português",
+      "date": "25 March 2020",
+      "author": "phabulu",
+      "img": "/static/thumbnail.png",
+      "filename": "Anúncio-d-BCHN-sobre-as-especificações-de-atualização-do-Bitcoin-Cash-BCH-Portuguêss"
+    },
+    {
       "title": "BCHN announcement regarding Bitcoin Cash upgrade specifications",
       "date": "25 March 2020",
       "author": "Bitcoin Cash Node Team",
@@ -218,11 +232,25 @@
       "filename": "march-2020-survey"
     },
     {
+      "title": "Pesquisa da comunidade Bitcoin Cash Node - março de 2020",
+      "date": "14 March 2020",
+      "author": "phabulu",
+      "img": "/static/thumbnail.png",
+      "filename": "março-2020-survey"
+    },
+    {
       "title": "BCHN lead maintainer report 2020-03-14",
       "date": "14 March 2020",
       "author": "freetrader",
       "img": "/static/thumbnail.png",
       "filename": "lead-maintainer-report-march-2020"
+    },
+    {
+      "title": "Bitcoin Cash Node - Portuguese",
+      "date": "02 March 2020",
+      "author": "phabulu",
+      "img": "/static/thumbnail.png",
+      "filename": "Bitcoin-Cash-Node-Portuguese"
     },
     {
       "title": "Bitcoin Cash Node 2020: planos para atualização de maio e adiante.",
@@ -244,6 +272,13 @@
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
       "filename": "Signatures-in-support-of-Bitcoin-Cash-Node"
+    },
+    {
+      "title": "ビットコインキャッシュノード（Bitcoin Cash Node)",
+      "date": "21 February 2020",
+      "author": "emergent_reasons",
+      "img": "/static/thumbnail.png",
+      "filename": "Announcing-Bitcoin-Cash-Node-Japanese"
     },
     {
       "title": "Bitcoin Cash Node客户端即将发布",

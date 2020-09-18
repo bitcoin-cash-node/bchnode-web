@@ -12,3 +12,6 @@ dist-lang/
 README.html
 app/static/css/style.css
 app/newsroom/*.html
+
+# Local Netlify folder
+.netlify

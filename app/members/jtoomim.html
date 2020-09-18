@@ -1,0 +1,46 @@
+{% extends 'base.njk' %}
+
+{% block title %}Jonathan Toomim | Bitcoin Cash Node{% endblock %}
+{% block description %}{% endblock %}
+
+{% block body %}
+    <section class="bg-dark">
+      <div class="container py-5">
+        <div class="row py-5 text-center text-md-left justify-content-center">
+          <div class="col-md-4 text-md-right">
+            <img class="rounded" src="/static/img/team/jtoomim.jpg" alt="Jonathan Toomim" width="200">
+          </div>
+          <div class="col-md-6 mt-5">
+            <h1 class="text-white font-weight-bold">Jonathan Toomim</h1>
+            <h4 class="text-white">Contributor, Independent BCH Developer</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container py-5">
+        <div class="row my-5 justify-content-center">
+          <div class="col-md-9 text-lg">
+             <p>Jonathan Toomim is an independent BCH developer, and an active contributor to the BCHN project.</p>
+
+             <p>He has been involved with the big block Bitcoin movement since 2015.<br>
+             He contributed as a junior developer to Bitcoin XT.</p>
+
+             <p>In December 2015, he presented data on <a href="https://youtu.be/EfuRTDcsWrk?t=8161">block propagation performance on a BIP101 testnet</a>.
+             After that, he surveyed miner opinions on preferred blocksizes in the <a href="https://www.reddit.com/r/Bitcoin/comments/3ygu5d/blocksize_consensus_census/">Blocksize Consensus Census</a>, and helped launch <a href="https://bitcoin.consider.it/">https://bitcoin.consider.it/</a> to richly represent users', developers', miners', and businesses' opinions on scaling proposals.<br>
+             In 2016, he cofounded Bitcoin Classic, an almost-successful attempt to increase the Bitcoin block size limit to 2 MB with a consensus hard fork.<br>
+             In 2018, he <a href="https://medium.com/@j_73307/block-propagation-data-from-bitcoin-cashs-stress-test-5b1d7d39a234">analyzed stress test data</a>, and came up with the <a href="https://medium.com/@j_73307/benefits-of-ltor-in-block-entropy-encoding-or-8d5b77cc2ab0">Xthinner block propagation protocol</a>.<br>
+             In 2019, he implemented a non-production-ready version of Xthinner and <a href="https://www.reddit.com/r/btc/comments/bgr143/xthinner_mainnet_compression_performance_stats/">ran it on mainnet</a>.
+             He also built a benchmark system that showed that up to <a href="https://www.youtube.com/watch?v=j5UvgfWVnYg">3,000 tx/sec</a> is possible with simple transactions on commodity hardware with a slightly modified version of Bitcoin ABC as long as networking isn't the bottleneck.
+
+             <p>His work on BCHN is mostly focused on scalability issues, like Xthinner and the O(n^2) transaction chain issue.</p>
+
+             <p>More information on Jonathan's work on BCH can be found in his Flipstarter campaign at <a href="https://flipstarter.toom.im/">https://flipstarter.toom.im/</a>.
+
+            <p class="mt-5"><a href="/team" class="text-dark text-decoration-none"><img src="/static/icons/arrow-left-circle.svg"> <span class="font-weight-bold">back</span></a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

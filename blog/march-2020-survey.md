@@ -6,6 +6,8 @@ layout: layout.html
 <% set('date', '14 March 2020') %>
 <% set('author', 'Bitcoin Cash Node Team') %>
 
+Translations: - [pt](março-2020-survey)
+
 ### Introducing the [BCHN Public Consultation System](https://gitlab.com/bitcoin-cash-node/bchn-public-consultation-system)
 
 Today I'm excited to launch something completely new with the [Bitcoin Cash Node](https://gitlab.com/bitcoin-cash-node/bchn-public-consultation-system) [_Public Consultation System_](https://gitlab.com/bitcoin-cash-node/bchn-public-consultation-system), or _BCHN PCS_ for short.
