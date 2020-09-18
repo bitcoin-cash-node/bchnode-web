@@ -30,7 +30,7 @@ $('.btn-tag-toggle').click(function() {
     $(this).siblings().removeClass('active');
   } else {
     if (!$('.btn-tag-toggle.active').length) {
-      $('.btn-tag-toggle-all').addClass('active');
+      $('.btn-tag-toggle-all').addClass('active').focus();
     } else {
       $('.btn-tag-toggle-all').removeClass('active');
     }
