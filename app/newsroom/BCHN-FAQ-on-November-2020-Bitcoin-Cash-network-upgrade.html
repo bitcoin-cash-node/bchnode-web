@@ -1,0 +1,112 @@
+{% extends 'base.njk' %}{% block title %}BCHN FAQ on November 2020 Bitcoin Cash network upgrade{% endblock %}{% block description %}{% endblock %}{% block body %}
+<section class="bg-dark">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col my-5 py-5 text-center">
+                <h1 class="text-white">BCHN FAQ on November 2020 Bitcoin Cash network upgrade</h1> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container py-6">
+        <div class="row justify-content-center">
+            <article class="col-md-10 col-lg-8">
+                <div class="d-flex align-items-center pb-5">
+                    <img src="/static/img/logomark.svg" alt="Logo" class="mr-3" height="40">
+                    <div>
+                        <div>by <strong>Bitcoin Cash Node Team</strong>
+                        </div>
+                        <div class="text-small text-muted">5 August 2020</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+
+                    </p>
+                    <div v-pre="">
+
+                        <p>This is a FAQ specifically on BCHN's position regarding the November 2020 Bitcoin Cash network upgrade and related topics.</p>
+                        <p>It is a document that is expected to incur some revision as we learn about new questions that the ecosystem may have. Please feel free to leave your questions in the comments.</p>
+                        <hr>
+                        <h3 id="1-what-proposal-is-bchn-backing-for-november-if-any-">1. What proposal is BCHN backing for November, if any?</h3>
+                        <p>BCHN backs the deployment of the aserti3-2d (<a href="https://read.cash/@jtoomim/bch-upgrade-proposal-use-asert-as-the-new-daa-8887b9c1">ASERT</a>) difficulty algorithm of Mark Lundeberg and Jonathan Toomim for the November upgrade.</p>
+                        <h3 id="2-would-you-consider-a-no-upgrade-for-november-">2. Would you consider a "no-upgrade" for November?</h3>
+                        <p>No, we do not support a "no upgrade" for November as we see the correction of the current DAA's problems as critical for the survival of Bitcoin Cash. The ASERT proposal has been evaluated against a wide range of contenders, including
+                            the recently announced Grasberg proposal, and has demonstrably outperformed them.</p>
+                        <h3 id="3-does-bchn-support-the-creation-of-a-new-coin-i-e-a-currency-split-">3. Does BCHN support the creation of a new coin (i.e. a currency split)?</h3>
+                        <p>No. We support a unified Bitcoin Cash ecosystem moving forward on the basis of a well-researched, tested proposal that performs measurably better than the alternatives.</p>
+                        <h3 id="4-is-bchn-going-to-abolish-automatic-replay-protection-aka-poison-pill-">4. Is BCHN going to abolish Automatic Replay Protection (aka poison pill)?</h3>
+                        <p>The intent of "Automatic Replay Protection" is to avoid un-upgraded nodes causing problems after a planned upgrade. It causes un-upgraded nodes to fork themselves off to a new network at the time of an upgrade.</p>
+                        <p>BCHN has a better way to accomplish the same intent by first ensuring that un-upgraded nodes notify the operator ahead of time, and second simply halting the un-upgraded node at the upgrade. Notification and shutdown are more actionable
+                            and save the operator the wasted time and money of mining or accidentally transacting on an empty chain.</p>
+                        <h3 id="5-has-anyone-asked-bchn-to-implement-historic-drift-correction-">5. Has anyone asked BCHN to implement historic drift correction?</h3>
+                        <p>No. Despite being in contact with pools, exchanges and many other businesses that use and build on Bitcoin Cash, no-one has ever asked BCHN for this feature.</p>
+                        <p>Moreover, the implications (longer block times & reduced mining reward) as recently considered by the ecosystem have shown strong and wide opposition to such a feature which negatively affects many users and would harm the reputation
+                            of the network.</p>
+                        <hr>
+                        <h3 id="links">Links</h3>
+                        <ul>
+                            <li>
+                                <p>Getting in touch with BCHN:</p>
+                                <ul>
+                                    <li>
+                                        <p>Website: <a href="https://bitcoincashnode.org">bitcoincashnode.org</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Development & support Slack chat invite link:</p>
+                                        <p><a href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA"><a href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA">https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA</a></a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Telegram: <code class="language-javascript">https://t dot me/bitcoincashnode</code> (there is a bridge channel to our Slack - sorry about the spaces in the URL, replace them with dots because readcash is not allowing
+                                            the URL otherwise)</p>
+                                    </li>
+                                    <li>
+                                        <p>IRC channel: Join <a href="/search?q=%23bchnode">#bchnode</a> on Freenode (we see messages on our Slack via an IRC bridge channel)</p>
+                                    </li>
+                                    <li>
+                                        <p>BCH Node WeChat QR code:</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <figure class="text-center">
+                            <img src="/static/img/newsroom/wechat-qr.jpg" class="img-fluid rounded w-50">
+                        </figure>
+
+                        <ul>
+                            <li>
+                                <p>Logs of our development Slack: <a href="http://logs.bchnode.org/"><a href="http://logs.bchnode.org/">http://logs.bchnode.org/</a></a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Main development repository on GitLab:</p>
+                                <p><a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node"><a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node">https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node</a></a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Easy download link via our website:</p>
+                                <p><a href="https://bitcoincashnode.org/download.html"><a href="https://bitcoincashnode.org/download.html">https://bitcoincashnode.org/download.html</a></a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Full releases on Github:</p>
+                                <p><a href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases"><a href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases">https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases</a></a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Donation address: <a href="https://bitcoincashnode.org/#donate"><a href="https://bitcoincashnode.org/#donate">https://bitcoincashnode.org/#donate</a></a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Follow us on Twitter: <a href="https://twitter.com/bitcoincashnode"><a href="https://twitter.com/bitcoincashnode">https://twitter.com/bitcoincashnode</a></a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+            </article>
+            </div>
+        </div>
+</section>{% endblock %}

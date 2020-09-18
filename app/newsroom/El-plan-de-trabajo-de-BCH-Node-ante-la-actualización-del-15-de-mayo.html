@@ -1,0 +1,124 @@
+{% extends 'base.njk' %}{% block title %}El plan de trabajo de «BCH Node» ante la actualización del 15 de mayo{% endblock %}{% block description %}{% endblock %}{% block body %}
+<section class="bg-dark">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col my-5 py-5 text-center">
+                <h1 class="text-white">El plan de trabajo de «BCH Node» ante la actualización del 15 de mayo</h1> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container py-6">
+        <div class="row justify-content-center">
+            <article class="col-md-10 col-lg-8">
+                <div class="d-flex align-items-center pb-5">
+                    <img src="/static/img/logomark.svg" alt="Logo" class="mr-3" height="40">
+                    <div>
+                        <div>by <strong>DarthRoison</strong>
+                        </div>
+                        <div class="text-small text-muted">03 March 2020</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+
+                    </p>
+                    <figure class="text-center">
+                        <img src="/static/img/newsroom/2020-03-22/Iy9nk8dcOb1tNhSPc6AbncqoAGA8ABhPuZPgB5W9.png" class="img-fluid rounded">
+                    </figure>
+
+                    <p><strong>Traducción de un fragmento del</strong>  <a href="Bitcoin-Cash-Node-2020-plans-for-May-upgrade-and-beyond"><strong>artículo en inglés original</strong></a>  <strong>de</strong>  <a href="https://read.cash/@bitcoincashnode/"><strong>bitcoincashnode</strong></a>
+                    </p>
+                    <p>Desde el lanzamiento del software el 27 de febrero de 2020, el equipo ha establecido un canal eficiente de Integración Continua (CI) y ha comenzado a revisar los <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/merge_requests/53">controles de calidad del código</a> existentes
+                        para que puedan ser refinados y ajustados sustancialmente a medida que avanza el desarrollo.</p>
+                    <p>El desarrollador líder se propone el uso de herramientas de análisis estático adicionales para reducir el riesgo de defectos de software. Le mantendremos informado sobre los desarrollos a ese respecto en publicaciones posteriores.</p>
+                    <p>Dado que se ha decidido el alcance de la versión de mayo, el equipo de Bitcoin Cash ahora se está centrando en los siguientes elementos:</p>
+                    <p><strong><ins>De cara al desarrollo de software</ins></strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <p>Asegurarse de que la documentación del usuario del proyecto esté actualizada y sea correcta (ya hemos solucionado varios <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/issues/24">problemas</a> allí).</p>
+                        </li>
+                        <li>
+                            <p>Completar la especificación faltante de la función de finalización automática (también conocida como "puntos de control continuos") introducida por Bitcoin ABC, una <em>brecha de especificación</em> que es relevante para el consenso
+                                y que plantea un obstáculo para que la implementación de otros clientes acceda al campo de minería de Bitcoin Cash.</p>
+                        </li>
+                        <li>
+                            <p>Poner en marcha un proceso de desarrollo completamente abierto y atractivo para el público y los nuevos desarrolladores, evaluadores y otros profesionales y aficionados que desean ayudar a BCH Node. ¡Creemos en "<em>no confíes, verifica</em> "!</p>
+                        </li>
+                        <li>
+                            <p>Identificar las <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/issues/35">brechas</a> existentes <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/issues/35">en las pruebas de software</a> , así como
+                                las deficiencias de las herramientas y métodos de verificación, y formular planes apropiados para mejorar la garantía de calidad.</p>
+                        </li>
+                        <li>
+                            <p>Monitoreo de los proyectos de Bitcoin Core y Bitcoin ABC en busca de <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/merge_requests/48">backports</a> que pueda necesitar Bitcoin Cash Node. Tenemos la intención
+                                de formalizar más este proceso: en este momento, los backports ocurren a discreción de nuestros desarrolladores senior, y cualquiera puede plantear un problema en nuestro <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/issues">Gitlab</a> para
+                                solicitar backports específicos.</p>
+                        </li>
+                        <li>
+                            <p>Configuración de procesos de creación y lanzamiento reproducibles más eficientes.</p>
+                        </li>
+                        <li>
+                            <p>Revisando nuestra infraestructura de proyecto (sembradoras, semillas) y buscando configurar una mejor forma de alojamiento de archivos para nuestros <a href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases">paquetes de lanzamiento</a>.</p>
+                        </li>
+                        <li>
+                            <p>Configuración de la implementación continua de nuestro proyecto a través de la integración de Gitlab/Docker con el fin de configurar pruebas adicionales, externas a Gitlab.</p>
+                        </li>
+                    </ul>
+                    <p><strong><ins>Organización y gestión de proyectos</ins></strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <p>Establecer nuestro proceso de soporte y contacto.</p>
+                        </li>
+                        <li>
+                            <p>Definir nuestro proceso de divulgación responsable.</p>
+                        </li>
+                        <li>
+                            <p>Establecer un proceso transparente y responsable para financiar el mantenimiento continuo y el desarrollo de BCH Node. Hasta el momento, hemos creado una <a href="https://read.cash/@bitcoincashnode/bitcoin-cash-node-2020-plans-for-may-upgrade-and-beyond-11af0b52#bad-link">cartera multi-firma (</a>que
+                                requiere de 3 de 5 firmas<a href="https://read.cash/@bitcoincashnode/bitcoin-cash-node-2020-plans-for-may-upgrade-and-beyond-11af0b52#bad-link">) con una dirección para donaciones principal</a> para la financiación general
+                                de las operaciones, incluido el personal, el equipo y la contratación. Apreciamos las donaciones, pero también haremos más anuncios sobre cómo tenemos la intención de participar en actividades de financiación colectiva
+                                y, potencialmente, compromisos de patrocinio de desarrollo con la industria.</p>
+                        </li>
+                        <li>
+                            <p>Definir funciones adicionales que el proyecto busca establecer, como el enlace profesional con usuarios clave de nuestro software y el compromiso con una base más amplia de usuarios de Bitcoin Cash. Tenemos la intención de
+                                responder a los requisitos de todo el ecosistema de Bitcoin Cash.</p>
+                        </li>
+                        <li>
+                            <p>Evaluar la cantidad de personal disponible para las tareas planificadas y elaborar un presupuesto apropiado para la próxima recaudación de fondos.</p>
+                        </li>
+                        <li>
+                            <p>Ayudar a establecer mejores procesos en todo el ecosistema para que los detalles y prioridades de la <a href="https://reference.cash/">especificación</a> general de BCH y la hoja de ruta respondan a las necesidades reales del
+                                ecosistema y <em>a la</em> investigación <em>basada en evidencia</em> .</p>
+                        </li>
+                    </ul>
+                    <p><strong><ins>Propuestas en cuanto a investigación</ins></strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <p>Estamos comenzando una evaluación para mejorar el algoritmo de ajuste de dificultad (DAA) con el fin de reducir la variación del tiempo de confirmación del bloque. Ya se ha realizado mucha investigación en este campo. No cambiaremos
+                                las reglas de validación de DAA en mayo. Sin embargo, queremos analizar de manera proactiva las posibles mejoras que podrían ser necesarias siempre que Bitcoin Cash tenga un hashrate relativamente bajo en comparación con
+                                BTC.</p>
+                        </li>
+                        <li>
+                            <p>La implementación de compromisos UTXO / <a href="https://eprint.iacr.org/2019/611.pdf">UtreeXO</a> como un paso crítico en el área del escalado y para posibilitar una sincronización y una verificación simplificada de pagos (SPV)
+                                más rápidas.</p>
+                        </li>
+                        <li>
+                            <p>El uso de <a href="https://blog.vermorel.com/journal/2019/1/9/merklix-tree-for-bitcoin.html">árboles de Merklix</a> para una sincronización más eficiente, especialmente en esquemas cómo los denominados "bloques débiles".</p>
+                        </li>
+                        <li>
+                            <p>La evaluación de algoritmos adaptativos de tamaño de bloque bajo varios escenarios. Se planifica como un proyecto de investigación para luego de que se hayan implementado otras mejoras para el escalado.</p>
+                        </li>
+                    </ul>
+                    <p>Planeamos emitir consegos dirigidos a agrupaciones mineras, plataformas de intercambio y otros usuarios de wallets antes de la actualización de Bitcoin Cash en mayo, recomendando ciertos procedimientos operativos, incluidos la migración,
+                        para aquellos que han estado usando software Bitcoin ABC hasta ahora y necesitan tomar medidas operativas para garantizar una actualización sin problemas.</p>
+                    <hr>
+                    <p><em>La imagen usada como portada se atribuye a</em>  <a href="https://read.cash/@Leandrodimarco"><em>Leandrodimarco</em></a>
+                    </p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>{% endblock %}

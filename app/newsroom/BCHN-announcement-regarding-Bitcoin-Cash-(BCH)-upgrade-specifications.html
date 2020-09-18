@@ -1,0 +1,72 @@
+{% extends 'base.njk' %}{% block title %}BCHN announcement regarding Bitcoin Cash (BCH) upgrade specifications{% endblock %}{% block description %}{% endblock %}{% block body %}
+<section class="bg-dark">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col my-5 py-5 text-center">
+                <h1 class="text-white">BCHN announcement regarding Bitcoin Cash (BCH) upgrade specifications</h1> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container py-6">
+        <div class="row justify-content-center">
+            <article class="col-md-10 col-lg-8">
+                <div class="d-flex align-items-center pb-5">
+                    <img src="/static/img/logomark.svg" alt="Logo" class="mr-3" height="40">
+                    <div>
+                        <div>by <strong>Bitcoin Cash Node Team</strong>
+                        </div>
+                        <div class="text-small text-muted">25 March 2020</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+
+                    </p>
+                    <p>Translations: - <a href="BCHN客户端关于BCH5月份升级的技术规范公告">中文</a> - <a href="Anúncio-d-BCHN-sobre-as-especificações-de-atualização-do-Bitcoin-Cash-BCH-Portuguêss">português</a>
+                    </p>
+                    <p>Today, the lead maintainer of Bitcoin Cash Node took a technical step to address an important issue relating to the project's need for an accurate specification of its consensus rules for the 15 May 2020 network upgrade.</p>
+                    <h3 id="background-on-the-bitcoin-cash-network-upgrades-and-specification">Background on the Bitcoin Cash network upgrades and specification</h3>
+                    <p>Since its creation in 2017, Bitcoin Cash has gone through regular network upgrades. These upgrades should be fully specified well in advance, to allow everyone to agree on, then implement and test the necessary changes.</p>
+                    <p>For this reason, there is a "feature freeze" three months before a network upgrade. By that date, all consensus rule changes for the upgrade are supposed to be completely specified, reviewed and accepted.</p>
+                    <h3 id="the-feature-freeze-for-the-may-upgrade-was-on-15-february-">The feature freeze for the May upgrade was on 15 February.</h3>
+                    <p><em>More than two weeks past that freeze date</em>, there has been an inclusion of the so-called "Infrastructure Funding Proposal" (IFP) - a highly controversial consensus rule change which impacts the economic incentives of Bitcoin
+                        Cash. Not only was this feature strongly opposed by many in the community, it is <em>not accepted by any other clients than Bitcoin ABC</em>, who appear to be treating the specification as their sole property.</p>
+                    <p>While strong opposition to the IFP has been expressed by the community, all protests about this unwanted feature have been ignored by the maintainers of the bitcoincash.org website which is incidentally hosted in the same repository
+                        that includes the upgrade specifications.</p>
+                    <p>BCHN is committed to reducing the risk of a chain split by providing node software which does not include the IFP. Given this unacceptable treatment of the common BCH specification, <strong>Bitcoin Cash Node is forced to maintain its own version</strong> of
+                        the upgrade specifications to accurately reflect the consensus rules of its software (absence of IFP equals no change to current BCH protocol).</p>
+                    <h3 id="location-of-our-upgrade-spec-repository">Location of our upgrade spec repository</h3>
+                    <p>The repository reflecting the protocol upgrade specifications as implemented or planned by Bitcoin Cash Node (BCHN) can be found at</p>
+                    <ul>
+                        <li><a href="https://gitlab.com/bitcoin-cash-node/bchn-sw/bitcoincash-upgrade-specifications.git"><a href="https://gitlab.com/bitcoin-cash-node/bchn-sw/bitcoincash-upgrade-specifications.git">https://gitlab.com/bitcoin-cash-node/bchn-sw/bitcoincash-upgrade-specifications.git</a></a>
+                        </li>
+                    </ul>
+                    <h3 id="further-notes-about-the-bchn-upgrade-specifications">Further notes about the BCHN upgrade specifications</h3>
+                    <p>At the time of writing, the only specification differences to bitcoincash.org were:</p>
+                    <ul>
+                        <li>
+                            <p>removal of inaccurate element: Infrastructure Funding Plan (IFP)</p>
+                        </li>
+                        <li>
+                            <p>increase of May 2020 specification version number to 1.0 (no longer DRAFT)</p>
+                        </li>
+                    </ul>
+                    <p>Please consult the <a href="https://gitlab.com/bitcoin-cash-node/bchn-sw/bitcoincash-upgrade-specifications/-/blob/master/README.md">README.md</a> file in the above repository for up-to-date status.</p>
+                    <p>No other changes to specification are planned by BCHN for May 2020.</p>
+                    <p>The specification in this repository is not considered "prescriptive" for anyone besides the BCHN project.</p>
+                    <p>It is considered descriptive and matches the upgrades planned by BCHN, and authoritative only for our project until such time as a good place can be agreed by the majority of BCH client projects for a common home to such "delta" upgrade
+                        specifications.</p>
+                    <p>The upgrade specifications are to be considered in the context of the overall Bitcoin Cash specification that is being developed (see e.g. <a href="https://reference.cash"><a href="https://reference.cash">https://reference.cash</a></a>).</p>
+                    <h3 id="future-plans">Future plans</h3>
+                    <p>We hope that a shared, collaboratively managed repository for Bitcoin Cash protocol specification, including changes proposed for the regular upgrades, can be established soon.</p>
+                    <p>The Bitcoin Cash Node maintainer has contacted lead developers of other BCH full node clients to discuss such a possibility.</p>
+                    <p><em>Cordially,</em>
+                    </p>
+                    <p>The Bitcoin Cash Node team.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>{% endblock %}
