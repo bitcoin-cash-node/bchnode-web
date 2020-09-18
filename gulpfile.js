@@ -6,9 +6,10 @@ let gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css'),
     nunjucksRender = require('gulp-nunjucks-render'),
     i18n = require('gulp-html-i18n'),
-    uglify = require('gulp-uglify'),
     data = require('gulp-data'),
     Techy = require('techy').gulp({root: 'blog/'}),
+    concat = require('gulp-concat'),
+    terser = require('gulp-terser'),
     reload = browserSync.reload;
 
 
@@ -67,14 +68,25 @@ gulp.task('copy-special', function(){
     .pipe(gulp.dest('dist/'))
 });
 
+// Concat and minify JavaScript
+gulp.task('js', function() {
+  const files = [
+    'node_modules/jquery/dist/jquery.slim.min.js',
+    'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+    'node_modules/aos/dist/aos.js',
+    'js/*.js'
+  ];
+  return gulp.src(files)
+    .pipe(concat('scripts.js'))
+    // Minify JS
+    .pipe(terser())
+    .pipe(gulp.dest('dist/static/js/'));
+});
+
 // Copy all static files
 gulp.task('copy-static', function(done){
   // Add AOS library from node_modules
   gulp.src('node_modules/aos/dist/aos.js')
-    .pipe(gulp.dest('dist/static/js/'));
-  // Minify JS
-  gulp.src('app/static/js/custom.js')
-    .pipe(uglify())
     .pipe(gulp.dest('dist/static/js/'));
   // Copy everything from app/static
   gulp.src('app/static/**/*.*', { ignore: 'app/static/js/custom.js' })
@@ -112,6 +124,8 @@ gulp.task('watch', function(done){
   gulp.watch('lang/**/*.yaml', gulp.series('i18n', 'reload'));
   // Watch Techy CMS files
   gulp.watch('blog/**/*.md', gulp.series('techy', 'nunjucks', 'i18n'));
+  // Watch JS files
+  gulp.watch('js/*.js', gulp.series('js', 'reload'));
   done();
 });
 
@@ -132,8 +146,8 @@ gulp.task('serve', function(done){
 
 // Default task
 gulp.task('default', gulp.series('clean', 'techy', 'sass', 'nunjucks', 'i18n',
-  'copy-static', 'copy-special', 'serve', 'watch'));
+  'copy-static', 'copy-special', 'js', 'serve', 'watch'));
 
 // Deployment task
 gulp.task('build', gulp.series('clean', 'techy', 'sass', 'nunjucks', 'i18n',
-  'copy-static', 'copy-special'));
+  'copy-static', 'copy-special', 'js'));

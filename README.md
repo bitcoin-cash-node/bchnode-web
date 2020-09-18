@@ -46,7 +46,7 @@ To add styles, edit the files in `/scss/` - use [Sass](https://sass-lang.com) if
 
 #### JavaScript
 
-Edit `/app/static/js/custom.js` *(this will change in the future)*. jQuery is available.
+JavaScript files are located in `/js/`. All files will be concatenated in alphabetical order unless specified otherwise.
 
 ## Writing an article
 

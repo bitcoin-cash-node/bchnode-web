@@ -5,112 +5,128 @@
       "date": "3 September 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "BCHN-Financial-Report-2020-09-03"
+      "filename": "BCHN-Financial-Report-2020-09-03",
+      "tags": ["financial-report"]
     },
     {
       "title": "BCHN v22.0.0版本发布公告",
       "date": "17 August 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "BCHNv22版本发布公告"
+      "filename": "BCHNv22版本发布公告",
+      "tags": ["chinese", "announcement"]
     },
     {
       "title": "Announcing Bitcoin Cash Node v22.0.0",
       "date": "17 August 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "Announcing-Bitcoin-Cash-Node-v22-0-0"
+      "filename": "Announcing-Bitcoin-Cash-Node-v22-0-0",
+      "tags": ["announcement"]
     },
     {
       "title": "BCHN就11月份BCH升级的常见问题集锦",
       "date": "12 August 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "BCHN就11月份BCH升级的常见问题集锦"
+      "filename": "BCHN就11月份BCH升级的常见问题集锦",
+      "tags": ["chinese", "faq"]
     },
     {
       "title": "BCHN FAQ on November 2020 Bitcoin Cash network upgrade",
       "date": "5 August 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "BCHN-FAQ-on-November-2020-Bitcoin-Cash-network-upgrade"
+      "filename": "BCHN-FAQ-on-November-2020-Bitcoin-Cash-network-upgrade",
+      "tags": ["faq"]
     },
     {
       "title": "BCHN Survey of Chinese Ecosystem about DAA Change in November",
       "date": "12 July 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "BCHN-Survey-of-Chinese-Ecosystem-about-DAA-Change-in-November"
+      "filename": "BCHN-Survey-of-Chinese-Ecosystem-about-DAA-Change-in-November",
+      "tags": ["survey"]
     },
     {
       "title": "BCHN Financial Report 2020-07-07",
       "date": "7 July 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "BCHN-Financial-Report-2020-07-07"
+      "filename": "BCHN-Financial-Report-2020-07-07",
+      "tags": ["financial-report"]
     },
     {
       "title": "BCHN 首席维护者报告（2020年6月15日）",
       "date": "17 June 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "BCHN 首席维护者报告-2020年6月15日"
+      "filename": "BCHN 首席维护者报告-2020年6月15日",
+      "tags": ["chinese", "survey"]
     },
     {
       "title": "Bitcoin Cash Node Community Survey - June 2020",
       "date": "17 June 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "survey-june-2020"
+      "filename": "survey-june-2020",
+      "tags": ["survey"]
     },
     {
       "title": "BCHN lead maintainer report 2020-06-15",
       "date": "15 June 2020",
       "author": "freeetrader",
       "img": "/static/thumbnail.png",
-      "filename": "BCHN-lead-maintainer-report-2020-06-15"
+      "filename": "BCHN-lead-maintainer-report-2020-06-15",
+      "tags": ["maintainer-report"]
     },
     {
       "title": "Bitcoin Cash Node: Vision and Objectives",
       "date": "12 June 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "Bitcoin-Cash-Node-Vision-and-Objectives"
+      "filename": "Bitcoin-Cash-Node-Vision-and-Objectives",
+      "tags": ["announcement"]
     },
     {
       "title": "BCHN welcomes Tracy Chen as Representative",
       "date": "4 June 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/img/team/tracy_chen.jpg",
-      "filename": "BCHN-welcomes-Tracy-Chen-as-Representative"
+      "filename": "BCHN-welcomes-Tracy-Chen-as-Representative",
+      "tags": ["announcement"]
     },
     {
       "title": "BCHN Financial Report 2020-06-03",
       "date": "3 June 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "BCHN-Financial-Report-2020-06-03"
+      "filename": "BCHN-Financial-Report-2020-06-03",
+      "tags": ["financial-report"]
     },
     {
       "title": "关于发布BCHN版本0.21.2的公告",
       "date": "20 May 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "关于发布BCHN版本0-21-2的公告"
+      "filename": "关于发布BCHN版本0-21-2的公告",
+      "tags": ["chinese", "announcement"]
     },
     {
       "title": "Announcing Bitcoin Cash Node v0.21.2",
       "date": "20 May 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "Announcing-Bitcoin-Cash-Node-v0-21-2"
+      "filename": "Announcing-Bitcoin-Cash-Node-v0-21-2",
+      "tags": ["announcement"]
     },
     {
       "title": "BCHN Technical Bulletin 2020-05-04",
       "date": "4 May 2020",
       "author": "Calin Culianu",
       "img": "/static/thumbnail.png",
-      "filename": "BCHN-Technical-Bulletin-2020-05-04"
+      "filename": "BCHN-Technical-Bulletin-2020-05-04",
+      "tags": ["technical-bulletin"]
     },
     {
       "title": "Bitcoin Cash Node Korean 비트 코인 캐시 노드 한국어",
@@ -124,70 +140,80 @@
       "date": "29 April 2020",
       "author": "freeetrader",
       "img": "/static/img/unsplash/city-complete.jpg",
-      "filename": "Informe-del-responsable-de-mantenimiento-de-BCHN-15-04-2020"
+      "filename": "Informe-del-responsable-de-mantenimiento-de-BCHN-15-04-2020",
+      "tags": ["spanish"]
     },
     {
       "title": "BCHN flipstarted - thank you to the community!",
       "date": "27 April 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/img/unsplash/city-complete.jpg",
-      "filename": "bchn-flipstarted"
+      "filename": "bchn-flipstarted",
+      "tags": ["announcement"]
     },
     {
       "title": "BCHN首席开发者维护工作报告（2020年4月15日）",
       "date": "22 April 2020",
       "author": "freetrader",
       "img": "/static/img/unsplash/city-complete.jpg",
-      "filename": "BCHN首席开发者维护工作报告2020年4月15日"
+      "filename": "BCHN首席开发者维护工作报告2020年4月15日",
+      "tags": ["chinese", "announcement"]
     },
     {
       "title": "关于发布BCHN版本0.21.1的公告",
       "date": "17 April 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "关于发布BCHN版本0-21-1的公告"
+      "filename": "关于发布BCHN版本0-21-1的公告",
+      "tags": ["chinese", "announcement"]
     },
     {
       "title": "Anunciando Bitcoin Cash Node v0.21.1",
       "date": "16 April 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "Anunciando-Bitcoin-Cash-Node-v0-21-1"
+      "filename": "Anunciando-Bitcoin-Cash-Node-v0-21-1",
+      "tags": ["spanish", "announcement"]
     },
     {
       "title": "Announcing Bitcoin Cash Node v0.21.1",
       "date": "16 April 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "Announcing-Bitcoin-Cash-Node-v0-21-1"
+      "filename": "Announcing-Bitcoin-Cash-Node-v0-21-1",
+      "tags": ["announcement"]
     },
     {
       "title": "BCHN lead maintainer report 2020-04-15",
       "date": "16 April 2020",
       "author": "freeetrader",
       "img": "/static/thumbnail.png",
-      "filename": "BCHN-lead-maintainer-report-2020-04-15"
+      "filename": "BCHN-lead-maintainer-report-2020-04-15",
+      "tags": ["maintainer-report"]
     },
     {
       "title": "BCHN客户端首席维护者的工作汇报（2020-03-31）",
       "date": "31 March 2020",
       "author": "freetrader",
       "img": "/static/thumbnail.png",
-      "filename": "BCHN客户端首席维护者的工作汇报-2020-03-31"
+      "filename": "BCHN客户端首席维护者的工作汇报-2020-03-31",
+      "tags": ["chinese", "maintainer-report"]
     },
     {
       "title": "BCHN lead maintainer report 2020-03-31",
       "date": "31 March 2020",
       "author": "freetrader",
       "img": "/static/thumbnail.png",
-      "filename": "lead-maintainer-report-march-31-2020"
+      "filename": "lead-maintainer-report-march-31-2020",
+      "tags": ["maintainer-report"]
     },
     {
       "title": "BCHN客户端关于BCH5月份升级的技术规范公告",
       "date": "27 March 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "BCHN客户端关于BCH5月份升级的技术规范公告"
+      "filename": "BCHN客户端关于BCH5月份升级的技术规范公告",
+      "tags": ["chinese", "announcement"]
     },
     {
       "title": "Anúncio do BCHN sobre as especificações de atualização do Bitcoin Cash (BCH) - Português",
@@ -201,35 +227,40 @@
       "date": "25 March 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "BCHN-announcement-regarding-Bitcoin-Cash-(BCH)-upgrade-specifications"
+      "filename": "BCHN-announcement-regarding-Bitcoin-Cash-(BCH)-upgrade-specifications",
+      "tags": ["announcement"]
     },
     {
       "title": "Bitcoin Cash Node 2020: plans for May upgrade and beyond",
       "date": "22 March 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "Bitcoin-Cash-Node-2020-plans-for-May-upgrade-and-beyond"
+      "filename": "Bitcoin-Cash-Node-2020-plans-for-May-upgrade-and-beyond",
+      "tags": ["announcement"]
     },
     {
       "title": "BCHN的5月份升级规划和未来工作计划",
       "date": "18 March 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "BCHN的5月份升级规划和未来工作计划"
+      "filename": "BCHN的5月份升级规划和未来工作计划",
+      "tags": ["chinese", "announcement"]
     },
     {
       "title": "BCHN客户端首席维护者的工作汇报 (2020-03-14)",
       "date": "17 March 2020",
       "author": "freetrader",
       "img": "/static/thumbnail.png",
-      "filename": "BCHN客户端首席维护者的工作汇报-2020-03-14"
+      "filename": "BCHN客户端首席维护者的工作汇报-2020-03-14",
+      "tags": ["chinese", "maintainer-report"]
     },
     {
       "title": "Bitcoin Cash Node Community Survey - March 2020",
       "date": "14 March 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "march-2020-survey"
+      "filename": "march-2020-survey",
+      "tags": ["survey"]
     },
     {
       "title": "Pesquisa da comunidade Bitcoin Cash Node - março de 2020",
@@ -243,7 +274,8 @@
       "date": "14 March 2020",
       "author": "freetrader",
       "img": "/static/thumbnail.png",
-      "filename": "lead-maintainer-report-march-2020"
+      "filename": "lead-maintainer-report-march-2020",
+      "tags": ["maintainer-report"]
     },
     {
       "title": "Bitcoin Cash Node - Portuguese",
@@ -264,7 +296,8 @@
       "date": "26 February 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "Signatures-in-support-of-Bitcoin-Cash-Node"
+      "filename": "Signatures-in-support-of-Bitcoin-Cash-Node",
+      "tags": ["announcement"]
     },
     {
       "title": "ビットコインキャッシュノード（Bitcoin Cash Node)",
@@ -278,14 +311,16 @@
       "date": "20 February 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "Bitcoin-Cash-Node客户端即将发布"
+      "filename": "Bitcoin-Cash-Node客户端即将发布",
+      "tags": ["chinese", "announcement"]
     },
     {
       "title": "Announcing Bitcoin Cash Node",
       "date": "20 February 2020",
       "author": "Bitcoin Cash Node Team",
       "img": "/static/thumbnail.png",
-      "filename": "Announcing-Bitcoin-Cash-Node"
+      "filename": "Announcing-Bitcoin-Cash-Node",
+      "tags": ["announcement"]
     }
   ]
 }

@@ -32,12 +32,14 @@
     "gulp-newer": "^1.4.0",
     "gulp-nunjucks-render": "^2.2.3",
     "gulp-sass": "^4.1.0",
-    "gulp-uglify": "^3.0.2",
     "minimist": "^1.2.5",
     "node-sass": "^4.14.1",
     "pattern.css": "^1.0.0"
   },
   "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-terser": "^1.4.0",
+    "jquery": "^3.5.1",
     "techy": "^1.2.5"
   }
 }

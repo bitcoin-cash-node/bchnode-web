@@ -16,31 +16,63 @@
 
 <section class="bg-dark">
   <div class="container">
+    {% set tagMaster = [] %}
+    {% for article in articles %}
+      {% for tag in article.tags %}
+        {% if tag not in tagMaster %}
+          {% set tagMaster = (tagMaster.push(tag),tagMaster) %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    {% if tagMaster|length > 1 %}
+      <div class="mb-5">
+        <button class="btn btn-outline-light btn-sm btn-tag-toggle btn-tag-toggle-all active m-1">All <span class="sr-only">articles</span></button>
+        {% for t in tagMaster %}
+          <button class="btn btn-outline-light btn-sm btn-tag-toggle m-1 text-capitalize" data-tag-target="tag-{{t}}">{{t|replace('-',' ')}} <span class="sr-only">articles</span></button>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <div class="collapse collapse-tag-error">
+      <div class="row py-3">
+        <div class="col-10 col-md-11">
+          <div class="card flex-md-row no-gutters bg-light text-dark">
+            <div class="card-body d-flex flex-column col-auto p-4">
+              <p class="mb-0">There are no articles that match your selection.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     {% for article in articles %}
-    <div class="row my-6">
-      <div class="col-10 col-md-11">
-        <div class="pattern-dots-sm text-white">
-          <div class="card flex-md-row no-gutters bg-light text-dark" style="transform:translate(30px, -30px);">
-            <a href="{{ article.filename }}" class="col-md-4">
-              <img src="{{ article.img }}" alt="Thumbnail" class="card-img rounded-0 fit-cover">
-            </a>
-            <div class="card-body d-flex flex-column col-auto p-4">
-              <div class="d-flex justify-content-between mb-3">
-                <div class="text-small d-flex">
-                  <div class="mr-2">
-                    Article
-                  </div>
-                  <span class="text-muted">{{ article.date }}</span>
-                </div>
-              </div>
-              <a href="{{ article.filename }}" class="flex-grow-1">
-                <h3>{{ article.title }}</h3>
+    <div class="collapse show collapse-tag{% for tag in article.tags %} tag-{{ tag }}{% endfor %}">
+      <div class="row py-3 py-md-4 py-lg-5">
+        <div class="col-10 col-md-11">
+          <div class="pattern-dots-sm text-white">
+            <div class="card flex-md-row no-gutters bg-light text-dark" style="transform:translate(30px, -30px);">
+              <a href="{{ article.filename }}" class="col-md-4">
+                <img src="{{ article.img }}" width="1200" height="675" alt="{{ article.title }} Thumbnail" class="card-img rounded-0 fit-cover">
               </a>
-              <div class="d-flex align-items-center mt-3">
-                <img src="/static/img/logomark.svg" alt="Logo" class="mr-3" height="40">
-                <div>
-                  by <strong>{{ article.author }}</strong>
+              <div class="card-body d-flex flex-column col-auto p-4">
+                <div class="d-flex justify-content-between mb-3">
+                  <div class="text-small d-flex">
+                    <div class="mr-2">
+                      {% for tag in article.tags %}
+                        <span class="text-capitalize">{{ tag|replace('-',' ') }} {% if not loop.last %}-{% endif %}</span>
+                      {% endfor %}
+                    </div>
+                    <span class="text-muted">{{ article.date }}</span>
+                  </div>
+                </div>
+                <a href="{{ article.filename }}" class="flex-grow-1">
+                  <h3>{{ article.title }}</h3>
+                </a>
+                <div class="d-flex align-items-center mt-3">
+                  <img class="mr-3" src="/static/img/logomark.svg" width="48" height="40" alt="">
+                  <div>
+                    by <strong>{{ article.author }}</strong>
+                  </div>
                 </div>
               </div>
             </div>
