@@ -37,6 +37,7 @@
     "pattern.css": "^1.0.0"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "gulp-concat": "^2.6.1",
     "gulp-terser": "^1.4.0",
     "jquery": "^3.5.1",
