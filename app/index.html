@@ -6,7 +6,7 @@
 {% block body %}
 
 <section class="bg-dark">
-  <div class="container py-7">
+  <div class="container pt-5 pt-md-6 pb-7">
     <div class="row pb-4">
       <div class="col">
         <!-- Logo -->
@@ -23,11 +23,14 @@
 
     <!-- Button -->
     <div class="row">
-      <div class="col text-center">
+      <div class="col-md-6 text-center text-md-right">
         <a class="btn btn-primary btn-lg rounded-pill" href="/$( _lang_ )$/download.html" data-aos="fade-up" data-aos-delay="1400">
           $( index.download )$ <small>v22.0.0</small>
         </a>
-        <a class="ml-2 btn btn-outline-light btn-lg rounded-pill" href="https://youtu.be/opebV2y70Dw" data-aos="fade-up" data-aos-delay="1500" data-fancybox>Watch video</a>
+      </div>
+
+      <div class="col-md-6 text-center text-md-left mt-3 mt-md-0">
+        <a class="btn btn-outline-light btn-lg rounded-pill" href="https://youtu.be/opebV2y70Dw" data-aos="fade-up" data-aos-delay="1500" data-fancybox>{% include "icons/play.svg" %} $( index.video-btn )$</a>
       </div>
     </div>
     <!-- /Button -->
