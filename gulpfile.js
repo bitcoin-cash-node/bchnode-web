@@ -74,6 +74,7 @@ gulp.task('js', function() {
     'node_modules/jquery/dist/jquery.slim.min.js',
     'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
     'node_modules/aos/dist/aos.js',
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
     'js/*.js'
   ];
   return gulp.src(files)
@@ -88,8 +89,14 @@ gulp.task('copy-static', function(done){
   // Add AOS library from node_modules
   gulp.src('node_modules/aos/dist/aos.js')
     .pipe(gulp.dest('dist/static/js/'));
+  // Add Fancybox CSS
+  gulp.src(['app/static/css/style.css',
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css'])
+    .pipe(concat('style.css'))
+    .pipe(gulp.dest('dist/static/css/'))
   // Copy everything from app/static
-  gulp.src('app/static/**/*.*', { ignore: 'app/static/js/custom.js' })
+  gulp.src('app/static/**/*.*', {ignore: ['app/static/js/custom.js',
+                                          'app/static/css/*']})
     .pipe(gulp.dest('dist/static/'));
   done();
 });
