@@ -1,5 +1,6 @@
 ---
 download: 下载
+video-btn: 团队介绍
 release-notes: 发布说明
 initiative:
   parag1: 比特币现金节点项目自2020年2月以来一直为比特币现金(BCH)网络提供高质量的全节点软件。
@@ -36,4 +37,4 @@ goals:
     goal1: 为了成为世界上最好的货币，BCH必须保持无需许可、有用、人人都用得起的状态，我们将持续努力，并提高人们对此的认知。
 gitlab: 我们的Gitlab页面
 collab: 合作开发
-goals: 我们的目标
+see-goals: 我们的目标
