@@ -36,17 +36,21 @@ Hit `ctrl + C` to stop the server.
 Use the coding style recommended by [codeguide.co](https://codeguide.co).  
 Open issues and pull requests at this repo.
 
-#### HTML
+##### HTML
 
 HTML files are found in `/app/`.
 
-#### CSS
+##### CSS
 
 To add styles, edit the files in `/scss/` - use [Sass](https://sass-lang.com) if possible (regular CSS will work too).
 
-#### JavaScript
+##### JavaScript
 
 JavaScript files are located in `/js/`. All files will be concatenated in alphabetical order unless specified otherwise.
+
+##### Version number
+
+Simply edit the `latest` version number in `/app/data/versions.json` and the download links will automatically update.
 
 ## Writing an article
 
