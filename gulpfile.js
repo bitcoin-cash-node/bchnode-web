@@ -42,6 +42,10 @@ gulp.task('nunjucks', function(){
   .pipe(data(function() {
     return require('./app/data/newsroom.json')
   }))
+  // Adds data from versions.json
+  .pipe(data(function() {
+    return require('./app/data/versions.json')
+  }))
   // Renders template with nunjucks
   .pipe(nunjucksRender({
     path: ['app/templates/']
