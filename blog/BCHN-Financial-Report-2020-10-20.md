@@ -216,9 +216,3 @@ Flipstarter funding proposal:
 *   Donation address: [https://bitcoincashnode.org/#donate](https://bitcoincashnode.org/#donate)
 
 Follow us on Twitter: [https://twitter.com/bitcoincashnode](https://twitter.com/bitcoincashnode)
-
-* * *
-
-Image credits:
-
-*   Lead background image based on [work by Gerd Altmann](https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5180477) from [Pixabay](https://pixabay.com)
