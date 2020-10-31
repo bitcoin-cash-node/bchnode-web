@@ -158,7 +158,7 @@ Flipstarter funding proposal:
 
 *   [Spanish, 1.1](https://gitlab.com/bitcoin-cash-node/bchn-project-management/bchn-pm-public/-/blob/master/finance/funding/campaigns/2020-q2-flipstarter/proposal/proposal-es.mediawiki) (mediawiki)
 
-**Getting in touch with BCHN:**
+Getting in touch with BCHN:
 
 *   Website: [https://bitcoincashnode.org](https://bitcoincashnode.org)
 
@@ -186,7 +186,7 @@ Flipstarter funding proposal:
 
 *   Donation address: [https://bitcoincashnode.org/#donate](https://bitcoincashnode.org/#donate)
 
-Follow us on Twitter: [https://twitter.com/bitcoincashnode](https://twitter.com/bitcoincashnode)
+*   Follow us on Twitter: [https://twitter.com/bitcoincashnode](https://twitter.com/bitcoincashnode)
 
 * * *
 
