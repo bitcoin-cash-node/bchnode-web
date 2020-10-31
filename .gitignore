@@ -1,8 +1,11 @@
 # local env
 .DS_Store
+**/*.swap
+**/*.swp
 
 # node
 node_modules
+package-lock.json
 
 # dist
 dist/
