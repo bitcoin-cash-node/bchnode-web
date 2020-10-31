@@ -197,7 +197,7 @@ Flipstarter funding proposal:
 
 *   Telegram: https://t.me/bitcoincashnode (there is a bridge channel to our Slack)
 
-*   IRC channel: Join [#bchnode](/search?q=%23bchnode) on Freenode (we see messages on our Slack via an IRC bridge channel)
+*   IRC channel: Join **#bchnode** on Freenode (we see messages on our Slack via an IRC bridge channel)
 
 *   Logs of our development Slack: [http://logs.bchnode.org/](http://logs.bchnode.org/)
 
