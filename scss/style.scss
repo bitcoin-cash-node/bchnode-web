@@ -12,6 +12,13 @@
   background-color: $lighter-dark;
 }
 
+.bg-info-gradient {
+  background: $primary;
+  background: -webkit-linear-gradient(left, $primary, $yellow);
+  background: -moz-linear-gradient(left, $primary, $yellow);
+  background: linear-gradient(to right, $primary, $yellow);
+}
+
 .alert {
   border: 1px solid $danger;
 }
