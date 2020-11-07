@@ -1,0 +1,9 @@
+// Colors
+
+$color-circle-size: 65px;
+
+.color-cirlce {
+  height: $color-circle-size;
+  width: $color-circle-size;
+  border-radius: 50%;
+}

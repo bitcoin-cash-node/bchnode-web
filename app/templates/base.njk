@@ -66,6 +66,7 @@
                 <a class="dropdown-item" href="/$( _lang_ )$/team">$( navbar.team )$</a>
                 <a class="dropdown-item" href="/$( _lang_ )$/goals">$( navbar.goals )$</a>
                 <a class="dropdown-item" href="/$( _lang_ )$/newsroom">$( navbar.newsroom )$</a>
+                <a class="dropdown-item" href="/$( _lang_ )$/media">$( navbar.media )$</a>
               </div>
             </div>
           </li>
@@ -107,63 +108,7 @@
     {% block body %}{% endblock %}
   </main>
 
-  <footer class="footer bg-dark py-6 text-a-white text-light">
-    <div class="container g">
-      <div class="row">
-        <!-- Organization -->
-        <div class="col-6 col-md-3 mb-4 mb-md-0">
-          <div class="h4 text-white">$( base.org )$</div>
-          <ul class="list-unstyled">
-            <li>
-              <a class="text-muted" href="/$( _lang_ )$/team">$( navbar.team )$</a>
-            </li>
-            <li>
-              <a class="text-muted" href="/$( _lang_ )$/newsroom">$( navbar.newsroom )$</a>
-            </li>
-            <li>
-              <a class="text-muted" href="https://gitlab.com/bitcoin-cash-node/">GitLab</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Navigate -->
-        <div class="col-6 col-md-3 mb-4 mb-md-0">
-          <div class="h4 text-white">$( base.nav )$</div>
-          <ul class="list-unstyled">
-            <li>
-              <a class="text-muted" href="https://docs.bitcoincashnode.org">$( navbar.docs )$</a>
-            </li>
-            <li>
-              <a class="text-muted" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">$( navbar.source )$</a>
-            </li>
-            <li>
-              <a class="text-muted" href="/$( _lang_ )$/download.html">$( index.download )$</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Social -->
-        <div class="col-6 col-md-3 mb-4 mb-md-0">
-          <div class="h4 text-white">$( base.social )$</div>
-          <ul class="list-inline social">
-            <li>
-              <a target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA" class="text-muted">Slack</a>
-            </li>
-            <li>
-              <a target="_blank" href="https://twitter.com/bitcoincashnode" class="text-muted">Twitter</a>
-            </li>
-            <li>
-              <a target="_blank" href="https://t.me/bitcoincashnode" class="text-muted">Telegram</a>
-            </li>
-          </ul>
-        </div>
-        <!--  -->
-        <div class="col-6 col-md-3 text-lg-right">
-          <a href="/">
-            <img src="/static/img/logomark.svg" alt="Logo" height="50">
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  {% include "footer.njk" %}
 
   <!-- JavaScript -->
   <script src="/static/js/scripts.js"></script>
