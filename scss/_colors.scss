@@ -1,0 +1,21 @@
+// Colors
+
+$color-circle-size: 65px;
+
+.color-cirlce {
+  height: $color-circle-size;
+  width: $color-circle-size;
+  border-radius: 50%;
+}
+
+.bg {
+  &-yellow {
+    background-color: $yellow;
+  }
+  &-almost-white {
+    background-color: #F2F2F2;
+  }
+  &-almost-black {
+    background-color: #333333;
+  }
+}

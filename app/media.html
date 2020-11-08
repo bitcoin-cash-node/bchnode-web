@@ -1,0 +1,57 @@
+{% extends 'base.njk' %}
+
+{% block title %}Media kit - Bitcoin Cash Node{% endblock %}
+{% block description %}{% endblock %}
+
+{% block body %}
+<section class="bg-dark">
+  <div class="container">
+    <div class="row pb-3">
+      <div class="col my-5 text-center text-md-left">
+        <h1 class="hero-title">$( media.title )$</h1>
+
+        <p class="mt-4"><a class="btn btn-primary" href="/static/img/bchn-mediakit.zip">$( media.download )$ {% include "icons/download.svg" %}</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-lighter-dark text-white">
+  <div class="container py-6">
+
+    <!-- Colors -->
+    <h2>$( media.colors )$</h2>
+    <div class="row mt-5">
+      <div class="col-4 col-lg-3">
+        <div class="bg-primary color-cirlce"></div>
+        <span>#A31C37</span>
+      </div>
+      <div class="col-4 col-lg-3">
+        <div class="bg-secondary color-cirlce"></div>
+        <p>#F15A24</p>
+      </div>
+      <div class="col-4 col-lg-3">
+        <div class="bg-yellow color-cirlce"></div>
+        <p>#FBB03B</p>
+      </div>
+      <div class="col-4 col-lg-3">
+        <div class="bg-almost-black color-cirlce"></div>
+        <p>#333333</p>
+      </div>
+      <div class="col-4 col-lg-3">
+        <div class="bg-almost-white color-cirlce"></div>
+        <p>#F2F2F2</p>
+      </div>
+    </div>
+
+    <!-- Logos -->
+    <h2 class="mt-5">$( media.logo )$</h2>
+    <div class="row mt-5">
+      <div class="col-md-5">
+        <img src="/static/img/logo-white.svg" class="img-fluid">
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}
