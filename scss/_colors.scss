@@ -8,6 +8,14 @@ $color-circle-size: 65px;
   border-radius: 50%;
 }
 
-.bg-yellow {
-  background-color: $yellow;
+.bg {
+  &-yellow {
+    background-color: $yellow;
+  }
+  &-almost-white {
+    background-color: #F2F2F2;
+  }
+  &-almost-black {
+    background-color: #333333;
+  }
 }
