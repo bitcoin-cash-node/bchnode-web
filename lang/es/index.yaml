@@ -16,17 +16,17 @@ donate:
 vision:
   title: La visión de Bitcoin Cash Node
   parag1: Un nodo profesional y amigable hacia los mineros que resuelve problemas prácticos para Bitcoin Cash.
-  parag2: Our development process is transparent, evidence-driven and responsive to ecosystem needs, resulting in software that is performant, reliable and predictable.
-  parag3: We strongly believe in building an ecosystem that has no single points of failure, and will collaborate to make that a reality.
+  parag2: Nuestro proceso de desarrollo es transparente, basado en evidencias y responsivo a las necesidades del ecosistema, resultando en un software que es eficiente, confiable y predecible.
+  parag3: Creemos firmemente en la construcción de un ecosistema que no tenga punto únicos de falla, y colaboraremos para hacerlo realidad.
 goals:
-  title: Objectives
+  title: Objetivos
   shortterm:
-    title: Short term
-    goal1: Establish a professional mining node which listens to feedback and delivers measurable improvements.
-    goal2: Provide well-researched proposals for consensus rule enhancements regarding DAA, 0-conf and script improvements.
-    goal3: Lead by example with specification-driven development that enables greater mining node diversity and increases BCH's resistance to capture.
+    title: Corto plazo
+    goal1: Establecer un nodo de minería profesional que escuche las necesidades del ecosistema y ofrezca mejoras mensurables.
+    goal2: Proporcionar propuestas adecuadamente investigadas para mejorar las reglas de consenso en relación a DAA, 0-conf y mejoras de script.
+    goal3: Liderar con el ejemplo según un desarrollo basado en especificaciones que permita una mayor diversidad de nodos mineros y aumente la resistencia de BCH a la captura.
   mediumterm:
-    title: Medium term
+    title: Mediano plazo
     goal1: Demonstrate sustainable client development based on wide ecosystem input and a transparent, voluntary funding model.
     goal2: Demonstrate evidence-based, collaborative decision making on consensus changes.
     goal3: Maintain and expand network effect where possible.
