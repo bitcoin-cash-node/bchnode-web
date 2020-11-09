@@ -30,11 +30,11 @@ goals:
     goal1: Demonstrere bærekraftig klient-utvikling basert på bred tilbakemelding fra økosystemet og gjennomsiktig, frivillig finansieringsmodell.
     goal2: Demonstrere bevis-basert beslutningstaking i samarbeid om consensus-endringer.
     goal3: Oppretthold og utvide nettverkseffekten hvor det lar seg gjøre.
-    goal4: Make progress on the scaling work for global adoption through both processing and network performance improvements.
-    goal5: Cooperate on specification and testing initiatives to diversify the node landscape, stimulate broader participation and protect the BCH network from catastrophic failures.
+    goal4: Gjøre fremdrift på skalringsarbeid for verdensomspennende bruk gjennom forbedringer på både prosesserings- og nettverksytelse.
+    goal5: Samarbeide om spesifikasjoner og initiativ til testing for å diversifisere node-landskapet, stimulere til større deltakelse og beskytte BCH-nettverket mot katastrofale feil.
   longterm:
     title: På lang sikt
-    goal1: Raise awareness that BCH must remain permissionless, useful and affordable to use in order to become the best money in the world.
+    goal1: Synliggjøre at BCH må forbli permissionless, nyttig og rimelig i bruk for å bli til beste penger i verden.
 gitlab: Se vårt Gitlab-repo
 collab: Utvikling i samarbeid
 see-goals: Se våre mål
