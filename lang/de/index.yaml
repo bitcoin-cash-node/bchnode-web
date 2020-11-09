@@ -11,8 +11,8 @@ irc:
   text: 'Treten Sie #bchnode auf Freenode bei.'
 donate:
   title: Spenden
-  parag1: 3 von 5 Multisignaturadresse in Besitz von Teammitgliedern wird zur allgemeinen Finanzierung von BCH Node-Operationen, einschließlich Personal, Ausrüstung und Vertragsabschlüssen, verwendet.
-  parag2: Bei den nächsten Bemühungen um Spendenbeschaffung tragen alle ungenutzten Mittel auch zur Erfüllung dieser Kampagne bei.
+  parag1: 3 von 5 Multisignaturadresse in Besitz von Teammitgliedern. Diese wird zur allgemeinen Finanzierung des BCH Node-Betrieb, einschließlich Personal, Ausrüstung und Vertragsabschlüssen, verwendet.
+  parag2: Bei der nächsten Spendenaktion tragen alle ungenutzten Mittel auch zur Erfüllung dieser Kampagne bei.
 vision:
   title: Die Bitcoin Cash Node Vision
   parag1: Ein professioneller, miner-freundlicher Knoten, der praktische Probleme für Bitcoin Cash löst.
