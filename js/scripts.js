@@ -1,5 +1,10 @@
 // scripts.js
 
+// Animate on Scroll
+AOS.init({
+  once: true
+});
+
 // Display closing navbar toggler icon
 $(".navbar-toggler").click(function() {
   $(".navbar-toggler-icon")
