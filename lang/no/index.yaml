@@ -1,9 +1,9 @@
 ---
 download: Last ned
-video-btn: Who are we?
+video-btn: Hvem er vi?
 release-notes: Versjonsmerknader
 initiative:
-  parag1: The Bitcoin Cash Node project has been providing high quality full node software for the Bitcoin Cash (BCH) network since February 2020.
+  parag1: Bitcoin Cash Node-prosjektet har levert full-node-programvare av høy kvalitet for Bitcoin Cash (BCH)-nettverket siden februar 2020.
 social:
   title: Ta kontakt
 irc:
@@ -14,8 +14,8 @@ donate:
   parag1: 3-av-5 multisignatur-adresse under kontroll av teammedlemmer. Denne er brukt til generell finansiering av vedlikehold av BCH Node, inkludert personell, utstyr og tildeling av oppdrag.
   parag2: Under neste pengeinnsamling, så vil ubrukte midler også kunne benyttes for å fullføre pengeinnsamlingen.
 vision:
-  title: The Bitcoin Cash Node Vision
-  parag1: A professional, miner-friendly node that solves practical problems for Bitcoin Cash.
+  title: Visjonen for Bitcoin Cash Node
+  parag1: En professionell, miner-vennlig node som løser praktiske problemer for Bitcoin Cash.
   parag2: Our development process is transparent, evidence-driven and responsive to ecosystem needs, resulting in software that is performant, reliable and predictable.
   parag3: We strongly believe in building an ecosystem that has no single points of failure, and will collaborate to make that a reality.
 goals:
@@ -35,7 +35,7 @@ goals:
   longterm:
     title: Long term
     goal1: Raise awareness that BCH must remain permissionless, useful and affordable to use in order to become the best money in the world.
-gitlab: See our GitLab repo
-collab: Collaborative development
-see-goals: See our goals
-contact: Contact
+gitlab: Se vårt Gitlab-repo
+collab: Utvikling i samarbeid
+see-goals: Se våre mål
+contact: Kontakt
