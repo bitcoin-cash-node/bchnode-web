@@ -23,7 +23,7 @@ goals:
   shortterm:
     title: Kurzfristig
     goal1: Etablierung eines professionellen Minerknotens, der auf Feedback hört und messbare Verbesserungen bringt.
-    goal2: Geben von gut recherchierten Vorschlägen für Konsensregelverbesserungen in Bezug auf DAA, 0-conf und Skriptverbesserungen.
+    goal2: Erstellen von gut recherchierten Vorschlägen für Konsensregelverbesserungen in Bezug auf DAA, 0-conf und Skriptverbesserungen.
     goal3: Mit gutem Beispiel führen mit spezifikationsorientierter Entwicklung, die eine größere Vielfalt von Minerknoten ermöglicht und die BCH-Widerstandsfähigkeit gegenüber der Übernahme erhöht.
   mediumterm:
     title: Mittelfristig
