@@ -3,7 +3,7 @@ download: Descarga
 video-btn: Quiénes somos?
 release-notes: Notas de lanzamiento
 initiative:
-  parag1: El proyecto Bitcoin Cash Node ha estado proporcionando software de nodo full de alta calidad para la red Bitcoin Cash (BCH) desde febrero de 2020.
+  parag1: El proyecto Bitcoina Cash Node ha estado proporcionando software de nodo full de alta calidad para la red Bitcoin Cash (BCH) desde febrero de 2020.
 social:
   title: Contacto
 irc:
@@ -15,7 +15,7 @@ donate:
   parag2: Cualquier fondo existente que no haya sido utilizado será destinado a contribuir con la campaña de recaudación de fondos en curso.
 vision:
   title: La visión de Bitcoin Cash Node
-  parag1: Un nodo profesional y amigable hacia los mineros que resuelve problemas prácticos para Bitcoin Cash.
+  parag1: Un nodo profesional y amigable hacia los mineros que resuelve problemas prácticos para Bitcoin Cash.
   parag2: Nuestro proceso de desarrollo es transparente, basado en evidencias y responsivo a las necesidades del ecosistema, resultando en un software que es eficiente, confiable y predecible.
   parag3: Creemos firmemente en la construcción de un ecosistema que no tenga punto únicos de falla, y colaboraremos para hacerlo realidad.
 goals:
