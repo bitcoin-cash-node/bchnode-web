@@ -1,7 +1,7 @@
 ---
 download: Download
 video-btn: Wer sind wir?
-release-notes: Änderungsnotizen
+release-notes: Versionshinweise
 initiative:
   parag1: Das Bitcoin Cash Node Projekt stellt seit Februar 2020 hochwertige Knotensoftware für das Bitcoin Cash (BCH) Netzwerk zur Verfügung.
 social:
@@ -11,8 +11,8 @@ irc:
   text: 'Treten Sie #bchnode auf Freenode bei.'
 donate:
   title: Spenden
-  parag1: 3 von 5 Multisignaturadresse in Besitz von Teammitgliedern wird zur allgemeinen Finanzierung von BCH Node-Operationen, einschließlich Personal, Ausrüstung und Vertragsabschlüssen, verwendet.
-  parag2: Bei den nächsten Bemühungen um Spendenbeschaffung tragen alle ungenutzten Mittel auch zur Erfüllung dieser Kampagne bei.
+  parag1: 3 von 5 Multisignaturadresse in Besitz von Teammitgliedern. Diese wird zur allgemeinen Finanzierung des BCH Node-Betrieb, einschließlich Personal, Ausrüstung und Vertragsabschlüssen, verwendet.
+  parag2: Bei der nächsten Spendenaktion tragen alle ungenutzten Mittel auch zur Erfüllung dieser Kampagne bei.
 vision:
   title: Die Bitcoin Cash Node Vision
   parag1: Ein professioneller, miner-freundlicher Knoten, der praktische Probleme für Bitcoin Cash löst.
@@ -23,18 +23,19 @@ goals:
   shortterm:
     title: Kurzfristig
     goal1: Etablierung eines professionellen Minerknotens, der auf Feedback hört und messbare Verbesserungen bringt.
-    goal2: Geben von gut recherchierten Vorschlägen für Konsensregelverbesserungen in Bezug auf DAA, 0-conf und Skriptverbesserungen.
+    goal2: Erstellen von gut recherchierten Vorschlägen für Konsensregelverbesserungen in Bezug auf DAA, 0-conf und Skriptverbesserungen.
     goal3: Mit gutem Beispiel führen mit spezifikationsorientierter Entwicklung, die eine größere Vielfalt von Minerknoten ermöglicht und die BCH-Widerstandsfähigkeit gegenüber der Übernahme erhöht.
   mediumterm:
     title: Mittelfristig
     goal1: Demonstrieren einer nachhaltigen Client-Entwicklung auf der Grundlage des Ökosystem-Inputs und eines transparenten, freiwilligen Finanzierungsmodells.
     goal2: Demonstrieren einer evidenzbasierten, gemeinsamen Entscheidungsfindung bei Konsensänderungen.
     goal3: Erhalten und erweitern des Netzwerk-Effekts, soweit möglich.
-    goal4: Fortschritte bei der Skalierung zur globalen Annahme durch Prozess- und Netzwerk-Leistungssteigerungen.
+    goal4: Voranbringen der Skalierungsarbeit für den globalen Einsatz durch Verarbeitungs- und Netzwerk-Leistungssteigerungen.
     goal5: Zusammenarbeit bei Spezifikations- und Testinitiativen zur Diversifizierung der Knotenlandschaft, Förderung einer breiteren Beteiligung und Schutz des BCH Netzwerks vor katastrophalen Fehlern.
   longterm:
     title: Langfristig
     goal1: Erhöhen des Bewusstseins, dass BCH weiterhin permissionless, nützlich und erschwinglich sein muss, um das beste Geld der Welt zu werden.
-gitlab: Sehen Sie unser GitLab-Repo
+gitlab: Unser GitLab-Repo ansehen
 collab: Kollaborative Entwicklung
-see-goals: Sehen Sie unsere Ziele
+see-goals: Unsere Ziele ansehen
+contact: Contact

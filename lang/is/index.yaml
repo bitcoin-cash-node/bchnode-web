@@ -1,18 +1,18 @@
 ---
-download: ダウンロード
+download: Sækja
 video-btn: Who are we?
-release-notes: リリースノート
+release-notes: Release notes
 initiative:
   parag1: The Bitcoin Cash Node project has been providing high quality full node software for the Bitcoin Cash (BCH) network since February 2020.
 social:
-  title: フォローする
+  title: Hafðu samband
 irc:
   title: IRC
-  text: 'Freenodeで#bchnodeに参加する'
+  text: 'Join #bchnode on Freenode.'
 donate:
-  title: 寄付する
-  parag1: チームメンバーは5のうち3つのマルチシグネチャアドレスを保持しています。人員、設備、請負を含むBCHノード操作の一般的な資金調達のために使用されます。
-  parag2: 次回の資金調達では、未使用の資金もそのキャンペーンに使用されます。
+  title: Donate
+  parag1: 3-of-5 multisignature address held by team members. It is used for general funding of BCH Node operations, including personnel, equipment and contracting.
+  parag2: At the next fundraising effort, any funds unused will also contribute to fulfilling that campaign.
 vision:
   title: The Bitcoin Cash Node Vision
   parag1: A professional, miner-friendly node that solves practical problems for Bitcoin Cash.

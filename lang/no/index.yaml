@@ -1,9 +1,9 @@
 ---
 download: Last ned
-video-btn: Who are we?
+video-btn: Hvem er vi?
 release-notes: Versjonsmerknader
 initiative:
-  parag1: The Bitcoin Cash Node project has been providing high quality full node software for the Bitcoin Cash (BCH) network since February 2020.
+  parag1: Bitcoin Cash Node-prosjektet har levert full-node-programvare av høy kvalitet for Bitcoin Cash (BCH)-nettverket siden februar 2020.
 social:
   title: Ta kontakt
 irc:
@@ -14,27 +14,28 @@ donate:
   parag1: 3-av-5 multisignatur-adresse under kontroll av teammedlemmer. Denne er brukt til generell finansiering av vedlikehold av BCH Node, inkludert personell, utstyr og tildeling av oppdrag.
   parag2: Under neste pengeinnsamling, så vil ubrukte midler også kunne benyttes for å fullføre pengeinnsamlingen.
 vision:
-  title: The Bitcoin Cash Node Vision
-  parag1: A professional, miner-friendly node that solves practical problems for Bitcoin Cash.
-  parag2: Our development process is transparent, evidence-driven and responsive to ecosystem needs, resulting in software that is performant, reliable and predictable.
-  parag3: We strongly believe in building an ecosystem that has no single points of failure, and will collaborate to make that a reality.
+  title: Visjonen for Bitcoin Cash Node
+  parag1: En professionell, miner-vennlig node som løser praktiske problemer for Bitcoin Cash.
+  parag2: Vår utviklingsprosess er gjennomsiktig, bevisdrevet og responsiv til økosystemets behov, noe som resulterer i programvare som er effektiv, pålitelig og forutsigbar.
+  parag3: Vi har sterk tro til å bygge opp ett økosystem som ikke har et «single point of failure» og vil sammarbeide for å gjøre dette til en virkelighet.
 goals:
-  title: Objectives
+  title: Mål
   shortterm:
-    title: Short term
-    goal1: Establish a professional mining node which listens to feedback and delivers measurable improvements.
-    goal2: Provide well-researched proposals for consensus rule enhancements regarding DAA, 0-conf and script improvements.
-    goal3: Lead by example with specification-driven development that enables greater mining node diversity and increases BCH's resistance to capture.
+    title: På kort sikt
+    goal1: Etablere en profesjonell mining-node som lytter til tilbakemeldinger og leverer målbare forbedringer.
+    goal2: Tilby godt utforskede forslag for consensus-forbedringer rundt DAA, 0-conf og script-forbedringer.
+    goal3: Gå foran som et godt eksempel med spesifikasjon-drevet utvikling som muliggjør større mining-node-mangfold og øker BCHs motstand mot kapring.
   mediumterm:
-    title: Medium term
-    goal1: Demonstrate sustainable client development based on wide ecosystem input and a transparent, voluntary funding model.
-    goal2: Demonstrate evidence-based, collaborative decision making on consensus changes.
-    goal3: Maintain and expand network effect where possible.
-    goal4: Make progress on the scaling work for global adoption through both processing and network performance improvements.
-    goal5: Cooperate on specification and testing initiatives to diversify the node landscape, stimulate broader participation and protect the BCH network from catastrophic failures.
+    title: På mellom sikt
+    goal1: Demonstrere bærekraftig klient-utvikling basert på bred tilbakemelding fra økosystemet og gjennomsiktig, frivillig finansieringsmodell.
+    goal2: Demonstrere bevis-basert beslutningstaking i samarbeid om consensus-endringer.
+    goal3: Oppretthold og utvide nettverkseffekten hvor det lar seg gjøre.
+    goal4: Gjøre fremdrift på skalringsarbeid for verdensomspennende bruk gjennom forbedringer på både prosesserings- og nettverksytelse.
+    goal5: Samarbeide om spesifikasjoner og initiativ til testing for å diversifisere node-landskapet, stimulere til større deltakelse og beskytte BCH-nettverket mot katastrofale feil.
   longterm:
-    title: Long term
-    goal1: Raise awareness that BCH must remain permissionless, useful and affordable to use in order to become the best money in the world.
-gitlab: See our GitLab repo
-collab: Collaborative development
-see-goals: See our goals
+    title: På lang sikt
+    goal1: Synliggjøre at BCH må forbli permissionless, nyttig og rimelig i bruk for å bli til beste penger i verden.
+gitlab: Se vårt Gitlab-repo
+collab: Utvikling i samarbeid
+see-goals: Se våre mål
+contact: Kontakt
