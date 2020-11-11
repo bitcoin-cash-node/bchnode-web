@@ -26,10 +26,10 @@ goals:
     goal2: Provide well-researched proposals for consensus rule enhancements regarding DAA, 0-conf and script improvements.
     goal3: 다음과 같은 예시들에서 집중적 개선점들을 찾을수 있다. 이는 마이닝 노드의 다양성을 극대화하고 비트코인캐시의 채굴 난이도를 높이는 것이다.
   mediumterm:
-    title: Medium term
-    goal1: Demonstrate sustainable client development based on wide ecosystem input and a transparent, voluntary funding model.
-    goal2: Demonstrate evidence-based, collaborative decision making on consensus changes.
-    goal3: Maintain and expand network effect where possible.
+    title: 중간 단계
+    goal1: 투명하고 자발적인 펀딩 모델, 폭 넓은 이코시스템을 이용한 지속적 고객 유치를 보여준다.
+    goal2: 합일점을 위한 근거에 기반한 협동적 의사판단을 보여준다.
+    goal3: 가능한 곳에서 네트워크 효과를 증대하고 유지한다.
     goal4: Make progress on the scaling work for global adoption through both processing and network performance improvements.
     goal5: Cooperate on specification and testing initiatives to diversify the node landscape, stimulate broader participation and protect the BCH network from catastrophic failures.
   longterm:
