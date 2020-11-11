@@ -16,15 +16,15 @@ donate:
 vision:
   title: 비트코인 노드 비젼
   parag1: 비트코인캐시에 연관된 문제들을 실용적이게 해결하기 위해 만들어진 전문적이고 마이너들을 위한 노드 입니다.
-  parag2: Our development process is transparent, evidence-driven and responsive to ecosystem needs, resulting in software that is performant, reliable and predictable.
-  parag3: We strongly believe in building an ecosystem that has no single points of failure, and will collaborate to make that a reality.
+  parag2: 저희 회사는 투명하고 근거에 기반한 발전 체계를 가지고 있습니다. 소프트웨어 또한 사회의 필요에 대응하도록 제작하며 이는 신뢰할수 있고 예측할수 있는 프로그램입니다.
+  parag3: 저희는 단 하나의 오차 또는 실패가 없는 체계를 만들고 그것을 실현시키는 것에 최선을 다합니다.
 goals:
-  title: Objectives
+  title: 목표
   shortterm:
-    title: Short term
-    goal1: Establish a professional mining node which listens to feedback and delivers measurable improvements.
+    title: 단기
+    goal1: 피드백에 대처하고 개선점을 제시할수 있는 체계적인 마이닝 노드를 만든다.
     goal2: Provide well-researched proposals for consensus rule enhancements regarding DAA, 0-conf and script improvements.
-    goal3: Lead by example with specification-driven development that enables greater mining node diversity and increases BCH's resistance to capture.
+    goal3: 다음과 같은 예시들에서 집중적 개선점들을 찾을수 있다. 이는 마이닝 노드의 다양성을 극대화하고 비트코인캐시의 채굴 난이도를 높이는 것이다.
   mediumterm:
     title: Medium term
     goal1: Demonstrate sustainable client development based on wide ecosystem input and a transparent, voluntary funding model.
