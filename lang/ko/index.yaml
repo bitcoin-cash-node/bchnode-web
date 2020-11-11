@@ -1,9 +1,9 @@
 ---
 download: 다운로드
-video-btn: Who are we?
+video-btn: 당사 소개
 release-notes: 릴리스 노트
 initiative:
-  parag1: The Bitcoin Cash Node project has been providing high quality full node software for the Bitcoin Cash (BCH) network since February 2020.
+  parag1: 비트코인 노드 프로젝트는 2020년 2월 부터 비트코인캐시 네트워크를 위한 최고의 질의 풀 노드 소프트웨어를 제공하고 있습니다.
 social:
   title: 연락 부탁드립니다.
 irc:
@@ -14,8 +14,8 @@ donate:
   parag1: 팀 멤버들이 3-of-5 멀티시그니쳐 주소를 가지고 있습니다. 이 펀드는 비트코인캐시 노드 활동에 필요한 부분, 예를 들어 인사, 장비, 그리고 컨트랙팅에 사용됩니다.
   parag2: 첫 모금에서 사용하지 않고 남은 후원자금은 다음 캠페인에 사용될 것입니다.
 vision:
-  title: The Bitcoin Cash Node Vision
-  parag1: A professional, miner-friendly node that solves practical problems for Bitcoin Cash.
+  title: 비트코인 노드 비젼
+  parag1: 비트코인캐시에 연관된 문제들을 실용적이게 해결하기 위해 만들어진 전문적이고 마이너들을 위한 노드 입니다.
   parag2: Our development process is transparent, evidence-driven and responsive to ecosystem needs, resulting in software that is performant, reliable and predictable.
   parag3: We strongly believe in building an ecosystem that has no single points of failure, and will collaborate to make that a reality.
 goals:
