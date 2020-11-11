@@ -3,7 +3,7 @@ download: Descarga
 video-btn: Quiénes somos?
 release-notes: Notas de lanzamiento
 initiative:
-  parag1: El proyecto Bitcoina Cash Node ha estado proporcionando software de nodo full de alta calidad para la red Bitcoin Cash (BCH) desde febrero de 2020.
+  parag1: El proyecto Bitcoin Cash Node ha estado proporcionando software de nodo full de alta calidad para la red Bitcoin Cash (BCH) desde febrero del 2020.
 social:
   title: Contacto
 irc:
@@ -16,14 +16,14 @@ donate:
 vision:
   title: La visión de Bitcoin Cash Node
   parag1: Un nodo profesional y amigable hacia los mineros que resuelve problemas prácticos para Bitcoin Cash.
-  parag2: Nuestro proceso de desarrollo es transparente, basado en evidencias y responsivo a las necesidades del ecosistema, resultando en un software que es eficiente, confiable y predecible.
-  parag3: Creemos firmemente en la construcción de un ecosistema que no tenga punto únicos de falla, y colaboraremos para hacerlo realidad.
+  parag2: Nuestro proceso de desarrollo es transparente, basado en evidencias, y responsivo a las necesidades del ecosistema, resultando en un software eficiente, confiable y predecible.
+  parag3: Creemos firmemente en la construcción de un ecosistema que no presente punto únicos de falla, y colaboraremos para hacer de eso una realidad.
 goals:
   title: Objetivos
   shortterm:
     title: Corto plazo
-    goal1: Establecer un nodo de minería profesional que escuche las necesidades del ecosistema y ofrezca mejoras mensurables.
-    goal2: Proporcionar propuestas adecuadamente investigadas para mejorar las reglas de consenso en relación a DAA, 0-conf y mejoras de script.
+    goal1: Establecer un nodo de minería profesional atento a las necesidades del ecosistema y que ofrezca mejoras mensurables.
+    goal2: Proporcionar propuestas adecuadamente investigadas para mejorar las reglas de consenso en relación a DAA, 0-conf y optimizaciones de script.
     goal3: Liderar con el ejemplo según un desarrollo basado en especificaciones que permita una mayor diversidad de nodos mineros y aumente la resistencia de BCH a la captura.
   mediumterm:
     title: Mediano plazo
@@ -31,7 +31,7 @@ goals:
     goal2: Demostrar una toma de decisiones aplicada a los cambios de consenso colaborativa y basada en evidencias.
     goal3: Mantener y expandir el efecto de redes siempre que sea posible.
     goal4: Hacer progresos en el trabajo de escala para la adopción global a través de mejoras en el procesamiento y rendimiento de la red.
-    goal5: Cooperar en iniciativas de especificación y pruebas para diversificar el panorama del nodo, estimular una mayor participación y proteger a la red BCH de fallas catastróficas.
+    goal5: Cooperar en iniciativas de especificación y evaluaciones para diversificar el panorama del nodo, estimular una mayor participación, y proteger a la red BCH de fallas catastróficas.
   longterm:
     title: Largo plazo
     goal1: Incrementar la conciencia de que BCH debe seguir siendo impermisionado, útil y accesible para convertirse en la mejor moneda del mundo.
