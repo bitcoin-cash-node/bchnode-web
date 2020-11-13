@@ -1,9 +1,9 @@
 ---
 download: 다운로드
-video-btn: Who are we?
+video-btn: 당사 소개
 release-notes: 릴리스 노트
 initiative:
-  parag1: The Bitcoin Cash Node project has been providing high quality full node software for the Bitcoin Cash (BCH) network since February 2020.
+  parag1: 비트코인 노드 프로젝트는 2020년 2월 부터 비트코인캐시 네트워크를 위한 최고의 질의 풀 노드 소프트웨어를 제공하고 있습니다.
 social:
   title: 연락 부탁드립니다.
 irc:
@@ -14,28 +14,28 @@ donate:
   parag1: 팀 멤버들이 3-of-5 멀티시그니쳐 주소를 가지고 있습니다. 이 펀드는 비트코인캐시 노드 활동에 필요한 부분, 예를 들어 인사, 장비, 그리고 컨트랙팅에 사용됩니다.
   parag2: 첫 모금에서 사용하지 않고 남은 후원자금은 다음 캠페인에 사용될 것입니다.
 vision:
-  title: The Bitcoin Cash Node Vision
-  parag1: A professional, miner-friendly node that solves practical problems for Bitcoin Cash.
-  parag2: Our development process is transparent, evidence-driven and responsive to ecosystem needs, resulting in software that is performant, reliable and predictable.
-  parag3: We strongly believe in building an ecosystem that has no single points of failure, and will collaborate to make that a reality.
+  title: 비트코인 노드 비젼
+  parag1: 비트코인캐시에 연관된 문제들을 실용적이게 해결하기 위해 만들어진 전문적이고 마이너들을 위한 노드 입니다.
+  parag2: 저희 회사는 투명하고 근거에 기반한 발전 체계를 가지고 있습니다. 소프트웨어 또한 사회의 필요에 대응하도록 제작하며 이는 신뢰할수 있고 예측할수 있는 프로그램입니다.
+  parag3: 저희는 단 하나의 오차 또는 실패가 없는 체계를 만들고 그것을 실현시키는 것에 최선을 다합니다.
 goals:
-  title: Objectives
+  title: 목표
   shortterm:
-    title: Short term
-    goal1: Establish a professional mining node which listens to feedback and delivers measurable improvements.
-    goal2: Provide well-researched proposals for consensus rule enhancements regarding DAA, 0-conf and script improvements.
-    goal3: Lead by example with specification-driven development that enables greater mining node diversity and increases BCH's resistance to capture.
+    title: 단기
+    goal1: 피드백에 대처하고 개선점을 제시할수 있는 체계적인 마이닝 노드를 만든다.
+    goal2: 협치적 규칙 개선점을 위한, DAA, O-conf 그리고 대사 개선을 등, 프로포절을 제시한다.
+    goal3: 다음과 같은 예시들에서 집중적 개선점들을 찾을수 있다. 이는 마이닝 노드의 다양성을 극대화하고 비트코인캐시의 채굴 난이도를 높이는 것이다.
   mediumterm:
-    title: Medium term
-    goal1: Demonstrate sustainable client development based on wide ecosystem input and a transparent, voluntary funding model.
-    goal2: Demonstrate evidence-based, collaborative decision making on consensus changes.
-    goal3: Maintain and expand network effect where possible.
-    goal4: Make progress on the scaling work for global adoption through both processing and network performance improvements.
+    title: 중간 단계
+    goal1: 투명하고 자발적인 펀딩 모델, 폭 넓은 이코시스템을 이용한 지속적 고객 유치를 보여준다.
+    goal2: 합일점을 위한 근거에 기반한 협동적 의사판단을 보여준다.
+    goal3: 가능한 곳에서 네트워크 효과를 증대하고 유지한다.
+    goal4: 네트워크 퍼포먼스와 프로세싱을 발전시켜 세계적 암호화폐 정착의 성장을 도모한다.
     goal5: Cooperate on specification and testing initiatives to diversify the node landscape, stimulate broader participation and protect the BCH network from catastrophic failures.
   longterm:
-    title: Long term
-    goal1: Raise awareness that BCH must remain permissionless, useful and affordable to use in order to become the best money in the world.
-gitlab: See our GitLab repo
-collab: Collaborative development
-see-goals: See our goals
-contact: Contact
+    title: 장기적 시점
+    goal1: 비트코인캐시가 최고의 화폐라는 인지도를 얻기 위해서는 본 화폐가 실용적이며 누구나 구매할수 있는 가격대이고 허가를 필요로하지 않는 다는 사실을 유지해나가야 한다.
+gitlab: 저희 GitLap 리포를 참고하세요
+collab: 협동적 발전
+see-goals: 저희 목표를 참고해주세요.
+contact: 연락처
