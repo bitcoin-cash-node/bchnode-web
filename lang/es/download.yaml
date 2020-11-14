@@ -1,6 +1,6 @@
 ---
 warning:
-  one: Berkeley DB versión 5.3 es necesaria para proceder con el build desde el código fuente.
+  one: Se necesita Berkeley DB versión 5.3 para proceder con el build a partir del código fuente.
   two: Por favor, asegúrate de hacer un respaldo de tus archivos de cartera antes de ejecutar cualquier cliente nuevo.
 signatures: firmas
 docker:
