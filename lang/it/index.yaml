@@ -22,19 +22,19 @@ goals:
   title: Obiettivi
   shortterm:
     title: Breve termine
-    goal1: Creare un nodo professionale per il mining che ascolti i feedback e offra miglioramenti tangibili.
-    goal2: Fornire proposte ben studiate che migliorino il consenso per quanto riguarda il DAA, 0-conf e miglioramenti agli scripts.
-    goal3: Lead by example with specification-driven development that enables greater mining node diversity and increases BCH's resistance to capture.
+    goal1: Stabilire un nodo professionale per il mining che ascolti i feedback e offra miglioramenti tangibili.
+    goal2: Fornire proposte ben studiate che migliorino il consenso per quanto riguarda il DAA, 0-conf e miglioramenti agli script.
+    goal3: Dare l'esempio, con uno sviluppo basato su specifiche, per raggiungere una maggiore varietà di nodi usati per il mining e impedire che BCH finisca nelle mani di pochi.
   mediumterm:
     title: Medio termine
-    goal1: Demonstrate sustainable client development based on wide ecosystem input and a transparent, voluntary funding model.
-    goal2: Demonstrate evidence-based, collaborative decision making on consensus changes.
-    goal3: Maintain and expand network effect where possible.
-    goal4: Make progress on the scaling work for global adoption through both processing and network performance improvements.
-    goal5: Cooperate on specification and testing initiatives to diversify the node landscape, stimulate broader participation and protect the BCH network from catastrophic failures.
+    goal1: Dimostrare lo sviluppo sostenibile del client basandosi sulle proposte avanzate da un ampio ecosistema e da un processo di finanziamento trasparente e volontario.
+    goal2: Dimostrare che i cambiamenti alle regole del consenso avvengano tramite un processo collaborativo basato su prove.
+    goal3: Conservare ed espandere l'effetto rete dove possibile.
+    goal4: Progredire nella scalabilità per un'adozione globale migliorando le prestazioni processuali e di rete.
+    goal5: Cooperare sulle specifiche e partecipare alle iniziative per diversificare lo scenario dei nodi, stimolare una partecipazione più ampia e proteggere la rete di BCH da catastrofici fallimenti.
   longterm:
     title: Lungo termine
-    goal1: Far crescere la consapevolezza che BCH debba rimanere senza permissionless, utile e conveniente da usare per diventare il miglior denaro del mondo.
+    goal1: Far crescere la consapevolezza che BCH debba rimanere permissionless, utile e conveniente da usare al fine di diventare il miglior denaro del mondo.
 gitlab: Guarda la nostra repo GitLab
 collab: Sviluppo collaborativo
 see-goals: Guarda i nostri obiettivi
