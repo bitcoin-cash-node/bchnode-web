@@ -12,10 +12,10 @@ irc:
 donate:
   title: Dona
   parag1: Un indirizzo multifirma 3-di-5 appartiene ai membri del team. È usato per finanziare lo sviluppo di BCH Node e pagare le spese del personale, delle attrezzature e dei contratti.
-  parag2: At the next fundraising effort, any funds unused will also contribute to fulfilling that campaign.
+  parag2: Alla prossima raccolta fondi, quelli non spesi saranno anche usati per tale campagna.
 vision:
-  title: The Bitcoin Cash Node Vision
-  parag1: A professional, miner-friendly node that solves practical problems for Bitcoin Cash.
+  title: Vision di Bitcoin Cash Node
+  parag1: Un nodo professionale, amico dei miner che risolve i problemi pratici di Bitcoin Cash.
   parag2: Our development process is transparent, evidence-driven and responsive to ecosystem needs, resulting in software that is performant, reliable and predictable.
   parag3: We strongly believe in building an ecosystem that has no single points of failure, and will collaborate to make that a reality.
 goals:
