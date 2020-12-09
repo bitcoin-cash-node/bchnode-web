@@ -11,7 +11,7 @@ irc:
   text: 'Unisciti a #bchnode su Freenode.'
 donate:
   title: Dona
-  parag1: 3-of-5 multisignature address held by team members. It is used for general funding of BCH Node operations, including personnel, equipment and contracting.
+  parag1: Un indirizzo multifirma 3-di-5 appartiene ai membri del team. È usato per finanziare lo sviluppo di BCH Node e pagare le spese del personale, delle attrezzature e dei contratti.
   parag2: At the next fundraising effort, any funds unused will also contribute to fulfilling that campaign.
 vision:
   title: The Bitcoin Cash Node Vision
