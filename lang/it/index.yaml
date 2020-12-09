@@ -3,14 +3,14 @@ download: Download
 video-btn: Chi siamo?
 release-notes: Note di rilascio
 initiative:
-  parag1: The Bitcoin Cash Node project has been providing high quality full node software for the Bitcoin Cash (BCH) network since February 2020.
+  parag1: Il progetto Bitcoin Cash Node sviluppa un nodo di alta qualità per la rete Bitcoin Cash (BCH) a partire da Febbraio 2020.
 social:
-  title: Get in touch
+  title: Resta aggiornato
 irc:
   title: IRC
-  text: 'Join #bchnode on Freenode.'
+  text: 'Unisciti a #bchnode su Freenode.'
 donate:
-  title: Donate
+  title: Dona
   parag1: 3-of-5 multisignature address held by team members. It is used for general funding of BCH Node operations, including personnel, equipment and contracting.
   parag2: At the next fundraising effort, any funds unused will also contribute to fulfilling that campaign.
 vision:
