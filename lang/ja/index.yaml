@@ -23,7 +23,7 @@ goals:
   shortterm:
     title: 短期
     goal1: 顧客フィードバックに耳を傾け、改善点を測定可能なプロ仕様のマイニングノードを作ります。
-    goal2: Provide well-researched proposals for consensus rule enhancements regarding DAA, 0-conf and script improvements.
+    goal2: DAA、0-conf、およびスクリプト改善などのコンセンサスルール強化に関して深く研究し、提案をします。
     goal3: Lead by example with specification-driven development that enables greater mining node diversity and increases BCH's resistance to capture.
   mediumterm:
     title: Medium term
