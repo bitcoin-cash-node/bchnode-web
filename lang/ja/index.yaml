@@ -17,12 +17,12 @@ vision:
   title: Bitcoin Cash Nodeの理念
   parag1: Bitcoin Cashの実務上の問題を解決するプロ向け、マイナー向けのノード。
   parag2: 私たちの開発プロセスは、透明で、エビデンスに基づいており、エコシステムのニーズに応え、高性能で信頼性があるソフトウェアを生み出しています。
-  parag3: We strongly believe in building an ecosystem that has no single points of failure, and will collaborate to make that a reality.
+  parag3: 私たちは、単一障害点(SPOF) の無いエコシステムの力を確信しており、その構築を実現するために協力していきます。
 goals:
-  title: Objectives
+  title: 目的
   shortterm:
-    title: Short term
-    goal1: Establish a professional mining node which listens to feedback and delivers measurable improvements.
+    title: 短期
+    goal1: 顧客フィードバックに耳を傾け、改善点を測定可能なプロ仕様のマイニングノードを作ります。
     goal2: Provide well-researched proposals for consensus rule enhancements regarding DAA, 0-conf and script improvements.
     goal3: Lead by example with specification-driven development that enables greater mining node diversity and increases BCH's resistance to capture.
   mediumterm:
