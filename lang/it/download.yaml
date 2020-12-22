@@ -1,0 +1,8 @@
+---
+warning:
+  one: È richiesta la versione 5.3 di Berkeley per la compilazione.
+  two: Per favore, assicurati di fare il backup dei file dei tuoi portafogli prima di avviare il nuovo client.
+signatures: firme
+docker:
+  instruction: 'Per eseguire l''ultima versione di Bitcoin Cash Node, lancia il comando:'
+  full: Vedi le istruzioni complete
