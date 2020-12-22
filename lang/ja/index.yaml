@@ -31,9 +31,9 @@ goals:
     goal2: コンセンサスの変更に関して、エビデンスに基き、協調的に、共同で意思決定して行きます。
     goal3: ネットワーク効果を維持し、可能な限り拡大します。
     goal4: 処理とネットワークパフォーマンス両方の改善によって、グローバルなアドプション（採用）のためのスケーリング作業を進めます。
-    goal5: Cooperate on specification and testing initiatives to diversify the node landscape, stimulate broader participation and protect the BCH network from catastrophic failures.
+    goal5: 仕様作成とテストに協力し、ノードの多様化し、より多くの開発者の参加を促し、壊滅的な障害からBCHネットワークを保護します。
   longterm:
-    title: Long term
+    title: 長期
     goal1: Raise awareness that BCH must remain permissionless, useful and affordable to use in order to become the best money in the world.
 gitlab: See our GitLab repo
 collab: Collaborative development
