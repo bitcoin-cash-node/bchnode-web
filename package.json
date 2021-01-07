@@ -39,7 +39,7 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "gulp-concat": "^2.6.1",
-    "gulp-terser": "^1.4.0",
+    "gulp-terser": "^2.0.1",
     "jquery": "^3.5.1",
     "techy": "^1.2.5"
   }
