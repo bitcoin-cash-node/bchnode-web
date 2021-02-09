@@ -160,12 +160,6 @@ In January 2021, a small BCH amount was received on this address again, and
 may be consolidated at some time in future.
 
 
-### Notes about balances displayed on block explorers
-
-Block explorers may show a slightly lower amount for the main wallet address `prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk` (2,109.93763055 BCH at block 657,989).
-
-This is because a small amount in donations (currently 0.00075823 BCH) are stored on a subsequent address (`pp03e95qz7yene7v4vdx2vfsqx4qsq4wfvw8z3pkjf`) in BCHN's multi-signature wallet which was issued to Coin.dance who are collecting donations on behalf of node client projects. They requested this separate address for their own accounting purposes. BCHN will probably periodically receive some donations coming in from there - should significant amounts accrue, they will eventually be moved to the main wallet, but the report (as above) will reflect the total donated amounts on both our main and this secondary address.
-
 
 ### BCHA fork coin airdrop and policy
 
