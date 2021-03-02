@@ -9,6 +9,14 @@
       "tags": ["financial-report"]
     },
     {
+      "title": "BCHN Financial Report 2020-12-05",
+      "date": "5 December 2020",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/thumbnail.png",
+      "filename": "BCHN-Financial-Report-2020-12-05",
+      "tags": ["financial-report"]
+    },
+    {
       "title": "BCHN v22.2.0版本发布公告",
       "date": "December 2 2020",
       "author": "Bitcoin Cash Node Team",
