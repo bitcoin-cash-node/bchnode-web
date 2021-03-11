@@ -20,6 +20,46 @@
 }]
 %}
 
+{% set individuals = [
+  "alphabeta",
+  "anime is okay",
+  "Anonymous Pelican",
+  "bitcoincashautist",
+  "BitcoinOutLoud",
+  "dagurval",
+  "emergent_reasons",
+  "Eric Reid",
+  "gammadelta",
+  "gm",
+  "Haruki Murakami",
+  "Henry Cashlitt",
+  "huckfinne",
+  "Jt 'Blockparty' Freeman",
+  "Kaizen517",
+  "Keith Patrick",
+  "Laura",
+  "legal_username",
+  "Lopokoko",
+  "lugaxker",
+  "Marc De Mesel",
+  "Masanobu Fukuoka",
+  "MattMinerShill",
+  "molecular",
+  "Monica",
+  "mtrycz",
+  "namby",
+  "Order Without Power",
+  "Sam",
+  "Sancho",
+  "Shadow Of Harbringer",
+  "Sur_Clyde_Hoffenfelder",
+  "Suzuki Subarashi",
+  "Thomas J",
+  "zveda",
+  "峨眉山"
+]
+%}
+
 {% block body %}
 <section class="bg-dark">
   <div class="container">
@@ -50,8 +90,10 @@
     <h3 class="mt-6">$( sponsors.individual )$</h3>
     <p class="text-muted">$( sponsors.listed )$</p>
 
-    <div>
-      <p>$( sponsors.soon )$</p>
+    <div class="row">
+      {% for individual in individuals %}
+      <div class="col-md-6 col-lg-3 py-1">{{ individual }}</div>
+      {% endfor %}
     </div>
 
   </div>
