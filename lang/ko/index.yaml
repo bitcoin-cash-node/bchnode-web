@@ -39,3 +39,6 @@ gitlab: 저희 GitLap 리포를 참고하세요
 collab: 협동적 발전
 see-goals: 저희 목표를 참고해주세요.
 contact: 연락처
+sponsors:
+  title: Sponsors of <span class="d-block d-md-inline">Bitcoin Cash Node</span>
+  btn: See all our sponsors
