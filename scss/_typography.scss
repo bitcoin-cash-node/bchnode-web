@@ -7,6 +7,14 @@
   font-size: 1.1em;
 }
 
+.text-gray {
+  color: $gray;
+
+  &:hover {
+    color: darken($gray, 10%);
+  }
+}
+
 // Hero header
 .hero {
   &-title {

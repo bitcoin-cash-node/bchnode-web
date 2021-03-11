@@ -1,0 +1,101 @@
+{% extends 'base.njk' %}
+
+{% block title %}$( sponsors.title )$ - Bitcoin Cash Node{% endblock %}
+{% block description %}{% endblock %}
+
+{% set orgs = [{
+  name: "Bitcoin.com",
+  website: "https://www.bitcoin.com",
+  image: "bitcoincom.png"
+},
+{
+  name: "General Protocols",
+  website: "https://generalprotocols.com",
+  image: "gp.svg"
+},
+{
+  name: "Satoshi Dice",
+  website: "https://satoshidice.com",
+  image: "satoshidice.png"
+}]
+%}
+
+{% set individuals = [
+  "alphabeta",
+  "anime is okay",
+  "Anonymous Pelican",
+  "bitcoincashautist",
+  "BitcoinOutLoud",
+  "dagurval",
+  "emergent_reasons",
+  "Eric Reid",
+  "gammadelta",
+  "gm",
+  "Haruki Murakami",
+  "Henry Cashlitt",
+  "huckfinne",
+  "Jt 'Blockparty' Freeman",
+  "Kaizen517",
+  "Keith Patrick",
+  "Laura",
+  "legal_username",
+  "Lopokoko",
+  "lugaxker",
+  "Marc De Mesel",
+  "Masanobu Fukuoka",
+  "MattMinerShill",
+  "molecular",
+  "Monica",
+  "mtrycz",
+  "namby",
+  "Order Without Power",
+  "Sam",
+  "Sancho",
+  "Shadow Of Harbringer",
+  "Sur_Clyde_Hoffenfelder",
+  "Suzuki Subarashi",
+  "Thomas J",
+  "zveda",
+  "峨眉山"
+]
+%}
+
+{% block body %}
+<section class="bg-dark">
+  <div class="container">
+    <div class="row pb-3">
+      <div class="col my-5 text-center text-md-left">
+        <h1 class="hero-title">$( sponsors.title )$</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-lighter-dark text-white">
+  <div class="container py-6">
+
+    <h3>$( sponsors.org )$</h3>
+    <p class="text-muted">$( sponsors.listed )$</p>
+
+    <div class="row align-items-center">
+      {% for org in orgs %}
+      <div class="col-6 col-md-3 col-xl-2 py-3 justify-content-center">
+        <a href="{{ org.website }}" target="_blank">
+          <img src="/static/img/sponsors/{{ org.image }}" alt="{{ org.name }}" class="img-fluid">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+    <h3 class="mt-6">$( sponsors.individual )$</h3>
+    <p class="text-muted">$( sponsors.listed )$</p>
+
+    <div class="row">
+      {% for individual in individuals %}
+      <div class="col-md-6 col-lg-3 py-1">{{ individual }}</div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+{% endblock %}
