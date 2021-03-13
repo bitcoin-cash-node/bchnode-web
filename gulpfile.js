@@ -40,11 +40,15 @@ gulp.task('nunjucks', function(){
   return gulp.src('app/**/*.html')
   // Adds data from newsroom.json
   .pipe(data(function() {
-    return require('./app/data/newsroom.json')
+    return require('./app/data/newsroom.json');
   }))
   // Adds data from versions.json
   .pipe(data(function() {
-    return require('./app/data/versions.json')
+    return require('./app/data/versions.json');
+  }))
+  // Adds data from sponsors.json
+  .pipe(data(function() {
+    return require('./app/data/sponsors.json');
   }))
   // Renders template with nunjucks
   .pipe(nunjucksRender({

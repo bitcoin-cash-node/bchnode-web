@@ -93,21 +93,15 @@
     <div class="row mt-5">
       <div class="col">
         <div class="d-flex flex-wrap justify-content-center align-items-center">
+
+          {% for org in organizations %}
           <div class="text-white mx-5 py-3" data-aos="fade-up" data-aos-delay="100">
-            <a href="https://satoshidice.com" target="_blank">
-              <img width="200" class="align-self-center" src="/static/img/sponsors/satoshidice.png" alt="Satoshi Dice">
+            <a href="{{ org.website }}" target="_blank">
+              <img width="200" class="align-self-center" src="/static/img/sponsors/{{ org.image }}" alt="{{ org.name }}">
             </a>
           </div>
-          <div class="text-white mx-5 py-3" data-aos="fade-up" data-aos-delay="200">
-            <a href="https://generalprotocols.com" target="_blank">
-              <img width="200" class="align-self-center" src="/static/img/sponsors/gp.svg" alt="General Protocols">
-            </a>
-          </div>
-          <div class="text-white mx-5 py-3" data-aos="fade-up" data-aos-delay="300">
-            <a href="https://www.bitcoin.com" target="_blank">
-              <img width="200" class="align-self-center" src="/static/img/sponsors/bitcoincom.png" alt="Bitcoin.com">
-            </a>
-          </div>
+          {% endfor %}
+
         </div>
       </div>
     </div>

@@ -1,0 +1,55 @@
+{
+  "organizations": [{
+    "name": "Bitcoin.com",
+    "website": "https://www.bitcoin.com",
+    "image": "bitcoincom.png"
+  },
+  {
+    "name": "General Protocols",
+    "website": "https://generalprotocols.com",
+    "image": "gp.svg"
+  },
+  {
+    "name": "Satoshi Dice",
+    "website": "https://satoshidice.com",
+    "image": "satoshidice.png"
+  }],
+  "individuals": [
+    "alphabeta",
+    "anime is okay",
+    "Anonymous Pelican",
+    "bitcoincashautist",
+    "BitcoinOutLoud",
+    "dagurval",
+    "emergent_reasons",
+    "Eric Reid",
+    "gammadelta",
+    "gm",
+    "Haruki Murakami",
+    "Henry Cashlitt",
+    "huckfinne",
+    "Jt 'Blockparty' Freeman",
+    "Kaizen517",
+    "Keith Patrick",
+    "Laura",
+    "legal_username",
+    "Lopokoko",
+    "lugaxker",
+    "Marc De Mesel",
+    "Masanobu Fukuoka",
+    "MattMinerShill",
+    "molecular",
+    "Monica",
+    "mtrycz",
+    "namby",
+    "Order Without Power",
+    "Sam",
+    "Sancho",
+    "Shadow Of Harbringer",
+    "Sur_Clyde_Hoffenfelder",
+    "Suzuki Subarashi",
+    "Thomas J",
+    "zveda",
+    "峨眉山"
+  ]
+}
