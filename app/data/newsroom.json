@@ -1,6 +1,22 @@
 {
   "articles": [
     {
+      "title": "BCHN v23.0.0版本发布公告",
+      "date": "April 14 2021",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/thumbnail.png",
+      "filename": "BCHN-v23-0-0版本发布公告",
+      "tags": ["announcement", "chinese"]
+    },
+    {
+      "title": "Announcing Bitcoin Cash Node v23.0.0",
+      "date": "April 14 2021",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/thumbnail.png",
+      "filename": "Announcing-Bitcoin-Cash-Node-v23-0-0",
+      "tags": ["announcement"]
+    },
+    {
       "title": "BCHN Financial Report 2021-02-08",
       "date": "8 February 2021",
       "author": "Bitcoin Cash Node Team",
