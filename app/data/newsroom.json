@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "title": "5 Awesome Things about BCHN v23.0.0 upgrade",
+      "date": "19 April 2021",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/thumbnail.png",
+      "filename": "5-Awesome-Things-about-BCHN-v23_0_0_upgrade",
+      "tags": ["editorial"]
+    },
+    {
       "title": "BCHN Financial Report 2021-04-17",
       "date": "17 April 2021",
       "author": "Bitcoin Cash Node Team",
