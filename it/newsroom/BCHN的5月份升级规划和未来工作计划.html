@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="author" content="Bitcoin Cash Community">
+  <meta name="description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://bitcoincashnode.org/static/img/icons/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="https://bitcoincashnode.org/static/img/icons/apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/css/style.css">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@bitcoincashnode">
+  <meta name="twitter:creator" content="@bitcoincashnode">
+  <meta name="twitter:title" content="Bitcoin Cash Node">
+  <meta name="twitter:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta name="twitter:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="https://bitcoincashnode.org/">
+  <meta property="og:title" content="Bitcoin Cash Node">
+  <meta property="og:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+
+  <title>BCHN的5月份升级规划和未来工作计划</title>
+</head>
+
+<body>
+  <!-- <div class="bg-dark">
+    <div class="bg-info-gradient py-3">
+      <div class="container text-center">
+         <a class="text-white" href=""></a>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark py-4 navbar-expand-lg">
+    <div class="container">
+      <a class="btn btn-link text-white underline-animate" href="/it">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapsed" aria-controls="navCollapsed" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navCollapsed">
+        <ul class="navbar-nav ml-auto text-center text-lg-left">
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://docs.bitcoincashnode.org">Documentazione</a></li>
+          <!-- About selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="about-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Informazioni <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/it/team">Team</a>
+                <a class="dropdown-item" href="/it/goals">Obiettivi</a>
+                <a class="dropdown-item" href="/it/newsroom">Notizie</a>
+                <a class="dropdown-item" href="/it/media">Media kit</a>
+              </div>
+            </div>
+          </li>
+          <!-- /About selector -->
+          <!-- Source -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Codice sorgente</a></li>
+          <!-- /Source -->
+          <!-- Download -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="/it/download.html">Scarica</a></li>
+          <!-- /Download -->
+          <!-- Language selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="lang-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Language <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/en">English</a>
+<a class="dropdown-item" href="/zh">简体中文</a>
+<a class="dropdown-item" href="/es">Español</a>
+<a class="dropdown-item" href="/ja">日本語</a>
+<a class="dropdown-item" href="/ko">한국어</a>
+<a class="dropdown-item" href="/de">Deutsch</a>
+<a class="dropdown-item" href="/fr">Français</a>
+<a class="dropdown-item" href="/it">Italiano</a>
+<a class="dropdown-item" href="/nl">Nederlands</a>
+<a class="dropdown-item" href="/no">Norsk</a>
+
+              </div>
+            </div>
+          </li>
+          <!-- /Language selector -->
+        </ul>
+      </div>
+      <!-- /Collapse -->
+    </div>
+  </nav>
+  <!-- /Navbar -->
+
+  <main class="overflow-hidden">
+    
+<section class="bg-dark">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col my-5 py-5 text-center">
+                <h1 class="text-white">BCHN的5月份升级规划和未来工作计划</h1> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container py-6">
+        <div class="row justify-content-center">
+            <article class="col-md-10 col-lg-8">
+                <div class="d-flex align-items-center pb-5">
+                    <img src="/static/img/logomark.svg" alt="Logo" class="mr-3" height="40">
+                    <div>
+                        <div>by <strong>Bitcoin Cash Node Team</strong>
+                        </div>
+                        <div class="text-small text-muted">18 March 2020</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+
+                    </p>
+                    <p>Bitcoin Cash Node （BCHN）项目接下来将发布一系列文章，概述我们为BCH 2020年5月份升级和11月份升级所做的准备工作。</p>
+                    <p>BCHN致力于为矿池、交易所和基于BCH有重要业务的公司提供专业服务。</p>
+                    <p>针对以上关键用户群体，我们会在3月份发布一系列文章提供更多信息。今天发布的这篇文章适应于所有BCHN的潜在用户。</p>
+                    <hr>
+                    <h3 id="bch-2020-5-">BCH将迎来2020年5月份的硬分叉升级</h3>
+                    <figure class="text-center">
+                        <img src="/static/img/newsroom/2020-03-22/hR0vyMyPXVro1ihLTwbG0sKIJm7mol9H6x2wZwr4.png" class="img-fluid rounded">
+                    </figure>
+
+                    <p>对即将到来的5月15号的升级，BCHN将提供：</p>
+                    <blockquote>
+                        <p>“安全且专业的节点客户端部署，保持中立的态度，遵循最长链来避免增加链分叉的风险。”
+                            <br>——写于2020年2月20号<a href="https://read.cash/@freetrader/bitcoin-cash-node-003b2381"><u>BCHN节点的发布公告</u></a>
+                        </p>
+                    </blockquote>
+                    <p>总之，我们在<a href="https://github.com/bitcoincashorg/bitcoincash.org/pull/444/commits/98d79b6ad7a23e5aafab1dffd570388400c5e210"><u>2020年2月15号BCH网络升级截止日期前</u></a>部署了OP_REVERSEBYTES操作码和SigCheck功能。</p>
+                    <ul>
+                        <li>
+                            <p><a href="https://github.com/bitcoincashorg/bitcoincash.org/blob/master/spec/2020-05-15-op_reversebytes.md"><u>OP_REVERSEBYTES</u></a> 规范</p>
+                        </li>
+                        <li>
+                            <p><a href="https://github.com/bitcoincashorg/bitcoincash.org/blob/master/spec/2020-05-15-sigchecks.md"><u>SigChecks</u></a> 规范</p>
+                        </li>
+                    </ul>
+                    <p>BCHN旨在在升级中遵循最长链，无论区块支不支持IFP都接受这些区块。</p>
+                    <p>BCHN客户端没有任何基于BIP9的规则激活或类似的投票。BCHN保留了重放保护，并跟ABC客户端有同样的默认值。</p>
+                    <p>对于5月份的升级，我们不希望再进行任何需要达成共识的改变，而是要重点减少软件缺点，提高性能、稳定性和用户体验。我们应该会在5月份之前发布一个小版本升级（非强制性）来加强这些特征。</p>
+                    <p>总之，我们致力于为不同版本间提供稳定的接口。</p>
+                    <h3 id="-">序言：团队介绍</h3>
+                    <figure class="text-center">
+                        <img src="/static/img/newsroom/2020-03-22/7ML5Y9zeqJiK0BJp4EQQmThngVXQA9wrms16yCl9.jpeg" class="rounded img-fluid">
+                    </figure>
+
+                    <p>我们团队中有不少经验丰富的比特币软件开发者。他们使用C++语言让软件能够适应于最复杂，最高要求的商业环境（挖矿、矿池和交易所）。同时，对BCH新手而言也操作简单。</p>
+                    <p>BCHN已提出申请，将在本周在r/btc论坛上举办AMA活动。届时我们的<a href="https://read.cash/@freetrader/"><u>首席开发者</u></a>和其他团队成员会亲自回答社区的问题，表达我们对BCH的看法。</p>
+                    <h3 id="5-">5月份升级前的工作计划</h3>
+                    <p>自2020年2月27号软件上线后，BCHN团队设立了一种高效的持续集成，审核现有的<a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/merge_requests/53"><u>代码质量检测</u></a>，确保代码能够随着开发工作的进展进行持续性的修改。</p>
+                    <p>我们的首席开发者正在寻求借助其他静态分析工具来减少软件缺陷。我们会在今后的文章中告知各位相关的开发工作。</p>
+                    <p>5月份升级的技术范畴已经被确定了。BCHN团队的主要工作如下：</p>
+                    <h3 id="-">软件开发</h3>
+                    <ul>
+                        <li>
+                            <p>更新项目用户文档，确保文档准确无误 （一些<a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/issues/24"><u>问题</u></a>已经得到了修改）。</p>
+                        </li>
+                        <li>
+                            <p>完善10区块不可逆功能的规范，比如“滚动检查点”等ABC引入的技术，却没有添加到BCH规范中。涉及到共识相关的规范缺失会对其他客户端接入BCH挖矿造成阻碍。</p>
+                        </li>
+                        <li>
+                            <p>打造一种完全开放的开发流程，能够吸引新开发者、测试人员、其他专业人员和业余爱好者为BCHN做贡献。我们的信条是“不要信任，要验证！”</p>
+                        </li>
+                        <li>
+                            <p>识别现有<a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/issues/35"><u>软件测试之间的差异</u></a>，现有验证工具和方法的不足，制定恰当的计划来提高软件质量。</p>
+                        </li>
+                        <li>
+                            <p>检测Bitcoin Core和Bitcoin ABC客户端，以防BCHN需要<a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/merge_requests/48"><u>向后移植</u></a>。我们希望能将此流程规范化。目前是否需要向后移植需要通过我们高级开发者的谨慎讨论。任何人都可以在 <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/issues"><u>Gitlab tracker</u></a>上提出向后移植请求。</p>
+                        </li>
+                        <li>
+                            <p>建立更高效、可复制的创建和发布流程。</p>
+                        </li>
+                        <li>
+                            <p>修改项目基础设施（seeders, seeds），完善<a href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases"><u>发布软件包</u></a>。</p>
+                        </li>
+                        <li>
+                            <p>建立项目持续部署，将Gitlab / Docker与Gitlab外的其他测试整合起来。</p>
+                        </li>
+                    </ul>
+                    <h3 id="-">组织 / 项目管理工作</h3>
+                    <ul>
+                        <li>
+                            <p>建立支持和联系流程</p>
+                        </li>
+                        <li>
+                            <p>确立“漏洞披露”（Responsible Disclosure）流程</p>
+                        </li>
+                        <li>
+                            <p>建立一套可追究责任的、公开透明的流程，来资助BCHN的维护和开发工作。目前我们创建了一个<a href="https://bitcoincashnode.org/"><u>多签钱包</u></a>（3/5）来接收一般性的运营捐赠，如人员雇佣、设备采购和外包项目。感谢大家的捐赠，但我们也有计划参加众筹活动，也希望有企业能赞助我们的开发工作。</p>
+                        </li>
+                        <li>
+                            <p>确立更多项目需要的角色，如专业的联络员来对接BCHN的核心用户和广泛的BCH社区用户。我们希望能对BCH生态做出及时反馈。</p>
+                        </li>
+                        <li>
+                            <p>评估完成规划的任务需要的人员支持。拟定进行募资活动需要的预算。</p>
+                        </li>
+                        <li>
+                            <p>帮助建立生态范围内的信息公示流程，实现通用的<a href="https://reference.cash/"><u>BCH规范</u></a>详情、优先级和开发路线能代表真实的社区诉求。</p>
+                        </li>
+                    </ul>
+                    <h3 id="-">研究工作</h3>
+                    <ul>
+                        <li>
+                            <p>我们正在评估如何改善难度调整算法（DAA）来减少区块确认时间的差异。社区在这方面已经进行了大量的调研工作。我们不会在此次的5月份升级中更改DAA规则。但是，只要BCH对BTC的算力占比相对较低，我们就希望能主动在DAA算法上进行一些改进。</p>
+                        </li>
+                        <li>
+                            <p>UTXO/<a href="https://eprint.iacr.org/2019/611.pdf"><u>UtreeXO</u></a> 对扩容、更快的同步和简单支付验证都十分重要 （SPV）。</p>
+                        </li>
+                        <li>
+                            <p><a href="https://blog.vermorel.com/journal/2019/1/9/merklix-tree-for-bitcoin.html"><u>Merklix</u></a>树能实现更高效的同步，尤其适应于弱区块。</p>
+                        </li>
+                        <li>
+                            <p>在其他扩容改进工作完成后，我们会进行多种场景下区块上限自适应算法的研究工作。</p>
+                        </li>
+                    </ul>
+                    <p>我们在5月份升级前会为矿池、交易所、钱包用户提出相关建议，为使用Bitcoin ABC客户端的用户推荐切换操作程序，确保升级能顺利完成。</p>
+                    <h3 id="-11-">关于11月份的升级</h3>
+                    <figure class="text-center">
+                        <img src="/static/img/newsroom/2020-03-22/xoMPmgVh3baq6v4KZU3xcexHSSGC30eoR8EzfswN.jpeg" class="rounded img-fluid">
+                    </figure>
+
+                    <p>BCH迄今已经进行了5次硬分叉升级。有些业界成员希望能把升级改为一年一次，这样可以有更多的时间和精力来展开研究和协调工作。</p>
+                    <p>目前ABC客户端上的“自动重放保护”功能迫使我们不得不在11月15号再次升级。</p>
+                    <p>因此，我们愿与各方共同推动11月份升级的顺利进行。</p>
+                    <p>在我们建立了更广泛咨询生态系统的决策过程后，今后的待办事宜或许需要重新评估。很多人认为半年一次的升级加大了运营成本和采用成本。</p>
+                    <p>以下是不会引起大量争议的软件改动。我们会与其他团队合作研究其可行性。</p>
+                    <p><strong>共识相关层面</strong>：</p>
+                    <ul>
+                        <li>
+                            <p>UTXO commitments（UC机制）来更快速同步新加入的网络节点</p>
+                        </li>
+                        <li>
+                            <p>脚本改善(64字节整数，可能执行操作码 op_txinfo)</p>
+                        </li>
+                        <li>
+                            <p>DAA升级，前提是评估显示该功能有用</p>
+                        </li>
+                        <li>
+                            <p>为未确认交易限制提供长期解决方案，而非像5月份升级只是把25提升到了50。</p>
+                        </li>
+                        <li>
+                            <p>对CPFP算法进行可能的调整</p>
+                        </li>
+                        <li>
+                            <p>继续研究预共识技术Avalanche和Storm。向社区如实汇报相应的优缺点。</p>
+                        </li>
+                    </ul>
+                    <p><strong>以下是BCHN客户端可独立完成，不涉及共识的工作：</strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <p>用于扩容的区块链广播技术（Graphene, Xthinner）</p>
+                        </li>
+                        <li>
+                            <p>双花确认工作（Flowee上实施过，目前转移到了BU上）</p>
+                        </li>
+                        <li>
+                            <p>SPV钱包的安全RPC接入 （Neutrino钱包与BCHN沟通过这个问题）</p>
+                        </li>
+                    </ul>
+                    <p>我们将在不久后发起一项提案，用一种更正式的方式来沟通BCHN的核心用户和更广泛的用户群体。</p>
+                    <p>如有疑问，或对我们的工作规划有任何意见，欢迎通过任一沟通渠道联系我们，或者在文章下面留言。</p>
+                    <p>感谢大家的支持！</p>
+                    <p>— BCHN团队敬上</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+  </main>
+
+  <footer class="footer bg-dark py-6 text-a-white text-light">
+  <div class="container g">
+    <div class="row justify-content-xl-center">
+
+      <!-- Organization -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Organizzazione</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/it/team">Team</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/it/goals">Obiettivi</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/it/newsroom">Notizie</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/it/media">Media kit</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Software -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Software</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/it/download.html">Scarica</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://docs.bitcoincashnode.org">Documentazione</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Codice sorgente</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Security -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Sicurezza</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/blob/master/DISCLOSURE_POLICY.md">Informativa sulla divulgazione</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:security@bitcoincashnode.org">Contatto problemi di sicurezza</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Social</div>
+        <ul class="list-inline social">
+          <li>
+            <a target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA" class="text-muted">Slack</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/bitcoincashnode" class="text-muted">Twitter</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://t.me/bitcoincashnode" class="text-muted">Telegram</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://read.cash/@bitcoincashnode" class="text-muted">read.cash</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Website -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0 mt-md-4 mt-xl-0">
+        <div class="h4 text-white">Sito web</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://github.com/bitcoin-cash-node/bchnode-web">GitHub</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:website@bitcoincashnode.org">Email</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA">Slack</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://t.me/merc1er">Telegram</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="/static/js/scripts.js"></script>
+
+
+</body>
+</html>

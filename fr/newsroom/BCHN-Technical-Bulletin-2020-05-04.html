@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="author" content="Bitcoin Cash Community">
+  <meta name="description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://bitcoincashnode.org/static/img/icons/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="https://bitcoincashnode.org/static/img/icons/apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/css/style.css">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@bitcoincashnode">
+  <meta name="twitter:creator" content="@bitcoincashnode">
+  <meta name="twitter:title" content="Bitcoin Cash Node">
+  <meta name="twitter:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta name="twitter:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="https://bitcoincashnode.org/">
+  <meta property="og:title" content="Bitcoin Cash Node">
+  <meta property="og:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+
+  <title>BCHN Technical Bulletin 2020-05-04</title>
+</head>
+
+<body>
+  <!-- <div class="bg-dark">
+    <div class="bg-info-gradient py-3">
+      <div class="container text-center">
+         <a class="text-white" href=""></a>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark py-4 navbar-expand-lg">
+    <div class="container">
+      <a class="btn btn-link text-white underline-animate" href="/fr">Accueil</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapsed" aria-controls="navCollapsed" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navCollapsed">
+        <ul class="navbar-nav ml-auto text-center text-lg-left">
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://docs.bitcoincashnode.org">Docs</a></li>
+          <!-- About selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="about-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                A propos <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/fr/team">Équipe</a>
+                <a class="dropdown-item" href="/fr/goals">Objectifs</a>
+                <a class="dropdown-item" href="/fr/newsroom">Newsroom</a>
+                <a class="dropdown-item" href="/fr/media">Kit de presse</a>
+              </div>
+            </div>
+          </li>
+          <!-- /About selector -->
+          <!-- Source -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Code source</a></li>
+          <!-- /Source -->
+          <!-- Download -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="/fr/download.html">Télécharger</a></li>
+          <!-- /Download -->
+          <!-- Language selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="lang-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Language <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/en">English</a>
+<a class="dropdown-item" href="/zh">简体中文</a>
+<a class="dropdown-item" href="/es">Español</a>
+<a class="dropdown-item" href="/ja">日本語</a>
+<a class="dropdown-item" href="/ko">한국어</a>
+<a class="dropdown-item" href="/de">Deutsch</a>
+<a class="dropdown-item" href="/fr">Français</a>
+<a class="dropdown-item" href="/it">Italiano</a>
+<a class="dropdown-item" href="/nl">Nederlands</a>
+<a class="dropdown-item" href="/no">Norsk</a>
+
+              </div>
+            </div>
+          </li>
+          <!-- /Language selector -->
+        </ul>
+      </div>
+      <!-- /Collapse -->
+    </div>
+  </nav>
+  <!-- /Navbar -->
+
+  <main class="overflow-hidden">
+    
+<section class="bg-dark">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col my-5 py-5 text-center">
+                <h1 class="text-white">BCHN Technical Bulletin 2020-05-04</h1> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container py-6">
+        <div class="row justify-content-center">
+            <article class="col-md-10 col-lg-8">
+                <div class="d-flex align-items-center pb-5">
+                    <img src="/static/img/logomark.svg" alt="Logo" class="mr-3" height="40">
+                    <div>
+                        <div>by <strong>Calin Culianu</strong>
+                        </div>
+                        <div class="text-small text-muted">4 May 2020</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+
+                    </p>
+                    <h3 id="getblocktemplate-light">GetBlockTemplate Light</h3>
+                    <p>In order to provide the most efficient mining RPCs, we have implemented the <code class="language-javascript">getblocktemplatelight</code> RPC which is popular amongst various mining pools such as BTC.COM and others.</p>
+                    <p>The two new RPC's are: <code class="language-javascript">getblocktemplatelight</code> and <code class="language-javascript">submitblocklight</code>. These RPCs reduce the round-trip time for mining software when retrieving new block templates.
+                        Transaction data is never sent between mining software and <code class="language-javascript">bitcoind</code>. Instead, <code class="language-javascript">job_id</code>'s are returned and <code class="language-javascript">bitcoind</code> later
+                        reconstructs the full block based on this <code class="language-javascript">job_id</code> and the solved header + coinbase submitted by the miner, leading to more efficient mining.</p>
+                    <p>A full description and specification for this facility can be found here: <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/blob/master/doc/getblocktemplatelight.md"><a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/blob/master/doc/getblocktemplatelight.md">https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/blob/master/doc/getblocktemplatelight.md</a></a>
+                    </p>
+                    <p>Below are some benchmarks:</p>
+                    <p><strong>Bitcoin Cash Node v0.21.2 (gitlab,</strong>  <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/merge_requests/281"><strong>Merge Request 281</strong></a><strong>)</strong>
+                    </p>
+                    <p><code class="language-javascript">getblocktemplatelight</code>, 6000 tx mempool (1271847 bytes)</p>
+                    <ul>
+                        <li>
+                            <p>New template generation</p>
+                            <ul>
+                                <li>call time, avg.: <strong>62.025</strong>  <em>milliseconds</em>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>Cached template (returned if you call again within 5 seconds and no new tx's)</p>
+                            <ul>
+                                <li>call time, avg.: <strong>0.917</strong>  <em>milliseconds</em>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><strong>Bitcoin ABC v0.21.6 (github master) + BTC.COM gbtl patch from</strong>  <a href="https://github.com/btccom/bitcoin-abc-1"><a href="https://github.com/btccom/bitcoin-abc-1">https://github.com/btccom/bitcoin-abc-1</a></a>
+                    </p>
+                    <p><code class="language-javascript">getblocktemplatelight</code>, 6000 tx mempool (1271847 bytes)</p>
+                    <ul>
+                        <li>
+                            <p>New template generation</p>
+                            <ul>
+                                <li>call time, avg.: <strong>64.200</strong>  <em>milliseconds</em>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>Cached template (returned if you call again within 5 seconds and no new tx's)</p>
+                            <ul>
+                                <li>call time, avg.: <strong>4.909</strong>  <em>milliseconds</em>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><strong>Winner:</strong>  <strong><em>BCHN</em></strong>
+                    </p>
+                    <p>For the first call to light GBT, ABC and BCHN are comparable. This is because the call is dominated by generating the new template by scanning the mempool. Subsequent calls (which are the common case) show a 4x speed improvement in <strong>BCHN</strong> over
+                        ABC, because BCHN uses better caching.</p>
+                    <hr>
+                    <h3 id="getblocktemplate-regular-improvements">GetBlockTemplate (regular) Improvements</h3>
+                    <p>Bitcoin Cash Node has made some improvements to the regular mining RPC calls. The <code class="language-javascript">getblocktemplate</code> call has been made up to <strong>70% faster</strong> than the current ABC implementation. We have
+                        optimized the JSON RPC code to be much more efficient.</p>
+                    <p>Below are some benchmarks:</p>
+                    <p><strong>Bitcoin Cash Node v0.21.2 (git master)</strong>
+                    </p>
+                    <p><code class="language-javascript">getblocktemplate</code>, 6000 tx mempool (1271847 bytes)</p>
+                    <ul>
+                        <li>
+                            <p>New template generation</p>
+                            <ul>
+                                <li>call time, avg.: <strong>164.023</strong>  <em>milliseconds</em>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>Cached template (returned if you call again within 5 seconds and no new tx's)</p>
+                            <ul>
+                                <li>call time, avg.: <strong>117.277</strong>  <em>milliseconds</em>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><strong>Bitcoin ABC v0.21.6 (git master)</strong>
+                    </p>
+                    <p><code class="language-javascript">getblocktemplate</code>, 6000 tx mempool (1271847 bytes)</p>
+                    <ul>
+                        <li>
+                            <p>New template generation</p>
+                            <ul>
+                                <li>call time, avg.: <strong>262.200</strong>  <em>milliseconds</em>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>Cached template (returned if you call again within 5 seconds and no new tx's)</p>
+                            <ul>
+                                <li>call time, avg.: <strong>200.476</strong>  <em>milliseconds</em>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><strong>Winner:</strong>  <strong><em>BCHN</em></strong>
+                    </p>
+                    <p>Between <strong>60%</strong> - <strong>70%</strong> speed improvement for both calls with BCHN. This is because the verbose <code class="language-javascript">getblocktemplate</code> returns a large JSON object. BCHN has heavily optimized
+                        the JSON generation code to reduce overhead.</p>
+                    <hr>
+                    <h3 id="where-to-get-bchn-gbt-light">Where to get BCHN + GBT Light</h3>
+                    <p><strong>v0.21.2 is coming soon!</strong> - This new facility is currently in review but will appear in the upcoming 0.21.2 BCHN release very soon.</p>
+                    <p>You may see the review branch here:</p>
+                    <ul>
+                        <li>Merge request: <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/merge_requests/281">gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/merge_requests/281</a>
+                        </li>
+                    </ul>
+                    <p>Or you can download a <em>binary pre-release</em> here:</p>
+                    <ul>
+                        <li>Binaries: <a href="https://c3-soft.com/downloads/BitcoinCash/bchn/GBTLight/">c3-soft.com/downloads/BitcoinCash/bchn/GBTLight/</a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <p>Links:</p>
+                    <ul>
+                        <li>
+                            <p>Instructions on how to perform this benchmark: <a href="https://gist.github.com/cculianu/20309e67ff82caa397b4460ec011ad54">GitHub Gist</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Repository link of this announcement: <a href="https://gitlab.com/bitcoin-cash-node/announcements/-/blob/master/20200504_gbt_light_announcement.md">GitLab</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+  </main>
+
+  <footer class="footer bg-dark py-6 text-a-white text-light">
+  <div class="container g">
+    <div class="row justify-content-xl-center">
+
+      <!-- Organization -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Organisation</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/fr/team">Équipe</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/fr/goals">Objectifs</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/fr/newsroom">Newsroom</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/fr/media">Kit de presse</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Software -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Logiciel</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/fr/download.html">Télécharger</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://docs.bitcoincashnode.org">Docs</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Code source</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Security -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Sécurité</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/blob/master/DISCLOSURE_POLICY.md">Politique de divulgation</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:security@bitcoincashnode.org">Sécurité</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Réseaux Sociaux</div>
+        <ul class="list-inline social">
+          <li>
+            <a target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA" class="text-muted">Slack</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/bitcoincashnode" class="text-muted">Twitter</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://t.me/bitcoincashnode" class="text-muted">Telegram</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://read.cash/@bitcoincashnode" class="text-muted">read.cash</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Website -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0 mt-md-4 mt-xl-0">
+        <div class="h4 text-white">Site Web</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://github.com/bitcoin-cash-node/bchnode-web">GitHub</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:website@bitcoincashnode.org">Email</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA">Slack</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://t.me/merc1er">Telegram</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="/static/js/scripts.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="author" content="Bitcoin Cash Community">
+  <meta name="description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://bitcoincashnode.org/static/img/icons/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="https://bitcoincashnode.org/static/img/icons/apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/css/style.css">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@bitcoincashnode">
+  <meta name="twitter:creator" content="@bitcoincashnode">
+  <meta name="twitter:title" content="Bitcoin Cash Node">
+  <meta name="twitter:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta name="twitter:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="https://bitcoincashnode.org/">
+  <meta property="og:title" content="Bitcoin Cash Node">
+  <meta property="og:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+
+  <title>BCHN Financial Report 2020-10-20</title>
+</head>
+
+<body>
+  <!-- <div class="bg-dark">
+    <div class="bg-info-gradient py-3">
+      <div class="container text-center">
+         <a class="text-white" href=""></a>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark py-4 navbar-expand-lg">
+    <div class="container">
+      <a class="btn btn-link text-white underline-animate" href="/nl">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapsed" aria-controls="navCollapsed" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navCollapsed">
+        <ul class="navbar-nav ml-auto text-center text-lg-left">
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://docs.bitcoincashnode.org">Documentatie</a></li>
+          <!-- About selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="about-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Over ons <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/nl/team">Team</a>
+                <a class="dropdown-item" href="/nl/goals">Doelen</a>
+                <a class="dropdown-item" href="/nl/newsroom">Nieuws</a>
+                <a class="dropdown-item" href="/nl/media">Media kit</a>
+              </div>
+            </div>
+          </li>
+          <!-- /About selector -->
+          <!-- Source -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Source code</a></li>
+          <!-- /Source -->
+          <!-- Download -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="/nl/download.html">Download</a></li>
+          <!-- /Download -->
+          <!-- Language selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="lang-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Language <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/en">English</a>
+<a class="dropdown-item" href="/zh">简体中文</a>
+<a class="dropdown-item" href="/es">Español</a>
+<a class="dropdown-item" href="/ja">日本語</a>
+<a class="dropdown-item" href="/ko">한국어</a>
+<a class="dropdown-item" href="/de">Deutsch</a>
+<a class="dropdown-item" href="/fr">Français</a>
+<a class="dropdown-item" href="/it">Italiano</a>
+<a class="dropdown-item" href="/nl">Nederlands</a>
+<a class="dropdown-item" href="/no">Norsk</a>
+
+              </div>
+            </div>
+          </li>
+          <!-- /Language selector -->
+        </ul>
+      </div>
+      <!-- /Collapse -->
+    </div>
+  </nav>
+  <!-- /Navbar -->
+
+  <main class="overflow-hidden">
+    
+<section class="bg-dark">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col my-5 py-5 text-center">
+                <h1 class="text-white">BCHN Financial Report 2020-10-20</h1> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container py-6">
+        <div class="row justify-content-center">
+            <article class="col-md-10 col-lg-8">
+                <div class="d-flex align-items-center pb-5">
+                    <img src="/static/img/logomark.svg" alt="Logo" class="mr-3" height="40">
+                    <div>
+                        <div>by <strong>Bitcoin Cash Node Team</strong>
+                        </div>
+                        <div class="text-small text-muted">20 October 2020</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+
+                    </p>
+                    <p>The Bitcoin Cash Node (BCHN) project practices and promotes transparent reporting.</p>
+                    <p>Project funds are held by team members in a 3-of-5 multi-signature wallet.</p>
+                    <p>This wallet is used to receive <a href="https://bitcoincashnode.org/#donate">donations</a> and pay for project expenses (general funding of BCH Node operations, including personnel, equipment and contracting).</p>
+                    <p>All our transactions are on the Bitcoin Cash (BCH) blockchain.</p>
+                    <p>We use open source wallet software (<a href="https://www.electroncash.org/">Electron Cash</a>) and maintain our accounts using <a href="https://plaintextaccounting.org/">plain text accounting</a> in a <a href="https://gitlab.com/bitcoin-cash-node/bchn-project-management/bchn-pm-public/-/blob/master/finance/bookkeeping/prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk.journal">ledger file</a> which
+                        is part of the public <a href="https://gitlab.com/bitcoin-cash-node/bchn-project-management/bchn-pm-public">project management repository</a> on GitLab.</p>
+                    <p>Based on this public ledger, the project can account for all its income and expenses and produce financial reports using auditable open source software.</p>
+                    <p>Please refer to the Links section at the bottom for links to previous financial reports.</p>
+                    <h3 id="project-account-details-as-of-2020-10-20">Project account details as of 2020-10-20</h3>
+                    <p>The statements below cover transactions up to and including on October 20, 2020 (more precisely, up to block 657,989.</p>
+                    <p>2109.93838878 BCH was held by the project at the time of writing. This represents a decrease in available funds of about 36.1 BCH since the previous report in September. The project remains in a very good financial state.</p>
+                    <p>All expenses below fall within the scope of our funding proposal (link above). Since project start, a total of 277.43677588 BCH has been spent so far, broken down as indicated.</p>
+                    <pre><code class="language-javascript">       2109.93838878 BCH  assets:crypto:bitcoincash
+        277.43677588 BCH  expenses
+        247.77313278 BCH    development
+         87.97578591 BCH      backporting
+         24.04174199 BCH      bounty
+          0.25000000 BCH        doc
+          0.50000000 BCH        feature
+          6.09334702 BCH        review
+          1.25000000 BCH        test
+         15.94839497 BCH        website
+         62.65460295 BCH      daa
+         48.94642857 BCH      general
+          5.48696844 BCH      general verification
+         18.66760492 BCH      website
+          6.80363425 BCH        flipstarter
+          3.91435825 BCH        general
+          7.94961242 BCH        i18n
+          6.40508893 BCH    infrastructure
+          0.00029924 BCH    mining fees
+         21.61212791 BCH    pr
+         19.61212791 BCH      representative
+          2.00000000 BCH      video
+          1.64612702 BCH    translation
+      -2387.37516466 BCH  income:donation
+</code></pre>
+                    <h3 id="income">Income</h3>
+                    <p>Currently BCHN derives all its income from donations.</p>
+                    <p>The donations below include those made directly to our project donation address and those forwarded from tips on this site.</p>
+                    <p>We thank Georg Engelmann for a very generous personal donation of 50 BCH during the time since our last report.</p>
+                    <p>A total of 2387.37516466 BCH had been received in donations since the start of the project in February 2020. About half of that was raised via a Flipstarter campaign which <a href="https://bitcoincashnode.org/en/newsroom/bchn-flipstarted">successfully completed</a> on
+                        26 April, yielding 978 BCH in funding for BCHN's initial <a href="https://gitlab.com/bitcoin-cash-node/bchn-project-management/bchn-pm-public/-/raw/master/finance/funding/campaigns/2020-q2-flipstarter/pdf/Bitcoin_Cash_Node_Flipstarter_Funding_Proposal_v1_1.pdf">project proposal</a>.
+                        Another 1000 BCH was received in an anonymous donation in August 2020, and the remainder is from several business and personal donations.</p>
+                    <p>There are many other anonymous donations making up the remainder, but some of our biggest known donors include ASICseer.com, Marc de Mesel and Georg Engelmann.</p>
+                    <p>We thank all our donors for their support!</p>
+                    <h3 id="expenses">Expenses</h3>
+                    <p>Below are the project's expenses since the last overview on September 3, 2020. They amount to 88.08639918 BCH over that period. The mining fees have been excluded. These are the network fees paid by BCHN when transacting on the Bitcoin
+                        Cash network, totalling only 0.00029924 BCH or less than 10 US cents for ALL financial transactions conducted by the project in its life up to now!</p>
+                    <pre><code class="language-javascript">    2020/09/04  ex:de:website:general        1.27118644 BCH
+    2020/09/07  ex:de:bounty:website         1.96506550 BCH
+    2020/09/07  ex:de:bounty:website         0.44052863 BCH
+    2020/09/07  ex:de:bounty:website         0.22366360 BCH
+    2020/09/07  ex:de:bounty:website         1.55832591 BCH
+    2020/09/07  ex:de:bounty:website         1.32450331 BCH
+    2020/09/09  ex:de:bounty:website         2.27272727 BCH
+    2020/09/09  ex:development:backporting   3.41071429 BCH
+    2020/09/09  ex:development:general       8.94642857 BCH
+    2020/09/10  ex:de:bounty:website         2.22222222 BCH
+    2020/09/10  ex:de:bounty:website         0.87336245 BCH
+    2020/09/11  ex:de:bounty:website         3.57941834 BCH
+    2020/09/18  ex:de:bounty:website         1.27118644 BCH
+    2020/09/20  ex:de:bounty:website         0.21739130 BCH
+    2020/09/27  ex:pr:video                  2.00000000 BCH
+    2020/09/30  ex:de:website:general        2.64317181 BCH
+    2020/09/30  ex:pr:representative         5.53097345 BCH
+    2020/10/01  ex:development:general      40.00000000 BCH
+    2020/10/02  ex:de:bounty:feature         0.50000000 BCH
+    2020/10/07  ex:development:bounty:test   1.25000000 BCH
+    2020/10/09  ex:development:bounty:doc    0.25000000 BCH
+    2020/10/10  ex:infrastructure            6.33552965 BCH
+</code></pre>
+                    <p>In the time since the last report, BCHN activity was focused on general development (with backporting activity reduced due to developer resource constraints). Several bounties were awarded in this period for website-related content
+                        imports and test and feature developments.</p>
+                    <p>19.86275322 BCH were spent on website maintenance and improvement.</p>
+                    <p>54.35714286 BCH were spent on client software (and documentation) development.</p>
+                    <p>7.53097345 BCH were spent on public relations, including a video to introduce the team.</p>
+                    <p>6.33552965 BCH were spent on project infrastructure.</p>
+                    <h3 id="basic-statistics-about-bchn-project-ledger">Basic statistics about BCHN project ledger</h3>
+                    <p>These are derived from hledger tool's statistic report.</p>
+                    <pre><code class="language-javascript">    Main file                : bchn.journal
+    Included files           : prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk.journal
+                               pp03e95qz7yene7v4vdx2vfsqx4qsq4wfvw8z3pkjf.journal
+    Transactions span        : 2020-02-22 to 2020-10-14 (235 days)
+    Last transaction         : 2020-10-13 (7 days ago)
+    Transactions             : 207 (0.9 per day)
+    Transactions last 30 days: 17 (0.6 per day)
+    Transactions last 7 days : 1 (0.1 per day)
+    Payees/descriptions      : 1
+    Accounts                 : 20 (depth 4)
+    Commodities              : 2 (, BCH)
+</code></pre>
+                    <h3 id="notes-about-balances-displayed-on-block-explorers">Notes about balances displayed on block explorers</h3>
+                    <p>Block explorers may show a slightly lower amount for the main wallet address <code class="language-javascript">prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk</code> (2,109.93763055 BCH at block 657,989).</p>
+                    <p>This is because a small amount in donations (currently 0.00075823 BCH) are stored on a subsequent address (<code class="language-javascript">pp03e95qz7yene7v4vdx2vfsqx4qsq4wfvw8z3pkjf</code>) in BCHN's multi-signature wallet which
+                        was issued to Coin.dance who are collecting donations on behalf of node client projects. They requested this separate address for their own accounting purposes. BCHN will probably periodically receive some donations coming in from
+                        there - should significant amounts accrue, they will eventually be moved to the main wallet, but the report (as above) will reflect the total donated amounts on both our main and this secondary address.</p>
+                    <h3 id="slp-donation-address">SLP donation address</h3>
+                    <p>The project has a SimpleLedger (SLP) token donation address.</p>
+                    <p><code class="language-javascript">simpleledger:qrjv4klcn9z5kqeye3ps64pr6aa4mzux8cy776pm6k</code>
+                    </p>
+                    <p>Currently, the project has received and is holding donations of 2,000,000 SPICE 🌶️ and 1,000 USDt on that address.</p>
+                    <p>A few other unknown tokens have been sent to the address.</p>
+                    <p>As we conduct our payments exclusively in Bitcoin Cash up to now, we have yet to set up a ledger file to account for token holdings. We may do so for main tokens like SPICE, but not generally for all random tokens sent our way, as
+                        this would be a way to spam the project.</p>
+                    <h3 id="development-bounties">Development bounties</h3>
+                    <p>The project has had good experience with bountied work so far and has increased that share of its expenditure.</p>
+                    <p>In this last period, bounties were used to successfully source</p>
+                    <ul>
+                        <li>
+                            <p>website content (importing from read.cash to the Newsroom)</p>
+                        </li>
+                        <li>
+                            <p>development of a relatively complex new functional test related to ongoing performance improvements</p>
+                        </li>
+                        <li>
+                            <p>development of a new <code class="language-javascript">indexdir</code> feature (complete with implementation, development and documentation) requested by a user</p>
+                        </li>
+                    </ul>
+                    <p>Developers who are interested in partaking in upcoming bounties, are invited to join the project Slack (link below) for announcements in the development channels and keep an eye out for <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=bounty">Issues on GitLab marked with a <code class="language-javascript">bounty</code> label</a>.</p>
+                    <hr>
+                    <h3 id="links">Links</h3>
+                    <p>Previous financial overviews:</p>
+                    <ul>
+                        <li>
+                            <p><a href="https://read.cash/@freetrader/bchn-lead-maintainer-report-2020-03-14-84f2992d#financial-overview">Financial overview in report of 14 March 2020</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p><a href="https://read.cash/@freetrader/bchn-lead-maintainer-report-2020-03-31-1e0a4c39#financial-overview">Financial overview in report of 31 March 2020</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p><a href="https://read.cash/@freetrader/bchn-lead-maintainer-report-2020-04-15-449fc115#financial-overview">Financial overview in report of 15 April 2020</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p><a href="https://read.cash/@bitcoincashnode/bchn-financial-report-2020-06-03-d2a0232f">BCHN Financial Report 2020-06-03</a> (3 June 2020)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://read.cash/@bitcoincashnode/bchn-financial-report-2020-07-07-d04c7e65">BCHN Financial Report 2020-07-07</a> (7 July 2020)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://read.cash/@bitcoincashnode/bchn-financial-report-2020-09-03-a477d4e2">BCHN Financial Report 2020-09-03</a> (20 October 2020)</p>
+                        </li>
+                    </ul>
+                    <p>Flipstarter funding proposal:</p>
+                    <ul>
+                        <li>
+                            <p><a href="https://gitlab.com/bitcoin-cash-node/bchn-project-management/bchn-pm-public/-/raw/master/finance/funding/campaigns/2020-q2-flipstarter/pdf/Bitcoin_Cash_Node_Flipstarter_Funding_Proposal_v1_1.pdf">English, v1.1</a> (PDF)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://gitlab.com/bitcoin-cash-node/bchn-project-management/bchn-pm-public/-/blob/master/finance/funding/campaigns/2020-q2-flipstarter/pdf/Bitcoin_Cash_Node_Flipstarter_Funding_Proposal_v1_1_CN.pdf">Chinese, v1.1</a> (PDF)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://gitlab.com/bitcoin-cash-node/bchn-project-management/bchn-pm-public/-/blob/master/finance/funding/campaigns/2020-q2-flipstarter/proposal/proposal-es.mediawiki">Spanish, 1.1</a> (mediawiki)</p>
+                        </li>
+                    </ul>
+                    <p>Getting in touch with BCHN:</p>
+                    <ul>
+                        <li>
+                            <p>Website: <a href="https://bitcoincashnode.org"><a href="https://bitcoincashnode.org">https://bitcoincashnode.org</a></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Development & support Slack chat invite link:</p>
+                            <p><a href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA"><a href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA">https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA</a></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Telegram: <a href="https://t.me/bitcoincashnode">https://t.me/bitcoincashnode</a> (there is a bridge channel to our Slack)</p>
+                        </li>
+                        <li>
+                            <p>IRC channel: Join <strong>#bchnode</strong> on Freenode (we see messages on our Slack via an IRC bridge channel)</p>
+                        </li>
+                        <li>
+                            <p>Logs of our development Slack: <a href="http://logs.bchnode.org/"><a href="http://logs.bchnode.org/">http://logs.bchnode.org/</a></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Main development repository on GitLab:</p>
+                            <p><a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node"><a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node">https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node</a></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Easy download link via our website:</p>
+                            <p><a href="https://bitcoincashnode.org/download.html"><a href="https://bitcoincashnode.org/download.html">https://bitcoincashnode.org/download.html</a></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Full releases on Github:</p>
+                            <p><a href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases"><a href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases">https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases</a></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Donation address: <a href="https://bitcoincashnode.org/#donate"><a href="https://bitcoincashnode.org/#donate">https://bitcoincashnode.org/#donate</a></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Follow us on Twitter: <a href="https://twitter.com/bitcoincashnode"><a href="https://twitter.com/bitcoincashnode">https://twitter.com/bitcoincashnode</a></a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+  </main>
+
+  <footer class="footer bg-dark py-6 text-a-white text-light">
+  <div class="container g">
+    <div class="row justify-content-xl-center">
+
+      <!-- Organization -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Organisatie</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/nl/team">Team</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/nl/goals">Doelen</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/nl/newsroom">Nieuws</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/nl/media">Media kit</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Software -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Software</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/nl/download.html">Download</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://docs.bitcoincashnode.org">Documentatie</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Source code</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Security -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Security</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/blob/master/DISCLOSURE_POLICY.md">Disclosure policy</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:security@bitcoincashnode.org">Security contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Sociaal</div>
+        <ul class="list-inline social">
+          <li>
+            <a target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA" class="text-muted">Slack</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/bitcoincashnode" class="text-muted">Twitter</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://t.me/bitcoincashnode" class="text-muted">Telegram</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://read.cash/@bitcoincashnode" class="text-muted">read.cash</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Website -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0 mt-md-4 mt-xl-0">
+        <div class="h4 text-white">Website</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://github.com/bitcoin-cash-node/bchnode-web">GitHub</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:website@bitcoincashnode.org">Email</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA">Slack</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://t.me/merc1er">Telegram</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="/static/js/scripts.js"></script>
+
+
+</body>
+</html>

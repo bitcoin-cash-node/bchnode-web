@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="author" content="Bitcoin Cash Community">
+  <meta name="description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://bitcoincashnode.org/static/img/icons/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="https://bitcoincashnode.org/static/img/icons/apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/css/style.css">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@bitcoincashnode">
+  <meta name="twitter:creator" content="@bitcoincashnode">
+  <meta name="twitter:title" content="Bitcoin Cash Node">
+  <meta name="twitter:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta name="twitter:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="https://bitcoincashnode.org/">
+  <meta property="og:title" content="Bitcoin Cash Node">
+  <meta property="og:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+
+  <title>BCHN lead maintainer report 2020-06-15</title>
+</head>
+
+<body>
+  <!-- <div class="bg-dark">
+    <div class="bg-info-gradient py-3">
+      <div class="container text-center">
+         <a class="text-white" href=""></a>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark py-4 navbar-expand-lg">
+    <div class="container">
+      <a class="btn btn-link text-white underline-animate" href="/de">Startseite</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapsed" aria-controls="navCollapsed" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navCollapsed">
+        <ul class="navbar-nav ml-auto text-center text-lg-left">
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://docs.bitcoincashnode.org">Dokumentation</a></li>
+          <!-- About selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="about-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Über <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/de/team">Team</a>
+                <a class="dropdown-item" href="/de/goals">Ziele</a>
+                <a class="dropdown-item" href="/de/newsroom">Newsroom</a>
+                <a class="dropdown-item" href="/de/media">Medienpaket</a>
+              </div>
+            </div>
+          </li>
+          <!-- /About selector -->
+          <!-- Source -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Source code</a></li>
+          <!-- /Source -->
+          <!-- Download -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="/de/download.html">Download</a></li>
+          <!-- /Download -->
+          <!-- Language selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="lang-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Language <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/en">English</a>
+<a class="dropdown-item" href="/zh">简体中文</a>
+<a class="dropdown-item" href="/es">Español</a>
+<a class="dropdown-item" href="/ja">日本語</a>
+<a class="dropdown-item" href="/ko">한국어</a>
+<a class="dropdown-item" href="/de">Deutsch</a>
+<a class="dropdown-item" href="/fr">Français</a>
+<a class="dropdown-item" href="/it">Italiano</a>
+<a class="dropdown-item" href="/nl">Nederlands</a>
+<a class="dropdown-item" href="/no">Norsk</a>
+
+              </div>
+            </div>
+          </li>
+          <!-- /Language selector -->
+        </ul>
+      </div>
+      <!-- /Collapse -->
+    </div>
+  </nav>
+  <!-- /Navbar -->
+
+  <main class="overflow-hidden">
+    
+<section class="bg-dark">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col my-5 py-5 text-center">
+                <h1 class="text-white">BCHN lead maintainer report 2020-06-15</h1> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container py-6">
+        <div class="row justify-content-center">
+            <article class="col-md-10 col-lg-8">
+                <div class="d-flex align-items-center pb-5">
+                    <img src="/static/img/logomark.svg" alt="Logo" class="mr-3" height="40">
+                    <div>
+                        <div>by <strong>freetrader</strong>
+                        </div>
+                        <div class="text-small text-muted">15 June 2020</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+
+                    </p>
+                    <p>This is my first report since the May upgrade, and I must apologize for the long delay. A lot has happened since my <a href="BCHN-lead-maintainer-report-2020-04-15">last report</a>.</p>
+                    <p>On the bright side (not an exhaustive list):</p>
+                    <ul>
+                        <li>
+                            <p>The community rallied to prevent a currency split around the Infrastructure Funding Plan (IFP) and prevented a mass exodus of investors in face of the threat of damage to the incentive structure of Bitcoin Cash.
+                                <br>I believe the BCH ecosystem demonstrated commitment to the necessary kind of decentralization that makes BCH worth having in the first place.</p>
+                        </li>
+                        <li>
+                            <p>BCHN <a href="https://read.cash/@bitcoincashnode/bchn-flipstarted-thank-you-to-the-community-81e2fd64">achieved its first funding goal</a> through Flipstarter!</p>
+                        </li>
+                        <li>
+                            <p>We released two <a href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases">updates</a> (v0.21.1 and <a href="https://read.cash/@bitcoincashnode/announcing-bitcoin-cash-node-v0212-a413f3a1">v0.21.2</a>)</p>
+                        </li>
+                        <li>
+                            <p>Our software attained a range of interface performance improvements in its client as well as a <a href="https://read.cash/@bitcoincashnode/bchn-technical-bulletin-2020-05-04-51b0305f">new API feature</a> requested by mining pools.</p>
+                        </li>
+                        <li>
+                            <p>We are embarking to put out more information about <a href="https://read.cash/@bitcoincashnode/bitcoin-cash-node-vision-and-objectives-ce17507b">our project's vision and objectives</a>, since many are wondering what lies ahead.</p>
+                        </li>
+                        <li>
+                            <p>The project <a href="https://read.cash/@bitcoincashnode/bchn-welcomes-tracy-chen-as-representative-b10aec81">welcomed Tracy Chen as BCHN Representative</a> to help it keep in touch with the global BCH ecosystem and abreast of
+                                the needs of BCHN users.
+                                <br>Tracy has been active for us by establishing a WeChat presence, writing articles for the Chinese audience and contacting users in the mining and exchange sectors to find out what they view as most important.</p>
+                        </li>
+                    </ul>
+                    <p>On the somewhat dimmer side:</p>
+                    <ul>
+                        <li>
+                            <p>The difficulty adjustment algorithm (DAA) is still being exploited by bigger pools which game its vulnerability to oscillations. Jonathan Toomim has published an <a href="https://youtu.be/Fd6GFpZjLxU">excellent video on why this algorithm is broken</a>,
+                                and explored some possible solutions.</p>
+                        </li>
+                        <li>
+                            <p>Some mining pools supporting BCHN have been crowded out due unprofitable mining conditions on Bitcoin Cash (the aforementioned exploitation).</p>
+                        </li>
+                    </ul>
+                    <h3 id="-on-the-upgrade-frequency-on-the-upgrade-frequency-"><a href="#on-the-upgrade-frequency">On the upgrade frequency</a></h3>
+                    <p>Now that the May upgrade has passed, people are logically enquiring about BCHN's stance toward the 6-monthly network upgrade cycle.</p>
+                    <p>In our <a href="https://gitlab.com/bitcoin-cash-node/bchn-project-management/bchn-pm-public/-/raw/master/finance/funding/campaigns/2020-q2-flipstarter/pdf/Bitcoin_Cash_Node_Flipstarter_Funding_Proposal_v1_1.pdf">proposal document</a>,
+                        we wrote:</p>
+                    <p><em>The 6-monthly network upgrade cycle and very rapid client release cycles have been identified as sub-optimal, causing development centralization and practical troubles even for its staunch proponents. In consultation with users, BCHN will engage on well-considered adaptation of the upgrade cycle after November 2020 (the November upgrade is already encoded into the current software in terms of some parameters and cannot simply be abandoned).</em>
+                    </p>
+                    <p>Let me be clear: Most of our contributors, including myself, support an extension of the upgrade cycle (perhaps to 9-12 months at least) as an improvement step compared to the status quo.</p>
+                    <p>The semi-annual flag day upgrade procedures have hardly lived up the qualities people (including myself) expected. An intention was to increase awareness and ensure a certain amount of pressure on everyone to get their ducks in a row.</p>
+                    <p>But even in May 2020, there were incidents on the Bitcoin Cash network due to users being caught unaware by the upgrade and failing to update their systems in time. Maybe this is due to the too-short cycle. Since February, we have
+                        received real feedback from BCH users in industry who feel that the current upgrade cycle is too rapid. It's time to listen and take the concerns seriously.</p>
+                    <p>What was good at first for the BTC->BCH fork, has since repeatedly led to problems in subsequent upgrades.</p>
+                    <p>We can see by their actions that even leading client developers are not able to meet the constraints of the 6 months. They slipped in specifications past the feature freeze date in Q1 of this year, leading to annoyance and confusion
+                        about the planned features. This state of affairs is not conducive to winning new businesses over to run their critical systems on Bitcoin Cash. It is hurting adoption.</p>
+                    <p>As mentioned in our proposal from April, for technical reasons we (BCHN) are committed to the next network upgrade in November, but open to reconsideration after that.</p>
+                    <p>The November commitment is related to the "Automatic Replay Protection" in the upgrade specifications -- a full node version-deprecation mechanism which is sometimes referred to as the "poison pill".</p>
+                    <p>It makes non-upgraded nodes alter their transaction signatures so that they can no longer talk to the upgraded network once the next upgrade comes around. Effectively hard-forking non-upgraded nodes to a chain of their own. This mechanism
+                        locks us in the 6-monthly cycle, because deployed nodes are already programmed to make certain changes on that future date.</p>
+                    <p>Come November, BCHN plans to permanently remove this poison pill code from its major upgrade release.</p>
+                    <p>And after that the ecosystem will have an opportunity to re-shape the way Bitcoin Cash does network upgrades.</p>
+                    <p>The process is currently unhealthy. Not only are working procedures, specification time frames and the completeness of functional specifications no longer adhered to - this has contributed to developmental centralization and formation
+                        of a renewed "reference client" mindset which would stifle innovation and progress if left uncorrected.</p>
+                    <p>If we can collectively re-orient our ecosystem culture to allow room for technical disagreement while resolving it through evidence-based evaluation, combined with safe activation mechanisms that do not put the chain at risk of splitting
+                        by hostile hashpower, then we can reach much better decisions and a swifter advancement on the Bitcoin Cash roadmap towards global adoption.</p>
+                    <h3 id="-project-uptake-project-uptake-"><a href="#project-uptake">Project uptake</a></h3>
+                    <p>Since IFP is no longer an immediate threat, miner signaling for BCHN has decreased.</p>
+                    <p>This was expected to some degree: when there is not a burning issue, miners signal less willingly for particular clients that seek to address the issue.</p>
+                    <p>The IFP hot button issue has passed and BCH has been safely upgraded without a chain split. Subsequently, the percentage of miners signaling for us has gone down from an all time high of almost 17% to a steady state comprising our
+                        most steadfast supporters.</p>
+                    <p>We are thankful to those miners who have supported us during the run-up to May and helped to keep Bitcoin Cash free of a forced levy.</p>
+                    <p>Our special thanks to those who continue to signal support for our software using <code class="language-javascript">/BCHN/</code> in their coinbase strings. Thanks <a href="https://www.bitcoin.com/">bitcoin.com</a> , Hashpipe and P2Pool.</p>
+                    <figure class="text-center">
+                        <img src="/static/img/newsroom/2020-06-15/3bneA5i1D0usLADh1f7AAIro3asfIlIK1AUSOFhU.png" class="rounded img-fluid" alt="" title="">
+                        <figcaption>Hashpower signaling for BCHN in their coinbase strings. Guess where's May 2020 in this diagram!
+                        </figcaption>
+                    </figure>
+
+                    <p>The data for the above graph is from Dagurval's site, <a href="https://bitcoincash.network/voting/"><a href="https://bitcoincash.network/voting/">https://bitcoincash.network/voting/</a></a>which counts percentages over the 2015-block
+                        voting windows.</p>
+                    <p>In terms of network nodes, I'm pleased to report an increase to ~91 nodes, up significantly from 55 at the last report. This represents pleasing growth over this time interval.</p>
+                    <figure class="text-center">
+                        <img src="/static/img/newsroom/2020-06-15/fpkC1f1Qv7xR6IdzXkEtMoHPtRce4HgCvsLgwhUX.png" class="rounded img-fluid" alt="" title="">
+                    </figure>
+
+                    <p>The spike in BCHN nodes in the coin.dance data at the end of May 2020 was due to an experiment that a BCHN contributor (@mtrycz) conducted, to measure network performance using a short-lived set of cloud nodes.</p>
+                    <h2 id="-financial-overview-financial-overview-"><a href="#financial-overview">Financial overview</a></h2>
+                    <p>In the time since April, I have set up a public book-keeping based on <a href="https://plaintextaccounting.org/">plain text accounting</a> . At the beginning of June we issued <a href="https://read.cash/@bitcoincashnode/bchn-financial-report-2020-06-03-d2a0232f">our first separate Financial Report</a>.</p>
+                    <p>This report will replace this "Financial Overview" section going forward (I will only reference it in future reports).</p>
+                    <p>Our full Financial Report contains links to all our previous financial overviews and allows us to go into more financial details than would be suitable for this maintainer report.</p>
+                    <p>BCHN intends to publish these Financial Reports on a monthly basis, allowing anyone to see how the money donated to us is being spent.</p>
+                    <p>We do not shy away from transparency and accountability. No other Bitcoin Cash full node software project I know of releases such detailed financial information. I am confident in claiming that BCHN is leading by example here.</p>
+                    <h2 id="-project-work-items-update-project-work-items-update-"><a href="#project-work-items-update">Project work items update</a></h2>
+                    <p>Since initial release:</p>
+                    <ul>
+                        <li>
+                            <p>Issues: 123 raised, 57 closed, 66 open</p>
+                        </li>
+                        <li>
+                            <p>Merge Requests: 545 raised, 455 merged, 28 closed (read: rejected or aborted), 62 open</p>
+                        </li>
+                    </ul>
+                    <p>Since last maintainer report (2020-04-15):</p>
+                    <ul>
+                        <li>
+                            <p>Issues: 47 raised, 18 closed, 29 open</p>
+                        </li>
+                        <li>
+                            <p>Merge Requests: 394 raised, 325 merged, 13 closed (read: rejected or aborted), 56 open</p>
+                        </li>
+                    </ul>
+                    <h3 id="-backporting-backporting-"><a href="#backporting">Backporting</a></h3>
+                    <p>What probably stands out most from the above numbers is a sharp increase in Merge Requests over this period. This is due to a concerted effort (still underway) to tackle outstanding backports from upstream projects.</p>
+                    <p>Backporting isn't simply copying changes from upstream, it requires experienced developers to review and test (and in some instances: develop tests for) those changes. In some instances we have found problems and reject upstream changes.</p>
+                    <p>We are currently still playing catch up. Both Core and ABC have more developers, so we need to figure out how to work smart.</p>
+                    <p>The graph below gives an overview of our backporting activities.</p>
+                    <figure class="text-center">
+                        <img src="/static/img/newsroom/2020-06-15/lR0FGkOAhTyIFTxBaH4JWgtTww5EyLee2YaYD4eU.png" class="rounded img-fluid" alt="" title="">
+                    </figure>
+
+                    <p>We need to ramp those up further (to make dents in yellow and red lines and bump up the green line).</p>
+                    <p>The slope of the increasing red line indicates rate at which backports from upstream (in this case, ABC) are heading towards us. They then get sorted into various categories (planned, deferred, rejected) and planned ones get worked
+                        on until they are integrated (merged).</p>
+                    <p>Internal project discussions were in May and held and concluded that the backporting effort would, for now, be shared by existing contributors to the project. This may change at a later date, but two BCHN developers have firmly committed
+                        time to this activity, while another developer has flexibly contributed to it. This is in accordance with our Flipstarter proposal, where we did foresee that</p>
+                    <p><em>we may either share it across developers or contract further development resources with these funds.</em>
+                    </p>
+                    <p>Starting June, BCHN has begun paying out funds monthly from its backport budget to contributing developers based on their efforts.</p>
+                    <h2 id="-project-planning-scheduling-project-planning-scheduling-"><a href="#project-planning-scheduling">Project Planning / Scheduling</a></h2>
+                    <p><em>Backport status tracking</em>
+                    </p>
+                    <p>To facilitate the planning and status tracking of backports, I've set up a <a href="https://gitlab.com/bitcoin-cash-node/bchn-project-management/bchn-pm-public/-/blob/master/planning/bchn-backporting.csv">shared tracking database maintained in GitLab</a> which
+                        can be used by maintainers & developers. Below shows an extract from this database.</p>
+                    <pre><code class="language-javascript">bp_id,bp_status,mr,abc_diff,core_pr,depends,upstream_commit,commit_desc,comment
+...
+9145,planned,,D5726,,"D5710,D5712,D5713,D5714",02ab89366a5a6623835b65038544e4e061b44031,Complete PR14796 by cleaning up some old functions and names (Nico Guiton),
+9144,deferred,,D5725,,,969731122b25481f237eaad32d9ad2386ac0cf32,Pass rpc/avalanche RPC argument descriptions to RPCHelpMan (Nico Guiton),Deferral reason: postpone all further Avalanche integration until after pre-/post-consensus evaluation
+9143,rejected,,D5724,,,b33ec898c04aa0b4b2f5716b4ff2becedf8e44ed,Add upgraded nodes as seeds (Jason B. Cox),Rejection reason: inapplicable (BCHN maintains its own seeds)
+9142,unevaluated,,D5723,,,b9e3d1272c0230c0d96b6063392cad06966ae8d4,Extract smoke tests from automated commits (Jason B. Cox),
+9141,planned,,D5722,,,a0950966fd8578ac25f54eadcefd27daf103a6f7,Finish passing the remainder of wallet/rpcwallet RPC argument descriptions to RPCHelpMan (Nico Guiton),
+9140,unevaluated,,D5721,,,baf31e908e8d0c348d2fb139d71c09a5486e60f5,Remove win32 from Github release (Jason B. Cox),
+9139,planned,,D5720,,,c69d41b2bc44d190dd3d115303024c5e222368fa,Pass rpc/rawtransaction RPC argument descriptions to RPCHelpMan (Nico Guiton),
+9138,deferred,,D5719,,,1d6e7ce3a40551ff588cc65f60599f2c1dfd6480,[avalanche] Modernize the code via using instead of typedef (Amaury Séchet),Deferral reason: postpone all further Avalanche integration until after pre-/post-consensus evaluation
+9137,planned,!508,D5718,,D5715,2f3cc194c824c16f652cb65ba672919f28fe13a8,Move PSBT definitions and code to separate files (Glenn Willen),
+...
+</code></pre>
+                    <p>There is also a <a href="https://schedule.bitcoincashnode.org/bchn-backport-diffs-planning.html">planning page</a> with hyperlinks to Merge Requests (for backports already in progress) and Phabricators Diffs.</p>
+                    <figure class="text-center">
+                        <img src="/static/img/newsroom/2020-06-15/ugyqlZNeYQoFWthiucMrb3M4s3CpBwp7M5bV7AbJ.png" class="rounded img-fluid" alt="" title="">
+                    </figure>
+
+                    <p><em>Project work package planning</em>
+                    </p>
+                    <p>I've started to set up an open project schedule of our project work packages, currently reflecting our initial Flipstarter proposal plans.</p>
+                    <ul>
+                        <li>
+                            <p><a href="https://schedule.bitcoincashnode.org/">High level view</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p><a href="https://schedule.bitcoincashnode.org/BCHN-task-detail.html">Detailed view</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <p>These plans are hosted on <a href="https://schedule.bitcoincashnode.org"><a href="https://schedule.bitcoincashnode.org">https://schedule.bitcoincashnode.org</a></a>and we plan to update them as needed. All the data and configuration
+                        files used to generate these scheduling pages are in our <a href="https://gitlab.com/bitcoin-cash-node/bchn-project-management/bchn-pm-public">public project management repository</a>.</p>
+                    <figure class="text-center">
+                        <img src="/static/img/newsroom/2020-06-15/ksQTYkCr1voHPKFalgEHj1CDFl9KmUyIBu5ck8IO.png" class="rounded img-fluid" alt="" title="">
+                        <figcaption>Preliminary project schedule based on Flipstarter proposal</figcaption>
+                    </figure>
+
+                    <p>We are currently hard-pressed to gather development resources to meet these plans.</p>
+                    <p>The schedule for higher-precision numerical script operators has already slipped a bit, and our schedule there will need updating.</p>
+                    <p>BCHN is looking for experienced Bitcoin Cash developers to drive this specification and implementation forward, but that is proving more difficult than originally anticipated.</p>
+                    <p>There have been productive internal discussions on the requirements and options (such as choosing between a 64-bit, 128-bit or arbitrary precision initial specification. Tobias Ruck has presented findings from his 128-bit specification
+                        work in progress where he found a DoS vector when using Boost. There have been suggestions to emulate 128-bit integer arithmetic using 64-bit operations and the same principle could be used to arrive at higher precision without
+                        a need to use arbitrary precision libraries. Arbitrary precision arithmetic comes with significantly more effort and complexity and would almost certainly be out of reach for August. Even for a fixed precision proposal, BCHN may
+                        not be able to make the feature freeze unless we soon find skilled people with time to write this specification, implement it and test it.</p>
+                    <p>Currently, the DAA is considered as the most urgent problem and is seen as make-or-break in the very near term. Consequently many developers are giving it attention. Lively discussion on several promising proposals was held among developers
+                        Jonathan Toomim, Karol Trzeszczkowski, Tom Zander and others. The best way to conduct an evaluation and come to a firm consensus on a replacement algorithm is still a matter of internal debate, but we are in touch with people who
+                        may be able to drive this work.</p>
+                    <p>@im_username has started to gather requirements and determine the scope of the testnet improvement work package. Contact him if you have suggestions or wish to participate in this activity. You can reach him on BCHN Slack or Telegram.</p>
+                    <p>I'll be focusing a large part of my efforts in the next 2-3 weeks on the rolling checkpoints specification and validation. I'm behind on the specification parts, but think I can make up sufficient ground.</p>
+                    <p>On the website improvement work package, <a href="https://merc1er.com/">Corentin Mercier</a> (@merc1er) has moved the project forward significantly by setting up translations via Crowdin and building a Newsroom page to which we can add
+                        content.</p>
+                    <figure class="text-center">
+                        <img src="/static/img/newsroom/2020-06-15/Fr4hoBC9t5dYGodpfRAizdoSxBQTrGYkAjM4OGmA.png" class="rounded img-fluid" alt="" title="">
+                    </figure>
+
+                    <p>He is current working on improving the user experience of our site (front page needs an overhaul) and <a href="https://gitlab.com/flipstarter/backend/-/issues/27">progressing Flipstarter deployment capability</a> via a project jointly
+                        funded by BCHN and the Flipstarter team. This will allow BCHN to easily deploy Flipstarter technology to raise funds in future for further development.</p>
+                    <h2 id="-additional-improvements-additional-improvements-"><a href="#additional-improvements">Additional improvements</a></h2>
+                    <h3 id="-new-api-getblocktemplatelight-submitblocklight-new-api-getblocktemplatelight-submitblocklight-"><a href="#new-api-getblocktemplatelight-submitblocklight">New API: <code class="language-javascript">getblocktemplatelight</code> + <code class="language-javascript">submitblocklight</code></a></h3>
+                    <p>This is a major new RPC interface developed by Calin Culianu in conjunction with WaYi / easy2mine pool.</p>
+                    <p>It offers a significant speed improvement to pools over the legacy <code class="language-javascript">getblocktemplate</code>/<code class="language-javascript">submitblock</code> method. BCHN published an earlier <a href="https://read.cash/@bitcoincashnode/bchn-technical-bulletin-2020-05-04-51b0305f">Technical Bulletin</a> about
+                        the performance improvements. The new feature comprised significant amounts of new code and is a great benefit for mining pools.</p>
+                    <p>Since any defect in such critical mining code could result in pools losing money due to invalid blocks or downtime, it was decided to spend some extra funds on review of this code. BCHN paid out two bounties to project contributors
+                        for review of this development (these were announced in our Slack developer channel). In return the project obtained a high quality of code reviews and could confidently release this new feature in v0.21.2.</p>
+                    <h2 id="-performance-optimizations-to-json-library-and-rpc-interface-performance-optimizations-to-json-library-and-rpc-interface-"><a href="#performance-optimizations-to-json-library-and-rpc-interface">Performance optimizations to JSON library and RPC interface</a></h2>
+                    <p>BCHN developers continue to improve the performance of JSON RPC, chiefly through optimization of the Univalue library, but not limited to that.</p>
+                    <p>This work is driven by BCHN developers @BigBlockIfTrue and Calin Culianu.</p>
+                    <p>Significant improvements have been achieved since BCHN project start, and since v0.21.2 release. More of these will be available in our next minor release v0.21.3.</p>
+                    <p>Work is progressing toward catching up with the performance of <a href="https://rapidjson.org/">rapidjson</a>, the leading JSON library in the field. Currently UniValue's JSON is slower by a factor of 2. This isn't actually that much
+                        difference anymore and we hope to release more benchmark results in the near future to showcase relevant BCHN improvements.</p>
+                    <p>These RPC performance improvements play an important part to contribute to scaling the data that can be transferred efficiently over these interfaces.</p>
+                    <p>The performance gains also translate into faster processing of your application's requests when interacting with the full node.</p>
+                    <h3 id="-better-documentation-better-documentation-"><a href="#better-documentation">Better documentation</a></h3>
+                    <p>BCHN developer @BigBlockIfTrue has done great work on supplementing the documentation by adding generated Markdown documents for BCHN software invocation options and JSON RPC interface calls. Together with Dagur and merc1er, the deployment
+                        and hosting of the documentation has been set up at <a href="https://docs.bitcoincashnode.org"><a href="https://docs.bitcoincashnode.org">https://docs.bitcoincashnode.org</a></a>.</p>
+                    <figure class="text-center">
+                        <img src="/static/img/newsroom/2020-06-15/8WclYIB57F0E63KYRDtanwyAcJecC8JbEPgDb991.png" class="rounded img-fluid" alt="" title="">
+                        <figcaption>Part of the new document site, showing RPC API usage</figcaption>
+                    </figure>
+
+                    <p>External BCHN contributor Søren Bredlund Caspersen has greatly assisted in the correction and improvement of various documents in the BCHN set. For example, he cleaned up installation and build documents and contributed a better way
+                        of building our documentation site for deployment. This allows us to present more of the documents and eliminate broken links.</p>
+                    <p>Now nearly the complete documentation is easily accessible for anyone who wishes to participate in the project or understand how to use the software.</p>
+                    <p>A big thanks to BigBlockIfTrue, Dagur, Søren and merc1er for all their continuing work to make better documentation happen.</p>
+                    <p>Nevertheless, documentation is never perfect. If there are questions remaining, we welcome anyone to join our Slack to get more support.</p>
+                    <h3 id="-removal-of-bip9-and-prototype-code-from-the-application-removal-of-bip9-and-prototype-code-from-the-application-"><a href="#removal-of-bip9-and-prototype-code-from-the-application">Removal of BIP9 and prototype code from the application</a></h3>
+                    <p>Based on feedback, we have removed the following (a mix of technical debt, code not suitable for production and obsolete/unused instructions):</p>
+                    <ul>
+                        <li>
+                            <p>Code: the BIP9-like (but not quite BIP9) signalling mechanism. If anything we would like to replace this with BIP135 or whatever is agreed to be a safer alternative - maybe even something related to BMP.</p>
+                        </li>
+                        <li>
+                            <p>Code: the Avalanche prototype. The feature is unspecified, undocumented and not even remotely production ready. BCHN remains open to evaluating pre-consensus solutions, including Avalanche, but few here share a view that integrating
+                                such early-stage experimental code into the regular production node client is advisable. We will however continue to monitor upstream development on it, and when the feature approaches a more complete, testable form, we
+                                are open to carefully re-integrating it with thorough review.</p>
+                        </li>
+                        <li>
+                            <p>Documentation: obsolete instructions for reproducible building (gitian) on Fedora</p>
+                        </li>
+                    </ul>
+                    <h3 id="-testing-tools-testing-tools-"><a href="#testing-tools">Testing Tools</a></h3>
+                    <p>BCHN contributor @mtrycz has developed a cloud-based (Amazon AWS) test framework and used it to conduct some highly interesting test runs to:</p>
+                    <ul>
+                        <li>
+                            <p>measure time of propagation of transactions across a network of nodes under various settings of the 'trickle' emission (relating to MRs <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/merge_requests/143">143</a>,
+                                <a
+                                href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/merge_requests/289">289</a>)</p>
+                        </li>
+                        <li>
+                            <p>conduct measurements related to Jonathan Toomim's MR <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/merge_requests/442">442</a> ("Faster sendtoaddress RPC and p2p_stresstest.py spam generation/stress testing
+                                script")</p>
+                        </li>
+                    </ul>
+                    <p>Among other interesting findings, @mtrycz's results demonstrate clearly a delay induced by the current transaction forwarding algorithm. This delay is something that could affect the user experience and we are looking at reducing it
+                        to improve 0-conf for users (and wallet developers).</p>
+                    <p>The graph below is taken from transaction propagation data collected on the BCH mainnet by a network of <code class="language-javascript">scatter</code>'ed nodes (the spike of additional BCHN network nodes that was mentioned earlier).</p>
+                    <p>It shows that for the bulk of transactions, propagation across the full measurent network happened in under 3 seconds (the Y axis graphs the time taken for a sample transaction to propagate to all the <code class="language-javascript">scatter</code> nodes).</p>
+                    <figure class="text-center">
+                        <img src="/static/img/newsroom/2020-06-15/cezA3clrrBb7AMexPjc9dyjKfKhZDsQdLUjJpUsP.jpeg" class="rounded img-fluid" alt="" title="">
+                        <figcaption>Measurements obtained using 'scatter' test tool developed by @mtrycz</figcaption>
+                    </figure>
+
+                    <p>@mtrycz has offered to release the testing framework (currently named <code class="language-javascript">scatter</code>) as open source under the BCHN project. You can [find it in his personal repository](
+                        <a href="https://gitlab.com/mtrycz/scatter"><a href="https://gitlab.com/mtrycz/scatter">https://gitlab.com/mtrycz/scatter</a></a>) for now where it is available for review. Please note that it is considered early stage (probably alpha) and as such users should read it carefully
+                        and take their own responsibility for using it.</p>
+                    <p>Developers from other node projects have already shown interest in using <code class="language-javascript">scatter</code> for their own testing. It is not limited to conducting BCHN tests - it can be used to test similar node software
+                        just as easily. BCHN owes thanks to @mtrycz for developing this tool - it will no doubt serve well for a lot of future tests which exceed the constraints of local regtest networks.</p>
+                    <h2 id="-ongoing-inter-project-collaboration-activities-ongoing-inter-project-collaboration-activities-"><a href="#ongoing-inter-project-collaboration-activities">Ongoing inter-project collaboration activities</a></h2>
+                    <p>There are no progress updates we can report on Xversion or Xthinner, but collaboration with both independent developers like Jonathan Toomim and those from other node projects (e.g. Greg Griffith from BU) is ongoing.</p>
+                    <p>Jonathan recently submitted a merge request (<a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/merge_requests/442">MR 442</a>) which contains a number of improvements and a stress-testing tool that may be helpful in
+                        scaling work.</p>
+                    <p>His work could provide a faster <code class="language-javascript">sendtoaddress</code> RPC implementation which could be activated through additional RPC command options in future.</p>
+                    <p>This work is currently under consideration for integration, and there is feedback that we could use from others on the proposed changes. BCHN will first need to improve its test and benchmarking facilities to ensure that changes like
+                        this can be introduced with the appropriate verification.</p>
+                    <p>Jonathan has also been very active in the DAA improvement sphere, where we benefit from his advice and insight. We thank both him and Mark Lundeberg, who agreed to let Jonathan publish the <a href="http://toom.im/files/da-asert.pdf">DA-ASERT paper</a> on
+                        Jonathan's website.</p>
+                    <p>DA-ASERT is an original contribution by Mark which has already been mentioned in the <a href="https://arxiv.org/abs/2006.03044">recent literature</a>.</p>
+                    <h3 id="-security-relations-security-relations-"><a href="#security-relations">Security relations</a></h3>
+                    <p>One security issue was found in upstream (Core + ABC) software by Calin Culianu. It does not directly affect BCHN, but is triggering some software improvements related to management of (auto-)banned nodes.</p>
+                    <p>Our disclosure relationship partners were advised to check whether the original issue might affect their software.</p>
+                    <h2 id="-issues-on-which-bchn-seeks-feedback-issues-on-which-bchn-seeks-feedback-"><a href="#issues-on-which-bchn-seeks-feedback">Issues on which BCHN seeks feedback</a></h2>
+                    <p><strong>CPFP</strong>
+                    </p>
+                    <p>I published a new <a href="https://gitlab.com/bitcoin-cash-node/bchn-public-consultation-system/-/raw/master/output/campaigns/202006_BCHN-PCS_CPFP_survey/202006_BCHN-PCS_CPFP_survey-en.md">PCS questionnaire to ask who is using Child-Pays-For-Parent</a> and
+                        if anyone, what their use cases are.</p>
+                    <p>Feedback I got so far via other channels was that majority of people were not using it, but a minority of Chinese users (seems related to exchange activities) had used it before and would like to use it in the future.</p>
+                    <p>The feedback sample size is currently small, so I'm looking for further input.</p>
+                    <p>We would like to explore technical solutions that involve eliminating CPFP in return for better scaling for unconfirmed transaction chains.</p>
+                    <p><code class="language-javascript">sendtoaddress</code>  <strong>interface extensions</strong>
+                    </p>
+                    <p><a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/merge_requests/442">MR 442</a> suggested some <code class="language-javascript">sendtoaddress</code> interface extensions. If you are a user of that interface and have
+                        some thoughts on those proposed extensions, please get in touch in some way.</p>
+                    <h2 id="-coming-up-coming-up-"><a href="#coming-up">Coming Up</a></h2>
+                    <p>BCHN plans to move to <a href="https://semver.org/">Semantic Versioning</a> (semver) in next <ins>major</ins> release (i.e. most likely the November upgrade).</p>
+                    <p>Semantic versioning will make it easier for our users to determine whether a release breaks existing public interfaces or not.</p>
+                    <p>This means the next major release version will be v22.0.0 .</p>
+                    <p>Until then, minor release continue to follow the current v0.21.x schema.</p>
+                    <hr>
+                    <h3 id="-how-to-get-in-touch-with-our-project-links-and-resources-how-to-get-in-touch-with-our-project-links-and-resources-"><a href="#how-to-get-in-touch-with-our-project-links-and-resources">How to get in touch with our project - links and resources</a></h3>
+                    <ul>
+                        <li>
+                            <p>Website: <a href="https://bitcoincashnode.org"><a href="https://bitcoincashnode.org">https://bitcoincashnode.org</a></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Development & support Slack chat invite link (should be non-expiring): <a href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA"><a href="https://join.slack.com/t/bitcoincashnode/shared\_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA">https://join.slack.com/t/bitcoincashnode/shared\_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA</a></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Telegram: <a href="https://t.me/bitcoincashnode">https://t.me/bitcoincashnode</a> (there is a bridge channel to our Slack)</p>
+                        </li>
+                        <li>
+                            <p>IRC channel: Join <a href="/search?q=%23bchnode">#bchnode</a> on Freenode (we see messages on our Slack via an IRC bridge channel)</p>
+                        </li>
+                        <li>
+                            <p>Logs of our development Slack: <a href="http://logs.bchnode.org/"><a href="http://logs.bchnode.org/">http://logs.bchnode.org/</a></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Main development repository on GitLab:<a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node"><a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node">https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node</a></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Easy download link via our website:<a href="https://bitcoincashnode.org/download.html"><a href="https://bitcoincashnode.org/download.html">https://bitcoincashnode.org/download.html</a></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Full releases on Github:<a href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases"><a href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases">https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases</a></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Donation address: <a href="https://bitcoincashnode.org/#donate"><a href="https://bitcoincashnode.org/#donate">https://bitcoincashnode.org/#donate</a></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Follow us on Twitter: <a href="https://twitter.com/bitcoincashnode"><a href="https://twitter.com/bitcoincashnode">https://twitter.com/bitcoincashnode</a></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>WeChat group: <a href="https://weixin.qq.com/g/AQYAAJAOatfv0Pe7UnstYGWU9tybJCvmP05-KfUhUKCFdzWTZnXdhHTl1tBkzo81">Bitcoin Cash Node WeChat</a> (see also QR code below)</p>
+                        </li>
+                    </ul>
+                    <figure class="text-center">
+                        <img src="/static/img/newsroom/2020-06-15/nKJEj6XrugZddptFCXDudSvekyGhaUjKpIiDSlfn.png" class="rounded img-fluid" alt="" title="">
+                        <figcaption>BCHN WeChat QR code</figcaption>
+                    </figure>
+
+                    <p><strong>Image credits:</strong>
+                    </p>
+                    <p>Lead image and wireframe 'Bitcoin Cash Node' : Leandrodimarco</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+  </main>
+
+  <footer class="footer bg-dark py-6 text-a-white text-light">
+  <div class="container g">
+    <div class="row justify-content-xl-center">
+
+      <!-- Organization -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Organisation</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/de/team">Team</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/de/goals">Ziele</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/de/newsroom">Newsroom</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/de/media">Medienpaket</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Software -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Software</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/de/download.html">Download</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://docs.bitcoincashnode.org">Dokumentation</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Source code</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Security -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Security</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/blob/master/DISCLOSURE_POLICY.md">Disclosure policy</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:security@bitcoincashnode.org">Security contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Social</div>
+        <ul class="list-inline social">
+          <li>
+            <a target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA" class="text-muted">Slack</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/bitcoincashnode" class="text-muted">Twitter</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://t.me/bitcoincashnode" class="text-muted">Telegram</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://read.cash/@bitcoincashnode" class="text-muted">read.cash</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Website -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0 mt-md-4 mt-xl-0">
+        <div class="h4 text-white">Website</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://github.com/bitcoin-cash-node/bchnode-web">GitHub</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:website@bitcoincashnode.org">Email</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA">Slack</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://t.me/merc1er">Telegram</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="/static/js/scripts.js"></script>
+
+
+</body>
+</html>

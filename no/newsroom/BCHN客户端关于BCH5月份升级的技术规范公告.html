@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="author" content="Bitcoin Cash Community">
+  <meta name="description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://bitcoincashnode.org/static/img/icons/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="https://bitcoincashnode.org/static/img/icons/apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/css/style.css">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@bitcoincashnode">
+  <meta name="twitter:creator" content="@bitcoincashnode">
+  <meta name="twitter:title" content="Bitcoin Cash Node">
+  <meta name="twitter:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta name="twitter:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="https://bitcoincashnode.org/">
+  <meta property="og:title" content="Bitcoin Cash Node">
+  <meta property="og:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+
+  <title>BCHN客户端关于BCH5月份升级的技术规范公告</title>
+</head>
+
+<body>
+  <!-- <div class="bg-dark">
+    <div class="bg-info-gradient py-3">
+      <div class="container text-center">
+         <a class="text-white" href=""></a>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark py-4 navbar-expand-lg">
+    <div class="container">
+      <a class="btn btn-link text-white underline-animate" href="/no">Hjem</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapsed" aria-controls="navCollapsed" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navCollapsed">
+        <ul class="navbar-nav ml-auto text-center text-lg-left">
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://docs.bitcoincashnode.org">Dokumentasjon</a></li>
+          <!-- About selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="about-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Om oss <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/no/team">Team</a>
+                <a class="dropdown-item" href="/no/goals">Mål</a>
+                <a class="dropdown-item" href="/no/newsroom">Nyheter</a>
+                <a class="dropdown-item" href="/no/media">Pressepakke</a>
+              </div>
+            </div>
+          </li>
+          <!-- /About selector -->
+          <!-- Source -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Kildekode</a></li>
+          <!-- /Source -->
+          <!-- Download -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="/no/download.html">Last ned</a></li>
+          <!-- /Download -->
+          <!-- Language selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="lang-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Language <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/en">English</a>
+<a class="dropdown-item" href="/zh">简体中文</a>
+<a class="dropdown-item" href="/es">Español</a>
+<a class="dropdown-item" href="/ja">日本語</a>
+<a class="dropdown-item" href="/ko">한국어</a>
+<a class="dropdown-item" href="/de">Deutsch</a>
+<a class="dropdown-item" href="/fr">Français</a>
+<a class="dropdown-item" href="/it">Italiano</a>
+<a class="dropdown-item" href="/nl">Nederlands</a>
+<a class="dropdown-item" href="/no">Norsk</a>
+
+              </div>
+            </div>
+          </li>
+          <!-- /Language selector -->
+        </ul>
+      </div>
+      <!-- /Collapse -->
+    </div>
+  </nav>
+  <!-- /Navbar -->
+
+  <main class="overflow-hidden">
+    
+<section class="bg-dark">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col my-5 py-5 text-center">
+                <h1 class="text-white">BCHN客户端关于BCH5月份升级的技术规范公告</h1> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container py-6">
+        <div class="row justify-content-center">
+            <article class="col-md-10 col-lg-8">
+                <div class="d-flex align-items-center pb-5">
+                    <img src="/static/img/logomark.svg" alt="Logo" class="mr-3" height="40">
+                    <div>
+                        <div>by <strong>Bitcoin Cash Node Team</strong>
+                        </div>
+                        <div class="text-small text-muted">27 March 2020</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+
+                    </p>
+                    <p>在今天的文章中，BCHN客户端的首席维护者会介绍该项目进行2020年5月15号升级的技术规范。</p>
+                    <h3 id="bch-">BCH网络升级的背景介绍和技术规范</h3>
+                    <p>自2017年诞生以来，BCH会例行每年两次的硬分叉升级。每次升级前都需要提前定好技术规范，以便社区达成共识，进而执行并进行相关测试。</p>
+                    <p>每次网络升级前三个月都会进行“功能冻结”（在功能冻结日期后，软件在发布前不可再添加新功能）。截止到那一日期，关于升级的一切规则改变都要完全确定下来，进行审核并被社区广泛接受。</p>
+                    <h3 id="-2020-5-">《基础设施融资计划》和2020年5月份升级技术规范</h3>
+                    <p>5月份升级的“功能冻结”截止日期在2月15号。</p>
+                    <p>距离这一截止日期已经过去了两周。这次升级包括一个极具争议的“基础设施融资计划（IFP）”，会影响BCH的经济结构。IFP不仅遭到了社区的广泛反对，也不被Bitcoin ABC之外的其他节点接受。而ABC团队却表现得一意孤行，不顾社区反对。</p>
+                    <p>社区反对IFP的声音此起彼伏，bitcoincash.org网站的维护人员却无视社区的反对。此外，bitcoincash.org网站与IFP技术规范同存储在一个项目库中。</p>
+                    <p>BCNH提供了一种不包含IFP的客户端版本，以试图减少链分裂的风险。BCHN团队能做的是维护其5月份升级的技术规范，向社区精准地展示其软件的共识规则（只要不激活IFP，现有的BCH协议就无需更改）。</p>
+                    <h3 id="bchn-">BCHN升级规范库</h3>
+                    <p>BCHN客户端5月份升级的技术规范细则如下：</p>
+                    <ul>
+                        <li><a href="https://gitlab.com/bitcoin-cash-node/bchn-sw/bitcoincash-upgrade-specifications.git"><u><a href="https://gitlab.com/bitcoin-cash-node/bchn-sw/bitcoincash-upgrade-specifications.git">https://gitlab.com/bitcoin-cash-node/bchn-sw/bitcoincash-upgrade-specifications.git</a>
+                            </u>
+                            </a>
+                        </li>
+                    </ul>
+                    <h3 id="-">其他注意事项</h3>
+                    <p>截止到发文日期，BCHN与bitcoincash.org项目库的不同点有：</p>
+                    <ul>
+                        <li>
+                            <p>移除了IFP</p>
+                        </li>
+                        <li>
+                            <p>把2020年5月份升级的规范版本号码提高为1.0 （不再是草案版本）</p>
+                        </li>
+                    </ul>
+                    <p>请查看上述项目库的<a href="https://gitlab.com/bitcoin-cash-node/bchn-sw/bitcoincash-upgrade-specifications/-/blob/master/README.md"><u>README.md</u></a>文件来随时跟进项目最新状态。</p>
+                    <p>除以上不同，BCHN不计划对5月份的升级进行其他规范更改。</p>
+                    <p>该项目库中的技术规范仅对BCHN有规范作用。</p>
+                    <p>此文只是描述BCHN为升级所做的技术规范，仅适用于BCHN团队。我们希望这些规范更改能够被大部分的BCH客户端团队意识到。</p>
+                    <p>BCHN的升级规范需要被考虑纳入总BCH规范之中（比如 <a href="https://reference.cash"><u><a href="https://reference.cash">https://reference.cash</a>
+                        </u>
+                        </a>）。</p>
+                    <h3 id="-">未来展望</h3>
+                    <p>我们希望能尽快建立起一个共享、协同管理的BCH协议规范。</p>
+                    <p>BCHN客户端维护者正在与其他BCH全节点客户端的首席开发者讨论这一可能性。</p>
+                    <p>BCHN团队敬上！</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+  </main>
+
+  <footer class="footer bg-dark py-6 text-a-white text-light">
+  <div class="container g">
+    <div class="row justify-content-xl-center">
+
+      <!-- Organization -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Organisasjon</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/no/team">Team</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/no/goals">Mål</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/no/newsroom">Nyheter</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/no/media">Pressepakke</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Software -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Programvare</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/no/download.html">Last ned</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://docs.bitcoincashnode.org">Dokumentasjon</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Kildekode</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Security -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Sikkerhet</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/blob/master/DISCLOSURE_POLICY.md">Retningslinjer for offentliggjøring</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:security@bitcoincashnode.org">Sikkerhetskontakt</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Sosiale medier</div>
+        <ul class="list-inline social">
+          <li>
+            <a target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA" class="text-muted">Slack</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/bitcoincashnode" class="text-muted">Twitter</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://t.me/bitcoincashnode" class="text-muted">Telegram</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://read.cash/@bitcoincashnode" class="text-muted">read.cash</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Website -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0 mt-md-4 mt-xl-0">
+        <div class="h4 text-white">Nettside</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://github.com/bitcoin-cash-node/bchnode-web">GitHub</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:website@bitcoincashnode.org">E-post</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA">Slack</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://t.me/merc1er">Telegram</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="/static/js/scripts.js"></script>
+
+
+</body>
+</html>

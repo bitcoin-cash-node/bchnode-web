@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="author" content="Bitcoin Cash Community">
+  <meta name="description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://bitcoincashnode.org/static/img/icons/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="https://bitcoincashnode.org/static/img/icons/apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/css/style.css">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@bitcoincashnode">
+  <meta name="twitter:creator" content="@bitcoincashnode">
+  <meta name="twitter:title" content="Bitcoin Cash Node">
+  <meta name="twitter:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta name="twitter:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="https://bitcoincashnode.org/">
+  <meta property="og:title" content="Bitcoin Cash Node">
+  <meta property="og:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+
+  <title>Bitcoin Cash Node</title>
+</head>
+
+<body>
+  <!-- <div class="bg-dark">
+    <div class="bg-info-gradient py-3">
+      <div class="container text-center">
+         <a class="text-white" href=""></a>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark py-4 navbar-expand-lg">
+    <div class="container">
+      <a class="btn btn-link text-white underline-animate" href="/en">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapsed" aria-controls="navCollapsed" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navCollapsed">
+        <ul class="navbar-nav ml-auto text-center text-lg-left">
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://docs.bitcoincashnode.org">Docs</a></li>
+          <!-- About selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="about-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/en/team">Team</a>
+                <a class="dropdown-item" href="/en/goals">Goals</a>
+                <a class="dropdown-item" href="/en/newsroom">Newsroom</a>
+                <a class="dropdown-item" href="/en/media">Media kit</a>
+              </div>
+            </div>
+          </li>
+          <!-- /About selector -->
+          <!-- Source -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Source code</a></li>
+          <!-- /Source -->
+          <!-- Download -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="/en/download.html">Download</a></li>
+          <!-- /Download -->
+          <!-- Language selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="lang-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Language <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/en">English</a>
+<a class="dropdown-item" href="/zh">简体中文</a>
+<a class="dropdown-item" href="/es">Español</a>
+<a class="dropdown-item" href="/ja">日本語</a>
+<a class="dropdown-item" href="/ko">한국어</a>
+<a class="dropdown-item" href="/de">Deutsch</a>
+<a class="dropdown-item" href="/fr">Français</a>
+<a class="dropdown-item" href="/it">Italiano</a>
+<a class="dropdown-item" href="/nl">Nederlands</a>
+<a class="dropdown-item" href="/no">Norsk</a>
+
+              </div>
+            </div>
+          </li>
+          <!-- /Language selector -->
+        </ul>
+      </div>
+      <!-- /Collapse -->
+    </div>
+  </nav>
+  <!-- /Navbar -->
+
+  <main class="overflow-hidden">
+    
+
+<section class="bg-dark">
+  <div class="container pt-5 pt-md-6 pb-7">
+    <div class="row pb-4">
+      <div class="col">
+        <!-- Logo -->
+        <div class="ml-md-3 text-center">
+          <svg class="hero-logo" viewBox="0 0 718 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="logo-white" fill-rule="nonzero">
+      <g id="mark" transform="translate(537.000000, 0.000000)">
+        <path data-aos="zoom-in" data-aos-delay="300" d="M37.3723145,150 L173.627686,150 C177.407471,150 180.5,146.90744 180.5,143.127655 L180.5,6.872345 C180.5,3.0925598 177.407471,0 173.627686,0 L37.3723145,0 C33.5925293,0 30.5,3.0925598 30.5,6.872345 L30.5,143.127655 C30.5,146.90744 33.5925293,150 37.3723145,150 Z" id="mark-red" fill="#A31C37"></path>
+        <path data-aos="zoom-in" data-aos-delay="600" d="M20.3106079,127.5 L115.689392,127.5 C118.335205,127.5 120.5,125.335205 120.5,122.689362 L120.5,27.3106385 C120.5,24.664795 118.335205,22.5000001 115.689392,22.5000001 L20.3106079,22.5000001 C17.6647949,22.5000001 15.5,24.664795 15.5,27.3106385 L15.5,122.689362 C15.5,125.335205 17.6647949,127.5 20.3106079,127.5 Z" id="mark-orange" fill="#F15A24"></path>
+        <path data-aos="zoom-in" data-aos-delay="900" d="M3.2489624,105 L57.7510376,105 C59.2630005,105 60.5,103.76297 60.5,102.251068 L60.5,47.7489319 C60.5,46.23703 59.2630005,45 57.7510376,45 L3.2489624,45 C1.7369995,45 0.5,46.23703 0.5,47.7489319 L0.5,102.251068 C0.5,103.76297 1.7369995,105 3.2489624,105 Z" id="mark-yellow" fill="#FBB03B"></path>
+      </g>
+      <g data-aos="zoom-in" data-aos-delay="100" id="text" fill="#F2F2F2">
+        <g>
+          <path d="M112.735443,64.0189514 L112.735443,146.666656 C112.735443,148.507629 111.243072,150 109.40213,150 L95.4325561,150 C93.5916137,150 92.0992431,148.507629 92.0992431,146.666656 L92.0992431,64.0189514 C92.0992431,61.70578 90.2066345,59.8132019 87.8934631,59.8132019 L24.84198,59.8132019 C22.5288086,59.8132019 20.6362305,61.70578 20.6362305,64.0189514 L20.6362305,146.666656 C20.6362305,148.507629 19.1438294,150 17.302887,150 L3.3333435,150 C1.4923706,150 0,148.507629 0,146.666656 L0,42.5102844 C0,40.669342 1.4923706,39.1769714 3.3333435,39.1769714 L87.8934631,39.1769714 C101.613312,39.1769714 112.735443,50.2991028 112.735443,64.0189514 Z"></path>
+          <path d="M218.388763,39.1769714 C232.144959,39.1769714 243.226868,50.2588806 243.226868,64.0189514 L243.226868,125.161896 C243.226868,138.918091 232.144959,150 218.388763,150 L155.333405,150 C141.577209,150 130.4953,138.918091 130.4953,125.161896 L130.4953,64.0189515 C130.4953,50.2588807 141.57721,39.1769714 155.333405,39.1769714 L218.388763,39.1769714 L218.388763,39.1769714 Z M155.333404,59.8132019 C153.040039,59.8132019 151.1315,61.7256165 151.1315,64.0189514 L151.1315,125.161896 C151.1315,127.455231 153.040039,129.36377 155.333404,129.36377 L218.388763,129.36377 C220.682098,129.36377 222.590637,127.455231 222.590637,125.161896 L222.590637,64.0189514 C222.590637,61.7256164 220.682098,59.8132019 218.388763,59.8132019 L155.333404,59.8132019 Z"></path>
+          <path d="M370.083862,3.3333435 L370.083862,146.666657 C370.083862,148.507629 368.591492,150 366.750549,150 L282.19043,150 C268.472717,150 257.352295,138.879608 257.352295,125.161896 L257.352295,64.0189515 C257.352295,50.2991029 268.474426,39.1769715 282.194275,39.1769715 L349.447632,39.1769715 L349.447632,3.3333436 C349.447632,1.4923707 350.940063,1.00000079e-07 352.781006,1.00000079e-07 L366.750549,1.00000079e-07 C368.591492,1.00000079e-07 370.083862,1.4923706 370.083862,3.3333435 Z M345.245789,129.363769 C347.556824,129.363769 349.447632,127.472931 349.447632,125.161896 L349.447632,64.0189514 C349.447632,61.70578 347.555054,59.8132019 345.241882,59.8132019 L282.19043,59.8132019 C279.877258,59.8132019 277.98468,61.70578 277.98468,64.0189514 L277.98468,125.161896 C277.98468,127.472931 279.875488,129.363769 282.186524,129.363769 L345.245789,129.363769 Z"></path>
+          <path d="M500,64.0150757 L500,101.573273 C500,103.414215 498.507629,104.906586 496.666687,104.906586 L407.904663,104.906586 L407.904663,125.161896 C407.904663,127.472931 409.795532,129.36377 412.106506,129.36377 L496.666687,129.36377 C498.50763,129.36377 500,130.856171 500,132.697113 L500,146.666657 C500,148.507629 498.507629,150 496.666687,150 L412.106506,150 C398.388855,150 387.268433,138.879608 387.268433,125.161896 L387.268433,64.0189515 C387.268433,50.2991029 398.390564,39.1769715 412.110413,39.1769715 L475.161865,39.1769715 C488.879578,39.1769715 500,50.2973633 500,64.0150757 Z M479.363769,84.2703552 L479.363769,64.0189514 C479.363769,61.70578 477.471191,59.8132019 475.15802,59.8132019 L412.106506,59.8132019 C409.795532,59.8132019 407.904663,61.7040405 407.904663,64.0150757 L407.904663,84.2703552 L479.363769,84.2703552 L479.363769,84.2703552 Z"></path>
+        </g>
+        <g>
+          <path d="M23.9941101,9.7225342 C23.9941101,10.3822937 23.8895874,10.971405 23.6465759,11.4927063 C24.4447937,12.3262329 25,13.5411987 25,14.7914734 L25,20.1740418 C25,22.8469849 22.8130798,25 20.1387329,25 L0,25 L0,0 L19.166748,0 C21.8057861,0 23.9941101,2.1530151 23.9941101,4.8259583 L23.9941101,9.7225342 Z M4.8259583,4.5829468 C4.6875,4.5829468 4.5829468,4.6875 4.5829468,4.8259583 L4.5829468,9.7225342 C4.5829468,9.8609925 4.6875,9.9655152 4.8259583,9.9655152 L19.1667481,9.9655152 C19.2713013,9.9655152 19.3758545,9.8609925 19.3758545,9.7225342 L19.3758545,4.8259583 C19.3758545,4.6875 19.2713013,4.5829468 19.1667481,4.5829468 L4.8259583,4.5829468 Z M20.3817139,14.7914734 C20.3817139,14.6530151 20.278595,14.5838013 20.1387329,14.5838013 L4.8259582,14.5838013 C4.6874999,14.5838013 4.5829467,14.6530152 4.5829467,14.7914734 L4.5829467,20.1740418 C4.5829467,20.3125001 4.6874999,20.4170533 4.8259582,20.4170533 L20.1387329,20.4170533 C20.278595,20.4170533 20.3817139,20.3125001 20.3817139,20.1740418 L20.3817139,14.7914734 Z"></path>
+          <polygon points="32.29 0 36.873 0 36.873 25 32.29 25"></polygon>
+          <polygon points="67.114 0 67.114 4.583 56.939 4.583 56.939 25 52.323 25 52.323 4.583 42.114 4.583 42.114 0"></polygon>
+          <path d="M78.014801,4.5829468 C77.8749389,4.5829468 77.77182,4.6875 77.77182,4.8259583 L77.77182,20.1740418 C77.77182,20.3125001 77.8749389,20.4170533 78.014801,20.4170533 L98.1182251,20.4170533 L98.1182251,24.9999999 L78.014801,24.9999999 C75.3404846,24.9999999 73.1874389,22.8469849 73.1874389,20.1740417 L73.1874389,4.8259582 C73.1874389,2.1530151 75.3404846,-1.00000022e-07 78.014801,-1.00000022e-07 L98.1182251,-1.00000022e-07 L98.1182251,4.5829467 L78.014801,4.5829467 L78.014801,4.5829468 Z"></path>
+          <path d="M125.302338,0 C127.941345,0 130.128265,2.1530151 130.128265,4.8259583 L130.128265,20.1740418 C130.128265,22.8469849 127.941345,25 125.302338,25 L109.955627,25 C107.281311,25 105.128265,22.846985 105.128265,20.1740418 L105.128265,4.8259583 C105.128265,2.1530152 107.281311,0 109.955627,0 L125.302338,0 Z M125.302338,20.4170532 C125.40686,20.4170532 125.511414,20.3125 125.511414,20.1740417 L125.511414,4.8259582 C125.511414,4.6874999 125.40686,4.5829467 125.302338,4.5829467 L109.955627,4.5829467 C109.815765,4.5829467 109.712646,4.6874999 109.712646,4.8259582 L109.712646,20.1740417 C109.712646,20.3125 109.815765,20.4170532 109.955627,20.4170532 L125.302338,20.4170532 Z"></path>
+          <polygon points="137.453 0 142.036 0 142.036 25 137.453 25"></polygon>
+          <polygon points="168.911 0 173.529 0 173.529 25 168.528 25 153.112 6.667 153.112 25 148.528 25 148.528 0 153.529 0 168.911 18.333"></polygon>
+          <path d="M185.71286,4.5829468 C185.572998,4.5829468 185.469879,4.6875 185.469879,4.8259583 L185.469879,20.1740418 C185.469879,20.3125001 185.572998,20.4170533 185.71286,20.4170533 L205.816284,20.4170533 L205.816284,24.9999999 L185.71286,24.9999999 C183.038544,24.9999999 180.885498,22.8469849 180.885498,20.1740417 L180.885498,4.8259582 C180.885498,2.1530151 183.038544,-1.00000022e-07 185.71286,-1.00000022e-07 L205.816284,-1.00000022e-07 L205.816284,4.5829467 L185.71286,4.5829467 L185.71286,4.5829468 Z"></path>
+          <path d="M233.106323,0 C235.779297,0 237.96759,2.1530151 237.96759,4.8259583 L237.96759,25 L233.349365,25 L233.349365,16.5969849 L217.550568,16.5969849 L217.550568,25 L212.967621,25 L212.967621,4.8259583 C212.967621,2.1530152 215.119232,0 217.793579,0 L233.106323,0 Z M233.349365,12.0140076 L233.349365,4.8259583 C233.349365,4.6875 233.244812,4.5829468 233.106323,4.5829468 L217.793579,4.5829468 C217.655121,4.5829468 217.550568,4.6875 217.550568,4.8259583 L217.550568,12.0140076 L233.349365,12.0140076 Z"></path>
+          <path d="M270.222107,6.7359924 L265.603821,6.7359924 L265.603821,4.8259582 C265.603821,4.6874999 265.499268,4.5829467 265.394714,4.5829467 L250.048035,4.5829467 C249.909607,4.5829467 249.805054,4.6874999 249.805054,4.8259582 L249.805054,9.9655151 C249.805054,10.1039734 249.909607,10.2085266 250.048035,10.2085266 L265.394714,10.2085266 C268.033752,10.2085266 270.222107,12.3615417 270.222107,15.0344849 L270.222107,20.1740418 C270.222107,22.8469849 268.033753,24.9999999 265.394714,24.9999999 L250.048035,24.9999999 C247.373718,24.9999999 245.220642,22.846985 245.220642,20.1740418 L245.220642,18.2640076 L249.805054,18.2640076 L249.805054,20.1740418 C249.805054,20.3125001 249.909607,20.4170533 250.048035,20.4170533 L265.394714,20.4170533 C265.499268,20.4170533 265.603821,20.3125001 265.603821,20.1740418 L265.603821,15.0344849 C265.603821,14.8960266 265.499268,14.7914734 265.394714,14.7914734 L250.048035,14.7914734 C247.373718,14.7914734 245.220642,12.6384583 245.220642,9.9655151 L245.220642,4.8259582 C245.220642,2.1530151 247.373718,-1.00000022e-07 250.048035,-1.00000022e-07 L265.394714,-1.00000022e-07 C268.033752,-1.00000022e-07 270.222107,2.153015 270.222107,4.8259582 L270.222107,6.7359924 L270.222107,6.7359924 Z"></path>
+          <polygon points="302.996 0 302.996 25 298.414 25 298.414 14.791 282.024 14.791 282.024 25 277.441 25 277.441 0 282.024 0 282.024 10.209 298.414 10.209 298.414 0"></polygon>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+        </div>
+        <!-- End logo -->
+      </div>
+    </div>
+
+    <div class="row justify-content-center mb-5">
+      <p class="text-white text-center h3 font-weight-normal col-md-7" data-aos="fade-up" data-aos-delay="1200">A professional, miner-friendly node that solves practical problems for Bitcoin Cash.</p>
+    </div>
+
+    <!-- Button -->
+    <div class="row">
+      <div class="col text-center">
+        <a class="btn btn-primary btn-lg rounded-pill" href="/en/download.html" data-aos="fade-up" data-aos-delay="1400">
+          Download <small>v23.0.0</small>
+        </a>
+      </div>
+    </div>
+    <!-- /Button -->
+  </div>
+</section>
+
+<section class="bg-lighter-dark text-white">
+  <div class="container pt-6 pb-5">
+    <div class="row align-items-center">
+      <div class="col-md-4 order-md-2" data-aos="fade-left">
+        <h3 class="h1">Collaborative development</h3>
+        <p class="lead">Our development process is transparent, evidence-driven and responsive to ecosystem needs, resulting in software that is performant, reliable and predictable.</p>
+        <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" class="btn btn-primary" target="_blank">See our GitLab repo</a>
+      </div>
+      <div class="col-md-8 order-md-1 mt-4 mt-md-0" data-aos="fade-right">
+        <img src="/static/img/screens/gitlab.png" alt="Collaborative development" class="img-fluid px-md-5">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="pattern-checks-sm bg-lighter-dark" style="height: 20px; width: 100%"></div>
+
+<section class="bg-lighter-dark text-white">
+  <div class="container pt-5 pb-6">
+    <div class="row justify-content-center" data-aos="fade-up">
+      <div class="col-md-6 text-md-center mt-4">
+        <p class="lead">We strongly believe in building an ecosystem that has no single points of failure, and will collaborate to make that a reality.</p>
+        <a href="/en/goals" class="btn btn-primary btn">See our goals</a>
+        <a class="ml-3 btn btn-outline-light" href="https://youtu.be/opebV2y70Dw" data-fancybox><svg style="height: 18px;margin-bottom: 3px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></span> Who are we?</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dark text-white py-5" id="donate">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-11 col-lg-8">
+        <h3 class="text-center h1" data-aos="zoom-in">Donate</h3>
+        <div class="row">
+          <div class="col-md-8 mt-3 lead" data-aos="fade-right">
+            <p>3-of-5 multisignature address held by team members. It is used for general funding of BCH Node operations, including personnel, equipment and contracting.</p>
+            <p>At the next fundraising effort, any funds unused will also contribute to fulfilling that campaign.</p>
+          </div>
+          <div class="col-md-4 text-center mt-3" data-aos="fade-left" data-aos-delay=200>
+            <a href="bitcoincash:prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk">
+              <img class="rounded" src="/static/img/qr-donation.png" alt="QR code" height="160" width="160">
+            </a>
+          </div>
+        </div>
+        <p class="text-truncate text-center pt-4">
+          <a class="text-danger" href="bitcoincash:prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk">bitcoincash:prnc2exht3zxlrqqcat690tc85cvfuypngh7szx6mk</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sponsors -->
+<section class="bg-lighter-dark text-light py-6">
+  <div class="container">
+    <h3 class="text-center" data-aos="zoom-in">Sponsors of <span class="d-block d-md-inline">Bitcoin Cash Node</span></h3>
+    <div class="row mt-5">
+      <div class="col">
+        <div class="d-flex flex-wrap justify-content-center align-items-center">
+          <div class="text-white mx-5 py-3" data-aos="fade-up" data-aos-delay="100">
+            <a href="https://satoshidice.com" target="_blank">
+              <img width="200" class="align-self-center" src="/static/img/sponsors/satoshidice.png" alt="Satoshi Dice">
+            </a>
+          </div>
+          <div class="text-white mx-5 py-3" data-aos="fade-up" data-aos-delay="200">
+            <a href="https://generalprotocols.com" target="_blank">
+              <img width="200" class="align-self-center" src="/static/img/sponsors/gp.svg" alt="General Protocols">
+            </a>
+          </div>
+          <div class="text-white mx-5 py-3" data-aos="fade-up" data-aos-delay="300">
+            <a href="https://www.bitcoin.com" target="_blank">
+              <img width="200" class="align-self-center" src="/static/img/sponsors/bitcoincom.png" alt="Bitcoin.com">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5" data-aos="zoom-in" data-aos-delay="400">
+      <a href="/en/sponsors" class="text-gray border-bottom border-gray text-decoration-none">See all our sponsors</a>
+    </div>
+  </div>
+</section>
+<!-- /Sponsors -->
+
+  </main>
+
+  <footer class="footer bg-dark py-6 text-a-white text-light">
+  <div class="container g">
+    <div class="row justify-content-xl-center">
+
+      <!-- Organization -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Organization</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/en/team">Team</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/en/goals">Goals</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/en/newsroom">Newsroom</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/en/media">Media kit</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Software -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Software</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/en/download.html">Download</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://docs.bitcoincashnode.org">Docs</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Source code</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Security -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Security</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/blob/master/DISCLOSURE_POLICY.md">Disclosure policy</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:security@bitcoincashnode.org">Security contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Social</div>
+        <ul class="list-inline social">
+          <li>
+            <a target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA" class="text-muted">Slack</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/bitcoincashnode" class="text-muted">Twitter</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://t.me/bitcoincashnode" class="text-muted">Telegram</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://read.cash/@bitcoincashnode" class="text-muted">read.cash</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Website -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0 mt-md-4 mt-xl-0">
+        <div class="h4 text-white">Website</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://github.com/bitcoin-cash-node/bchnode-web">GitHub</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:website@bitcoincashnode.org">Email</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA">Slack</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://t.me/merc1er">Telegram</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="/static/js/scripts.js"></script>
+
+
+</body>
+</html>

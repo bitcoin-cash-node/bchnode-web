@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="author" content="Bitcoin Cash Community">
+  <meta name="description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://bitcoincashnode.org/static/img/icons/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="https://bitcoincashnode.org/static/img/icons/apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/css/style.css">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@bitcoincashnode">
+  <meta name="twitter:creator" content="@bitcoincashnode">
+  <meta name="twitter:title" content="Bitcoin Cash Node">
+  <meta name="twitter:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta name="twitter:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="https://bitcoincashnode.org/">
+  <meta property="og:title" content="Bitcoin Cash Node">
+  <meta property="og:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+
+  <title>ビットコインキャッシュノード（Bitcoin Cash Node)</title>
+</head>
+
+<body>
+  <!-- <div class="bg-dark">
+    <div class="bg-info-gradient py-3">
+      <div class="container text-center">
+         <a class="text-white" href=""></a>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark py-4 navbar-expand-lg">
+    <div class="container">
+      <a class="btn btn-link text-white underline-animate" href="/is">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapsed" aria-controls="navCollapsed" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navCollapsed">
+        <ul class="navbar-nav ml-auto text-center text-lg-left">
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://docs.bitcoincashnode.org">Docs</a></li>
+          <!-- About selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="about-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/is/team">Team</a>
+                <a class="dropdown-item" href="/is/goals">Goals</a>
+                <a class="dropdown-item" href="/is/newsroom">Fréttastofa</a>
+                <a class="dropdown-item" href="/is/media">Media kit</a>
+              </div>
+            </div>
+          </li>
+          <!-- /About selector -->
+          <!-- Source -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Source code</a></li>
+          <!-- /Source -->
+          <!-- Download -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="/is/download.html">Sækja</a></li>
+          <!-- /Download -->
+          <!-- Language selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="lang-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Language <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/en">English</a>
+<a class="dropdown-item" href="/zh">简体中文</a>
+<a class="dropdown-item" href="/es">Español</a>
+<a class="dropdown-item" href="/ja">日本語</a>
+<a class="dropdown-item" href="/ko">한국어</a>
+<a class="dropdown-item" href="/de">Deutsch</a>
+<a class="dropdown-item" href="/fr">Français</a>
+<a class="dropdown-item" href="/it">Italiano</a>
+<a class="dropdown-item" href="/nl">Nederlands</a>
+<a class="dropdown-item" href="/no">Norsk</a>
+
+              </div>
+            </div>
+          </li>
+          <!-- /Language selector -->
+        </ul>
+      </div>
+      <!-- /Collapse -->
+    </div>
+  </nav>
+  <!-- /Navbar -->
+
+  <main class="overflow-hidden">
+    
+<section class="bg-dark">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col my-5 py-5 text-center">
+                <h1 class="text-white">ビットコインキャッシュノード（Bitcoin Cash Node)</h1> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container py-6">
+        <div class="row justify-content-center">
+            <article class="col-md-10 col-lg-8">
+                <div class="d-flex align-items-center pb-5">
+                    <img src="/static/img/logomark.svg" alt="Logo" class="mr-3" height="40">
+                    <div>
+                        <div>by <strong>emergent_reasons</strong>
+                        </div>
+                        <div class="text-small text-muted">21 February 2020</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+
+                    </p>
+                    <p><a href="https://read.cash/@freetrader/bitcoin-cash-node-003b2381">English</a>
+                        <br><a href="https://read.cash/@freetrader/bitcoin-cash-node-907e5878">中文</a>
+                    </p>
+                    <h3 id="-bitcoin-cash-node-bitcoin-cash-nodeniguan-surufa-biao-"><a href="#bitcoin-cash-nodeniguan-surufa-biao">Bitcoin Cash Nodeに関する発表</a></h3>
+                    <p>2020年5月15日アップグレードの為の、Bitcoin ABCのバージョン0.21.0がリリースされました。これには現在、論争の原因となっているコインの発行に関する変更が加わっています。きちんとした合意がない状態で、このようなアクティベーションを行うとブロックチェーンが分岐するリスクが高くなります。私達は沢山のビットコインビジネス、マイナー、マイニングプール、開発者等からの強い要望を受けて、Bitcoin ABCに必要最低限の変更を加えたクライアントソフトウェアのリリースを決定しました。新しいクライアントと既存のBitcoin
+                        ABCとの違いは、コインベースのブロック報酬から開発資金の集金を行うコードと、それに関連したシグナリングとアクティベーション機能が有るか無いかだけです。</p>
+                    <p>この取り組みの一番の目的は、ブロックチェーン分岐のリスクを助長する事なく、中立的に最も長いチェーンを追従する安全なノードソフトウェアを提供する事です。このクライアントはBitcoin Cash Node (BCH Node)と呼ばれます。Bitcoin Cash Node (BCH Node)は既にBitcoin ABCのクライアントを利用しているマイナーやビジネスがそのまま利用出来るように、ABCのクライアントと完全な互換性を持ちます。</p>
+                    <p>私達は最低でも一年以上この新しいクライアントのメンテナンスにコミットします。また、より広く透明性のあるプロセスを通して将来同じような問題を回避出来るように協力して行きます。</p>
+                    <p>貢献者リスト:</p>
+                    <ul>
+                        <li>
+                            <p>Andrea Suisani "sickpig"（Bitcoin Unlimited)</p>
+                        </li>
+                        <li>
+                            <p>Calin Culianu "NilacTheGrim" （Electron Cash, Fulcrum)</p>
+                        </li>
+                        <li>
+                            <p>Dagur V. Johannsson</p>
+                        </li>
+                        <li>
+                            <p>emergent_reasons</p>
+                        </li>
+                        <li>
+                            <p>Fernando Pelliccioni (Knuth Node)</p>
+                        </li>
+                        <li>
+                            <p>freetrader (元Bitcoin ABC)</p>
+                        </li>
+                        <li>
+                            <p>imaginary_username</p>
+                        </li>
+                        <li>
+                            <p>Jt Freeman （fountainhead.cash)</p>
+                        </li>
+                    </ul>
+                    <p>賛同開発者リスト:</p>
+                    <ul>
+                        <li>
+                            <p>Jonathan Silverblood</p>
+                        </li>
+                        <li>
+                            <p>Josh Green (Bitcoin Verde)</p>
+                        </li>
+                        <li>
+                            <p>Mark Lundeberg</p>
+                        </li>
+                        <li>
+                            <p>Tom Zander (Flowee the Hub)</p>
+                        </li>
+                    </ul>
+                    <p>私達は現在、交換所、マイニングプール、マイナーと積極的にコミュニケーションをとっています。この取り組みに関してもっと知りたい方はfreetraderへ連絡してください。</p>
+                    <p>Bitcoin Cash Nodeは近日中に公開予定、詳細と計画は追って発表致します。</p>
+                    <p>Bitcoin Cash Node チーム</p>
+                    <hr>
+                    <p><strong>アドレス</strong>： bitcoincash:qrdvmdluf2s5cf08wcp9h2ja8lqt5peq35y56z4s7s (1LwvkQTWmotqTosgBcK8kFPCKzW2BPiE1G)
+                        <br><strong>署名</strong>： H4dzATEN52+g0lWBPfYolfsDqNBON+IIkCPgfZo7iXE0QFg+EqbV0GRcSF515Fj7P5pgCMArayrbKxazekA9KhY=
+                        <br><strong>メッセージ</strong>： Andrea Suisani (aka sickpig) of Bitcoin Unlimited is in collaboration with the Bitcoin Cash Node implementation for the May 15th, 2020 upgrade.</p>
+                    <p><strong>アドレス</strong>： qplw0d304x9fshz420lkvys2jxup38m9symky6k028
+                        <br><strong>署名</strong>： G4lglKyDMfsLa663DmdHJIX7BH4HmdTzq2K6BK8l2z8wSq/yxBznWuVJfEZdVMr6b1Ds4SxfSNe1qRFLij4xgNM=
+                        <br><strong>メッセージ</strong>： I, Calin Culianu (NilacTheGrim) of Electron Cash and Fulcrum, and as also one of the original ABC devs, am in collaboration with the Bitcoin Cash Node implementation. It should be the implementation used
+                        for the May 15th, 2020 upgrade. I endorse and support this codebase and will lend my 20+ years' C++ development experience to the project.</p>
+                    <p><strong>アドレス</strong>： bitcoincash:qrfat0epsxsvq0tgdve74r9tuu5cqhx0hq9y9vzsva (keybase @Dagur)
+                        <br><strong>署名</strong>： IMLcZLcMsbwMhMw62IjQW/WtwcruS4wE4DGKlVTkuPHie6oxEIxJkFuBZQMyZM13mWz241khjPN/xZOElPlmb6Q=
+                        <br><strong>メッセージ</strong>： I, Dagur V. Johannsson, contributor to Bitcoin XT, Bitcoin Unlimited, Bitcoin ABC and other Bitcoin Cash supporting open source software, endorse and support the Bitcoin Cash Node implementation for the
+                        May 15th, 2020 upgrade.</p>
+                    <p><strong>アドレス</strong>： bitcoincash:qz3aq0uhltztqyjy2esa0lshadg9pf87yu7yealu3a (emergent_reasons<a href="/search?q=%23100">#100</a>)
+                        <br><strong>署名</strong>： IElqGO9KzOy+fCwJRnDwqAsn4DebcWX8jegu5sPArLTeSzXmdpWoGQGVpBlOGKYoHqjz+crPkgdAAYBmGE2JNgE=
+                        <br><strong>メッセージ</strong>： emergent_reasons endorses the Bitcoin Cash Node implementation for the May 15th, 2020 Bitcoin Cash upgrade and pledges his support for at least 1 year.</p>
+                    <p><strong>アドレス</strong>： bitcoincash:qrlgfg2qkj3na2x9k7frvcmv06ljx5xlnuuwx95zfn (1QCmX1feK431gSZGFJ7aZbYnN9XAo7TZbM)
+                        <br><strong>署名</strong>： H3BGddvUCaTOMYGfntlqMX7SQCF1HkbcY4qGUz58FzGJcJb4F754y1whDir5E7ec71E5XNb6dmfUHlklRHcvQCk=
+                        <br><strong>メッセージ</strong>： Fernando Pelliccioni of Knuth node (former Bitprim lead developer and Bitcoin ABC contributor) participates in, endorses and is willing to support the Bitcoin Cash Node implementation for the May 15th, 2020
+                        Bitcoin Cash upgrade, while pledging his service on it for 1 year.</p>
+                    <p><strong>アドレス</strong>： bitcoincash:qrvy3znq8wuzfkqejp88zwknwdvahy995vf67dw3au (1Libre7MGkCXr7pUAEbwihCR9X4quYAyQ4)
+                        <br><strong>署名</strong>： GzYnbDEUdN67nV9bt6JFHza/rLHCFhIo/iqg2THVk8I88aUj2N3lEZ/RH+pcbyY1em9dn+rFwqiRHDgXGrUZIAs=
+                        <br><strong>メッセージ</strong>： freetrader participates in, endorses and is willing to lead and support the Bitcoin Cash Node implementation for the May 15th, 2020 Bitcoin Cash upgrade, while pledging his service on it for 1 year.</p>
+                    <p><strong>アドレス</strong>： bitcoincash:qrye0g0t2x0u7qkmfe3v0kedtjdhk8d2hvu9kx54ga (im_uname<a href="/search?q=%23102">#102</a>)
+                        <br><strong>署名</strong>： H1d6Ji+Jcw1lBZHJ7LzYKvNLOhN/OrueHzYMmBFt3nd/Kio/3+ZP4SgLDeuCgpOPboam0RP5v/XPiCY5YabM3fo=
+                        <br><strong>メッセージ</strong>： imaginary_username participates in and endorses the Bitcoin Cash Node implementation for the May 15th, 2020 Bitcoin Cash upgrade.</p>
+                    <p><strong>アドレス</strong>： bitcoincash:qpygaungmfry8xzxphj4pw24kk5l9vfxlyhy0z36al
+                        <br><strong>署名</strong>： H5JR5ec8UPBBEWjvZ2NtYv+abJOB65dkDPIyNeDGg5M/F+uVk+9XB/wRb95ids5XWiPXiav9rbT1hVnEVlyC/yQ=
+                        <br><strong>メッセージ</strong>： I, Jt Freeman of fountainhead.cash promise to give my unwavering support to Bitcoin Cash and the furtherance of Bitcoin itself by supporting the Bitcoin Cash Node project.</p>
+                    <p><strong>アドレス</strong>： bitcoincash:qr4aadjrpu73d2wxwkxkcrt6gqxgu6a7usxfm96fst (jonathan<a href="/search?q=%23100">#100</a>)
+                        <br><strong>署名</strong>： H5ccGgiAlrS12+n7KQI9Hw+rGkQpWJm5Y46liQr39WjOFo72KuA6iPfiJFleFB2ayVo2mIb3/tXQfjyf0ZWj14E=
+                        <br><strong>メッセージ</strong>： I, Jonathan Silverblood, supports the Bitcoin Cash Node in their effort to offer an alternative for the May 15th, 2020 upgrade without the infrastructure funding proposal.</p>
+                    <p><strong>アドレス</strong>： 1VerdeMuXH1ApSZsQDkuHHZrwJaAtXTVn
+                        <br><strong>署名</strong>： HNxAuWEA/mT0vR0xi4VOLI+XEwoLYOraex8iIJWxptNAIsw4i90sLDETm7IrlSkIxSs9eAXPgcX7/yuOh29YFEI=
+                        <br><strong>メッセージ</strong>： Josh Green of Bitcoin Verde is in collaboration with the Bitcoin Cash Node implementation for the May 15th, 2020 upgrade.</p>
+                    <p><strong>アドレス</strong>： qqy9myvyt7qffgye5a2mn2vn8ry95qm6asy40ptgx2
+                        <br><strong>署名</strong>： IM9FSi9fg3deq8lkuoYoNNbbW7PmyxXT4ilYCiOiVkIUWlpLWl5FZzOL/VP2q5uf/msu+0qT3L8evxmJDUpkCG0=
+                        <br><strong>メッセージ</strong>： Mark Lundeberg supports the Bitcoin Cash Node in their effort to offer a high quality node for the May 15th, 2020 upgrade that is neutral on the infrastructure funding proposal. -ML 20200220</p>
+                    <p><strong>アドレス</strong>： bitcoincash:qpgn5ka4jptc98a9ftycvujxx33e79nxuqlz5mvxns
+                        <br><strong>署名</strong>： HwbTJ27+K54GrS+o+dFdck5DEDsgDiFnAoB3PxrkNiNhZMt/FMeQRMDbHGrLlqrrCkHLriJfxlwKf3tFR3dKfZk=
+                        <br><strong>メッセージ</strong>： Tom Zander endorses he Bitcoin Cash Node implementation by Freetrader for the May 15th, 2020 Bitcoin Cash upgrade.</p>
+                    <hr>
+                    <p><a href="https://pixabay.com/photos/pencil-diversity-team-spectrum-4552590/">画像提供</a>  <a href="https://pixabay.com/users/qimono-1962238/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4552590">Arek Soch</a> /
+                        <a
+                        href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4552590">Pixabay</a>
+                    </p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+  </main>
+
+  <footer class="footer bg-dark py-6 text-a-white text-light">
+  <div class="container g">
+    <div class="row justify-content-xl-center">
+
+      <!-- Organization -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Organization</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/is/team">Team</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/is/goals">Goals</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/is/newsroom">Fréttastofa</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/is/media">Media kit</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Software -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Software</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/is/download.html">Sækja</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://docs.bitcoincashnode.org">Docs</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Source code</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Security -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Security</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/blob/master/DISCLOSURE_POLICY.md">Disclosure policy</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:security@bitcoincashnode.org">Security contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Social</div>
+        <ul class="list-inline social">
+          <li>
+            <a target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA" class="text-muted">Slack</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/bitcoincashnode" class="text-muted">Twitter</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://t.me/bitcoincashnode" class="text-muted">Telegram</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://read.cash/@bitcoincashnode" class="text-muted">read.cash</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Website -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0 mt-md-4 mt-xl-0">
+        <div class="h4 text-white">Website</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://github.com/bitcoin-cash-node/bchnode-web">GitHub</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:website@bitcoincashnode.org">Email</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA">Slack</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://t.me/merc1er">Telegram</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="/static/js/scripts.js"></script>
+
+
+</body>
+</html>

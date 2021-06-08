@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="author" content="Bitcoin Cash Community">
+  <meta name="description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://bitcoincashnode.org/static/img/icons/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="https://bitcoincashnode.org/static/img/icons/apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/css/style.css">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@bitcoincashnode">
+  <meta name="twitter:creator" content="@bitcoincashnode">
+  <meta name="twitter:title" content="Bitcoin Cash Node">
+  <meta name="twitter:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta name="twitter:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="https://bitcoincashnode.org/">
+  <meta property="og:title" content="Bitcoin Cash Node">
+  <meta property="og:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+
+  <title>BCHN就11月份BCH升级的常见问题集锦</title>
+</head>
+
+<body>
+  <!-- <div class="bg-dark">
+    <div class="bg-info-gradient py-3">
+      <div class="container text-center">
+         <a class="text-white" href=""></a>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark py-4 navbar-expand-lg">
+    <div class="container">
+      <a class="btn btn-link text-white underline-animate" href="/zh">主页</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapsed" aria-controls="navCollapsed" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navCollapsed">
+        <ul class="navbar-nav ml-auto text-center text-lg-left">
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://docs.bitcoincashnode.org">文档</a></li>
+          <!-- About selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="about-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                关于我们 <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/zh/team">团队</a>
+                <a class="dropdown-item" href="/zh/goals">目标</a>
+                <a class="dropdown-item" href="/zh/newsroom">资讯</a>
+                <a class="dropdown-item" href="/zh/media">媒体工具包</a>
+              </div>
+            </div>
+          </li>
+          <!-- /About selector -->
+          <!-- Source -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">源码</a></li>
+          <!-- /Source -->
+          <!-- Download -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="/zh/download.html">下载</a></li>
+          <!-- /Download -->
+          <!-- Language selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="lang-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Language <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/en">English</a>
+<a class="dropdown-item" href="/zh">简体中文</a>
+<a class="dropdown-item" href="/es">Español</a>
+<a class="dropdown-item" href="/ja">日本語</a>
+<a class="dropdown-item" href="/ko">한국어</a>
+<a class="dropdown-item" href="/de">Deutsch</a>
+<a class="dropdown-item" href="/fr">Français</a>
+<a class="dropdown-item" href="/it">Italiano</a>
+<a class="dropdown-item" href="/nl">Nederlands</a>
+<a class="dropdown-item" href="/no">Norsk</a>
+
+              </div>
+            </div>
+          </li>
+          <!-- /Language selector -->
+        </ul>
+      </div>
+      <!-- /Collapse -->
+    </div>
+  </nav>
+  <!-- /Navbar -->
+
+  <main class="overflow-hidden">
+    
+<section class="bg-dark">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col my-5 py-5 text-center">
+                <h1 class="text-white">BCHN就11月份BCH升级的常见问题集锦</h1> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container py-6">
+        <div class="row justify-content-center">
+            <article class="col-md-10 col-lg-8">
+                <div class="d-flex align-items-center pb-5">
+                    <img src="/static/img/logomark.svg" alt="Logo" class="mr-3" height="40">
+                    <div>
+                        <div>by <strong>Bitcoin Cash Node Team</strong>
+                        </div>
+                        <div class="text-small text-muted">12 August 2020</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+
+                    </p>
+                    <p>此文是针对BCHN关于2020年11月BCH网络升级相关主题的问答集锦。</p>
+                    <p>我们意识到BCH生态中可能会发生某些新的问题，该文档希望能做出一些修正。 请随时在评论中留下你的问题。</p>
+                    <hr>
+                    <h3 id="1-11-bchn-">1. 对11月份的提案，BCHN支持谁？</h3>
+                    <p>BCHN支持Mark Lundeberg和Jonathan Toomim提出的aserti3-2d（ASERT）难度调整算法。</p>
+                    <h3 id="2-11-">2.你是否认为11月份相当于是“没有升级”？</h3>
+                    <p>不，我们不这么认为。我们认为对DAA算法的纠正对比特币现金的生存至关重要。 ASERT提案已针对众多竞争方案进行了评估，其中包括最近宣布的Grasberg提案，并且其表现明显好于其他方案。</p>
+                    <h3 id="3-bchn-">3. BCHN是否支持创建新的货币，如分叉？</h3>
+                    <p>不。我们希望BCH保持统一，在经过充分研究和测试后，选择出一个最佳提案。</p>
+                    <h3 id="4-bchn-">4. BCHN是否要废除自动重防保护？</h3>
+                    <p>“自动重放保护”的目的是避免未升级的节点在计划的升级后引起问题，如在升级时将自己分叉到新的网络。</p>
+                    <p>BCHN有更好的方法来实现相同的目的。首先要确保未升级的节点提前通知操作员，其次要在升级时暂停未升级的节点。通知和关闭更具可操作性，可为操作员节省时间和金钱，避免在空链上进行挖矿或发起意外交易。</p>
+                    <h3 id="5-bchn-historic-drift-correction-">5.是否有人要求BCHN进行历史漂移校正(historic drift correction)？</h3>
+                    <p>不。尽管BCHN与一些BCH矿池，交易所和许多其他企业保持联系，但从未有人要求BCHN添加此功能。</p>
+                    <p>此外，此"功能"导致的出块时间变长，挖矿奖励变少等结果在社区遭到了普遍反对。这种"功能"会对许多用户产生负面影响，损害网络声誉。</p>
+                    <hr>
+                    <h3 id="-">相关链接</h3>
+                    <ul>
+                        <li>
+                            <p>与BCHN联系：</p>
+                            <ul>
+                                <li>
+                                    <p>网站：https：//bitcoincashnode.org</p>
+                                </li>
+                                <li>
+                                    <p>开发与支持Slack聊天邀请链接：</p>
+                                    <p><a href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA"><a href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA">https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA</a></a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>电报：https://t dot me/bitcoincashnode</p>
+                                </li>
+                                <li>
+                                    <p>IRC通道：在Freenode上加入<a href="/search?q=%23bchnode">#bchnode</a>（我们通过IRC桥通道在Slack上看到消息）</p>
+                                </li>
+                                <li>
+                                    <p>BCH Node微信QR码：</p>
+                                </li>
+                                <li>
+                                    <p>我们的开发日志Slack：<a href="http://logs.bchnode.org/"><a href="http://logs.bchnode.org/">http://logs.bchnode.org/</a></a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>GitLab上的主要开发资料库：</p>
+                                    <p><a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node"><a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node">https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node</a></a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>通过我们的网站轻松下载链接：</p>
+                                    <p><a href="https://bitcoincashnode.org/download.html"><a href="https://bitcoincashnode.org/download.html">https://bitcoincashnode.org/download.html</a></a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>在Github上的完整发行版：</p>
+                                    <p><a href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases"><a href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases">https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases</a></a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>捐赠地址：<a href="https://bitcoincashnode.org/#donate"><a href="https://bitcoincashnode.org/#donate">https://bitcoincashnode.org/#donate</a></a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>在Twitter上关注我们：<a href="https://twitter.com/bitcoincashnode"><a href="https://twitter.com/bitcoincashnode">https://twitter.com/bitcoincashnode</a></a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+  </main>
+
+  <footer class="footer bg-dark py-6 text-a-white text-light">
+  <div class="container g">
+    <div class="row justify-content-xl-center">
+
+      <!-- Organization -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">组织</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/zh/team">团队</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/zh/goals">目标</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/zh/newsroom">资讯</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/zh/media">媒体工具包</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Software -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">软件</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/zh/download.html">下载</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://docs.bitcoincashnode.org">文档</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">源码</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Security -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">安全</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/blob/master/DISCLOSURE_POLICY.md">安全问题通报规则</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:security@bitcoincashnode.org">安全问题联系人</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">社群媒体</div>
+        <ul class="list-inline social">
+          <li>
+            <a target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA" class="text-muted">Slack</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/bitcoincashnode" class="text-muted">Twitter</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://t.me/bitcoincashnode" class="text-muted">Telegram</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://read.cash/@bitcoincashnode" class="text-muted">read.cash</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Website -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0 mt-md-4 mt-xl-0">
+        <div class="h4 text-white">网站</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://github.com/bitcoin-cash-node/bchnode-web">GitHub</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:website@bitcoincashnode.org">Email</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA">Slack</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://t.me/merc1er">Telegram</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="/static/js/scripts.js"></script>
+
+
+</body>
+</html>

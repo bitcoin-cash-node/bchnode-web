@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="author" content="Bitcoin Cash Community">
+  <meta name="description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://bitcoincashnode.org/static/img/icons/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="https://bitcoincashnode.org/static/img/icons/apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/css/style.css">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@bitcoincashnode">
+  <meta name="twitter:creator" content="@bitcoincashnode">
+  <meta name="twitter:title" content="Bitcoin Cash Node">
+  <meta name="twitter:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta name="twitter:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="https://bitcoincashnode.org/">
+  <meta property="og:title" content="Bitcoin Cash Node">
+  <meta property="og:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+
+  <title>Bitcoin Cash Node 2020: plans for May upgrade and beyond</title>
+</head>
+
+<body>
+  <!-- <div class="bg-dark">
+    <div class="bg-info-gradient py-3">
+      <div class="container text-center">
+         <a class="text-white" href=""></a>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark py-4 navbar-expand-lg">
+    <div class="container">
+      <a class="btn btn-link text-white underline-animate" href="/en">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapsed" aria-controls="navCollapsed" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navCollapsed">
+        <ul class="navbar-nav ml-auto text-center text-lg-left">
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://docs.bitcoincashnode.org">Docs</a></li>
+          <!-- About selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="about-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/en/team">Team</a>
+                <a class="dropdown-item" href="/en/goals">Goals</a>
+                <a class="dropdown-item" href="/en/newsroom">Newsroom</a>
+                <a class="dropdown-item" href="/en/media">Media kit</a>
+              </div>
+            </div>
+          </li>
+          <!-- /About selector -->
+          <!-- Source -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Source code</a></li>
+          <!-- /Source -->
+          <!-- Download -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="/en/download.html">Download</a></li>
+          <!-- /Download -->
+          <!-- Language selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="lang-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Language <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/en">English</a>
+<a class="dropdown-item" href="/zh">简体中文</a>
+<a class="dropdown-item" href="/es">Español</a>
+<a class="dropdown-item" href="/ja">日本語</a>
+<a class="dropdown-item" href="/ko">한국어</a>
+<a class="dropdown-item" href="/de">Deutsch</a>
+<a class="dropdown-item" href="/fr">Français</a>
+<a class="dropdown-item" href="/it">Italiano</a>
+<a class="dropdown-item" href="/nl">Nederlands</a>
+<a class="dropdown-item" href="/no">Norsk</a>
+
+              </div>
+            </div>
+          </li>
+          <!-- /Language selector -->
+        </ul>
+      </div>
+      <!-- /Collapse -->
+    </div>
+  </nav>
+  <!-- /Navbar -->
+
+  <main class="overflow-hidden">
+    
+<section class="bg-dark">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col my-5 py-5 text-center">
+                <h1 class="text-white">Bitcoin Cash Node 2020: plans for May upgrade and beyond</h1> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container py-6">
+        <div class="row justify-content-center">
+            <article class="col-md-10 col-lg-8">
+                <div class="d-flex align-items-center pb-5">
+                    <img src="/static/img/logomark.svg" alt="Logo" class="mr-3" height="40">
+                    <div>
+                        <div>by <strong>Bitcoin Cash Node Team</strong>
+                        </div>
+                        <div class="text-small text-muted">22 March 2020</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+
+                    </p>
+                    <p>This is the first of a series of <a href="https://bitcoincashnode.org/">Bitcoin Cash Node</a> project announcement posts that will outline our plans for 2020, both in the short term (May) and looking ahead a bit further (November).</p>
+                    <p>Bitcoin Cash Node is intended for professional use by mining pools, exchanges and other businesses with mission-critical infrastructure building on Bitcoin Cash (BCH).</p>
+                    <p>In March, we intend to release a series of further announcements with more focused information aimed specifically at these key user groups. The following general announcement is addressed to all prospective Bitcoin Cash Node users.</p>
+                    <hr>
+                    <h3 id="upcoming-bitcoin-cash-upgrade-on-15-may-2020">Upcoming Bitcoin Cash upgrade on 15 May 2020</h3>
+                    <figure class="text-center">
+                        <img class="rounded img-fluid" src="https://rcimg.net/images/11af0b52/NmChpaFVu59HRq3WyG4zGRiKOzcVZbGqXHhSxFDk.png">
+                    </figure>
+
+                    <p>For the coming upgrade on 15 May 2020, Bitcoin Cash Node will provide:</p>
+                    <blockquote>
+
+                        "<em>a safe and professional node implementation that will neutrally follow the longest chain without contributing to the risk of a chain split</em>" > - <a href="https://read.cash/@freetrader/bitcoin-cash-node-003b2381">original Bitcoin Cash Node release announcement, February 20, 2020</a>
+
+                    </blockquote>
+
+                    <p>To recap, we implement the <code class="language-javascript">OP_REVERSEBYTES</code> and SigChecks features of the Bitcoin Cash network upgrade which were <a href="https://github.com/bitcoincashorg/bitcoincash.org/pull/444/commits/98d79b6ad7a23e5aafab1dffd570388400c5e210">specified at the cut-off date of 15 Feb 2020</a>:</p>
+                    <ul>
+                        <li>
+                            <p><a href="https://github.com/bitcoincashorg/bitcoincash.org/blob/master/spec/2020-05-15-op_reversebytes.md">OP_REVERSEBYTES</a> specification</p>
+                        </li>
+                        <li>
+                            <p><a href="https://github.com/bitcoincashorg/bitcoincash.org/blob/master/spec/2020-05-15-sigchecks.md">SigChecks</a> specification</p>
+                        </li>
+                    </ul>
+                    <p>Our node is constructed to safely follow the longest chain during the upgrade, by accepting blocks regardless of whether they vote for the IFP or not.</p>
+                    <p>The client does not include any rule activation based on BIP9 or similar voting. Re-org protection remains included and configured with the same default values as the ABC client.</p>
+                    <p>We intend to make no further changes that require consensus for May, but focus on reducing defects and improving performance, stability and user-friendliness until then. It is likely that we will issue an <em>optional</em> minor release
+                        providing such enhancements before May.</p>
+                    <p>Generally, we commit to providing stable interfaces across major releases.</p>
+                    <h3 id="preamble-meeting-our-team">Preamble: Meeting our team</h3>
+                    <figure class="text-center">
+                        <img class="rounded img-fluid" src="https://rcimg.net/images/11af0b52/MT3lsI46DQ9LTa4AO14xu7Pb3FZikELITvlaShB6.jpeg">
+                    </figure>
+
+                    <p>Our team includes a number of seasoned Bitcoin professionals, including software developers with many years of experience, who are committed to delivering a C++ node software that is suitable for the most demanding business environments
+                        (mining, pools, exchanges) yet can also be set up with minimal effort by novice Bitcoin Cash users.</p>
+                    <p><strong>Our project has requested to conduct an Ask-Me-Anything (AMA) session on the popular Reddit forum /r/btc later this week</strong>, where our <a href="https://read.cash/@freetrader/">lead developer</a> and other team members will
+                        be on hand to answer your questions about the project and how we see the future of Bitcoin Cash.</p>
+                    <h3 id="our-work-plan-ahead-of-the-may-upgrade">Our work plan ahead of the May upgrade</h3>
+                    <figure class="text-center">
+                        <img class="rounded img-fluid" src="https://rcimg.net/images/11af0b52/DDP4gOeDQMuSkfND0ito1bOYMtQoZjS8le2DQ1zg.jpeg">
+                    </figure>
+
+                    <p>Since the software launch on 27 February 2020, the team has set up an efficient Continuous Integration (CI) pipeline and has begun reviewing the existing <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/merge_requests/53">code quality checks</a> so
+                        that they can be substantially refined and tightened as development proceeds.</p>
+                    <p>The lead developer is pursuing the use of additional static analysis tools to reduce the risk of software defects. We will keep you informed about developments in that regard in subsequent posts.</p>
+                    <p>Since the scope for the May release has been decided, the Bitcoin Cash Node team is now focusing on the following items:</p>
+                    <p><strong><u>Software development side</u></strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <p>Ensuring that project user documentation is up to date and correct (we have already fixed a number of <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/issues/24">issues</a> there).</p>
+                        </li>
+                        <li>
+                            <p>Completing the missing specification of the automatic finalization feature (aka "rolling checkpoints") introduced by Bitcoin ABC - a <em>specification gap</em> which is consensus relevant and poses an obstacle to other client
+                                implementation accessing the Bitcoin Cash mining arena</p>
+                        </li>
+                        <li>
+                            <p>Putting in place a development process that is completely open and inviting to the public and new developers, testers and other professionals and hobbyists who want to help Bitcoin Cash Node. We believe in "<em>do not trust, verify</em>"
+                                !</p>
+                        </li>
+                        <li>
+                            <p>Identifying existing <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/issues/35">gaps in software tests</a> as well as inadequacies of the verification tools and methods, and formulating appropriate plans to improve
+                                the quality assurance.</p>
+                        </li>
+                        <li>
+                            <p>Monitoring Bitcoin Core and Bitcoin ABC projects for <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/merge_requests/48">backports</a> that Bitcoin Cash Node might need. We intend to formalize this process more
+                                - at the moment backports occur at the discretion of our senior developers, and anyone can raise an issue on our <a href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/issues">Gitlab tracker</a> to request specific
+                                backports.</p>
+                        </li>
+                        <li>
+                            <p>Setting up more efficient reproducible build and release processes</p>
+                        </li>
+                        <li>
+                            <p>Revising our project infrastructure (seeders, seeds) and looking into setting up better file hosting for our <a href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases">release packages</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Setting up continuous deployment of our project through Gitlab / Docker integration with a view to setting up additional testing, external to Gitlab.</p>
+                        </li>
+                    </ul>
+                    <p><strong><u>Organizational / project management side</u></strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <p>Establishing our support and contact process</p>
+                        </li>
+                        <li>
+                            <p>Defining our Responsible Disclosure process</p>
+                        </li>
+                        <li>
+                            <p>Establishing an accountable and transparent process for funding continued maintenance and development of Bitcoin Cash Node. So far we have set up a 3-of-5 <a href="https://bitcoincashnode.org/">multi-signature wallet with a main donation address</a> for
+                                general funding of operations, including personnel, equipment and contracting. We appreciate donations, but will also have further announcements on how we intend to participate in crowd-funding activities and potentially,
+                                development sponsorship engagements with industry.</p>
+                        </li>
+                        <li>
+                            <p>Defining further roles that the project seeks to establish, such as professional liaison with key users of our software and engagement with wider Bitcoin Cash user base. We intend to be responsive to the requirements of the
+                                Bitcoin Cash ecosystem.</p>
+                        </li>
+                        <li>
+                            <p>Evaluating the amount of personnel available for the planned tasks and crafting an appropriate budget for the upcoming fundraiser.</p>
+                        </li>
+                        <li>
+                            <p>Help establish better ecosystem-wide processes so that the details and priorities of the common <a href="https://reference.cash/">Bitcoin Cash specification</a> and roadmap are responsive to real ecosystem needs and <em>evidence-based</em> research.</p>
+                        </li>
+                    </ul>
+                    <p><strong><u>Proposed Research</u></strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <p>We are starting an evaluation to improve the difficulty adjustment algorithm (DAA) in order to reduce variance of the block confirmation time. Much research has already been done in this field. We will not change DAA validation
+                                rules in May. However, we want to proactively look at possible improvements that might be needed as long as Bitcoin Cash has a relatively low hashrate compared to BTC.</p>
+                        </li>
+                        <li>
+                            <p>UTXO/<a href="https://eprint.iacr.org/2019/611.pdf">UtreeXO</a> commitment as a critical step in scaling, and to enable faster synchronization as well as fast Simplified Payment Verification (SPV)</p>
+                        </li>
+                        <li>
+                            <p><a href="https://blog.vermorel.com/journal/2019/1/9/merklix-tree-for-bitcoin.html">Merklix tree</a> use for more efficient synchronization, especially in weak-block schemes.</p>
+                        </li>
+                        <li>
+                            <p>Evaluation of adaptive blocksize algorithms under various scenarios is planned as a research project after other scaling improvements are in place.</p>
+                        </li>
+                    </ul>
+                    <p>We plan to issue advice to pools, exchanges and other wallet users ahead of the Bitcoin Cash upgrade in May to recommend certain operational procedures including switchover and switchback for those who have been using Bitcoin ABC until
+                        now and need to take operational steps to ensure a smooth upgrade.</p>
+                    <h3 id="looking-toward-the-november-upgrade">Looking toward the November upgrade</h3>
+                    <figure class="text-center">
+                        <img class="rounded img-fluid" src="https://rcimg.net/images/11af0b52/yLAn4vlNyUapw1q4kIitoxRPuYwlMFRK9ITR3pcd.jpeg">
+                    </figure>
+
+                    <p>Bitcoin Cash has established - through five successful upgrade cycles - that hard fork upgrades are valuable. Parts of the industry have communicated a desire to move to a more ecosystem-friendly schedule of a one-year upgrade cycle
+                        that leaves more room for research and coordination.</p>
+                    <p>The "automatic replay protection" feature that is currently active on the network in ABC clients forces another software update by 15 November 2020.</p>
+                    <p>Therefore, we intend to work together with all stakeholders to ensure a successful upgrade in November 2020 as well.</p>
+                    <p>As ecosystem-wide decision processes are established, future schedules may need to be reassessed - many have expressed that the current semi-annual upgrade schedule creates difficulties in adoption and operational cost.</p>
+                    <p>There are a number of low-contention improvements already suggested for the client software. We will be investigating the feasibility of these in collaboration with other teams.</p>
+                    <p><strong>Consensus relevant</strong> (or quasi-consensus):</p>
+                    <ul>
+                        <li>
+                            <p>UTXO commitments for faster synchronization of newly joined network nodes</p>
+                        </li>
+                        <li>
+                            <p>Script improvements (64 bit integers, perhaps <code class="language-javascript">op_txinfo</code>)</p>
+                        </li>
+                        <li>
+                            <p>DAA upgrade if evaluation results indicate that it is useful</p>
+                        </li>
+                        <li>
+                            <p>Resolving the unconfirmed transaction chain limits in a more permanent way than the current (May 2020) bump of defaults by a factor of two from 25 to 50.</p>
+                        </li>
+                        <li>
+                            <p>Possible adjustments to Child-Pays-For-Parent (CPFP) feature (relates to above)</p>
+                        </li>
+                        <li>
+                            <p>Continue supporting research on pre-consensus techniques such as Avalanche and Storm, objectively presenting their strengths and weaknesses to the community</p>
+                        </li>
+                    </ul>
+                    <p><strong>Non-consensus work</strong> that Bitcoin Cash Node client implementation can progress independently:</p>
+                    <ul>
+                        <li>
+                            <p>Block propagation techniques for scaling (Graphene, Xthinner)</p>
+                        </li>
+                        <li>
+                            <p>Double spend proof work (implemented in Flowee, currently being ported to Bitcoin Unlimited)</p>
+                        </li>
+                        <li>
+                            <p>Secure RPC access for SPV wallets (useful e.g. for Neutrino Wallet to talk to our node software)</p>
+                        </li>
+                    </ul>
+                    <p>We will shortly announce an initiative to more formally engage with key users and the larger user base.</p>
+                    <p>If you have any questions or feel that we omitted something important from our planning list above, please contact the project through any of our communication channels or leave comments in the section below.</p>
+                    <p>Thank you for your support!</p>
+                    <p>— The Bitcoin Cash Node Project</p>
+                    <figure class="image-width-normal">
+                        <img class="img-fluid rounded" src="https://rcimg.net/images/11af0b52/XZOUQgq2gN9eXUxkgiSzbKEZVRxyXJQ33HcuqqUE.png">
+                    </figure>
+
+                    <hr>
+                    <p>Footnotes:</p>
+                    <ol>
+                        <li>
+                            <p><em>This is an official Bitcoin Cash Node project account. Monetary tips to it will be channeled towards the project's main multi-signature funding address, however such transfers need to be done manually at this point and may therefore happen at irregular intervals. Project management will strive to keep the funds kept on the read.cash account to a minimum.</em>
+                            </p>
+                        </li>
+                        <li>
+                            <p><em>A markup text version of this announcement post is available in our announcement repository:</em>
+                                <br><a href="https://gitlab.com/bitcoin-cash-node/announcements/-/blob/master/20200303_bitcoin_cash_node_2020_plans_for_may_upgrade_and_beyond.md"><a href="https://gitlab.com/bitcoin-cash-node/announcements/-/blob/master/20200303_bitcoin_cash_node_2020_plans_for_may_upgrade_and_beyond.md">https://gitlab.com/bitcoin-cash-node/announcements/-/blob/master/20200303_bitcoin_cash_node_2020_plans_for_may_upgrade_and_beyond.md</a></a>
+                            </p>
+                        </li>
+                    </ol>
+                    <hr>
+                    <p>Image credits:</p>
+                    <ul>
+                        <li>
+                            <p>Lead image and wireframe 'Bitcoin Cash Node' : <a href="https://read.cash/@Leandrodimarco">Leandrodimarco</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>man jumping: Photo by <a href="https://unsplash.com/@karinacarvalho?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Karina Carvalho</a> on <a href="https://unsplash.com/s/photos/human?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>female software engineer writing on whiteboard: Photo by <a href="https://unsplash.com/@thisisengineering?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">ThisisEngineering RAEng</a> on <a href="https://unsplash.com/s/photos/clapper-board?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>woman looking out on multiple screens: Photo by <a href="https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christina @ wocintechchat.com</a> on <a href="https://unsplash.com/s/photos/software-installation?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+  </main>
+
+  <footer class="footer bg-dark py-6 text-a-white text-light">
+  <div class="container g">
+    <div class="row justify-content-xl-center">
+
+      <!-- Organization -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Organization</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/en/team">Team</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/en/goals">Goals</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/en/newsroom">Newsroom</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/en/media">Media kit</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Software -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Software</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/en/download.html">Download</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://docs.bitcoincashnode.org">Docs</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Source code</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Security -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Security</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/blob/master/DISCLOSURE_POLICY.md">Disclosure policy</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:security@bitcoincashnode.org">Security contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Social</div>
+        <ul class="list-inline social">
+          <li>
+            <a target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA" class="text-muted">Slack</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/bitcoincashnode" class="text-muted">Twitter</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://t.me/bitcoincashnode" class="text-muted">Telegram</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://read.cash/@bitcoincashnode" class="text-muted">read.cash</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Website -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0 mt-md-4 mt-xl-0">
+        <div class="h4 text-white">Website</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://github.com/bitcoin-cash-node/bchnode-web">GitHub</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:website@bitcoincashnode.org">Email</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA">Slack</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://t.me/merc1er">Telegram</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="/static/js/scripts.js"></script>
+
+
+</body>
+</html>

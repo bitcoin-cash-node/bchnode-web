@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="author" content="Bitcoin Cash Community">
+  <meta name="description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://bitcoincashnode.org/static/img/icons/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="https://bitcoincashnode.org/static/img/icons/apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/css/style.css">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@bitcoincashnode">
+  <meta name="twitter:creator" content="@bitcoincashnode">
+  <meta name="twitter:title" content="Bitcoin Cash Node">
+  <meta name="twitter:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta name="twitter:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="https://bitcoincashnode.org/">
+  <meta property="og:title" content="Bitcoin Cash Node">
+  <meta property="og:description" content="Home of the Bitcoin Cash Node full node implementation for Bitcoin Cash (BCH).">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bitcoincashnode.org/static/thumbnail.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+
+  <title>5 Awesome Things about BCHN v23.0.0 upgrade</title>
+</head>
+
+<body>
+  <!-- <div class="bg-dark">
+    <div class="bg-info-gradient py-3">
+      <div class="container text-center">
+         <a class="text-white" href=""></a>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark py-4 navbar-expand-lg">
+    <div class="container">
+      <a class="btn btn-link text-white underline-animate" href="/it">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCollapsed" aria-controls="navCollapsed" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navCollapsed">
+        <ul class="navbar-nav ml-auto text-center text-lg-left">
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://docs.bitcoincashnode.org">Documentazione</a></li>
+          <!-- About selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="about-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Informazioni <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/it/team">Team</a>
+                <a class="dropdown-item" href="/it/goals">Obiettivi</a>
+                <a class="dropdown-item" href="/it/newsroom">Notizie</a>
+                <a class="dropdown-item" href="/it/media">Media kit</a>
+              </div>
+            </div>
+          </li>
+          <!-- /About selector -->
+          <!-- Source -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Codice sorgente</a></li>
+          <!-- /Source -->
+          <!-- Download -->
+          <li class="nav-item"><a class="btn btn-link text-white" href="/it/download.html">Scarica</a></li>
+          <!-- /Download -->
+          <!-- Language selector -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-link text-white dropdown-toggle" id="lang-selector" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Language <img class="chevron-down" src="/static/img/icons/chevron-down.svg" alt="Chevron Down">
+              </button>
+              <div class="dropdown-menu text-center text-lg-left" aria-labelledby="lang-selector">
+                <a class="dropdown-item" href="/en">English</a>
+<a class="dropdown-item" href="/zh">简体中文</a>
+<a class="dropdown-item" href="/es">Español</a>
+<a class="dropdown-item" href="/ja">日本語</a>
+<a class="dropdown-item" href="/ko">한국어</a>
+<a class="dropdown-item" href="/de">Deutsch</a>
+<a class="dropdown-item" href="/fr">Français</a>
+<a class="dropdown-item" href="/it">Italiano</a>
+<a class="dropdown-item" href="/nl">Nederlands</a>
+<a class="dropdown-item" href="/no">Norsk</a>
+
+              </div>
+            </div>
+          </li>
+          <!-- /Language selector -->
+        </ul>
+      </div>
+      <!-- /Collapse -->
+    </div>
+  </nav>
+  <!-- /Navbar -->
+
+  <main class="overflow-hidden">
+    
+<section class="bg-dark">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col my-5 py-5 text-center">
+                <h1 class="text-white">5 Awesome Things about BCHN v23.0.0 upgrade</h1> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container py-6">
+        <div class="row justify-content-center">
+            <article class="col-md-10 col-lg-8">
+                <div class="d-flex align-items-center pb-5">
+                    <img src="/static/img/logomark.svg" alt="Logo" class="mr-3" height="40">
+                    <div>
+                        <div>by <strong>Bitcoin Cash Node Team</strong>
+                        </div>
+                        <div class="text-small text-muted">19 April 2021</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+
+                    </p>
+                    <p>In this article we share five exciting things about the latest BCHN release (v23.0.0).</p>
+                    <h2 id="-1-it-strengthens-the-network-upgrade-on-may-15-2021">#1 - It strengthens the network upgrade on May 15, 2021</h2>
+                    <p>This network upgrade is important, even though it does not change what are known as "consensus rules", it does bring significant changes which depend on coordination within the infrastructure.</p>
+                    <p>The v23.0.0 is BCHN's contribution to that effort, and includes some changes which only activate on May 15, 2021:</p>
+                    <ul>
+                        <li>
+                            <p>removing the limit on unconfirmed transaction chains</p>
+                        </li>
+                        <li>
+                            <p>enabling multiple OP_RETURNs on the network (making them "standard")</p>
+                        </li>
+                    </ul>
+                    <p>The first one is a change that has long been requested and anticipated by businesses whose use cases depend on many small transactions, performed using 0-conf. In these use cases, customers or users are likely to perform transactions
+                        that build on one another, forming a long chain that can be confirmed as a group in a subsequent block. (Sometimes, only part of that chain is confirmed, leaving the rest of the chain in the mempool, waiting to be confirmed later
+                        - but since BCH has ample block space, miners will be able to confirm very long chains from May 15 onwards.)</p>
+                    <p>The second is a change which will help those who build token applications, such as new auction protocols, combining SLP transactions together with other SLP-based protocols, etc.</p>
+                    <p>Because these are both changes that affect which transactions are regularly propagated across the network, it is important to activate them together on May 15.</p>
+                    <p>Both mining nodes and other "relay" BCHN nodes should upgrade to make the transition to these new network rules a smooth one.</p>
+                    <h2 id="-2-new-feature-double-spend-proofs">#2 - New feature: Double Spend Proofs</h2>
+                    <p>Double Spend Proofs are a new feature in BCHN v23.0.0 that will help provide the infrastructure for more reliable merchant use of Bitcoin Cash.</p>
+                    <p>Several nodes have agreed on a common specification and have implemented a new network message to pass around proofs of double spend attempts if they detect them.</p>
+                    <p>Other software, such as Fulcrum SPV server, can build on these message to provide double spend notifications to wallet software.</p>
+                    <p>The more this feature is available on the infrastructure layer, the sooner we can see more wallets integrated double spend alerts, and it becomes safer to use Bitcoin Cash for everyday purchases in brick and mortar as well as online
+                        shops.</p>
+                    <p>By upgrading your BCHN node to v23.0.0, you are helping to strengthen the protection of those receiving payments in BCH, which will bring about more confidence in the network and more adoption as a payment system.</p>
+                    <h2 id="-3-you-can-filter-out-useless-connections-from-unclean-forks">#3 - You can filter out useless connections from unclean forks</h2>
+                    <p>The BSV and ABC forks did not cleanly separate themselves from other Bitcoin Cash nodes, which is why you still see occasional connections from their network nodes if you are running a BCH node.</p>
+                    <p>In BCHN v23.0.0 you can use the -rejectsubversion option to block such nodes when they try to connect.</p>
+                    <p>This frees up connection slots on your BCHN node so that other useful nodes (like BCHUnlimited, BCHD, Bitcoin Verde, Flowee, Knuth and other BCHN peers) can connect to you and use those slots.</p>
+                    <h2 id="-4-miner-pool-or-other-economic-nodes-soft-limit-increase-rpc-availability">#4 - (miner, pool or other economic nodes) Soft limit increase + RPC availability</h2>
+                    <p>The BCHN software has been tested to increase the mining soft limit to 8MB (the hard limit default stays at 32MB). This means by default, generated block templates can include more transactions, earning you more money. Of course it
+                        is unlikely that you do not already customize your blockmaxsize setting, but we thought we should mention it anyway.</p>
+                    <p>We also must inform you that if you are a miner, a pool or other economic node (e.g. exchange) using BCHN, this upgrade to v23.0.0 is mandatory.</p>
+                    <p>The v22.x.0 versions will disable RPC calls on May 15, 2021 and would require a special parameter to override and continue on the old rules.</p>
+                    <p>So please upgrade to v23.0.0 well in advance!</p>
+                    <h2 id="-5-assorted-bug-fixes-and-improvements">#5 - Assorted bug fixes and improvements</h2>
+                    <p>There are many small fixes and improvements to our code and also to the graphical user interface. We believe that this new version is more efficient in CPU and memory resources, than v22.x.0. We have tested it extensively, including
+                        longer term operation on the main network, ahead of this release.</p>
+                    <p>You can find our latest release BCHN v23.0.0 in the following locations:</p>
+                    <ul>
+                        <li>
+                            <p><a href="https://bitcoincashnode.org">https://bitcoincashnode.org</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p><a href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/tag/v23.0.0">https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/tag/v23.0.0</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p><a href="https://download.bitcoincashnode.org/releases/23.0.0/">https://download.bitcoincashnode.org/releases/23.0.0/</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <p>Please contact us via our support channels (Slack, Telegram, GitLab) if you experience any difficulties.</p>
+                    <p>We look forward to continuing to provide the BCH network with high quality node software.</p>
+                    <p>The Bitcoin Cash Node team</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+  </main>
+
+  <footer class="footer bg-dark py-6 text-a-white text-light">
+  <div class="container g">
+    <div class="row justify-content-xl-center">
+
+      <!-- Organization -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Organizzazione</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/it/team">Team</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/it/goals">Obiettivi</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/it/newsroom">Notizie</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/it/media">Media kit</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Software -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Software</div>
+        <ul class="list-unstyled">
+          <li>
+            <a class="text-muted" href="/it/download.html">Scarica</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://docs.bitcoincashnode.org">Documentazione</a>
+          </li>
+          <li>
+            <a class="text-muted" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node" target="_blank">Codice sorgente</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Security -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Sicurezza</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://gitlab.com/bitcoin-cash-node/bitcoin-cash-node/-/blob/master/DISCLOSURE_POLICY.md">Informativa sulla divulgazione</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:security@bitcoincashnode.org">Contatto problemi di sicurezza</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0">
+        <div class="h4 text-white">Social</div>
+        <ul class="list-inline social">
+          <li>
+            <a target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA" class="text-muted">Slack</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/bitcoincashnode" class="text-muted">Twitter</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://t.me/bitcoincashnode" class="text-muted">Telegram</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://read.cash/@bitcoincashnode" class="text-muted">read.cash</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Website -->
+      <div class="col-6 col-md-3 col-xl-2 mb-4 mb-md-0 mt-md-4 mt-xl-0">
+        <div class="h4 text-white">Sito web</div>
+        <ul class="list-inline social">
+          <li>
+            <a class="text-muted" target="_blank" href="https://github.com/bitcoin-cash-node/bchnode-web">GitHub</a>
+          </li>
+          <li>
+            <a class="text-muted" href="mailto:website@bitcoincashnode.org">Email</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://join.slack.com/t/bitcoincashnode/shared_invite/zt-egg3c36d-2cglIrKcbnGpIQFaKFzCWA">Slack</a>
+          </li>
+          <li>
+            <a class="text-muted" target="_blank" href="https://t.me/merc1er">Telegram</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="/static/js/scripts.js"></script>
+
+
+</body>
+</html>
