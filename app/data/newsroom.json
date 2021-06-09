@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "title": "How to set up a Bitcoin Cash Node on a Raspberry Pi 4 running Ubuntu Desktop 21.04",
+      "date": "9 June 2021",
+      "author": "Josh Wong",
+      "img": "/static/thumbnail.png",
+      "filename": "BCHN-on-raspberry-pi-2021-06",
+      "tags": ["tutorial"]
+    },
+    {
       "title": "BCHN v23.0.0升级的5大亮点",
       "date": "19 April 2021",
       "author": "Bitcoin Cash Node Team",
