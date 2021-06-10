@@ -6,6 +6,8 @@ layout: layout.html
 <% set('date', '9 June 2021') %>
 <% set('author', 'Josh Wong') %>
 
+([Link to the original tutorial on Github](https://github.com/josh-wong/bitcoin-cash-node-on-raspberry-pi))
+
 This tutorial describes how to install and run a [Bitcoin Cash Node](https://bitcoincashnode.org/) on a Raspberry Pi 4 running the 64-bit Ubuntu Desktop 21.04. This setup focuses on uses the Bitcoin Cash Node graphical user interface (GUI) so that you can visualize processes on the blockchain and your Bitcoin Cash wallet transactions.
 
 These instructions are intended for those who have basic knowledge of the Ubuntu environment and familiarity with Linux commands.
@@ -68,7 +70,7 @@ Open a web browser on your Raspberry Pi, and go to the **[Download](https://bitc
 
 Under **Linux**, download the **AARCH 64 (tar)** package the home directory on your mounted SSD. Downloading this compressed package should take about 1 minute.
 
-<img src="/static/img/newsroom/2021-06-09/bitcoin_cash_node_download.png?raw=true" style="zoom: 50%;" />
+<img src="/static/img/newsroom/2021-06-09/bitcoin_cash_node_download.png"/>
 
 
 
@@ -100,23 +102,23 @@ The Bitcoin Cash Node software then prompts us to specify where to download the 
 
 Select **Use a custom data directory**, and click the **three dots** to choose a directory.
 
-<img src="/static/img/newsroom/2021-06-09/bitcoin_cash_node_welcome_screen.png?raw=true" style="zoom:50%;" />
+<img src="/static/img/newsroom/2021-06-09/bitcoin_cash_node_welcome_screen.png"/>
 
 Navigate to your SSD, select the directory named **blockchain-data** that you previously created, and click **OK**. Then, click **OK** to begin downloading the blockchain.
 
 The Bitcoin Cash Node software will then begin downloading transactions. This will take hours or days, depending on your Internet connection speed.
 
-<img src="/static/img/newsroom/2021-06-09/bitcoin_cash_node_sync.png?raw=true" style="zoom: 80%;" />
+<img src="/static/img/newsroom/2021-06-09/bitcoin_cash_node_sync.png"/>
 
 After all the Bitcoin Cash transactions have finished downloading to your SSD, you will see the following Overview screen and your node will automatically start verifying transactions on the Bitcoin Cash blockchain as they happen.
 
-<img src="/static/img/newsroom/2021-06-09/bitcoin_cash_node_synced.png?raw=true" style="zoom:80%;" />
+<img src="/static/img/newsroom/2021-06-09/bitcoin_cash_node_synced.png"/>
 
 To monitor inbound and outbound traffic on your node, click **Window** in the menu bar and choose **Network Traffic**. From here, you can see how much data is being transferred to and from your node. 
 
 ***Note:** The "Received" and "Sent" under "Totals" will reset if you restart the Bitcoin Cash Node software. Additionally, the network traffic will reset if you move the slider below the graph.*
 
-<img src="/static/img/newsroom/2021-06-09/bitcoin_cash_node_network_traffic_30_minutes.png?raw=true.png" style="zoom:80%;" />
+<img src="/static/img/newsroom/2021-06-09/bitcoin_cash_node_network_traffic_30_minutes.png"/>
 
 ## Setting up your Bitcoin Cash wallet
 
@@ -134,7 +136,7 @@ In the menu bar, click **Settings**, then select **Encrypt Wallet**. When the pa
 
 After you have successfully encrypted your wallet with a password, the following confirmation screen will appear. Please carefully read the notice, then click **OK**.
 
-<img src="/static/img/newsroom/2021-06-09/bitcoin_cash_node_wallet_encrypted_notice.png?raw=true" style="zoom:80%;" />
+<img src="/static/img/newsroom/2021-06-09/bitcoin_cash_node_wallet_encrypted_notice.png"/>
 
 ### Back up your wallet
 
@@ -158,11 +160,11 @@ At this point, a window will appear that shows you a QR code for someone to scan
 
 Once someone submits a payment transaction to that payment request that we've generated, it will appear as "Pending" until it is validated by the blockchain.
 
-<img src="/static/img/newsroom/2021-06-09/bitcoin_cash_node_test_receive_pending.png?raw=true" style="zoom: 55%;" />
+<img src="/static/img/newsroom/2021-06-09/bitcoin_cash_node_test_receive_pending.png"/>
 
 After a few minutes, you can see that the transaction has been validated and your Bitcoin Cash now appears as "Available" funds.
 
-<img src="/static/img/newsroom/2021-06-09/bitcoin_cash_node_test_receive_verified.png?raw=true" style="zoom: 66%;" />
+<img src="/static/img/newsroom/2021-06-09/bitcoin_cash_node_test_receive_verified.png"/>
 
 When the Bitcoin Cash has moved to your available balance, it is in your possession and you can send it to others, make payments, or save it.
 
