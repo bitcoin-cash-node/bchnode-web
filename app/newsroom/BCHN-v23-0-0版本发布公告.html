@@ -1,0 +1,46 @@
+{% extends 'base.njk' %}{% block title %}BCHN v23.0.0版本发布公告{% endblock %}{% block description %}{% endblock %}{% block body %}
+<section class="bg-dark">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col my-5 py-5 text-center">
+                <h1 class="text-white">BCHN v23.0.0版本发布公告</h1> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container py-6">
+        <div class="row justify-content-center">
+            <article class="col-md-10 col-lg-8">
+                <div class="d-flex align-items-center pb-5">
+                    <img src="/static/img/logomark.svg" alt="Logo" class="mr-3" height="40">
+                    <div>
+                        <div>by <strong>Bitcoin Cash Node Team</strong>
+                        </div>
+                        <div class="text-small text-muted">2021年4月14日</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+
+                    </p>
+                    <h2 id="bchn-v23-0-0-">BCHN v23.0.0版本发布公告</h2>
+                    <p>BCHN项目在此宣布其重要版本更新23.0.0。</p>
+                    <p>该版本实行了2021年5月15号网络升级的技术特征，包括对未确认交易链上限的移除， 在同样总大小下单笔交易容许多条 OP_RETURN， Double Spend Proof (beta)， 预设挖矿区块大小提高至8MB， 以及其他除错与性能提升。</p>
+                    <p>BCHN用户在2021年5月15日前必须升级到此版本， 以在未确认交易链及多条OP_RETURN的规则上与全网同步。 v22.2.0及以前的软件将于5月15日到期而失去功能， 并将于4月15日起开始警告用户。</p>
+                    <p>访问以下网址，查看完整版版本说明：</p>
+                    <p><a href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/tag/v23.0.0"><a href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/tag/v23.0.0">https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/tag/v23.0.0</a></a>
+                    </p>
+                    <p>该链接中有可执行程序和支持平台的源码，你也可以在BCHN的项目网页进行下载：</p>
+                    <p><a href="https://bitcoincashnode.org"><a href="https://bitcoincashnode.org">https://bitcoincashnode.org</a></a>
+                    </p>
+                    <p>如需了解更多5月15号升级的信息，请访问以下链接：</p>
+                    <p><a href="https://upgradespecs.bitcoincashnode.org/2021-05-15-upgrade/"><a href="https://upgradespecs.bitcoincashnode.org/2021-05-15-upgrade/">https://upgradespecs.bitcoincashnode.org/2021-05-15-upgrade/</a></a>
+                    </p>
+                    <p>我们希望最新版本能带给你好的体验。让我们一起改善BCH。</p>
+                    <p>BCHN团队</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>{% endblock %}
