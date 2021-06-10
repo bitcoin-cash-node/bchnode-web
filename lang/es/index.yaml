@@ -39,3 +39,6 @@ gitlab: Visitar nuestro repo en GitLab
 collab: Desarrollo colaborativo
 see-goals: Nuestros objetivos
 contact: Contacto
+sponsors:
+  title: Sponsors of <span class="d-block d-md-inline">Bitcoin Cash Node</span>
+  btn: See all our sponsors
