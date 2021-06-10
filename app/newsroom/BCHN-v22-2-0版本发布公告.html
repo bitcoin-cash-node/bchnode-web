@@ -1,0 +1,44 @@
+{% extends 'base.njk' %}{% block title %}BCHN v22.2.0版本发布公告{% endblock %}{% block description %}{% endblock %}{% block body %}
+<section class="bg-dark">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col my-5 py-5 text-center">
+                <h1 class="text-white">BCHN v22.2.0版本发布公告</h1> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container py-6">
+        <div class="row justify-content-center">
+            <article class="col-md-10 col-lg-8">
+                <div class="d-flex align-items-center pb-5">
+                    <img src="/static/img/logomark.svg" alt="Logo" class="mr-3" height="40">
+                    <div>
+                        <div>by <strong>Bitcoin Cash Node Team</strong>
+                        </div>
+                        <div class="text-small text-muted">2020年12月2日</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+
+                    </p>
+                    <h2 id="bchn-v22-2-0-">BCHN v22.2.0版本发布公告</h2>
+                    <p>BCHN项目在此宣布其小幅版本更新22.2.0。</p>
+                    <p>此版本实行了一些介面和程序上的除错及改良。</p>
+                    <p>作为例常维护，我们建议运行之前版本的用户更新到v22.2.0。</p>
+                    <p>此版本在testnet4上运行时只转播标准交易。同时maxmempool预设值改为excessiveblocksize的十倍，在主网上仅略增加mempool最大值，但在scalenet上有大幅增加。</p>
+                    <p>访问以下网址，查看完整版版本说明：</p>
+                    <p><a href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/tag/v22.2.0">github.com/bitcoin-cash-node/bitcoin-cash-node/releases/tag/v22.2.0</a>
+                    </p>
+                    <p>该链接中有可执行程序和支持平台的源码，你也可以在BCHN的项目网页进行下载：</p>
+                    <p><a href="https://bitcoincashnode.org/zh/">bitcoincashnode.org</a>
+                    </p>
+                    <p>我们希望最新版本能带给你好的体验。让我们一起改善BCH。</p>
+                    <p>BCHN团队</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>{% endblock %}
