@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "title": "BCHN Financial Report 2021-06-11",
+      "date": "11 June 2021",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/thumbnail.png",
+      "filename": "BCHN-Financial-Report-2021-06-11",
+      "tags": ["financial-report"]
+    },
+    {
       "title": "How to set up a Bitcoin Cash Node on a Raspberry Pi 4 running Ubuntu Desktop 21.04",
       "date": "9 June 2021",
       "author": "Josh Wong",
