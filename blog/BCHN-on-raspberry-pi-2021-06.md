@@ -76,13 +76,13 @@ Under **Linux**, download the **AARCH 64 (tar)** package the home directory on y
 
 After the compressed package finishes downloading, let's extract the compressed package. 
 
-To do so, let's open **Terminal** and go to the directory where you downloaded the package to. Be sure to replace "&lt;SSD-directory-containing-downloaded-package&gt;" in the command below with the directory where you saved the compressed package to.
+To do so, let's open **Terminal** and go to the directory where you downloaded the package to. Be sure to replace "SSD-directory-containing-downloaded-package" in the command below with the directory where you saved the compressed package to.
 
-`cd /&lt;SSD-directory-containing-downloaded-package&gt;`
+`cd /"SSD-directory-containing-downloaded-package"`
 
-Next, let's extract the compressed package. When running the following command in **Terminal**, be sure to replace "&lt;version-number-downloaded&gt;" with the version number that matches the package you downloaded.
+Next, let's extract the compressed package. When running the following command in **Terminal**, be sure to replace "version-number-downloaded" with the version number that matches the package you downloaded.
 
-`sudo tar -xvzf bitcoin-cash-node-&lt;version-number-downloaded&gt;-aarch64-linux-gnu.tar.gz`
+`sudo tar -xvzf bitcoin-cash-node-"version-number-downloaded"-aarch64-linux-gnu.tar.gz`
 
 While we're in this directory, let's create a new directory to store the blockchain data and keep things tidy. In **Terminal**, run the following command.
 
