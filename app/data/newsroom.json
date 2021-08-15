@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "title": "Announcing Bitcoin Cash Node v23.1.0",
+      "date": "August 15 2021",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/thumbnail.png",
+      "filename": "Announcing-Bitcoin-Cash-Node-v23-1-0",
+      "tags": ["announcement"]
+    },
+    {
       "title": "BCHN Financial Report 2021-06-11",
       "date": "11 June 2021",
       "author": "Bitcoin Cash Node Team",
