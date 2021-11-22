@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "title": "BCHN v24.0.0版本发布公告",
+      "date": "November 21 2021",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/thumbnail.png",
+      "filename": "BCHN-v24-0-0版本发布公告",
+      "tags": ["announcement", "chinese"]
+    },
+    {
       "title": "Announcing Bitcoin Cash Node v24.0.0",
       "date": "November 21 2021",
       "author": "Bitcoin Cash Node Team",
