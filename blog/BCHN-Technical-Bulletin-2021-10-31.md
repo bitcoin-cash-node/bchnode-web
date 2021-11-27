@@ -50,7 +50,7 @@ BCHN currently uses LevelDB to store UTXOs.
 
 The API is comfortably straightforward.
 
-The initialization is a little exotic, but [well documented](http://www.lmdb.tech/doc/starting.html). After that the db interaction is with straightforward `get`, `put` and `del` function calls.
+The initialization is a little exotic, but [well documented](http://www.lmdb.tech/doc/starting.html). After that the db interaction is with straightforward `get`, `put` and `del`  function calls.
 
 There is also the ability to open a `cursor` to streamline reads. The documentation also mentions that `cursor`s can streamline writes if the keys to be written are pre-ordered for bulk preloading of data. It is unclear if this works on batch-writing to an existing database (TODO).
 
@@ -81,7 +81,7 @@ For ease of use I used the C++ wrapper [lmdb++](https://github.com/drycpp/lmdbxx
   dbi.get(txn, key, value);
   ```
 
-But this might choose a wrong overload:
+  But this might choose a wrong overload:
 
   ``` C++
   dbi.get(txn, make_val_from(stream), value);
