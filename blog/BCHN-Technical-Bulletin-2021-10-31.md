@@ -50,7 +50,7 @@ BCHN currently uses LevelDB to store UTXOs.
 
 The API is comfortably straightforward.
 
-The initialization is a little exotic, but [well documented](http://www.lmdb.tech/doc/starting.html). After that the db interaction is with straightforward `get`, `put` and `del`  function calls.
+The initialization is a little exotic, but [well documented](http://www.lmdb.tech/doc/starting.html). After that the db interaction is with straightforward `get`, `put` and `del`  function calls.
 
 There is also the ability to open a `cursor` to streamline reads. The documentation also mentions that `cursor`s can streamline writes if the keys to be written are pre-ordered for bulk preloading of data. It is unclear if this works on batch-writing to an existing database (TODO).
 
