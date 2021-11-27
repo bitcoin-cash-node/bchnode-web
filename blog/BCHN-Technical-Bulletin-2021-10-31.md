@@ -40,7 +40,7 @@ NB: This is the result of a *preliminary* study of the lmdb database library in 
 
 BCHN currently uses LevelDB to store UTXOs.
 
-* LevelDB is log/based (append only), so it's more friendly to HDD type memory.
+* LevelDB is log-based (append only), so it's more friendly to HDD type memory.
 * LevelDB requires periodic compaction of data, while lmdb requires no ongoing maintenance (the btree rebalances directly on writes).
 * LevelDB has lots of configuration knobs (RocksDB even more), while lmdb has a handful; the defaults on lmdb are intentionally restricting, so that devs familiarize with them and add what they need.
 * lmdb uses significantly more disk-space (Preliminary test showed a 4x).
@@ -50,7 +50,7 @@ BCHN currently uses LevelDB to store UTXOs.
 
 The API is comfortably straightforward.
 
-The initialization is a little exotic, but [well documented](http://www.lmdb.tech/doc/starting.html). After that the db interaction is with straightforward `get`, `put` a `del` function calls.
+The initialization is a little exotic, but [well documented](http://www.lmdb.tech/doc/starting.html). After that the db interaction is with straightforward `get`, `put` and `del` function calls.
 
 There is also the ability to open a `cursor` to streamline reads. The documentation also mentions that `cursor`s can streamline writes if the keys to be written are pre-ordered for bulk preloading of data. It is unclear if this works on batch-writing to an existing database (TODO).
 
@@ -76,18 +76,18 @@ For ease of use I used the C++ wrapper [lmdb++](https://github.com/drycpp/lmdbxx
 * the `lmdb::val` object is central to interacting with the wrapper.
 * the `lmdb++` APIs are wonky in how they accept the `lmdb::val` objects. The different overloads in the API might take over and break things, without a warning. For example the following will work:
 
-``` C++
-lmdb::val key(stream.data(), stream.size()), value;
-dbi.get(txn, key, value);
-```
+  ``` C++
+  lmdb::val key(stream.data(), stream.size()), value;
+  dbi.get(txn, key, value);
+  ```
 
 But this might choose a wrong overload:
 
-``` C++
-dbi.get(txn, make_val_from(stream), value);
-```
+  ``` C++
+  dbi.get(txn, make_val_from(stream), value);
+  ```
 
-The advisory here is to not use the overloaded functions *at all*, and use the the `lmdb::dbi_*` methods (which all accept `MDB_val *`, simply converted to from `lmdb::val`s).
+  The advisory here is to not use the overloaded functions *at all*, and use the the `lmdb::dbi_*` methods (which all accept `MDB_val *`, simply converted to from `lmdb::val`s).
 
 
 ### Benchmarks
