@@ -1,0 +1,131 @@
+{% extends 'base.njk' %}{% block title %}BCHN Technical Bulletin 2021-10-31{% endblock %}{% block description %}{% endblock %}{% block body %}
+<section class="bg-dark">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col my-5 py-5 text-center">
+                <h1 class="text-white">BCHN Technical Bulletin 2021-10-31</h1> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container py-6">
+        <div class="row justify-content-center">
+            <article class="col-md-10 col-lg-8">
+                <div class="d-flex align-items-center pb-5">
+                    <img src="/static/img/logomark.svg" alt="Logo" class="mr-3 w-auto" height="40">
+                    <div>
+                        <div>by <strong>matricz</strong>
+                        </div>
+                        <div class="text-small text-muted">31 October 2021</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+
+                    </p>
+                    <h3 id="lmdb-preliminary-tech-report">LMDB Preliminary Tech Report</h3>
+                    <h4 id="summary">Summary</h4>
+                    <ol>
+                        <li>General description of lmdb</li>
+                        <li>Differences with LevelDB</li>
+                        <li>lmdb API</li>
+                        <li>lmdb caveats</li>
+                        <li>lmdb++ caveats</li>
+                        <li>Benchmarks</li>
+                        <li>Conclusion</li>
+                    </ol>
+                    <hr>
+                    <p>NB: This is the result of a <em>preliminary</em> study of the lmdb database library in the context of maintaining a persistent database of UTXOs in BCHN node software.</p>
+                    <p><a href="https://git.openldap.org/openldap/openldap/tree/mdb.master">Repository</a>  <a href="https://github.com/LMDB/lmdb">Mirror</a>
+                    </p>
+                    <p><a href="http://www.lmdb.tech/doc/">Documentation</a>
+                    </p>
+                    <hr>
+                    <h3 id="general-description-of-lmdb">General description of lmdb</h3>
+                    <p><a href="http://www.lmdb.tech/doc/">lmdb</a> is a memory-mapped key-value btree-based database library.</p>
+                    <ul>
+                        <li>Memory-mapped: Data is stored on disk and loading data into memory is delegated to the OS via memory-mapping. This is said to be faster than manually managing memory.</li>
+                        <li>Key-value: self descriptive</li>
+                        <li>Btree-based: data is stored on a btree (by key). This seems to optimize for read latency.</li>
+                    </ul>
+                    <h3 id="differences-with-leveldb">Differences with LevelDB</h3>
+                    <p>BCHN currently uses LevelDB to store UTXOs.</p>
+                    <ul>
+                        <li>LevelDB is log-based (append only), so it's more friendly to HDD type memory.</li>
+                        <li>LevelDB requires periodic compaction of data, while lmdb requires no ongoing maintenance (the btree rebalances directly on writes).</li>
+                        <li>LevelDB has lots of configuration knobs (RocksDB even more), while lmdb has a handful; the defaults on lmdb are intentionally restricting, so that devs familiarize with them and add what they need.</li>
+                        <li>lmdb uses significantly more disk-space (Preliminary test showed a 4x).</li>
+                    </ul>
+                    <h3 id="lmdb-api">lmdb API</h3>
+                    <p>The API is comfortably straightforward.</p>
+                    <p>The initialization is a little exotic, but <a href="http://www.lmdb.tech/doc/starting.html">well documented</a>. After that the db interaction is with straightforward <code class="language-javascript">get</code>, <code class="language-javascript">put</code> and
+                        <code
+                        class="language-javascript">del</code> function calls.</p>
+                    <p>There is also the ability to open a <code class="language-javascript">cursor</code> to streamline reads. The documentation also mentions that <code class="language-javascript">cursor</code>s can streamline writes if the keys to be written
+                        are pre-ordered for bulk preloading of data. It is unclear if this works on batch-writing to an existing database (TODO).</p>
+                    <p><code class="language-javascript">lmdb</code> has ACID semantics, which we don't care about much, since we do either reads <em>or</em> writes.</p>
+                    <p>For ease of use I used the C++ wrapper <a href="https://github.com/drycpp/lmdbxx">lmdb++</a>. It is comfortable because it provides RAII semantics for lmdb objects. It has its own set of caveats.</p>
+                    <h3 id="-lmdb-caveats"><code class="language-javascript">lmdb</code> caveats</h3>
+                    <ul>
+                        <li>It can be considerably slower than LevelDB on HDD memory (because of frequent random access).</li>
+                        <li>It can also be slower on low-end machines.</li>
+                        <li>Being a btree database, performance is stellar when database is small. Be sure to benchmark on real-life sizes for the db. Disregard benchmarks that are done on small datasets (eg. <a href="https://mozilla.github.io/firefox-browser-architecture/text/0015-rkv.html">https://mozilla.github.io/firefox-browser-architecture/text/0015-rkv.html</a>)</li>
+                        <li>I have noticed a distinctive drop in performance once the db size exceeds RAM. Commit times roughly double. I was not able to mitigate this with configuration flags (but needs more research - TODO).</li>
+                        <li>Database size needs to be set at initialization. This means that additional code needs to be maintained for when a limit is hit and the db needs to be resized. Dagur had implemented such code for BitcoinXT in 2018 <a href="https://github.com/bitcoinxt/bitcoinxt/pull/469">here</a>,
+                            which might make sense to port over.</li>
+                        <li>Write batches need to be small-ish, smaller than available RAM, else swap will step in. Disk flushes can be deferred with the <code class="language-javascript">NOSYNC</code> flag to do smaller commits, but only one disk write at
+                            the end. In <code class="language-javascript">master</code> the default batch size in IDB is currently some 900MB, which is big.</li>
+                        <li>The <code class="language-javascript">WRITEMAP</code> flag <a href="http://www.lmdb.tech/doc/group__mdb.html#ga32a193c6bf4d7d5c5d579e71f22e9340">is documented</a> to improve performance on databases smaller than RAM. I have not been
+                            able to confirm a speedup with this flag.</li>
+                        <li>The <code class="language-javascript">MAPASYNC</code> flag <a href="http://www.lmdb.tech/doc/group__mdb.html#ga32a193c6bf4d7d5c5d579e71f22e9340">is documented</a> to improve write performance, on databases smaller than RAM and if
+                            <code
+                            class="language-javascript">WRITEMAP</code>is enabled. I did see a considerable improvement on writing speeds with this flag.</li>
+                        <li>The semantics of a crash with the <code class="language-javascript">MAPASYNC</code> flag are unclear: will it leave the db in a previous consistent state, or an eintirely inconsistent state?</li>
+                    </ul>
+                    <h3 id="lmdb-caveats">lmdb++ caveats</h3>
+                    <ul>
+                        <li>The RAII semantics are comfortable.</li>
+                        <li>the <code class="language-javascript">lmdb::val</code> object is central to interacting with the wrapper.</li>
+                        <li>
+                            <p>the <code class="language-javascript">lmdb++</code> APIs are wonky in how they accept the <code class="language-javascript">lmdb::val</code> objects. The different overloads in the API might take over and break things, without
+                                a warning. For example the following will work:</p>
+                            <pre><code class="lang-C++">lmdb::val key(stream.data(), stream.size()), value;
+dbi.get(txn, key, value);
+</code></pre>
+                            <p>But this might choose a wrong overload:</p>
+                            <pre><code class="lang-C++">dbi.get(txn, make_val_from(stream), value);
+</code></pre>
+                            <p>The advisory here is to not use the overloaded functions <em>at all</em>, and use the the <code class="language-javascript">lmdb::dbi_*</code> methods (which all accept <code class="language-javascript">MDB_val *</code>, simply
+                                converted to from <code class="language-javascript">lmdb::val</code>s).</p>
+                        </li>
+                    </ul>
+                    <h3 id="benchmarks">Benchmarks</h3>
+                    <p>A minimum viable changeset to benchmark lmdb performance was implemented in <a href="https://gitlab.com/matricz/bitcoin-cash-node/-/tree/lmdb">https://gitlab.com/matricz/bitcoin-cash-node/-/tree/lmdb</a>. NB: The LevelDB code has not
+                        even been ripped out as it's just a prototype. In the future, I would prefer to port Dagur's work on BitcoinXT, instead of working on top of this.</p>
+                    <p>Preliminary tests were done on my laptop, and Digital Ocean instances with standard and NVMe SSDs.</p>
+                    <p>I have a Nitro5 laptop with a very fast NVMe SSD, running the lmdb branch on WSL1/Debian. This is suboptimal and only to be regarded as anecdotal, since WSL can scramble IO times. This being said, I could obtain write rates 40% better
+                        on databases sizes smaller than RAM versus LevelDB, which is a nice improvement.</p>
+                    <p>I did a full IBD with default options on a Digital Ocean VM instance (Storage Optimized, 32GB, 4CPUs, 600GB NVMe, $250/mo) both with master and this lmdb branch.</p>
+                    <p>The lmdb build completed mainnet IBD in 3 hours and 6 minutes, while the master build completed mainnet IBD in 3 hours and 11 minutes. The write times on master were consistently around 12 seconds, while on lmdb they went from 15 seconds,
+                        to a steep jump to 30 seconds (at a point I presume to be the RAM limit), to slowly building up to 40 seconds.</p>
+                    <p>Nontheless, lmdb finished faster, which could lead to faster read times. Still, this is not statistically significant.</p>
+                    <h3 id="future-work">Future work</h3>
+                    <p>We spend only a small amount of time writing to the UTXO database and reading from it is singlethreaded. Hence, any performance gains in the UTXO database, no matter how significant, will bring only a modest global performance improvement
+                        to the node as a whole.</p>
+                    <p>On the other hand, if/when we are able to bring better parallelism to block validation, then db performance improvements could become proportionally more significant. lmdb is known to improve read latency in multithreaded applications,
+                        which would suit our usecase nicely.</p>
+                    <p>We cannot remove LevelDB backend entirely without ruling out people who run the node on HDDs. A mechanism for chosing the db backend (between current LevelDB and lmdb) should be provided (as implemented by Dagur for BitcoinXT).</p>
+                    <p>Future work: since lmdb maps the data to (system managed) memory, and effectively using it as an in-RAM cache, we could possibly remove the <code class="language-javascript">dbcache</code> entirely, IF read times prove to be fast and
+                        reliable enough.</p>
+                    <hr>
+                    <p>Links:</p>
+                    <ul>
+                        <li>Repository link of this announcement: <a href="https://gitlab.com/bitcoin-cash-node/announcements/-/blob/master/20211031_lmdb-preliminary-tech-report.md">GitLab</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>{% endblock %}
