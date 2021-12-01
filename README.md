@@ -20,14 +20,13 @@
 You will need [nodeJS](https://nodejs.org/en/) installed on your machine, then run the following once:
 
 ```shell
-npm install -g gulp-cli
 npm install
 ```
 
 Run the following every time you want to start the development server:
 
 ```shell
-gulp
+npm start
 ```
 
 Hit `ctrl + C` to stop the server.

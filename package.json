@@ -4,6 +4,8 @@
   "description": "Bitcoin Cash Node website.",
   "main": "gulpfile.js",
   "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
     "test": "echo test"
   },
   "repository": {
