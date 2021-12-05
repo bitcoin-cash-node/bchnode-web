@@ -17,6 +17,14 @@
       "tags": ["announcement"]
     },
     {
+      "title": "Bitcoin Cash Upgrade 2022",
+      "date": "November 15 2021",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/thumbnail.png",
+      "filename": "Bitcoin-Cash-Upgrade-2022-Statement",
+      "tags": ["announcement"]
+    },
+    {
       "title": "BCHN Technical Bulletin 2021-10-31 (LMDB Preliminary Technical Report)",
       "date": "31 October 2021",
       "author": "matricz",
