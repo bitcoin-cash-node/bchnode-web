@@ -35,7 +35,7 @@
     "gulp-nunjucks-render": "^2.2.3",
     "gulp-sass": "^4.1.0",
     "minimist": "^1.2.5",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "pattern.css": "^1.0.0"
   },
   "dependencies": {
