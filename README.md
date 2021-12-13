@@ -10,9 +10,7 @@
 
 <div align="center">
   <img src="https://api.netlify.com/api/v1/badges/27419879-7ae8-4f7b-ad2e-117fe78ce814/deploy-status" alt="Netlify Deploy">
-  <img src="https://travis-ci.org/bitcoin-cash-node/bchnode-web.svg?branch=master" alt="Build">
   <a title="Crowdin" target="_blank" href="https://crowdin.com/project/bchnode-web"><img src="https://badges.crowdin.net/bchnode-web/localized.svg"></a>
-  <img src="https://www.codefactor.io/repository/github/bitcoin-cash-node/bchnode-web/badge">
 </div>
 
 ## Run the develoment server
@@ -64,4 +62,4 @@ Pull requests are automatically created when a translation is updated.
 
 ## License
 
-The files in this repository are licensed under MIT license. See [LICENSE](https://github.com/bitcoin-cash-node/bchnode-web/blob/master/LICENSE).
+The files in this repository are licensed under MIT license. See [LICENSE](https://gitlab.com/bitcoin-cash-node/BCHN-SW/bchnode-web/blob/master/LICENSE).

@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bitcoin-cash-node/bchnode-web.git"
+    "url": "git+https://gitlab.com/bitcoin-cash-node/BCHN-SW/bchnode-web.git"
   },
   "keywords": [
     "BitcoinCash",
@@ -19,7 +19,7 @@
   "author": "Corentin Mercier",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bitcoin-cash-node/bchnode-web/issues"
+    "url": "https://gitlab.com/bitcoin-cash-node/BCHN-SW/bchnode-web/issues"
   },
   "homepage": "https://bitcoincashnode.org",
   "devDependencies": {
