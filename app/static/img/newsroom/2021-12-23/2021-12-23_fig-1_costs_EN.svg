@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="67.45mm" height="49.085mm" version="1.1" viewBox="0 0 67.45 49.085" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="Arrow1Lend" overflow="visible" orient="auto">
+   <path transform="matrix(-.8 0 0 -.8 -10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Lstart" overflow="visible" orient="auto">
+   <path transform="matrix(.8 0 0 .8 10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(-50.218 -21.946)" fill="none" stroke="#000">
+  <path d="m54.876 22.46v41.074h62.138" marker-end="url(#Arrow1Lend)" marker-start="url(#Arrow1Lstart)" stroke-width=".26458px"/>
+  <path d="m54.876 63.534c0.93633-6.2028 26.46-17.687 61.697-22.977" stroke-width=".26458px"/>
+  <path d="m54.869 28.065h61.703" stroke-dasharray="0.793749, 0.793749" stroke-width=".26458"/>
+ </g>
+ <g font-family="'Liberation Sans'" font-size="3.5278px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+  <text x="50.39505" y="5.1825161" style="line-height:1" xml:space="preserve"><tspan x="50.39505" y="5.1825161" stroke-width=".26458">real costs</tspan></text>
+  <text x="22.59663" y="15.050032" style="line-height:1" xml:space="preserve"><tspan x="22.59663" y="15.050032" stroke-width=".26458">unknown costs</tspan></text>
+  <text transform="rotate(-10.07)" x="41.853825" y="28.963522" style="line-height:1" xml:space="preserve"><tspan x="41.853825" y="28.963522" stroke-width=".26458">proven costs</tspan></text>
+  <text transform="rotate(-90)" x="-6.6869183" y="2.2806675" style="line-height:1" xml:space="preserve"><tspan x="-6.6869183" y="2.2806675" stroke-width=".26458">cost</tspan></text>
+  <text x="45.084183" y="45.875603" style="line-height:1" xml:space="preserve"><tspan x="45.084183" y="45.875603">effort to prove,</tspan></text>
+  <text x="45.084183" y="49.050606" style="line-height:1" xml:space="preserve"><tspan x="45.084183" y="49.050606">meta cost</tspan></text>
+ </g>
+</svg>
