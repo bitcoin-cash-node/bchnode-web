@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="83.68mm" height="50.144mm" version="1.1" viewBox="0 0 83.68 50.144" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="Arrow2Mend" overflow="visible" orient="auto">
+   <path transform="scale(-.6)" d="m8.7186 4.0337-10.926-4.0177 10.926-4.0177c-1.7455 2.3721-1.7354 5.6175 0 8.0354z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-linejoin="round" stroke-width=".625"/>
+  </marker>
+  <marker id="Arrow1Lend" overflow="visible" orient="auto">
+   <path transform="matrix(-.8 0 0 -.8 -10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Lstart" overflow="visible" orient="auto">
+   <path transform="matrix(.8 0 0 .8 10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <path d="m4.836 0.51365v41.074h67.926" fill="none" marker-end="url(#Arrow1Lend)" marker-start="url(#Arrow1Lstart)" stroke="#000" stroke-width=".26458px"/>
+ <path d="m4.836 41.588c0.71492-6.2028 20.203-17.687 47.107-22.977" fill="none" stroke="#000" stroke-width=".26458px"/>
+ <g font-family="'Liberation Sans'" font-size="3.5278px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+  <text x="50.948315" y="45.875965" style="line-height:1" xml:space="preserve"><tspan x="50.948315" y="46.667057">effort to prove,</tspan><tspan x="50.948315" y="50.194828"/></text>
+  <text x="11.695528" y="12.348886" style="line-height:1" xml:space="preserve"><tspan x="11.695528" y="12.348886" stroke-width=".26458">unknown benefits</tspan></text>
+  <text transform="rotate(-15.058)" x="20.866552" y="30.599846" style="line-height:1" xml:space="preserve"><tspan x="20.866552" y="30.599846" stroke-width=".26458">proven benefits</tspan></text>
+  <text transform="rotate(-90)" x="-12.6094" y="2.556277" style="line-height:1" xml:space="preserve"><tspan x="-12.6094" y="2.556277" stroke-width=".26458">benefits</tspan></text>
+ </g>
+ <g transform="translate(-55.836 -25.504)" stroke-width=".26458">
+  <path d="m107.78 44.114c3.3472-1.0119 5.9978-3.601 6.9703-7.4689" fill="none" marker-end="url(#Arrow2Mend)" stroke="#000" stroke-dasharray="0.264583, 0.793749"/>
+  <text x="105.64033" y="35.094265" font-family="'Liberation Sans'" font-size="3.5278px" letter-spacing="0px" word-spacing="0px" style="line-height:1" xml:space="preserve"><tspan x="105.64033" y="35.094265" stroke-width=".26458">upper bound?</tspan></text>
+  <path d="m60.762 53.07h67.952" fill="none" stroke="#000" stroke-dasharray="0.793749, 0.793749"/>
+  <text x="91.136284" y="52.055943" font-family="'Liberation Sans'" font-size="3.5278px" letter-spacing="0px" word-spacing="0px" style="line-height:1" xml:space="preserve"><tspan x="91.136284" y="52.055943" stroke-width=".26458">knowable costs treshold</tspan></text>
+ </g>
+ <circle cx="23.023" cy="27.69" r="1.1911" style="paint-order:markers fill stroke"/>
+ <g font-family="'Liberation Sans'" font-size="3.5278px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+  <text x="61.163177" y="16.858755" style="line-height:1" xml:space="preserve"><tspan x="61.163177" y="17.649839">net benefits</tspan><tspan x="61.163177" y="21.17761"/></text>
+  <text x="61.163177" y="21.092093" style="line-height:1" xml:space="preserve">post-activation</text>
+  <text x="50.948315" y="50.109303" style="line-height:1" xml:space="preserve">meta cost</text>
+ </g>
+</svg>

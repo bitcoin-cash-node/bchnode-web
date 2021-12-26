@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "title": "BCHN Technical Bulletin 2021-12-23 (Evaluate Viability of Transaction Format or ID Change)",
+      "date": "23 December 2021",
+      "author": "bitcoincashautist",
+      "img": "/static/thumbnail.png",
+      "filename": "BCHN-Technical-Bulletin-2021-12-23",
+      "tags": ["technical-bulletin"]
+    },
+    {
       "title": "BCHN Financial Report 2021-11-24",
       "date": "24 November 2021",
       "author": "Bitcoin Cash Node Team",

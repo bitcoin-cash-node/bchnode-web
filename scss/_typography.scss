@@ -1,4 +1,5 @@
 // Typography
+
 .lead {
   font-size: 1.2em;
 }
@@ -16,6 +17,7 @@
 }
 
 // Hero header
+
 .hero {
   &-title {
     margin-bottom: 2rem;
@@ -39,4 +41,11 @@
       height: 8rem;
     }
   }
+}
+
+// Articles
+
+article h5 {
+  text-decoration: underline;
+  margin-bottom: 1.2rem;
 }
