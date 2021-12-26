@@ -54,6 +54,15 @@ Simply edit the `latest` version number in `/app/data/versions.json` and the dow
 
 In `/blog/`, copy the `example.md` file and replace the content. Run `gulp` to preview the article in the browser (located at http://localhost:3000/en/newsroom/filename).
 
+To caption an image, use thie `figure` and `figcaption` tags:
+
+```html
+<figure>
+  <img src="image.jpg" alt="Something">
+  <figcaption>This is a caption</figcaption>
+</figure>
+```
+
 ## Translating
 
 Translations are managed through [Crowdin](https://crowdin.com). If you wish to translate this website into your own language, please open an issue at this repo.
