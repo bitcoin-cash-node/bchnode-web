@@ -45,7 +45,16 @@
 
 // Articles
 
-article h5 {
-  text-decoration: underline;
-  margin-bottom: 1.2rem;
+article {
+  & h5 {
+    text-decoration: underline;
+    margin-bottom: 1.2rem;
+  }
+
+  & figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: .6rem;
+    color: $gray;
+  }
 }
