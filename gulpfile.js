@@ -9,7 +9,7 @@ let gulp = require('gulp'),
     nunjucksRender = require('gulp-nunjucks-render'),
     i18n = require('gulp-html-i18n'),
     data = require('gulp-data'),
-    // Techy = require('techy').gulp({root: 'blog/'}),
+    Techy = require('techy-cms').gulp({root: 'blog/'}),
     concat = require('gulp-concat'),
     terser = require('gulp-terser'),
     reload = browserSync.reload;
@@ -122,9 +122,9 @@ gulp.task('reload', function(done){
 // Techy CMS
 
 gulp.task('techy', function(done){
-  // gulp.src(['blog/**/*.md', '!blog/example.md'])
-  //   .pipe(Techy())
-  //   .pipe(gulp.dest('./app/newsroom/'));
+  gulp.src(['blog/**/*.md', '!blog/example.md'])
+    .pipe(Techy())
+    .pipe(gulp.dest('./app/newsroom/'));
   done();
 });
 
