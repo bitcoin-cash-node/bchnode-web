@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "title": "BCHN Financial Report 2022-06-07",
+      "date": "07 June 2022",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/thumbnail.png",
+      "filename": "BCHN-Financial-Report-2022-06-07",
+      "tags": ["financial-report"]
+    },
+    {
       "title": "Announcing Bitcoin Cash Node v24.1.0",
       "date": "30 May 2022",
       "author": "Bitcoin Cash Node Team",
