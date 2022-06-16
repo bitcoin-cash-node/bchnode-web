@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "title": "Announcing Bitcoin Cash Node v24.1.0",
+      "date": "30 May 2022",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/thumbnail.png",
+      "filename": "Announcing-Bitcoin-Cash-Node-v24-1-0",
+      "tags": ["announcement"]
+    },
+    {
       "title": "BCHN Technical Bulletin 2021-12-23 (Evaluate Viability of Transaction Format or ID Change)",
       "date": "23 December 2021",
       "author": "bitcoincashautist",
