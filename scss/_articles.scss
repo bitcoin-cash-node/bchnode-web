@@ -1,0 +1,104 @@
+// Articles
+
+article {
+
+  // Headings
+  & h5 {
+    text-decoration: underline;
+    margin-bottom: 1.2rem;
+  }
+
+  & h6 {
+    font-weight: 600;
+  }
+
+  & h7 {
+    // paragraph-like properties
+    display: inline-block;
+    position: relative;
+
+    // properties inherited from other headings
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+
+    // custom properties
+    font-size: 1rem;
+  }
+
+  // Figures
+  & figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: .6rem;
+    color: $gray;
+  }
+
+  // Blockquotes
+  & blockquote {
+    border-left: 10px solid #ccc;
+    margin: 1.5em 0;
+    padding: 0 10px;
+
+    &:before {
+      color: #ccc;
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    }
+  }
+
+  // Tables
+  table {
+    width: 100%;
+    margin-bottom: $spacer;
+    color: $table-color;
+    background-color: $table-bg;
+
+    th,
+    td {
+      padding: $table-cell-padding;
+      vertical-align: top;
+      border-top: $table-border-width solid $table-border-color;
+    }
+
+    thead th {
+      vertical-align: bottom;
+      border-bottom: (2 * $table-border-width) solid $table-border-color;
+    }
+
+    tbody + tbody {
+      border-top: (2 * $table-border-width) solid $table-border-color;
+    }
+
+    overflow: auto;
+    white-space: nowrap;
+
+    // Responsive
+    @each $breakpoint in map-keys($grid-breakpoints) {
+      $next: breakpoint-next($breakpoint, $grid-breakpoints);
+      $infix: breakpoint-infix($next, $grid-breakpoints);
+
+      &#{$infix} {
+        @include media-breakpoint-down($breakpoint) {
+          display: block;
+          width: 100%;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+
+          // Prevent double border on horizontal scroll due to use of `display: block;`
+          > .table-bordered {
+            border: 0;
+          }
+        }
+      }
+    }
+
+    // Striped
+    tbody tr:nth-of-type(#{$table-striped-order}) {
+      background-color: $table-accent-bg;
+    }
+  }
+
+}
