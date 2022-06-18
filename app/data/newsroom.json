@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "title": "BCHN Technical Bulletin 2022-06-09 (Bitcoin Cash Pay-to-Script-Hash (P2SH): Past, Present, and Future)",
+      "date": "09 June 2022",
+      "author": "bitcoincashautist",
+      "img": "/static/thumbnail.png",
+      "filename": "BCHN-Technical-Bulletin-2022-06-09",
+      "tags": ["technical-bulletin"]
+    },
+    {
       "title": "BCHN Financial Report 2022-06-07",
       "date": "07 June 2022",
       "author": "Bitcoin Cash Node Team",
