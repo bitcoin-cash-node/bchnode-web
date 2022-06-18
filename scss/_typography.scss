@@ -42,33 +42,3 @@
     }
   }
 }
-
-// Articles
-
-article {
-  & h5 {
-    text-decoration: underline;
-    margin-bottom: 1.2rem;
-  }
-
-  & figcaption {
-    text-align: center;
-    font-style: italic;
-    margin-top: .6rem;
-    color: $gray;
-  }
-
-  & blockquote {
-    border-left: 10px solid #ccc;
-    margin: 1.5em 0;
-    padding: 0 10px;
-
-    &:before {
-      color: #ccc;
-      font-size: 4em;
-      line-height: 0.1em;
-      margin-right: 0.25em;
-      vertical-align: -0.4em;
-    }
-  }
-}
