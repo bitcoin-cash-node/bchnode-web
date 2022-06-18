@@ -51,6 +51,24 @@ article {
     margin-bottom: 1.2rem;
   }
 
+  & h6 {
+    font-weight: 600;
+  }
+
+  & h7 {
+    // paragraph-like properties
+    display: inline-block;
+    position: relative;
+
+    // properties inherited from other headings
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+
+    // custom properties
+    font-size: 1rem;
+  }
+
   & figcaption {
     text-align: center;
     font-style: italic;
