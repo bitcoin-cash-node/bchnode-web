@@ -25,6 +25,14 @@
       "tags": ["announcement"]
     },
     {
+      "title": "BCHN Technical Bulletin 2022-05-16 (BCHN Network Architecture)",
+      "date": "16 May 2022",
+      "author": "matricz",
+      "img": "/static/thumbnail.png",
+      "filename": "BCHN-Technical-Bulletin-2022-05-16",
+      "tags": ["technical-bulletin"]
+    },
+    {
       "title": "BCHN Technical Bulletin 2021-12-23 (Evaluate Viability of Transaction Format or ID Change)",
       "date": "23 December 2021",
       "author": "bitcoincashautist",
