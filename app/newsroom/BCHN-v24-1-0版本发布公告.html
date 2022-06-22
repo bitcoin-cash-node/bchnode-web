@@ -1,0 +1,48 @@
+{% extends 'base.njk' %}{% block title %}BCHN v24.1.0版本发布公告{% endblock %}{% block description %}{% endblock %}{% block body %}
+<section class="bg-dark">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col my-5 py-5 text-center">
+                <h1 class="text-white">BCHN v24.1.0版本发布公告</h1> 
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container py-6">
+        <div class="row justify-content-center">
+            <article class="col-md-10 col-lg-8">
+                <div class="d-flex align-items-center pb-5">
+                    <img src="/static/img/logomark.svg" alt="Logo" class="mr-3 w-auto" height="40">
+                    <div>
+                        <div>by <strong>Bitcoin Cash Node Team</strong>
+                        </div>
+                        <div class="text-small text-muted">2022年5月30日</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>
+
+                    </p>
+                    <h2 id="bchn-v24-1-0-">BCHN v24.1.0版本发布公告</h2>
+                    <p>BCHN项目在此宣布其重要版本更新24.1.0。</p>
+                    <p>该版本实施了一些介面的升级，包括TORv3的支持，以及其他除错与性能提升。此介面升级与现有软件完全向后兼容，除了以下几处：</p>
+                    <ol>
+                        <li>不再接受在RFC4632下无效的netmask。</li>
+                        <li>将<code class="language-javascript">-whitelistrelay</code> 选项的预设恢复成启用。</li>
+                        <li>Mac OSX 最低版本要求提高到 10.14 (Mojave)。</li>
+                    </ol>
+                    <p>我们建议使用之前发布版本的用户升级到v24.1.0，但使用早于 OSX 10.14 版本的 Mac 用户应暂缓更换，直到作业系统能升级为止。</p>
+                    <p>访问以下网址，查看完整版版本说明：</p>
+                    <p><a href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/tag/v24.1.0"><a href="https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/tag/v24.1.0">https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/tag/v24.1.0</a></a>
+                    </p>
+                    <p>该链接中有可执行程序和支持平台的源码，你也可以在BCHN的项目网页进行下载：</p>
+                    <p><a href="https://bitcoincashnode.org"><a href="https://bitcoincashnode.org">https://bitcoincashnode.org</a></a>
+                    </p>
+                    <p>我们希望最新版本能带给你好的体验。让我们一起改善BCH。</p>
+                    <p>BCHN团队</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>{% endblock %}
