@@ -9,6 +9,14 @@
       "tags": ["financial-report"]
     },
     {
+      "title": "BCHN v24.1.0版本发布公告",
+      "date": "30 May 2022",
+      "author": "Bitcoin Cash Node Team",
+      "img": "/static/thumbnail.png",
+      "filename": "BCHN-v24-1-0版本发布公告",
+      "tags": ["announcement", "chinese"]
+    },
+    {
       "title": "Announcing Bitcoin Cash Node v24.1.0",
       "date": "30 May 2022",
       "author": "Bitcoin Cash Node Team",
