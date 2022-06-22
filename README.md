@@ -13,7 +13,19 @@
   <a title="Crowdin" target="_blank" href="https://crowdin.com/project/bchnode-web"><img src="https://badges.crowdin.net/bchnode-web/localized.svg"></a>
 </div>
 
-## Run the develoment server
+---
+
+### Table of contents
+
+- [Run the development server](#-run-the-development-server)
+- [Deploy](#-deploy)
+- [Contribute](#-contribute)
+- [Translate](#-translate)
+
+---
+
+
+## Run the development server
 
 You will need [nodeJS](https://nodejs.org/en/) installed on your machine, then run the following once:
 
@@ -29,7 +41,15 @@ npm start
 
 Hit `ctrl + C` to stop the server.
 
-## Contributing
+## Deploy
+
+To build the production website, run:
+
+```shell
+npm run build
+```
+
+## Contribute
 
 Use the coding style recommended by [codeguide.co](https://codeguide.co).  
 Open issues and pull requests at this repo.
@@ -50,9 +70,9 @@ JavaScript files are located in `/js/`. All files will be concatenated in alphab
 
 Simply edit the `latest` version number in `/app/data/versions.json` and the download links will automatically update.
 
-## Writing an article
+##### Write an article
 
-In `/blog/`, copy the `example.md` file and replace the content. Run `gulp` to preview the article in the browser (located at http://localhost:3000/en/newsroom/filename).
+In `/blog/`, copy the `example.md` file and replace the content. Run `npm start` to preview the article in the browser (located at http://localhost:3000/en/newsroom/filename).
 
 To caption an image, use thie `figure` and `figcaption` tags:
 
@@ -63,7 +83,7 @@ To caption an image, use thie `figure` and `figcaption` tags:
 </figure>
 ```
 
-## Translating
+## Translate
 
 Translations are managed through [Crowdin](https://crowdin.com). If you wish to translate this website into your own language, please open an issue at this repo.
 
