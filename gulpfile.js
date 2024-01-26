@@ -98,6 +98,8 @@ gulp.task('js', function() {
 // Copy all static files
 
 gulp.task('copy-static', function(done){
+  // Copy _redirects
+  gulp.src('_redirects').pipe(gulp.dest('dist/'));
   // Add AOS library from node_modules
   gulp.src('node_modules/aos/dist/aos.js')
     .pipe(gulp.dest('dist/static/js/'));
