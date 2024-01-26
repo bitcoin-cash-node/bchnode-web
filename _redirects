@@ -1,0 +1,16 @@
+/ /_/ 301! 
+/goals /_/goals 301! 
+/media /_/media 301! 
+/newsroom /_/newsroom 301! 
+/team /_/team 301! 
+
+/_/*  /de/:splat  301  Language=de
+/_/*  /en/:splat  301  Language=en
+/_/*  /es/:splat  301  Language=es
+/_/*  /fr/:splat  301  Language=fr
+/_/*  /it/:splat  301  Language=it
+/_/*  /jp/:splat  301  Language=jp
+/_/*  /ko/:splat  301  Language=ko
+/_/*  /nl/:splat  301  Language=nl
+/_/*  /no/:splat  301  Language=no
+/_/*  /zh/:splat  301  Language=zh

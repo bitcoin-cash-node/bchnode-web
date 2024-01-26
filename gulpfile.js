@@ -47,8 +47,8 @@ gulp.task('html', function(){
     .pipe(i18n({
       langDir: 'lang', // takes translations from /lang/
       createLangDirs: true,
-      defaultLang: 'en',
-      fallback: 'en',
+      defaultLang: '_',
+      fallback: '_',
       delimiters: ['$(',')$']
     }))
     .pipe(gulp.dest('dist'));
